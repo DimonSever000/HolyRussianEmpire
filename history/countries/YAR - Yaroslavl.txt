@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = principality
+government_rank = 1
+technology_group = eastern
+religion = orthodox
+primary_culture = vladimirian
+capital = 308	# Yaroslavl
+fixed_capital = 308 # Cannot move capital away from this province & no power cost to move to it
+
+1420.1.1 = {
+	monarch = {
+		name = "Ivan"
+		dynasty = "Rurikovich"
+		birth_date = 1386.1.1
+		dip = 3
+		adm = 2
+		mil = 2
+	}
+}

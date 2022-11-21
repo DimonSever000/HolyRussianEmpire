@@ -1,0 +1,18 @@
+government = republic
+add_government_reform = free_city
+government_rank = 1
+mercantilism = 10
+primary_culture = arkhangelsk
+religion = orthodox
+technology_group = eastern
+capital = 4259	# Velsk
+fixed_capital = 4259
+
+1441.1.1 = {
+	monarch = {
+		name = "Aleksandr"
+		adm = 4
+		dip = 4
+		mil = 2
+	}
+}

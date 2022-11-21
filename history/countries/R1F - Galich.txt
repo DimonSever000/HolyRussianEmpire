@@ -1,0 +1,20 @@
+government = monarchy
+add_government_reform = principality
+government_rank = 1
+mercantilism = 15
+primary_culture = kostromian
+religion = orthodox
+technology_group = eastern
+capital = 1957	# Galich
+fixed_capital = 1957
+
+1435.1.1 = {
+	monarch = {
+		name = "Pavel"
+		dynasty = Rurikovich
+		birth_date = 1386.1.1
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}

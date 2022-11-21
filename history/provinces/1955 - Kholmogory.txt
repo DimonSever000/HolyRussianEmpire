@@ -1,0 +1,23 @@
+#1955 - Kholmogory
+
+owner = R1A 
+controller = R1A 
+culture = arkhangelsk
+religion = orthodox
+hre = no
+base_tax = 3 
+base_production = 6
+trade_goods = fur 
+base_manpower = 4
+capital = "Arkhangelsk"
+is_city = yes
+add_core = R1A
+discovered_by = KAZ
+discovered_by = CRI
+discovered_by = GOL
+discovered_by = AST
+discovered_by = QAS
+discovered_by = eastern
+discovered_by = western
+extra_cost = 16
+center_of_trade = 2

@@ -1,0 +1,18 @@
+government = republic
+add_government_reform = free_city
+government_rank = 1
+mercantilism = 5
+primary_culture = arkhangelsk
+religion = orthodox
+technology_group = eastern
+capital = 1079	# Viatka
+fixed_capital = 1079
+
+1441.1.1 = {
+	monarch = {
+		name = "Innokentiy"
+		adm = 1
+		dip = 1
+		mil = 0
+	}
+}

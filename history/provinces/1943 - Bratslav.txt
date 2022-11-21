@@ -1,0 +1,21 @@
+#Bratslav/East Podolia
+
+owner = R1Y
+controller = R1Y
+culture = ruthenian
+religion = orthodox
+hre = no
+base_tax = 4
+base_production = 1
+trade_goods = livestock 
+base_manpower = 4
+capital = "Bratslav"
+is_city = yes
+add_local_autonomy = 25
+add_core = KIE
+add_core = R1Y
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = nomad_group

@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = principality
+government_rank = 1
+technology_group = nomad_group
+primary_culture = ryazanian
+religion = orthodox
+capital = 1778	# Kasimov
+
+
+1442.1.1 = {
+	monarch = {
+		name = "Afanasiy"
+		dynasty = "Rurikovich"
+		birth_date = 1405.1.1
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}

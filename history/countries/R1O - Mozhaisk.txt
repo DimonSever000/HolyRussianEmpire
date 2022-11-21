@@ -1,0 +1,20 @@
+government = monarchy
+add_government_reform = principality
+government_rank = 1
+mercantilism = 15
+primary_culture = tverian
+religion = orthodox
+technology_group = eastern
+capital = 4251	# Mozhaisk
+fixed_capital = 4251
+
+1444.1.1 = {
+	monarch = {
+		name = "Makariy"
+		dynasty = Rurikovich
+		birth_date = 1412.1.1
+		adm = 0
+		dip = 1
+		mil = 1
+	}
+}

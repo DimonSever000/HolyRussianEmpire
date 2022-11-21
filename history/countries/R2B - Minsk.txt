@@ -1,0 +1,17 @@
+government = republic
+add_government_reform = free_city
+government_rank = 1
+technology_group = eastern
+religion = orthodox
+primary_culture = byelorussian
+technology_group = eastern
+capital = 276
+
+1433.1.1 = {
+	monarch = {
+		name = "Stanislav"
+		adm = 0
+		dip = 2
+		mil = 0
+	}
+}

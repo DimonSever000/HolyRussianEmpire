@@ -1,0 +1,18 @@
+government = republic
+add_government_reform = veche_republic
+government_rank = 1
+mercantilism = 20
+primary_culture = arkhangelsk
+religion = orthodox
+technology_group = eastern
+capital = 1955	# Arkhangelsk
+fixed_capital = 1955 # Cannot move capital away from this province & no power cost to move to it
+
+1440.1.1 = {
+	monarch = {
+		name = "Kirill"
+		adm = 2
+		dip = 5
+		mil = 2
+	}
+}

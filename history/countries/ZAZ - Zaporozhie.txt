@@ -1,0 +1,16 @@
+government = republic
+add_government_reform = cossacks_reform
+technology_group = nomad_group
+religion = orthodox
+primary_culture = ruthenian
+capital = 283	# Zaporozhia
+
+
+1441.1.1 = {	
+	monarch = {		
+		name = "Lyantskoronsky"			
+		adm = 3		
+		dip = 4		
+		mil = 4	
+	}
+}

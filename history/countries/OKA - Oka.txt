@@ -1,0 +1,18 @@
+#Represents the various small Upper Oka Principalities
+government_rank = 1
+government = republic
+add_government_reform = free_city
+primary_culture = ryazanian
+religion = orthodox
+technology_group = eastern
+capital = 4116	# Upper Oka
+fixed_capital = 4116 # Cannot move capital away from this province & no power cost to move to it
+
+1427.1.1 = {
+	monarch = {
+		name = "Ivan"
+		adm = 1
+		dip = 2
+		mil = 6
+	}
+}

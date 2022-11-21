@@ -1,0 +1,20 @@
+government = monarchy
+add_government_reform = principality
+government_rank = 1
+mercantilism = 15
+primary_culture = vladimirian
+religion = orthodox
+technology_group = eastern
+capital = 307	# Vladimir
+fixed_capital = 307
+
+1441.1.1 = {
+	monarch = {
+		name = "Vladimir"
+		dynasty = Rurikovich
+		birth_date = 1422.1.1
+		adm = 0
+		dip = 6
+		mil = 1
+	}
+}

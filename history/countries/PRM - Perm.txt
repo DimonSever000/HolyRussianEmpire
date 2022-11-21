@@ -1,0 +1,20 @@
+government = monarchy
+add_government_reform = principality
+government_rank = 1
+primary_culture = uralic
+religion = orthodox
+technology_group = eastern
+capital = 305
+fixed_capital = 305
+
+
+1444.1.1 = {
+	monarch = {
+		name = "Yermolay"
+		dynasty = "Rurikovich"
+		birth_date = 1421.1.1
+		adm = 6
+		dip = 4
+		mil = 5
+	}
+}

@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = principality
+government_rank = 1
+technology_group = eastern
+religion = orthodox
+primary_culture = byelorussian
+technology_group = eastern
+capital = 4537
+
+1433.1.1 = {
+	monarch = {
+		name = "Vsevolod"
+		dynasty = Rurikovich
+		birth_date = 1413.1.1
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}

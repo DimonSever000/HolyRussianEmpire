@@ -1,0 +1,17 @@
+# - Bezhetsk
+
+owner = R1M
+controller = R1M
+culture = novgorodian
+religion = orthodox
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = naval_supplies 
+base_manpower = 2
+capital = "Bezhetsk"
+is_city = yes
+add_core = R1M
+discovered_by = eastern
+discovered_by = western
+discovered_by = nomad_group

@@ -1,0 +1,21 @@
+#1956 - Suzdal
+
+owner = R1S
+controller = R1S
+culture = vladimirian
+religion = orthodox
+hre = no
+base_tax = 6
+base_production = 4
+trade_goods = grain 
+base_manpower = 4
+capital = "Suzdal"
+is_city = yes
+add_core = R1S
+add_core = R1T
+add_core = R1R
+discovered_by = GOL
+discovered_by = KAZ
+discovered_by = eastern
+discovered_by = western
+discovered_by = nomad_group

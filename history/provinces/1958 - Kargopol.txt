@@ -1,0 +1,21 @@
+#Kargopol
+
+owner = R1I
+controller = R1I 
+culture = arkhangelsk
+religion = orthodox
+hre = no
+base_tax = 4
+base_production = 2
+trade_goods = naval_supplies
+base_manpower = 2
+capital = "Kargopol"
+is_city = yes
+add_core = R1I
+add_core = R1A
+
+
+
+discovered_by = eastern
+discovered_by = western
+discovered_by = nomad_group

@@ -1,0 +1,18 @@
+# Nizhny Novgorod
+
+government = republic
+add_government_reform = free_city
+government_rank = 1
+primary_culture = russian
+religion = orthodox
+technology_group = eastern
+capital = 306	# Nizhny Novgorod
+
+1350.1.1 = {
+	monarch = {
+		name = "Dmitry"
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+}

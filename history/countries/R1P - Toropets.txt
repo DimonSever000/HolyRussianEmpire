@@ -1,0 +1,20 @@
+government = monarchy
+add_government_reform = principality
+government_rank = 1
+mercantilism = 15
+primary_culture = polotskian
+religion = orthodox
+technology_group = eastern
+capital = 4243	# Toropets
+fixed_capital = 4243
+
+1444.1.1 = {
+	monarch = {
+		name = "Vasiliy"
+		dynasty = Rurikovich
+		birth_date = 1412.1.1
+		adm = 0
+		dip = 3
+		mil = 2
+	}
+}

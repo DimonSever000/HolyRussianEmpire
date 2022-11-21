@@ -1,0 +1,83 @@
+# Beloozero and Velsk
+vassal = {
+	first = BLO
+	second = R1H
+	start_date = 1444.1.1
+}
+
+# Novgorod and Vyshny Volochyok
+vassal = {
+	first = NOV
+	second = R1J
+	start_date = 1444.1.1
+}
+
+# Novgorod and Luki
+vassal = {
+	first = NOV
+	second = R1K
+	start_date = 1444.1.1
+}
+
+# Tver and Rzhev
+vassal = {
+	first = TVE
+	second = R1N
+	start_date = 1444.1.1
+}
+
+# Polotsk and Toropets
+vassal = {
+	first = PLT
+	second = R1P
+	start_date = 1444.1.1
+}
+
+# Vladimir and Suzdal
+vassal = {
+	first = R1R
+	second = R1S
+	start_date = 1444.1.1
+}
+
+# Vladimir and Yuriev
+vassal = {
+	first = R1R
+	second = R1T
+	start_date = 1444.1.1
+}
+
+# Vladimir and Moscow
+union = {
+	first = R1R
+	second = MOS
+	start_date = 1444.1.1
+}
+
+# Litva and Breslauja
+vassal = {
+	first = LIT
+	second = R1W
+	start_date = 1444.1.1
+}
+
+# Litva and Grodno
+vassal = {
+	first = LIT
+	second = R1X
+	start_date = 1444.1.1
+}
+
+# Kiev and Bratslav
+vassal = {
+	first = KIE
+	second = R1Y
+	start_date = 1444.1.1
+}
+
+# White Ruthenian and Turov
+vassal = {
+	first = R2A
+	second = R2E
+	start_date = 1444.1.1
+}

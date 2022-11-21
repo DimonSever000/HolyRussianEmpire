@@ -1,0 +1,22 @@
+#4122 - Shenkursk
+
+owner = R1C 
+controller = R1C 
+culture = arkhangelsk
+religion = orthodox
+hre = no
+base_tax = 2
+base_production = 1
+trade_goods = salt 
+base_manpower = 2
+capital = "Shenkursk"
+add_local_autonomy = 15
+is_city = yes
+add_core = R1A
+discovered_by = KAZ
+discovered_by = CRI
+discovered_by = GOL
+discovered_by = AST
+discovered_by = QAS
+discovered_by = eastern
+discovered_by = western

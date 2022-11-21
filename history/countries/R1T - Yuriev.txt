@@ -1,0 +1,20 @@
+government = monarchy
+add_government_reform = principality
+government_rank = 1
+mercantilism = 10
+primary_culture = vladimirian
+religion = orthodox
+technology_group = eastern
+capital = 4253	# Yuriev
+fixed_capital = 4253
+
+1412.1.1 = {
+	monarch = {
+		name = "Vasiliy"
+		dynasty = Rurikovich
+		birth_date = 1390.1.1
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}

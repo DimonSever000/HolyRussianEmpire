@@ -1,0 +1,20 @@
+government = monarchy
+add_government_reform = principality
+government_rank = 1
+technology_group = eastern
+religion = orthodox
+primary_culture = polovtsian
+technology_group = eastern
+capital = 287
+fixed_capital = 287
+
+1443.1.1 = {
+	monarch = {
+		name = "Ahmad"
+		dynasty = Rurikovich
+		birth_date = 1423.1.1
+		adm = 2
+		dip = 4
+		mil = 2
+	}
+}

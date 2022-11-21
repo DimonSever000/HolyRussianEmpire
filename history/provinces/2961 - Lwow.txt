@@ -1,0 +1,30 @@
+#2961 - Lwow
+
+latent_trade_goods = {
+	coal
+}
+
+owner = R2G
+controller = R2G
+capital= "Lwow"
+culture = volynian
+religion = orthodox
+trade_goods = dyes
+hre = no
+base_tax = 4
+base_production = 6
+base_manpower = 1
+is_city = yes
+add_core = R2G
+add_core = VOL
+discovered_by = KAZ
+discovered_by = CRI
+discovered_by = GOL
+discovered_by = AST
+discovered_by = QAS
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+extra_cost = 8
+center_of_trade = 1

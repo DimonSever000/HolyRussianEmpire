@@ -1,0 +1,26 @@
+#4541 - Drohobycz
+
+owner = R2G
+controller = R2G
+culture = volynian
+religion = orthodox
+hre = no
+base_tax = 2
+base_production = 3
+trade_goods = livestock
+base_manpower = 2
+capital = "Drohobycz"
+is_city = yes
+add_core = R2G
+add_core = VOL
+
+
+discovered_by = KAZ
+discovered_by = CRI
+discovered_by = GOL
+discovered_by = AST
+discovered_by = QAS
+discovered_by = eastern
+discovered_by = western
+discovered_by = ottoman
+discovered_by = muslim

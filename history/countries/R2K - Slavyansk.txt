@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = principality
+government_rank = 1
+technology_group = eastern
+religion = orthodox
+primary_culture = polovtsian
+technology_group = eastern
+capital = 2411
+
+1425.1.1 = {
+	monarch = {
+		name = "Svyatoslav"
+		dynasty = Rurikovich
+		birth_date = 1413.1.1
+		adm = 3
+		dip = 5
+		mil = 1
+	}
+}

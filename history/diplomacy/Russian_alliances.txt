@@ -81,3 +81,17 @@ vassal = {
 	second = R2E
 	start_date = 1444.1.1
 }
+
+# Volyn and Galicia
+union = {
+	first = VOL
+	second = R2G
+	start_date = 1444.1.1
+}
+
+# Don and Kuban
+union = {
+	first = R2O
+	second = R2N
+	start_date = 1444.1.1
+}

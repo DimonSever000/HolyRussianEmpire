@@ -1,0 +1,16 @@
+government = republic
+add_government_reform = free_city
+government_rank = 1
+religion = orthodox
+primary_culture = polovtsian
+technology_group = eastern
+capital = 2410	# Theodoro
+
+1444.1.1 = {
+	monarch = {
+		name = "Fyodor"
+		adm = 2
+		dip = 5
+		mil = 5
+	}
+}

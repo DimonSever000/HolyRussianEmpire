@@ -13,6 +13,7 @@ capital = "Shenkursk"
 add_local_autonomy = 15
 is_city = yes
 add_core = R1A
+add_core = R1C
 discovered_by = KAZ
 discovered_by = CRI
 discovered_by = GOL

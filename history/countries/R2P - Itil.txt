@@ -5,14 +5,14 @@ technology_group = eastern
 religion = orthodox
 primary_culture = polovtsian
 technology_group = eastern
-capital = 467
-fixed_capital = 467
+capital = 464
+fixed_capital = 464
 
-1443.1.1 = {
+1438.1.1 = {
 	monarch = {
-		name = "Gleb"
-		adm = 4
-		dip = 3
-		mil = 5
+		name = "Yevgeniy"
+		adm = 3
+		dip = 0
+		mil = 1
 	}
 }

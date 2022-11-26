@@ -1,17 +1,17 @@
-#2415 - Etkara
+#2416 - Majar
 
-owner = R2H
-controller = R2H
-culture = ryazanian
-religion = orthodox
+owner = R2U
+controller = R2U
+culture = astrakhani
+religion = tengri_pagan_reformed
 hre = no
-base_tax = 3 
-base_production = 2
+base_tax = 3
+base_production = 3
 trade_goods = livestock
 base_manpower = 2
-capital = "Etkara"
+capital = "Majar"
 is_city = yes
-add_core = R2H
+add_core = R2U
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

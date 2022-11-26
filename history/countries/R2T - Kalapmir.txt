@@ -3,16 +3,15 @@ add_government_reform = free_city
 government_rank = 1
 technology_group = eastern
 religion = orthodox
-primary_culture = polovtsian
-technology_group = eastern
-capital = 467
-fixed_capital = 467
+primary_culture = kazani
+capital = 303
+fixed_capital = 303
 
 1443.1.1 = {
 	monarch = {
-		name = "Gleb"
-		adm = 4
-		dip = 3
-		mil = 5
+		name = "Semen"
+		adm = 2
+		dip = 0
+		mil = 1
 	}
 }

@@ -2,7 +2,7 @@
 
 owner = R2I
 controller = R2I
-culture = mishary
+culture = polovtsian
 religion = orthodox
 capital = "Borisoglebsk"
 trade_goods = livestock

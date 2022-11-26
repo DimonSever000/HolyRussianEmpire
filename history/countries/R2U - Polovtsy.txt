@@ -1,0 +1,21 @@
+government = tribal
+add_government_reform = steppe_horde
+government_rank = 1
+technology_group = nomad_group
+religion = tengri_pagan_reformed
+primary_culture = polovtsian
+add_accepted_culture = astrakhani
+add_accepted_culture = kazani
+capital = 466
+fixed_capital = 466
+
+1440.1.1 = {
+	monarch = {
+		name = "Uskhal"
+		dynasty = Borjihan
+		birth_date = 1420.1.1
+		adm = 5
+		dip = 5
+		mil = 4
+	}
+}

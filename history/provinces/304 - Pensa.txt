@@ -2,7 +2,7 @@
 
 owner = R2H
 controller = R2H
-culture = kazani
+culture = ryazanian
 religion = orthodox
 hre = no
 base_tax = 3 

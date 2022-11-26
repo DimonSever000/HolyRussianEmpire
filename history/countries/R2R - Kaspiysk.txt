@@ -1,0 +1,20 @@
+government = monarchy
+add_government_reform = principality
+government_rank = 1
+technology_group = eastern
+religion = orthodox
+primary_culture = astrakhani
+technology_group = eastern
+capital = 469
+fixed_capital = 469
+
+1432.1.1 = {
+	monarch = {
+		name = "Andrei"
+		dynasty = Rurikovich
+		birth_date = 1410.1.1
+		adm = 4
+		dip = 3
+		mil = 3
+	}
+}

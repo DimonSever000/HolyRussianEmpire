@@ -1,17 +1,17 @@
 #296 - Kaluga
 
-owner = R1O
-controller = R1O   
+owner = R2V
+controller = R2V   
 culture = russian
 religion = orthodox
 hre = no
-base_tax = 4
+base_tax = 3
 base_production = 3
 trade_goods = grain  
-base_manpower = 4
-capital = "Kaluga"
+base_manpower = 7
+capital = "Kozelsk"
 is_city = yes
-add_core = R1O
+add_core = R2V
 discovered_by = eastern
 discovered_by = western
 discovered_by = GOL

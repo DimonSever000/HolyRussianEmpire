@@ -1,0 +1,17 @@
+#315 - Finnmark
+
+owner = R2Y
+controller = R2Y
+culture = sapmi
+religion = shamanism
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1
+trade_goods = fish
+capital = "Vard"
+is_city = yes
+add_core = R2Y
+add_local_autonomy = 70
+discovered_by = eastern
+discovered_by = western

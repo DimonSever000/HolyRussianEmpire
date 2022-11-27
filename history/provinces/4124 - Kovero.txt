@@ -4,6 +4,7 @@ owner = SCA
 controller = SCA
 add_core = SCA
 add_core = KRL
+add_core = FIN
 culture = karelian
 religion = orthodox
 hre = no

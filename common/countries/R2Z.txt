@@ -1,38 +1,36 @@
-graphical_culture = easterngfx
+graphical_culture = westerngfx
 
-color = { 200  150  80 }
+color = { 106  140  106 }
 
-revolutionary_colors = { 200  150  80 }
+revolutionary_colors = { 106  140  106 }
 
 historical_idea_groups = {
-	
 	defensive_ideas
-	administrative_ideas
-	quality_ideas
-	quantity_ideas
-	diplomatic_ideas
-	religious_ideas
+	offensive_ideas
+	trade_ideas
 	economic_ideas
-	influence_ideas
+	diplomatic_ideas
+	aristocracy_ideas
+	spy_ideas
+	religious_ideas
 }
 
 historical_units = {
-	bardiche_infantry
-	druzhina_cavalry
-	slavic_stradioti
-	eastern_militia
-	muscovite_musketeer
-	muscovite_caracolle
-	muscovite_soldaty
-	muscovite_cossack
-	russian_petrine
-	russian_lancer
-	russian_green_coat
-	russian_cuirassier
-	eastern_skirmisher
-	eastern_uhlan
-	eastern_carabinier
-	russian_mass
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	swiss_landsknechten
+	dutch_maurician
+	swedish_gallop
+	swedish_gustavian
+	swedish_caroline
+	swedish_arme_blanche
+	prussian_frederickian
+	prussian_uhlan
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
 }
 
 leader_names = {

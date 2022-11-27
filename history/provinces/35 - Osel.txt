@@ -1,0 +1,20 @@
+#Ösel and Dagö, incl. Sonnenburg and Arensburg.
+
+owner = R2Z
+controller = R2Z
+add_core = R2Z
+add_core = EST
+culture = estonian
+religion = orthodox
+hre = yes
+base_tax = 1 
+base_production = 2
+trade_goods = grain
+base_manpower = 2
+capital = "Arensgrad"
+is_city = yes
+
+
+
+discovered_by = western
+discovered_by = eastern

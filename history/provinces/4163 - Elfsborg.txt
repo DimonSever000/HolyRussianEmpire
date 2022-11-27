@@ -1,0 +1,22 @@
+#Elfsborgs Län
+
+add_core = SWE
+owner = SCA
+controller = SCA
+add_core = SCA
+culture = swedish
+religion = catholic
+hre = no
+base_tax = 2
+base_production = 1
+trade_goods = grain
+base_manpower = 1
+capital = "Elfsborg"
+add_local_autonomy = 25
+is_city = yes
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+extra_cost = 8
+center_of_trade = 1

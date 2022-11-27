@@ -1,0 +1,17 @@
+government = monarchy
+add_government_reform = principality
+primary_culture = kazani
+religion = orthodox
+technology_group = nomad_group
+capital = 1082	# Kazan
+
+1438.1.1 = {
+	monarch = {
+		name = "Adai"
+		dynasty = Borjihan
+		birth_date = 1412.1.1
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+}

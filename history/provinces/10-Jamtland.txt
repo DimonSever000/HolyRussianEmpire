@@ -1,0 +1,21 @@
+#Jämtland+Härjedalen
+
+owner = SCA
+controller = SCA
+culture = norwegian # They were actually Jämts - the unique blend of Swedish, Norwegian and local tendencies
+religion = catholic
+hre = no
+base_tax = 1 
+base_production = 1
+trade_goods = fur
+base_manpower = 1
+capital = "Frun"
+add_local_autonomy = 90
+is_city = yes
+add_core = NOR
+add_core = SCA
+
+
+
+discovered_by = eastern
+discovered_by = western

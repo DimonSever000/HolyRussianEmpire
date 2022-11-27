@@ -1,0 +1,17 @@
+government = tribal
+add_government_reform = steppe_horde
+primary_culture = bashkir
+religion = tengri_pagan_reformed
+technology_group = nomad_group
+capital = 475	# Bashkortostan
+
+1424.1.1 = {
+	monarch = {
+		name = "Bek"
+		dynasty = Borjihan
+		birth_date = 1400.1.1
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+}

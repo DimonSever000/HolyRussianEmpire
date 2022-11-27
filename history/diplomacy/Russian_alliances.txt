@@ -95,3 +95,11 @@ union = {
 	second = R2N
 	start_date = 1444.1.1
 }
+
+# Scandinavia and Saami
+dependency = {
+	subject_type = "tributary_state"
+	first = SCA
+	second = R2Y
+	start_date = 1444.1.1
+}

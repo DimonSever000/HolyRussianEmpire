@@ -1,0 +1,18 @@
+#Finland, incl. Åbo.
+
+owner = SCA
+controller = SCA
+add_core = SCA
+add_core = FIN
+culture = swedish
+religion = catholic
+hre = no
+base_tax = 3 
+base_production = 3
+trade_goods = grain
+base_manpower = 2
+capital = "Åbo"
+is_city = yes
+add_local_autonomy = 90
+discovered_by = western
+discovered_by = eastern

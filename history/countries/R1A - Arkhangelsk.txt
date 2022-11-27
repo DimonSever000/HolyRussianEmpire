@@ -1,5 +1,5 @@
 government = republic
-add_government_reform = veche_republic
+add_government_reform = arkhangelsk_republic
 government_rank = 1
 mercantilism = 20
 primary_culture = arkhangelsk

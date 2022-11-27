@@ -1,0 +1,42 @@
+######################
+# Russian ideas
+######################
+
+# Arkhangelsk
+R1A_ideas = {
+	start = {
+		global_institution_spread = 0.1
+		range = 2.1
+	}
+	
+	bonus = {
+		trade_steering = 0.1
+	}	
+
+	trigger = {
+		tag = R1A
+	}
+	free = yes
+	
+	R1A_idea_I = {
+		colonists = 1
+	}
+	R1A_idea_II = {
+		navy_tradition = 0.5
+	}
+	R1A_idea_III = {
+		trade_efficiency = 0.1
+	}
+	R1A_idea_IV = {
+		republican_tradition = 0.3
+	}
+	R1A_idea_V = {
+		merchants = 1
+	}
+	R1A_idea_VI = {
+		colonist_placement_chance = 0.10
+	}
+	R1A_idea_VII = {
+		naval_maintenance_modifier = -0.15
+	}
+}

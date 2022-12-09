@@ -1,0 +1,12 @@
+##################################################################################################
+# scriptable and usable for event-system below.
+##################################################################################################
+
+modifier_arkhangelsk_1_4 = {
+	harsh_treatment_cost = -0.25
+	global_unrest = -2
+}
+modifier_arkhangelsk_2_4 = {
+	trade_efficiency = 0.2
+	trade_steering = 0.2
+}

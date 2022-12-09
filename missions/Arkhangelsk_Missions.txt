@@ -1,0 +1,403 @@
+arkhangelsk_1 = {
+	slot = 1
+	generic = yes
+	ai = yes
+	potential = {
+		OR = {
+			tag = R1A
+		}
+	}
+	has_country_shield = yes
+
+	arkhangelsk_1_1 = {
+		icon = mission_reconquer_vologda
+		required_missions = {  }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1955
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			owns = 1955
+			1955 = { development = 20 }
+		}
+		effect = {
+			add_province_modifier = {
+				name = "growth_of_capital"
+				duration = 7300
+			}
+		}
+	}
+	arkhangelsk_1_2 = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { arkhangelsk_1_1 }
+		trigger = {
+			army_size_percentage = 1
+		}
+		effect = {
+			add_country_modifier = {
+				name = "thriving_arms_industry"
+				duration = 9125 #25 years
+			}
+			1777 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	arkhangelsk_1_3 = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { arkhangelsk_1_2 }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 313
+				province_id = 1958
+				province_id = 4122
+				province_id = 4256
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			313 = {
+				owned_by = ROOT
+			}
+			1958 = {
+				owned_by = ROOT
+			}
+			4122 = {
+				owned_by = ROOT
+			}
+			4256 = {
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "hegemonic_ambition"
+				duration = 7300 #25 years
+			}
+		}
+	}
+	arkhangelsk_1_4 = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { arkhangelsk_1_3 arkhangelsk_2_1 }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 312
+				province_id = 4259
+				province_id = 4261
+				province_id = 309
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = building_alliances.tooltip
+				num_of_allies = 2
+				calc_true_if = {
+					all_ally = {
+						has_opinion = {
+							who = ROOT
+							value = 150
+						}
+					}
+					amount = 2
+				}
+			}
+			312 = {
+				owned_by = ROOT
+			}
+			4259 = {
+				owned_by = ROOT
+			}
+			4261 = {
+				owned_by = ROOT
+			}
+			309 = {
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 30
+			add_country_modifier = {
+				name = "modifier_arkhangelsk_1_4"
+				duration = 5475
+			}
+		}
+	}
+}
+arkhangelsk_2 = {
+	slot = 2
+	generic = yes
+	ai = yes
+	potential = {
+		OR = {
+			tag = R1A
+		}
+	}
+	has_country_shield = yes
+	
+	
+	arkhangelsk_2_2 = {
+		position = 1
+		icon = mission_build_up_to_force_limit
+		required_missions = { }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1955
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			1955 = {
+				owned_by = ROOT
+				OR = {
+					has_great_project = {
+						type = great_arkhangelsk_library
+						tier = 2
+					}
+					has_great_project = {
+						type = great_arkhangelsk_library
+						tier = 3
+					}
+				}
+			}
+		}
+		effect = {
+			add_prestige = 30
+			1955 = {
+				if = {
+					limit = {
+						NOT = { has_building = university }
+					}
+					add_building = university
+				}
+			}
+		}
+	}
+	arkhangelsk_2_3 = {
+		position = 2
+		icon = mission_build_up_to_force_limit
+		required_missions = { arkhangelsk_2_2 }
+		trigger = {
+			innovativeness = 30
+		}
+		effect = {
+			add_adm_power = 30
+			add_dip_power = 30
+			add_mil_power = 30
+		}
+	}
+	
+	arkhangelsk_2_1 = {
+		position = 3
+		icon = mission_build_up_to_force_limit
+		required_missions = { arkhangelsk_1_2 }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1777
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			1777 = {
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			1777 = {
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+				change_province_name = "Small Arkhangelsk"
+				change_culture = ROOT
+			}
+			4259 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			312 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			4261 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			309 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	arkhangelsk_2_4 = {
+		position = 5
+		icon = mission_build_up_to_force_limit
+		required_missions = { arkhangelsk_1_4 arkhangelsk_3_3 }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 315
+				province_id = 21
+				province_id = 20
+				province_id = 22
+				province_id = 23
+				province_id = 2752
+				province_id = 17
+				province_id = 24
+				province_id = 4144
+				province_id = 4145
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			315 = {
+				owned_by = ROOT
+			}
+			21 = {
+				owned_by = ROOT
+			}
+			20 = {
+				owned_by = ROOT
+			}
+			22 = {
+				owned_by = ROOT
+			}
+			23 = {
+				owned_by = ROOT
+			}
+			2752 = {
+				owned_by = ROOT
+			}
+			17 = {
+				owned_by = ROOT
+			}
+			24 = {
+				owned_by = ROOT
+			}
+			4144 = {
+				owned_by = ROOT
+			}
+			4145 = {
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "modifier_arkhangelsk_2_4"
+				duration = 9125 #25 years
+			}
+		}
+	}
+}
+
+arkhangelsk_3 = {
+	slot = 3
+	generic = yes
+	ai = yes
+	potential = {
+		OR = {
+			tag = R1A
+		}
+	}
+	has_country_shield = yes
+
+	arkhangelsk_3_1 = {
+		position = 1
+		icon = mission_build_up_to_force_limit
+		required_missions = { }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1955
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = { 
+			1955 = {
+				owned_by = ROOT
+				has_building = marketplace
+				has_building = dock
+				is_strongest_trade_power = ROOT
+			}
+			navy_size_percentage = 1
+		}
+		effect = {
+			add_country_modifier = {
+				name = "naval_enthusiasm_mission"
+				duration = 9125 #25 years
+			}
+		}
+	}
+	arkhangelsk_3_2 = {
+		position = 2
+		icon = mission_build_up_to_force_limit
+		required_missions = { arkhangelsk_3_1 }
+		trigger = { 
+			custom_trigger_tooltip = {
+				tooltip = miss_discover_canada
+				colonial_canada = { has_discovered = ROOT }
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "the_unknown_frontier"
+				duration = 5475
+			}
+			add_dip_power = 50
+		}
+	}
+	arkhangelsk_3_3 = {
+		position = 4
+		icon = mission_build_up_to_force_limit
+		required_missions = { arkhangelsk_3_2 arkhangelsk_2_1 }
+		provinces_to_highlight = {
+			colonial_region = colonial_canada
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			has_discovered = ROOT
+		}
+		trigger = { 
+			custom_trigger_tooltip = {
+				tooltip = miss_colonize_canada
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					value = 1
+					colonial_region = colonial_canada
+					is_city = yes
+				}
+			}
+		}
+		effect = {
+			create_conquistador = {
+				tradition = 80
+			}
+		}
+	}
+}

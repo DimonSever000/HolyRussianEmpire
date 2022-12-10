@@ -14,3 +14,12 @@
  modded_event_185600002_option_3:0 "Focus on the war"
  modded_event_185600002_option_4:0 "Reforms will not be canceled"
  #
+ modded_event_185600003_title:0 "The collapse of the Vladimir"
+ modded_event_185600003_desc:0 "Our vassals have decided that now is the right moment to fight for freedom. We must do something!"
+ modded_event_185600003_option_1:0 "We are powerless..."
+ modded_event_185600003_option_2:0 "Crush them!"
+ #
+ modded_event_185600004_title:0 "Stabilization of Vladimir"
+ modded_event_185600004_desc:0 "The situation in the country can hardly be called positive, but we managed to at least stabilize."
+ modded_event_185600004_option_1:0 "Good news"
+ #

@@ -7,14 +7,28 @@ religion = orthodox
 technology_group = eastern
 capital = 307	# Vladimir
 fixed_capital = 307
+elector = yes
 
-1441.1.1 = {
+1400.1.1 = {
 	monarch = {
 		name = "Vladimir"
 		dynasty = Rurikovich
-		birth_date = 1422.1.1
+		birth_date = 1365.1.1
 		adm = 0
 		dip = 6
+		mil = 1
+	}
+}
+1425.1.1 = {
+	heir = {
+		name = "Radomir"
+		monarch_name = "Radomir I"
+		dynasty = "Rurikovich"
+		birth_date = 1420.1.1
+		death_date = 1456.1.1
+		claim = 10
+		adm = 1
+		dip = 1
 		mil = 1
 	}
 }

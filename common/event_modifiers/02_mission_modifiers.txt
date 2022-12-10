@@ -10,3 +10,17 @@ modifier_arkhangelsk_2_4 = {
 	trade_efficiency = 0.2
 	trade_steering = 0.2
 }
+
+modifier_penza_1_4 = {
+	global_tax_modifier = 0.25
+	global_unrest = -3
+}
+
+modifier_penza_2_4 = {
+	missionaries = 1
+	global_missionary_strength = 0.01
+}
+modifier_penza_2_3 = {
+	tolerance_own = 2
+	land_morale = 0.1
+}

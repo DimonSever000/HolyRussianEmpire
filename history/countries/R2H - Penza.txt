@@ -1,5 +1,5 @@
 government = republic
-add_government_reform = veche_republic
+add_government_reform = boyars_republic
 government_rank = 1
 technology_group = eastern
 religion = orthodox
@@ -7,6 +7,24 @@ primary_culture = ryazanian
 technology_group = eastern
 capital = 304
 fixed_capital = 304
+
+change_estate_land_share = {
+	estate = estate_burghers
+	share = -10
+}
+change_estate_land_share = {
+	estate = estate_church
+	share = -10
+}
+change_estate_land_share = {
+	estate = estate_nobles
+	share = 20
+}
+
+1444.1.1 = {
+	set_estate_privilege = estate_nobles_levies
+	set_estate_privilege = estate_nobles_land_rights
+}
 
 1443.1.1 = {
 	monarch = {

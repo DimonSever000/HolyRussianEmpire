@@ -5,6 +5,7 @@ technology_group = eastern
 religion = orthodox
 primary_culture = volynian
 capital = 279	# Volhynia
+elector = yes
 
 1443.1.1 = {
 	monarch = {

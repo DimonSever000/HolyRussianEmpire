@@ -80,3 +80,66 @@ country_event = {
 		add_republican_tradition = 10
 	}
 }
+
+# The collapse of the Vladimir
+country_event = {
+	id = 185600003
+	title = "modded_event_185600003_title"
+	desc = "modded_event_185600003_desc"
+	picture = BAD_WITH_MONARCH_eventPicture
+	is_triggered_only = yes
+
+	option = {
+		name = "modded_event_185600003_option_1"
+		add_dip_power = -200
+		every_subject_country = {
+			R1R = { free_vassal = PREV }
+		}
+	}
+	
+	option = {
+		name = "modded_event_185600003_option_2"
+		every_subject_country = {
+			declare_war_with_cb = {
+				who = root
+				casus_belli = cb_independence_war
+			}
+		}
+		
+		if = { 
+			limit = { exists = R1V }
+			R1V = {
+				declare_war_with_cb = {
+					who = root
+					casus_belli = cb_annex
+				}
+			}
+		}
+		
+		if = { 
+			limit = { exists = NZH }
+			NZH = {
+				declare_war_with_cb = {
+					who = root
+					casus_belli = cb_annex
+				}
+			}
+		}
+		
+		add_war_exhaustion = 4
+	}
+}
+
+# Stabilization of Vladimir
+country_event = {
+	id = 185600004
+	title = "modded_event_185600004_title"
+	desc = "modded_event_185600004_desc"
+	picture = ECONOMY_eventPicture
+	is_triggered_only = yes
+
+	option = {
+		name = "modded_event_185600004_option_1"
+		add_dip_power = 50
+	}
+}

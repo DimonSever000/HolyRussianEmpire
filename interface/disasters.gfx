@@ -1,0 +1,9 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_disaster_vladimir_legacy"
+		texturefile = "gfx//interface//disasters//vladimir_legacy.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+}

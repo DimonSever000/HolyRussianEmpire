@@ -6,6 +6,7 @@ religion = orthodox
 primary_culture = ryazanian
 capital = 289	# Chernigov
 fixed_capital = 289 # Cannot move capital away from this province & no power cost to move to it
+elector = yes
 
 1399.1.1 = {
 	monarch = {

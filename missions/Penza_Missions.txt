@@ -1,0 +1,252 @@
+penza_1 = {
+	slot = 1
+	generic = yes
+	ai = yes
+	potential = {
+		OR = {
+			tag = R2H
+		}
+	}
+	has_country_shield = yes
+
+	penza_1_1 = {
+		icon = mission_conquer_50_development
+		required_missions = { }
+		trigger = { grown_by_development = 30 }
+		effect = {
+			capital_scope = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+				area = {
+					limit = { owned_by = ROOT }
+					add_province_modifier = {
+						name = "growth_of_capital"
+						duration = 9125 #25 years
+					}
+				}
+			}
+		}
+	}
+	penza_1_2 = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { penza_1_1 penza_2_1 }
+		trigger = {
+			army_size_percentage = 1
+		}
+		effect = {
+			add_country_modifier = {
+				name = "thriving_arms_industry"
+				duration = 9125 #25 years
+			}
+			2423 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	penza_1_3 = {
+		icon = mission_noble_council
+		required_missions = { penza_1_2 }
+		trigger = {
+			if = {
+				limit = {
+					has_estate = estate_nobles
+				}
+				estate_loyalty = {
+					estate = estate_nobles
+					loyalty = 70
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "hegemonic_ambition"
+				duration = 7300 #25 years
+			}
+			2419 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			1081 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	penza_1_4 = {
+		icon = mission_unite_home_region
+		required_missions = { penza_1_3 }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 2423
+				province_id = 2419
+				province_id = 1081
+				province_id = 304
+				province_id = 2415
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			2423 = {
+				owned_by = ROOT
+			}
+			2419 = {
+				owned_by = ROOT
+			}
+			1081 = {
+				owned_by = ROOT
+			}
+			304 = {
+				owned_by = ROOT
+			}
+			2415 = {
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 30
+			add_country_modifier = {
+				name = "modifier_penza_1_4"
+				duration = 5475
+			}
+		}
+	}
+}
+penza_2 = {
+	slot = 2
+	generic = yes
+	ai = yes
+	potential = {
+		OR = {
+			tag = R2H
+		}
+	}
+	has_country_shield = yes
+	
+	
+	penza_2_1 = {
+		position = 1
+		icon = mission_conquer_novgorod
+		required_missions = { }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 304
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			304 = {
+				owned_by = ROOT
+				OR = {
+					has_building = fort_15th
+					has_building = fort_16th
+					has_building = fort_17th
+					has_building = fort_18th
+				}
+			}
+		}
+		effect = {
+			add_prestige = 30
+		}
+	}
+	
+	penza_2_3 = {
+		position = 3
+		icon = mission_hands_praying
+		required_missions = {  }
+		trigger = {
+			if = {
+				limit = {
+					has_estate = estate_church
+				}
+				estate_loyalty = {
+					estate = estate_church
+					loyalty = 70
+				}
+			}
+			num_of_owned_provinces_with = {
+				religion = orthodox
+				has_tax_building_trigger = yes
+				value = 3
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "modifier_penza_2_3"
+				duration = 7300 #25 years
+			}
+		}
+	}
+	
+	penza_2_4 = {
+		position = 4
+		icon = mission_religious
+		required_missions = { penza_2_3 }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 304
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			304 = {
+				owned_by = ROOT
+				OR = {
+					has_building = temple
+					has_building = cathedral
+				}
+			}
+			custom_trigger_tooltip = {
+					tooltip = ser_has_any_icon
+					OR = {
+						current_icon = icon_michael
+						current_icon = icon_eleusa
+						current_icon = icon_pancreator
+						current_icon = icon_nicholas
+						current_icon = icon_climacus
+					}
+				}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "modifier_penza_2_4"
+				duration = 7300
+			}
+		}
+	}
+	
+	penza_2_5 = {
+		position = 5
+		icon = mission_autocephalous_archbishopric
+		required_missions = { penza_2_4 penza_1_4 }
+		trigger = {
+			is_defender_of_faith = yes
+			religious_unity = 1
+		}
+		effect = {
+			303 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}

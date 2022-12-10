@@ -7,6 +7,7 @@ religion = orthodox
 technology_group = eastern
 capital = 1955	# Arkhangelsk
 fixed_capital = 1955 # Cannot move capital away from this province & no power cost to move to it
+elector = yes
 
 1440.1.1 = {
 	monarch = {

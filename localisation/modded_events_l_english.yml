@@ -1,0 +1,16 @@
+﻿l_english:
+ #
+ modded_event_185600001_title:0 "Ruler retraining"
+ modded_event_185600001_desc:0 "The courtiers advise the ruler to learn new things at the expense of time developing other skills. Is it really worth it?"
+ modded_event_185600001_option_1:0 "Focus on government"
+ modded_event_185600001_option_2:0 "Focus on diplomacy"
+ modded_event_185600001_option_3:0 "Focus on the war"
+ modded_event_185600001_option_4:0 "Why not go to the library?"
+ #
+ modded_event_185600002_title:0 "Revision of reforms"
+ modded_event_185600002_desc:0 "Some council members argue that we need to change a few recent reforms in the name of the stability of the republic. But how exactly should we do it?"
+ modded_event_185600002_option_1:0 "Focus on government"
+ modded_event_185600002_option_2:0 "Focus on diplomacy"
+ modded_event_185600002_option_3:0 "Focus on the war"
+ modded_event_185600002_option_4:0 "Reforms will not be canceled"
+ #

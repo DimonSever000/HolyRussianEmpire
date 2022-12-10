@@ -10,7 +10,7 @@ arkhangelsk_1 = {
 	has_country_shield = yes
 
 	arkhangelsk_1_1 = {
-		icon = mission_reconquer_vologda
+		icon = mission_conquer_50_development
 		required_missions = {  }
 		provinces_to_highlight = {
 			OR = {
@@ -52,7 +52,7 @@ arkhangelsk_1 = {
 		}
 	}
 	arkhangelsk_1_3 = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_alliances
 		required_missions = { arkhangelsk_1_2 }
 		provinces_to_highlight = {
 			OR = {
@@ -87,7 +87,7 @@ arkhangelsk_1 = {
 		}
 	}
 	arkhangelsk_1_4 = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_found_arkhangelsk
 		required_missions = { arkhangelsk_1_3 arkhangelsk_2_1 }
 		provinces_to_highlight = {
 			OR = {
@@ -150,7 +150,7 @@ arkhangelsk_2 = {
 	
 	arkhangelsk_2_2 = {
 		position = 1
-		icon = mission_build_up_to_force_limit
+		icon = mission_early_modern_university
 		required_missions = { }
 		provinces_to_highlight = {
 			OR = {
@@ -189,7 +189,7 @@ arkhangelsk_2 = {
 	}
 	arkhangelsk_2_3 = {
 		position = 2
-		icon = mission_build_up_to_force_limit
+		icon = mission_establish_the_prikazy
 		required_missions = { arkhangelsk_2_2 }
 		trigger = {
 			innovativeness = 30
@@ -203,7 +203,7 @@ arkhangelsk_2 = {
 	
 	arkhangelsk_2_1 = {
 		position = 3
-		icon = mission_build_up_to_force_limit
+		icon = mission_advance_to_the_dnieper
 		required_missions = { arkhangelsk_1_2 }
 		provinces_to_highlight = {
 			OR = {
@@ -258,7 +258,7 @@ arkhangelsk_2 = {
 	}
 	arkhangelsk_2_4 = {
 		position = 5
-		icon = mission_build_up_to_force_limit
+		icon = mission_protect_white_sea_trade
 		required_missions = { arkhangelsk_1_4 arkhangelsk_3_3 }
 		provinces_to_highlight = {
 			OR = {
@@ -331,7 +331,7 @@ arkhangelsk_3 = {
 
 	arkhangelsk_3_1 = {
 		position = 1
-		icon = mission_build_up_to_force_limit
+		icon = mission_develop_nevas_port
 		required_missions = { }
 		provinces_to_highlight = {
 			OR = {
@@ -359,7 +359,7 @@ arkhangelsk_3 = {
 	}
 	arkhangelsk_3_2 = {
 		position = 2
-		icon = mission_build_up_to_force_limit
+		icon = mission_invade_island
 		required_missions = { arkhangelsk_3_1 }
 		trigger = { 
 			custom_trigger_tooltip = {
@@ -377,7 +377,7 @@ arkhangelsk_3 = {
 	}
 	arkhangelsk_3_3 = {
 		position = 4
-		icon = mission_build_up_to_force_limit
+		icon = mission_colonial
 		required_missions = { arkhangelsk_3_2 arkhangelsk_2_1 }
 		provinces_to_highlight = {
 			colonial_region = colonial_canada

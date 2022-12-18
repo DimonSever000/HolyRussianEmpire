@@ -1,0 +1,548 @@
+smolensk_1 = {
+	slot = 1
+	generic = yes
+	ai = yes
+	potential = {
+		OR = {
+			tag = SMO
+		}
+	}
+	has_country_shield = yes
+
+	smolensk_1_1 = {
+		icon = mission_conquer_50_development
+		required_missions = {  }
+		trigger = {
+			owns = 293
+			total_own_and_non_tributary_subject_development = 100
+		}
+		effect = {
+			add_province_modifier = {
+				name = "growth_of_capital"
+				duration = 7300
+			}
+			add_years_of_income = 0.25
+		}
+	}
+	smolensk_1_2 = {
+		icon = mission_autocephalous_archbishopric
+		required_missions = { smolensk_1_1 }
+		trigger = {
+			num_of_owned_provinces_with = {
+				religion = orthodox
+				has_tax_building_trigger = yes
+				value = 10
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "modifier_smolensk_1_2"
+				duration = 9125 #25 years
+			}
+		}
+	}
+	smolensk_1_3 = {
+		icon = mission_hands_praying
+		required_missions = { smolensk_1_2 }
+		trigger = {
+			is_defender_of_faith = yes
+			religious_unity = 1
+		}
+		effect = {
+			add_country_modifier = {
+				name = "modifier_smolensk_1_3"
+				duration = 7300 #25 years
+			}
+			add_casus_belli = {
+				target = LIT
+				type = cb_vassalize_mission
+				months = 300
+			}
+			add_casus_belli = {
+				target = LIV
+				type = cb_vassalize_mission
+				months = 300
+			}
+			add_casus_belli = {
+				target = RIG
+				type = cb_vassalize_mission
+				months = 300
+			}
+		}
+	}
+	smolensk_1_4 = {
+		icon = mission_teutonic_knights
+		required_missions = { smolensk_1_3 smolensk_2_3 }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 37
+				province_id = 38
+				province_id = 272
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				OR = {
+					province_id = 37
+					province_id = 38
+					province_id = 272
+				}
+				value = 3
+			}
+		}
+		effect = {
+			add_prestige = 30
+			pripyat_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}
+smolensk_2 = {
+	slot = 2
+	generic = yes
+	ai = yes
+	potential = {
+		OR = {
+			tag = SMO
+		}
+	}
+	has_country_shield = yes
+	
+	
+	smolensk_2_1 = {
+		position = 1
+		icon = balance_the_estates
+		required_missions = { }
+		trigger = {
+			owns = 293
+			stability = 2
+			if = {
+				limit = {
+					government = monarchy
+				}
+				legitimacy = 90
+				estate_loyalty = {
+					estate = estate_burghers
+					loyalty = 60
+				}
+			}
+			else_if = {
+				limit = {
+					government = republic
+				}
+				republican_tradition = 90
+				estate_loyalty = {
+					estate = estate_nobles
+					loyalty = 60
+				}
+			}
+		}
+		effect = {
+			add_years_of_income = 0.5
+		}
+	}
+	smolensk_2_2 = {
+		position = 2
+		icon = mission_build_up_to_force_limit
+		required_missions = { smolensk_2_1 smolensk_3_1 }
+		provinces_to_highlight = {
+			OR = {
+				area = smolensk_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			smolensk_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			num_of_owned_provinces_with = {
+				has_fort_building_trigger = yes 
+				value = 3
+			}
+			army_size_percentage = 1
+		}
+		effect = {
+			white_ruthenia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			minsk_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			275 = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	smolensk_2_3 = {
+		position = 3
+		icon = mission_unite_home_region
+		required_missions = { smolensk_2_2 }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 275
+				province_id = 293
+				area = white_ruthenia_area
+				area = minsk_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			owns = 275
+			owns = 293
+			white_ruthenia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			minsk_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			275 = {
+				add_base_tax = -3
+			}
+			add_years_of_income = 1
+			tver_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_dip_power = 50
+			add_prestige = 20
+		}
+	}
+	smolensk_2_4 = {
+		position = 4
+		icon = mission_conquer_tver
+		required_missions = { smolensk_2_3 smolensk_3_3 }
+		provinces_to_highlight = {
+			OR = {
+				area = tver_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			OR = {
+				tver_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				AND = {
+					exists = TVE
+					TVE = {
+						has_opinion = {
+							who = ROOT
+							value = 150
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			moscow_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_yearly_manpower = 2
+		}
+	}
+	smolensk_2_5 = {
+		position = 5
+		icon = mission_monarch_in_throne_room
+		required_missions = { smolensk_1_4 smolensk_2_4 smolensk_3_4 }
+		provinces_to_highlight = {
+			OR = {
+				area = smolensk_area
+				area = white_ruthenia_area
+				area = tver_area
+				area = oka_area
+				area = moscow_area
+				area = minsk_area
+				area = pripyat_area
+				area = lithuania_area
+				province_id = 275
+				province_id = 289
+				province_id = 1945
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			smolensk_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			white_ruthenia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			tver_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			oka_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			moscow_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			minsk_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			pripyat_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			lithuania_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			owns = 289
+			owns = 1945
+			owns = 275
+			if = {
+				limit = {
+					government = monarchy
+				}
+				is_emperor = yes
+				legitimacy = 100
+			}
+			else_if = {
+				limit = {
+					government = republic
+				}
+				republican_tradition = 100
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "modifier_smolensk_2_5"
+				duration = -1
+			}
+		}
+	}
+}
+
+smolensk_3 = {
+	slot = 3
+	generic = yes
+	ai = yes
+	potential = {
+		OR = {
+			tag = SMO
+		}
+	}
+	has_country_shield = yes
+
+	smolensk_3_1 = {
+		position = 1
+		icon = balance_of_power
+		required_missions = { }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 293
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = { 
+			custom_trigger_tooltip = {
+				tooltip = building_alliances.tooltip
+				num_of_allies = 2
+				calc_true_if = {
+					all_ally = {
+						has_opinion = {
+							who = ROOT
+							value = 150
+						}
+					}
+					amount = 2
+				}
+			}
+			owns = 293
+		}
+		effect = {
+			add_dip_power = 50
+			add_yearly_manpower = 2
+			289 = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			1945 = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	smolensk_3_2 = {
+		position = 2
+		icon = mission_cannons_firing
+		required_missions = { smolensk_3_1 }
+		trigger = { 
+			owns = 289
+			owns = 1945
+		}
+		effect = {
+			oka_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_casus_belli = {
+				target = RYA
+				type = cb_vassalize_mission
+				months = 300
+			}
+		}
+	}
+	smolensk_3_3 = {
+		position = 3
+		icon = mission_weather_the_troubles
+		required_missions = { smolensk_3_2 }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 301
+				area = oka_area
+			}
+		}
+		trigger = { 
+			oka_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			owns = 301
+		}
+		effect = {
+			280 = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_casus_belli = {
+				target = KIE
+				type = cb_vassalize_mission
+				months = 300
+			}
+		}
+	}
+	
+	smolensk_3_4 = {
+		position = 4
+		icon = mission_rule_ruthenia
+		required_missions = { smolensk_3_3 }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 280
+			}
+		}
+		trigger = { 
+			OR = {
+				AND = {
+					exists = KIE
+					KIE = {
+						has_opinion = {
+							who = ROOT
+							value = 200
+						}
+					}
+				}
+				AND = {
+					owns = 280
+					NOT = { exists = KIE }
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "modifier_smolensk_3_4"
+				duration = 7300
+			}
+			add_prestige = 30
+			34 = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			33 = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	smolensk_3_5 = {
+		position = 5
+		icon = defeat_the_english
+		required_missions = { smolensk_3_4 }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 34
+				province_id = 33
+			}
+		}
+		trigger = { 
+			naval_forcelimit = 40
+		}
+		effect = {
+			add_country_modifier = {
+				name = "modifier_smolensk_3_5"
+				duration = 7300
+			}
+			add_dip_power = 100
+		}
+	}
+}

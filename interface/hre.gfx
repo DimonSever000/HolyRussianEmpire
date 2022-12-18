@@ -228,7 +228,7 @@ spriteTypes = {
 			
 	spriteType = {
 		name = "GFX_imperial_incident_hre"
-		texturefile = "gfx/interface/imperial_incident_hre.dds"
+		texturefile = "gfx/interface/imperial_incident_185600dds"
 		loadType = "INGAME"
 	}
 			
@@ -425,12 +425,12 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_incidents_bur_inheritance.2.c"
-		texturefile = "gfx/interface/imperial_incident_hre.dds"
+		texturefile = "gfx/interface/imperial_incident_185600dds"
 		loadType = "INGAME"
 	}
 	spriteType = {
 		name = "GFX_incidents_bur_inheritance.3.a"
-		texturefile = "gfx/interface/imperial_incident_hre.dds"
+		texturefile = "gfx/interface/imperial_incident_185600dds"
 		loadType = "INGAME"
 	}
 	spriteType = {
@@ -445,7 +445,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_incidents_bur_inheritance.4.a"
-		texturefile = "gfx/interface/imperial_incident_hre.dds"
+		texturefile = "gfx/interface/imperial_incident_185600dds"
 		loadType = "INGAME"
 	}
 	spriteType = {
@@ -460,7 +460,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_incidents_bur_join_empire.2.a"
-		texturefile = "gfx/interface/imperial_incident_hre.dds"
+		texturefile = "gfx/interface/imperial_incident_185600dds"
 		loadType = "INGAME"
 	}
 	spriteType = {
@@ -470,7 +470,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_incident_generic.2.a"
-		texturefile = "gfx/interface/imperial_incident_hre.dds"
+		texturefile = "gfx/interface/imperial_incident_185600dds"
 		loadType = "INGAME"
 	}
 	spriteType = {
@@ -515,7 +515,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_holstein.1.a"
-		texturefile = "gfx/interface/imperial_incident_hre.dds"
+		texturefile = "gfx/interface/imperial_incident_185600dds"
 		loadType = "INGAME"
 	}
 	spriteType = {
@@ -530,7 +530,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_shadow_kingdom.2.b"
-		texturefile = "gfx/interface/imperial_incident_hre.dds"
+		texturefile = "gfx/interface/imperial_incident_185600dds"
 		loadType = "INGAME"
 	}
 	spriteType = {
@@ -560,7 +560,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_new_flavour_hun.2.A"
-		texturefile = "gfx/interface/imperial_incident_hre.dds"
+		texturefile = "gfx/interface/imperial_incident_185600dds"
 		loadType = "INGAME"
 	}
 	spriteType = {

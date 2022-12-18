@@ -1,0 +1,3165 @@
+country_decisions = {
+
+	# Chelyabinsk
+	release_N1A = {
+		potential = {
+			was_never_end_game_tag_trigger = yes
+			NOT = { exists = N1A }
+			1966 = { NOT = { is_core = N1A } }
+			2441 = { NOT = { is_core = N1A } }
+			4692 = { NOT = { is_core = N1A } }
+			owns = 1966
+			owns = 2441
+			owns = 4692
+		}
+		provinces_to_highlight = {
+			province_id = 1966
+			province_id = 2441
+			province_id = 4692
+		}
+		allow = {
+			NOT = { exists = N1A }
+			OR = {
+				is_elector = yes
+				is_emperor = yes
+			}
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			owns = 1966
+			owns = 2441
+			owns = 4692		
+		}
+		
+		effect = {
+			add_dip_power = 100
+			add_imperial_influence = 10
+			1966 = {
+				add_core = N1A
+				change_culture = root
+				change_religion = root
+			}
+			2441 = {
+				add_core = N1A
+				change_culture = root
+                change_religion = root
+			}
+			4692 = {
+				add_core = N1A
+				change_culture = root
+                change_religion = root
+			}
+			release = N1A
+			N1A = {
+				hidden_effect = {
+					set_in_empire = yes
+					add_manpower = 10
+					add_years_of_income = 1
+					set_government_rank = 1
+					change_religion = root
+					change_primary_culture = root
+					define_ruler = {
+						adm = 2
+						dip = 2
+						mil = 2
+						name = "Dmitriy"
+						culture = root
+						dynasty = root
+						religion = root
+					}
+					capital_scope = {
+						build_to_forcelimit = {
+						infantry = 0.7
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 100
+	}
+	
+	# Surgut
+	release_N1B = {
+		potential = {
+			was_never_end_game_tag_trigger = yes
+			NOT = { exists = N1B }
+			1073 = { NOT = { is_core = N1B } }
+			1069 = { NOT = { is_core = N1B } }
+			4691 = { NOT = { is_core = N1B } }
+			2445 = { NOT = { is_core = N1B } }
+			owns = 1073
+			owns = 1069
+			owns = 4691
+			owns = 2445
+		}
+		provinces_to_highlight = {
+			province_id = 1073
+			province_id = 1069
+			province_id = 4691
+			province_id = 2445
+		}
+		allow = {
+			NOT = { exists = N1B }
+			OR = {
+				is_elector = yes
+				is_emperor = yes
+			}
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			owns = 1073
+			owns = 1069
+			owns = 4691
+			owns = 2445	
+		}
+		effect = {
+			add_dip_power = 100
+			add_imperial_influence = 10
+			1073 = {
+				add_core = N1B
+				change_culture = root
+                change_religion = root
+			}
+			1069 = {
+				add_core = N1B
+				change_culture = root
+                change_religion = root
+			}
+			4691 = {
+				add_core = N1B
+				change_culture = root
+                change_religion = root
+			}
+			2445 = {
+				add_core = N1B
+				change_culture = root
+                change_religion = root
+			}
+			release = N1B
+			N1B = {
+				hidden_effect = {
+					set_in_empire = yes
+					add_manpower = 10
+					add_years_of_income = 1
+					set_government_rank = 1
+					change_religion = root
+					change_primary_culture = root
+					define_ruler = {
+						adm = 2
+						dip = 4
+						mil = 1
+						name = "Fyodor"
+						culture = root
+						dynasty = root
+						religion = root
+					}
+					capital_scope = {
+						build_to_forcelimit = {
+							infantry = 0.7
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 100
+	}
+	
+	# Omsk
+	release_N1C = {
+		potential = {
+			was_never_end_game_tag_trigger = yes
+			NOT = { exists = N1C }
+			4689 = { NOT = { is_core = N1C } }
+			1071 = { NOT = { is_core = N1C } }
+			4688 = { NOT = { is_core = N1C } }
+			4687 = { NOT = { is_core = N1C } }
+			2434 = { NOT = { is_core = N1C } }
+			owns = 4689
+			owns = 1071
+			owns = 4688
+			owns = 4687
+			owns = 2434
+		}
+		provinces_to_highlight = {
+			province_id = 4689
+			province_id = 1071
+			province_id = 4688
+			province_id = 4687
+			province_id = 2434
+		}
+		allow = {
+			NOT = { exists = N1C }
+			OR = {
+				is_elector = yes
+				is_emperor = yes
+			}
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			owns = 4689
+			owns = 1071
+			owns = 4688
+			owns = 4687
+			owns = 2434				
+		}
+		effect = {
+			add_dip_power = 100
+			add_imperial_influence = 10
+			4689 = {
+				add_core = N1C
+				change_culture = root
+                change_religion = root
+				change_province_name = "Omsk"
+				rename_capital = "Omsk"
+				set_in_empire = yes
+			}
+			1071 = {
+				add_core = N1C
+				change_culture = root
+                change_religion = root
+			}
+			4688 = {
+				add_core = N1C
+				change_culture = root
+                change_religion = root
+			}
+			4687 = {
+				add_core = N1C
+				change_culture = root
+                change_religion = root
+			}
+			2434 = {
+				add_core = N1C
+				change_culture = root
+                change_religion = root
+			}
+			release = N1C
+			hidden_effect = {
+				N1C = { 
+					set_in_empire = yes
+					add_manpower = 10
+					add_years_of_income = 1
+					set_government_rank = 1
+					change_religion = root
+					change_primary_culture = root
+					define_ruler = {
+						adm = 3
+						dip = 2
+						mil = 3
+						name = "Arkadiy"
+						culture = root
+						dynasty = root
+						religion = root
+					}
+					capital_scope = {
+						build_to_forcelimit = {
+							infantry = 0.7
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 100
+	}
+	
+	# Ishim
+	release_N1D = {
+		potential = {
+			was_never_end_game_tag_trigger = yes
+			NOT = { exists = N1D }
+			owns = 4690
+			4690 = { NOT = { is_core = N1D } }
+		}
+		provinces_to_highlight = {
+			province_id = 4690
+		}
+		allow = {
+			NOT = { exists = N1D }
+			OR = {
+				is_elector = yes
+				is_emperor = yes
+			}
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			owns = 4690			
+		}
+		effect = {
+			add_dip_power = 50
+			add_imperial_influence = 5
+			4690 = {
+				add_core = N1D
+				change_culture = root
+                change_religion = root
+			}
+			release = N1D
+			hidden_effect = {
+				N1D = { 
+					set_in_empire = yes
+					add_manpower = 10
+					add_years_of_income = 1
+					set_government_rank = 1
+					change_government = republic
+					add_government_reform = free_city
+					change_religion = root
+					change_primary_culture = root
+					define_ruler = {
+						adm = 2
+						dip = 2
+						mil = 2
+						name = "Akim"
+						culture = root
+						dynasty = root
+						religion = root
+					}
+					capital_scope = {
+						build_to_forcelimit = {
+							infantry = 0.7
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 100
+	}
+	
+	# Aqmola
+	release_N1F = {
+		potential = {
+			was_never_end_game_tag_trigger = yes
+			NOT = { exists = N1F }
+			479 = { NOT = { is_core = N1F } }
+			2357 = { NOT = { is_core = N1F } }
+			2354 = { NOT = { is_core = N1F } }
+			4686 = { NOT = { is_core = N1F } }
+			owns = 479
+			owns = 2357
+			owns = 2354
+			owns = 4686
+		}
+		provinces_to_highlight = {
+			province_id = 479
+			province_id = 2357
+			province_id = 2354
+			province_id = 4686
+		}
+		allow = {
+			NOT = { exists = N1F }
+			OR = {
+				is_elector = yes
+				is_emperor = yes
+			}
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			owns = 479
+			owns = 2357
+			owns = 2354
+			owns = 4686
+		}
+		effect = {
+			add_dip_power = 100
+			add_imperial_influence = 10
+			479 = {
+				add_core = N1F
+				change_culture = root
+                change_religion = root
+			}
+			2357 = {
+				add_core = N1F
+				change_culture = root
+                change_religion = root
+			}
+			2354 = {
+				add_core = N1F
+				change_culture = root
+                change_religion = root
+			}
+			4686 = {
+				add_core = N1F
+				change_culture = root
+                change_religion = root
+			}
+			release = N1F
+			hidden_effect = {
+				N1F = { 
+					set_in_empire = yes
+					add_manpower = 10
+					add_years_of_income = 1
+					set_government_rank = 1
+					change_religion = root
+					change_primary_culture = root
+					define_ruler = {
+						adm = 0
+						dip = 3
+						mil = 2
+						name = "Daniil"
+						culture = root
+						dynasty = root
+						religion = root
+					}
+					capital_scope = {
+						build_to_forcelimit = {
+							infantry = 0.7
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 100
+	}
+	
+	# Kurgan
+	release_N1E = {
+		potential = {
+			was_never_end_game_tag_trigger = yes
+			NOT = { exists = N1E }
+			1076 = { NOT = { is_core = N1E } }
+			1074 = { NOT = { is_core = N1E } }
+			1075 = { NOT = { is_core = N1E } }
+			2369 = { NOT = { is_core = N1E } }
+			owns = 1076
+			owns = 1074
+			owns = 1075
+			owns = 2369
+		}
+		provinces_to_highlight = {
+			province_id = 1076
+			province_id = 1074
+			province_id = 1075
+			province_id = 2369
+		}
+		allow = {
+			NOT = { exists = N1E }
+			OR = {
+				is_elector = yes
+				is_emperor = yes
+			}
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			owns = 1076
+			owns = 1074
+			owns = 1075
+			owns = 2369
+		}
+		effect = {
+			add_dip_power = 100
+			add_imperial_influence = 10
+			1076 = {
+				add_core = N1E
+				change_culture = root
+                change_religion = root				
+			}
+			1074 = {
+				add_core = N1E
+				change_culture = root
+                change_religion = root				
+			}
+			1075 = {
+				add_core = N1E
+				change_culture = root
+                change_religion = root				
+			}
+			2369 = {
+				add_core = N1E
+				change_culture = root
+                change_religion = root				
+			}
+			release = N1E
+			hidden_effect = {
+				N1E = { 
+					set_in_empire = yes
+					add_manpower = 10
+					add_years_of_income = 1
+					set_government_rank = 1
+					change_government = republic
+					change_religion = root
+					change_primary_culture = root
+					define_ruler = {
+						adm = 0
+						dip = 3
+						mil = 2
+						name = "Vyacheslav"
+						culture = root
+						dynasty = root
+						religion = root
+					}
+					capital_scope = {
+						build_to_forcelimit = {
+							infantry = 0.7
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 100
+	}
+	
+	# Aralsk
+	release_N1G = {
+		potential = {
+			was_never_end_game_tag_trigger = yes
+			NOT = { exists = N1G }
+			2351 = { NOT = { is_core = N1G } }
+			2353 = { NOT = { is_core = N1G } }
+			owns = 2351
+			owns = 2353
+		}
+		provinces_to_highlight = {
+			province_id = 2351
+			province_id = 2353
+		}
+		allow = {
+			NOT = { exists = N1G }
+			OR = {
+				is_elector = yes
+				is_emperor = yes
+			}
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			owns = 2351
+			owns = 2353
+		}
+		effect = {
+			add_dip_power = 100
+			add_imperial_influence = 10
+			2351 = {
+				add_core = N1G
+				change_culture = root
+                change_religion = root
+				change_province_name = "Aralsk"
+				rename_capital = "Aralsk"				
+			}
+			2353 = {
+				add_core = N1G
+				change_culture = root
+                change_religion = root				
+			}
+			release = N1G
+			hidden_effect = {
+				N1G = { 
+					set_in_empire = yes
+					add_manpower = 10
+					add_years_of_income = 1
+					set_government_rank = 1
+					change_religion = root
+					change_primary_culture = root
+					define_ruler = {
+						adm = 0
+						dip = 3
+						mil = 2
+						name = "Yuriy"
+						culture = root
+						dynasty = root
+						religion = root
+					}
+					capital_scope = {
+						build_to_forcelimit = {
+							infantry = 0.7
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 100
+	}
+	
+	# Yelsk
+	release_N1H = {
+		potential = {
+			was_never_end_game_tag_trigger = yes
+			NOT = { exists = N1H }
+			476 = { NOT = { is_core = N1H } }
+			2359 = { NOT = { is_core = N1H } }
+			owns = 476
+			owns = 2359
+		}
+		provinces_to_highlight = {
+			province_id = 476
+			province_id = 2359
+		}
+		allow = {
+			NOT = { exists = N1H }
+			OR = {
+				is_elector = yes
+				is_emperor = yes
+			}
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			owns = 476
+			owns = 2359
+		}
+		effect = {
+			add_dip_power = 100
+			add_imperial_influence = 10
+			476 = {
+				add_core = N1H
+				change_culture = root
+                change_religion = root
+				change_province_name = "Yelsk"
+				rename_capital = "Yelsk"				
+			}
+			2359 = {
+				add_core = N1H
+				change_culture = root
+                change_religion = root				
+			}
+			release = N1H
+			hidden_effect = {
+				N1H = { 
+					set_in_empire = yes
+					add_manpower = 10
+					add_years_of_income = 1
+					set_government_rank = 1
+					change_religion = root
+					change_primary_culture = root
+					define_ruler = {
+						adm = 0
+						dip = 3
+						mil = 2
+						name = "Yuriy"
+						culture = root
+						dynasty = root
+						religion = root
+					}
+					capital_scope = {
+						build_to_forcelimit = {
+							infantry = 0.7
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 100
+	}
+	
+	# Stepnogorsk
+	release_N1I = {
+		potential = {
+			was_never_end_game_tag_trigger = yes
+			NOT = { exists = N1I }
+			2352 = { NOT = { is_core = N1I } }
+			1970 = { NOT = { is_core = N1I } }
+			2358 = { NOT = { is_core = N1I } }
+			2361 = { NOT = { is_core = N1I } }
+			477 = { NOT = { is_core = N1I } }
+			456 = { NOT = { is_core = N1I } }
+			owns = 2352
+			owns = 1970
+			owns = 2358
+			owns = 2361
+			owns = 477
+			owns = 456
+		}
+		provinces_to_highlight = {
+			province_id = 2352
+			province_id = 1970
+			province_id = 2358
+			province_id = 2361
+			province_id = 477
+			province_id = 456
+		}
+		allow = {
+			NOT = { exists = N1I }
+			OR = {
+				is_elector = yes
+				is_emperor = yes
+			}
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			owns = 2352
+			owns = 1970
+			owns = 2358
+			owns = 2361
+			owns = 477
+			owns = 456
+		}
+		effect = {
+			add_dip_power = 150
+			add_imperial_influence = 15
+			2352 = {
+				add_core = N1I
+				change_culture = root
+                change_religion = root
+				change_province_name = "Stepnogorsk"
+				rename_capital = "Stepnogorsk"				
+			}
+			1970 = {
+				add_core = N1I
+				change_culture = root
+                change_religion = root				
+			}
+			2358 = {
+				add_core = N1I
+				change_culture = root
+                change_religion = root				
+			}
+			2361 = {
+				add_core = N1I
+				change_culture = root
+                change_religion = root				
+			}
+			477 = {
+				add_core = N1I
+				change_culture = root
+                change_religion = root				
+			}
+			456 = {
+				add_core = N1I
+				change_culture = root
+                change_religion = root				
+			}
+			release = N1I
+			hidden_effect = {
+				N1I = { 
+					set_in_empire = yes
+					add_manpower = 10
+					add_years_of_income = 1
+					set_government_rank = 1
+					change_religion = root
+					change_primary_culture = root
+					define_ruler = {
+						adm = 2
+						dip = 2
+						mil = 1
+						name = "Andrei"
+						culture = root
+						dynasty = root
+						religion = root
+					}
+					capital_scope = {
+						build_to_forcelimit = {
+							infantry = 0.7
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 100
+	}
+	
+	# Kamensk
+	release_N1J = {
+		potential = {
+			was_never_end_game_tag_trigger = yes
+			NOT = { exists = N1J }
+			4685 = { NOT = { is_core = N1J } }
+			2360 = { NOT = { is_core = N1J } }
+			2355 = { NOT = { is_core = N1J } }
+			478 = { NOT = { is_core = N1J } }
+			2118 = { NOT = { is_core = N1J } }
+			owns = 4685
+			owns = 2360
+			owns = 2355
+			owns = 478
+			owns = 2118
+		}
+		provinces_to_highlight = {
+			province_id = 4685
+			province_id = 2360
+			province_id = 2355
+			province_id = 478
+			province_id = 2118
+		}
+		allow = {
+			NOT = { exists = N1J }
+			OR = {
+				is_elector = yes
+				is_emperor = yes
+			}
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			owns = 4685
+			owns = 2360
+			owns = 2355
+			owns = 478
+			owns = 2118
+		}
+		effect = {
+			add_dip_power = 100
+			add_imperial_influence = 10
+			478 = {
+				add_core = N1J
+				change_culture = root
+                change_religion = root
+				change_province_name = "Kamensk"
+				rename_capital = "Kamensk"				
+			}
+			4685 = {
+				add_core = N1J
+				change_culture = root
+                change_religion = root				
+			}
+			2360 = {
+				add_core = N1J
+				change_culture = root
+                change_religion = root				
+			}
+			2355 = {
+				add_core = N1J
+				change_culture = root
+                change_religion = root				
+			}
+			2118 = {
+				add_core = N1J
+				change_culture = root
+                change_religion = root				
+			}
+			release = N1J
+			hidden_effect = {
+				N1J = { 
+					set_in_empire = yes
+					add_manpower = 10
+					add_years_of_income = 1
+					set_government_rank = 1
+					change_religion = root
+					change_primary_culture = root
+					define_ruler = {
+						adm = 2
+						dip = 2
+						mil = 1
+						name = "Oleg"
+						culture = root
+						dynasty = root
+						religion = root
+					}
+					capital_scope = {
+						build_to_forcelimit = {
+							infantry = 0.7
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 100
+	}
+	
+	# Novosibirsk
+	release_N1K = {
+		potential = {
+			was_never_end_game_tag_trigger = yes
+			NOT = { exists = N1K }
+			2428 = { NOT = { is_core = N1K } }
+			2429 = { NOT = { is_core = N1K } }
+			2433 = { NOT = { is_core = N1K } }
+			480 = { NOT = { is_core = N1K } }
+			owns = 2428
+			owns = 2429
+			owns = 2433
+			owns = 480
+		}
+		provinces_to_highlight = {
+			province_id = 2428
+			province_id = 2429
+			province_id = 2433
+			province_id = 480
+		}
+		allow = {
+			NOT = { exists = N1K }
+			OR = {
+				is_elector = yes
+				is_emperor = yes
+			}
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			owns = 2428
+			owns = 2429
+			owns = 2433
+			owns = 480
+		}
+		effect = {
+			add_dip_power = 100
+			add_imperial_influence = 10
+			480 = {
+				add_core = N1K
+				change_culture = root
+                change_religion = root
+				change_province_name = "Novosibirsk"
+				rename_capital = "Novosibirsk"				
+			}
+			2433 = {
+				add_core = N1K
+				change_culture = root
+                change_religion = root				
+			}
+			2429 = {
+				add_core = N1K
+				change_culture = root
+                change_religion = root				
+			}
+			2428 = {
+				add_core = N1K
+				change_culture = root
+                change_religion = root				
+			}
+			release = N1K
+			hidden_effect = {
+				N1K = { 
+					set_in_empire = yes
+					add_manpower = 10
+					add_years_of_income = 1
+					set_government_rank = 1
+					change_government = republic
+					add_government_reform = veche_republic
+					change_religion = root
+					change_primary_culture = root
+					define_ruler = {
+						adm = 4
+						dip = 4
+						mil = 4
+						name = "Lavrentiy"
+						culture = root
+						dynasty = root
+						religion = root
+					}
+					capital_scope = {
+						build_to_forcelimit = {
+							infantry = 0.7
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 100
+	}
+	
+	# Uralsk
+	release_N1L = {
+		potential = {
+			was_never_end_game_tag_trigger = yes
+			NOT = { exists = N1L }
+			470 = { NOT = { is_core = N1L } }
+			472 = { NOT = { is_core = N1L } }
+			2366 = { NOT = { is_core = N1L } }
+			owns = 470
+			owns = 472
+			owns = 2366
+		}
+		provinces_to_highlight = {
+			province_id = 470
+			province_id = 472
+			province_id = 2366
+		}
+		allow = {
+			NOT = { exists = N1L }
+			OR = {
+				is_elector = yes
+				is_emperor = yes
+			}
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			owns = 470
+			owns = 472
+			owns = 2366
+		}
+		effect = {
+			add_dip_power = 100
+			add_imperial_influence = 10
+			470 = {
+				add_core = N1L
+				change_culture = root
+                change_religion = root
+				change_province_name = "Uralsk"
+				rename_capital = "Uralsk"				
+			}
+			472 = {
+				add_core = N1L
+				change_culture = root
+                change_religion = root				
+			}
+			2366 = {
+				add_core = N1L
+				change_culture = root
+                change_religion = root				
+			}
+			release = N1L
+			hidden_effect = {
+				N1L = { 
+					set_in_empire = yes
+					add_manpower = 10
+					add_years_of_income = 1
+					set_government_rank = 1
+					change_religion = root
+					change_primary_culture = root
+					define_ruler = {
+						adm = 3
+						dip = 2
+						mil = 3
+						name = "Aleksandr"
+						culture = root
+						dynasty = root
+						religion = root
+					}
+					capital_scope = {
+						build_to_forcelimit = {
+							infantry = 0.7
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 100
+	}
+	
+	# Altai
+	release_N1M = {
+		potential = {
+			was_never_end_game_tag_trigger = yes
+			NOT = { exists = N1M }
+			4684 = { NOT = { is_core = N1M } }
+			716 = { NOT = { is_core = N1M } }
+			1065 = { NOT = { is_core = N1M } }
+			1066 = { NOT = { is_core = N1M } }
+			owns = 4684
+			owns = 716
+			owns = 1065
+			owns = 1066
+		}
+		provinces_to_highlight = {
+			province_id = 4684
+			province_id = 716
+			province_id = 1065
+			province_id = 1066
+		}
+		allow = {
+			NOT = { exists = N1M }
+			OR = {
+				is_elector = yes
+				is_emperor = yes
+			}
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			owns = 4684
+			owns = 716
+			owns = 1065
+			owns = 1066
+		}
+		effect = {
+			add_dip_power = 100
+			add_imperial_influence = 10
+			4684 = {
+				add_core = N1M
+				change_culture = root
+                change_religion = root			
+			}
+			716 = {
+				add_core = N1M
+				change_culture = root
+                change_religion = root				
+			}
+			1065 = {
+				add_core = N1M
+				change_culture = root
+                change_religion = root				
+			}
+			1066 = {
+				add_core = N1M
+				change_culture = root
+                change_religion = root				
+			}
+			release = N1M
+			hidden_effect = {
+				N1M = { 
+					set_in_empire = yes
+					add_manpower = 10
+					add_years_of_income = 1
+					set_government_rank = 1
+					change_religion = root
+					change_primary_culture = root
+					define_ruler = {
+						adm = 2
+						dip = 2
+						mil = 2
+						name = "Dorofey"
+						culture = root
+						dynasty = root
+						religion = root
+					}
+					capital_scope = {
+						build_to_forcelimit = {
+							infantry = 0.7
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 100
+	}
+	
+	# Sayanogorsk
+	release_N1N = {
+		potential = {
+			was_never_end_game_tag_trigger = yes
+			NOT = { exists = N1N }
+			1063 = { NOT = { is_core = N1N } }
+			owns = 1063
+		}
+		provinces_to_highlight = {
+			province_id = 1063
+		}
+		allow = {
+			NOT = { exists = N1N }
+			OR = {
+				is_elector = yes
+				is_emperor = yes
+			}
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			owns = 1063
+		}
+		effect = {
+			add_dip_power = 50
+			add_imperial_influence = 5
+			1063 = {
+				add_core = N1N
+				change_culture = root
+                change_religion = root
+				change_province_name = "Sayanogorsk"
+				rename_capital = "Sayanogorsk"				
+			}
+			release = N1N
+			hidden_effect = {
+				N1N = { 
+					set_in_empire = yes
+					add_manpower = 10
+					add_years_of_income = 1
+					set_government_rank = 1
+					change_religion = root
+					change_primary_culture = root
+					define_ruler = {
+						adm = 3
+						dip = 1
+						mil = 1
+						name = "Sergei"
+						culture = root
+						dynasty = root
+						religion = root
+					}
+					capital_scope = {
+						build_to_forcelimit = {
+							infantry = 0.7
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 100
+	}
+	
+	# Beloyarsk
+	release_N1O = {
+		potential = {
+			was_never_end_game_tag_trigger = yes
+			NOT = { exists = N1O }
+			1068 = { NOT = { is_core = N1O } }
+			1064 = { NOT = { is_core = N1O } }
+			owns = 1068
+			owns = 1064
+		}
+		provinces_to_highlight = {
+			province_id = 1068
+			province_id = 1064
+		}
+		allow = {
+			NOT = { exists = N1O }
+			OR = {
+				is_elector = yes
+				is_emperor = yes
+			}
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			owns = 1068
+			owns = 1064
+		}
+		effect = {
+			add_dip_power = 100
+			add_imperial_influence = 10
+			1064 = {
+				add_core = N1O
+				change_culture = root
+                change_religion = root
+				change_province_name = "Beloyarsk"
+				rename_capital = "Beloyarsk"				
+			}
+			1068 = {
+				add_core = N1O
+				change_culture = root
+                change_religion = root			
+			}
+			release = N1O
+			hidden_effect = {
+				N1O = { 
+					set_in_empire = yes
+					add_manpower = 10
+					add_years_of_income = 1
+					set_government_rank = 1
+					change_religion = root
+					change_primary_culture = root
+					define_ruler = {
+						adm = 2
+						dip = 4
+						mil = 3
+						name = "Izyaslav"
+						culture = root
+						dynasty = root
+						religion = root
+					}
+					capital_scope = {
+						build_to_forcelimit = {
+							infantry = 0.7
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 100
+	}
+	
+	# Yeniseysk
+	release_N1P = {
+		potential = {
+			was_never_end_game_tag_trigger = yes
+			NOT = { exists = N1P }
+			1062 = { NOT = { is_core = N1P } }
+			2432 = { NOT = { is_core = N1P } }
+			2443 = { NOT = { is_core = N1P } }
+			owns = 1062
+			owns = 2432
+			owns = 2443
+		}
+		provinces_to_highlight = {
+			province_id = 1062
+			province_id = 2432
+			province_id = 2443
+		}
+		allow = {
+			NOT = { exists = N1P }
+			OR = {
+				is_elector = yes
+				is_emperor = yes
+			}
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			owns = 1062
+			owns = 2432
+			owns = 2443
+		}
+		effect = {
+			add_dip_power = 100
+			add_imperial_influence = 10
+			1062 = {
+				add_core = N1P
+				change_culture = root
+                change_religion = root
+				change_province_name = "Yeniseysk"
+				rename_capital = "Yeniseysk"				
+			}
+			2432 = {
+				add_core = N1P
+				change_culture = root
+                change_religion = root			
+			}
+			2443 = {
+				add_core = N1P
+				change_culture = root
+                change_religion = root			
+			}
+			release = N1P
+			hidden_effect = {
+				N1P = { 
+					set_in_empire = yes
+					add_manpower = 10
+					add_years_of_income = 1
+					set_government_rank = 1
+					change_religion = root
+					change_primary_culture = root
+					define_ruler = {
+						adm = 1
+						dip = 2
+						mil = 1
+						name = "Yevgeniy"
+						culture = root
+						dynasty = root
+						religion = root
+					}
+					capital_scope = {
+						build_to_forcelimit = {
+							infantry = 0.7
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 100
+	}
+	
+	# Irkutsk
+	release_N1R = {
+		potential = {
+			was_never_end_game_tag_trigger = yes
+			NOT = { exists = N1R }
+			1060 = { NOT = { is_core = N1R } }
+			4679 = { NOT = { is_core = N1R } }
+			2442 = { NOT = { is_core = N1R } }
+			owns = 1060
+			owns = 4679
+			owns = 2442
+		}
+		provinces_to_highlight = {
+			province_id = 1060
+			province_id = 4679
+			province_id = 2442
+		}
+		allow = {
+			NOT = { exists = N1R }
+			OR = {
+				is_elector = yes
+				is_emperor = yes
+			}
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			owns = 1060
+			owns = 4679
+			owns = 2442
+		}
+		effect = {
+			add_dip_power = 100
+			add_imperial_influence = 10
+			1060 = {
+				add_core = N1R
+				change_culture = root
+                change_religion = root
+				change_province_name = "Irkutsk"
+				rename_capital = "Irkutsk"				
+			}
+			4679 = {
+				add_core = N1R
+				change_culture = root
+                change_religion = root			
+			}
+			2442 = {
+				add_core = N1R
+				change_culture = root
+                change_religion = root			
+			}
+			release = N1R
+			hidden_effect = {
+				N1R = { 
+					set_in_empire = yes
+					add_manpower = 10
+					add_years_of_income = 1
+					set_government_rank = 1
+					change_religion = root
+					change_primary_culture = root
+					define_ruler = {
+						adm = 1
+						dip = 2
+						mil = 1
+						name = "Ingvar"
+						culture = root
+						dynasty = root
+						religion = root
+					}
+					capital_scope = {
+						build_to_forcelimit = {
+							infantry = 0.7
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 100
+	}
+	
+	# Transbaikalia
+	release_N1S = {
+		potential = {
+			was_never_end_game_tag_trigger = yes
+			NOT = { exists = N1S }
+			1057 = { NOT = { is_core = N1S } }
+			1056 = { NOT = { is_core = N1S } }
+			1058 = { NOT = { is_core = N1S } }
+			2446 = { NOT = { is_core = N1S } }
+			owns = 1057
+			owns = 1056
+			owns = 1058
+			owns = 2446
+		}
+		provinces_to_highlight = {
+			province_id = 1057
+			province_id = 1056
+			province_id = 1058
+			province_id = 2446
+		}
+		allow = {
+			NOT = { exists = N1S }
+			OR = {
+				is_elector = yes
+				is_emperor = yes
+			}
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			owns = 1057
+			owns = 1056
+			owns = 1058
+			owns = 2446
+		}
+		effect = {
+			add_dip_power = 100
+			add_imperial_influence = 10
+			1057 = {
+				add_core = N1S
+				change_culture = root
+                change_religion = root
+				change_province_name = "Zabaikalsk"
+				rename_capital = "Zabaikalsk"				
+			}
+			1056 = {
+				add_core = N1S
+				change_culture = root
+                change_religion = root			
+			}
+			1058 = {
+				add_core = N1S
+				change_culture = root
+                change_religion = root			
+			}
+			2446 = {
+				add_core = N1S
+				change_culture = root
+                change_religion = root			
+			}
+			release = N1S
+			hidden_effect = {
+				N1S = { 
+					set_in_empire = yes
+					add_manpower = 10
+					add_years_of_income = 1
+					set_government_rank = 1
+					change_religion = root
+					change_primary_culture = root
+					define_ruler = {
+						adm = 2
+						dip = 3
+						mil = 2
+						name = "Stanislav"
+						culture = root
+						dynasty = root
+						religion = root
+					}
+					capital_scope = {
+						build_to_forcelimit = {
+							infantry = 0.7
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 100
+	}
+	
+	# Alekseevsk
+	release_N1T = {
+		potential = {
+			was_never_end_game_tag_trigger = yes
+			NOT = { exists = N1T }
+			2106 = { NOT = { is_core = N1T } }
+			owns = 2106
+		}
+		provinces_to_highlight = {
+			province_id = 2106
+		}
+		allow = {
+			NOT = { exists = N1T }
+			OR = {
+				is_elector = yes
+				is_emperor = yes
+			}
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			owns = 2106
+		}
+		effect = {
+			add_dip_power = 50
+			add_imperial_influence = 5
+			2106 = {
+				add_core = N1T
+				change_culture = root
+                change_religion = root
+				change_province_name = "Alekseevsk"
+				rename_capital = "Alekseevsk"				
+			}
+			release = N1T
+			hidden_effect = {
+				N1T = { 
+					set_in_empire = yes
+					add_manpower = 10
+					add_years_of_income = 1
+					set_government_rank = 1
+					change_religion = root
+					change_primary_culture = root
+					define_ruler = {
+						adm = 3
+						dip = 3
+						mil = 3
+						name = "Alexei"
+						culture = root
+						dynasty = root
+						religion = root
+					}
+					capital_scope = {
+						build_to_forcelimit = {
+							infantry = 0.7
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 100
+	}
+	
+	# Yakutia
+	release_N1U = {
+		potential = {
+			was_never_end_game_tag_trigger = yes
+			NOT = { exists = N1U }
+			1045 = { NOT = { is_core = N1U } }
+			2437 = { NOT = { is_core = N1U } }
+			1054 = { NOT = { is_core = N1U } }
+			1055 = { NOT = { is_core = N1U } }
+			2435 = { NOT = { is_core = N1U } }
+			1051 = { NOT = { is_core = N1U } }
+			1052 = { NOT = { is_core = N1U } }
+			2438 = { NOT = { is_core = N1U } }
+			1046 = { NOT = { is_core = N1U } }
+			1047 = { NOT = { is_core = N1U } }
+			1042 = { NOT = { is_core = N1U } }
+			1043 = { NOT = { is_core = N1U } }
+			owns = 1045
+			owns = 2437
+			owns = 1054
+			owns = 1055
+			owns = 2435
+			owns = 1051
+			owns = 1052
+			owns = 2438
+			owns = 1046
+			owns = 1047
+			owns = 1042
+			owns = 1043
+		}
+		provinces_to_highlight = {
+			province_id = 1045
+			province_id = 2437
+			province_id = 1054
+			province_id = 1055
+			province_id = 2435
+			province_id = 1051
+			province_id = 1052
+			province_id = 2438
+			province_id = 1046
+			province_id = 1047
+			province_id = 1042
+			province_id = 1043
+		}
+		allow = {
+			NOT = { exists = N1U }
+			OR = {
+				is_elector = yes
+				is_emperor = yes
+			}
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			owns = 1045
+			owns = 2437
+			owns = 1054
+			owns = 1055
+			owns = 2435
+			owns = 1051
+			owns = 1052
+			owns = 2438
+			owns = 1046
+			owns = 1047
+			owns = 1042
+			owns = 1043
+		}
+		effect = {
+			add_dip_power = 200
+			add_imperial_influence = 20
+			1045 = {
+				add_core = N1U
+				change_culture = root
+                change_religion = root
+				change_province_name = "Yakutsk"
+				rename_capital = "Yakutsk"				
+			}
+			2437 = {
+				add_core = N1U
+				change_culture = root
+                change_religion = root			
+			}
+			1054 = {
+				add_core = N1U
+				change_culture = root
+                change_religion = root			
+			}
+			1055 = {
+				add_core = N1U
+				change_culture = root
+                change_religion = root			
+			}
+			2435 = {
+				add_core = N1U
+				change_culture = root
+                change_religion = root			
+			}
+			1051 = {
+				add_core = N1U
+				change_culture = root
+                change_religion = root			
+			}
+			1052 = {
+				add_core = N1U
+				change_culture = root
+                change_religion = root			
+			}
+			2438 = {
+				add_core = N1U
+				change_culture = root
+                change_religion = root			
+			}
+			1046 = {
+				add_core = N1U
+				change_culture = root
+                change_religion = root			
+			}
+			1047 = {
+				add_core = N1U
+				change_culture = root
+                change_religion = root			
+			}
+			1042 = {
+				add_core = N1U
+				change_culture = root
+                change_religion = root			
+			}
+			1043 = {
+				add_core = N1U
+				change_culture = root
+                change_religion = root			
+			}
+			release = N1U
+			hidden_effect = {
+				N1U = { 
+					set_in_empire = yes
+					add_manpower = 10
+					add_years_of_income = 1
+					set_government_rank = 1
+					change_religion = root
+					change_primary_culture = root
+					define_ruler = {
+						adm = 2
+						dip = 2
+						mil = 3
+						name = "Dmitriy"
+						culture = root
+						dynasty = root
+						religion = root
+					}
+					capital_scope = {
+						build_to_forcelimit = {
+							infantry = 0.7
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 100
+	}
+	
+	# Amur
+	release_N1V = {
+		potential = {
+			was_never_end_game_tag_trigger = yes
+			NOT = { exists = N1V }
+			1049 = { NOT = { is_core = N1V } }
+			4662 = { NOT = { is_core = N1V } }
+			2102 = { NOT = { is_core = N1V } }
+			2104 = { NOT = { is_core = N1V } }
+			owns = 1049
+			owns = 4662
+			owns = 2102
+			owns = 2104
+		}
+		provinces_to_highlight = {
+			province_id = 1049
+			province_id = 4662
+			province_id = 2102
+			province_id = 2104
+		}
+		allow = {
+			NOT = { exists = N1V }
+			OR = {
+				is_elector = yes
+				is_emperor = yes
+			}
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			owns = 1049
+			owns = 4662
+			owns = 2102
+			owns = 2104
+		}
+		effect = {
+			add_dip_power = 100
+			add_imperial_influence = 10
+			1049 = {
+				add_core = N1V
+				change_culture = root
+                change_religion = root
+				change_province_name = "Blagoveshchensk"
+				rename_capital = "Blagoveshchensk"				
+			}
+			4662 = {
+				add_core = N1V
+				change_culture = root
+                change_religion = root			
+			}
+			2102 = {
+				add_core = N1V
+				change_culture = root
+                change_religion = root			
+			}
+			2104 = {
+				add_core = N1V
+				change_culture = root
+                change_religion = root			
+			}
+			release = N1V
+			hidden_effect = {
+				N1V = { 
+					set_in_empire = yes
+					add_manpower = 10
+					add_years_of_income = 1
+					set_government_rank = 1
+					change_religion = root
+					change_primary_culture = root
+					define_ruler = {
+						adm = 5
+						dip = 5
+						mil = 5
+						name = "Gleb"
+						culture = root
+						dynasty = root
+						religion = root
+					}
+					capital_scope = {
+						build_to_forcelimit = {
+							infantry = 0.7
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 100
+	}
+	
+	# Seversk
+	release_N1W = {
+		potential = {
+			was_never_end_game_tag_trigger = yes
+			NOT = { exists = N1W }
+			1040 = { NOT = { is_core = N1W } }
+			1039 = { NOT = { is_core = N1W } }
+			1036 = { NOT = { is_core = N1W } }
+			2439 = { NOT = { is_core = N1W } }
+			owns = 1040
+			owns = 1039
+			owns = 1036
+			owns = 2439
+		}
+		provinces_to_highlight = {
+			province_id = 1040
+			province_id = 1039
+			province_id = 1036
+			province_id = 2439
+		}
+		allow = {
+			NOT = { exists = N1W }
+			OR = {
+				is_elector = yes
+				is_emperor = yes
+			}
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			owns = 1040
+			owns = 1039
+			owns = 1036
+			owns = 2439
+		}
+		effect = {
+			add_dip_power = 100
+			add_imperial_influence = 10
+			1040 = {
+				add_core = N1W
+				change_culture = root
+                change_religion = root
+				change_province_name = "Seversk"
+				rename_capital = "Seversk"				
+			}
+			1039 = {
+				add_core = N1W
+				change_culture = root
+                change_religion = root			
+			}
+			1036 = {
+				add_core = N1W
+				change_culture = root
+                change_religion = root			
+			}
+			2439 = {
+				add_core = N1W
+				change_culture = root
+                change_religion = root			
+			}
+			release = N1W
+			hidden_effect = {
+				N1W = { 
+					set_in_empire = yes
+					add_manpower = 10
+					add_years_of_income = 1
+					set_government_rank = 1
+					change_religion = root
+					change_primary_culture = root
+					define_ruler = {
+						adm = 1
+						dip = 2
+						mil = 2
+						name = "Roman"
+						culture = root
+						dynasty = root
+						religion = root
+					}
+					capital_scope = {
+						build_to_forcelimit = {
+							infantry = 0.7
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 100
+	}
+	
+	# Kamchatka
+	release_N1X = {
+		potential = {
+			was_never_end_game_tag_trigger = yes
+			NOT = { exists = N1X }
+			1034 = { NOT = { is_core = N1X } }
+			1035 = { NOT = { is_core = N1X } }
+			2440 = { NOT = { is_core = N1X } }
+			1038 = { NOT = { is_core = N1X } }
+			1037 = { NOT = { is_core = N1X } }
+			1041 = { NOT = { is_core = N1X } }
+			1044 = { NOT = { is_core = N1X } }
+			owns = 1034
+			owns = 1035
+			owns = 2440
+			owns = 1038
+			owns = 1037
+			owns = 1041
+			owns = 1044
+		}
+		provinces_to_highlight = {
+			province_id = 1034
+			province_id = 1035
+			province_id = 2440
+			province_id = 1038
+			province_id = 1037
+			province_id = 1041
+			province_id = 1044
+		}
+		allow = {
+			NOT = { exists = N1X }
+			OR = {
+				is_elector = yes
+				is_emperor = yes
+			}
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			owns = 1034
+			owns = 1035
+			owns = 2440
+			owns = 1038
+			owns = 1037
+			owns = 1041
+			owns = 1044
+		}
+		effect = {
+			add_dip_power = 100
+			add_imperial_influence = 10
+			1034 = {
+				add_core = N1X
+				change_culture = root
+                change_religion = root
+				change_province_name = "Yaroslavl-Kamchatsky"
+				rename_capital = "Yaroslavl-Kamchatsky"				
+			}
+			1035 = {
+				add_core = N1X
+				change_culture = root
+                change_religion = root			
+			}
+			2440 = {
+				add_core = N1X
+				change_culture = root
+                change_religion = root			
+			}
+			1038 = {
+				add_core = N1X
+				change_culture = root
+                change_religion = root			
+			}
+			1037 = {
+				add_core = N1X
+				change_culture = root
+                change_religion = root			
+			}
+			1041 = {
+				add_core = N1X
+				change_culture = root
+                change_religion = root			
+			}
+			1044 = {
+				add_core = N1X
+				change_culture = root
+                change_religion = root			
+			}
+			release = N1X
+			hidden_effect = {
+				N1X = { 
+					set_in_empire = yes
+					add_manpower = 10
+					add_years_of_income = 1
+					set_government_rank = 1
+					change_religion = root
+					change_primary_culture = root
+					define_ruler = {
+						adm = 3
+						dip = 2
+						mil = 2
+						name = "Yaroslav"
+						culture = root
+						dynasty = root
+						religion = root
+					}
+					capital_scope = {
+						build_to_forcelimit = {
+							infantry = 0.7
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 100
+	}
+	
+	# Olensk
+	release_N1Y = {
+		potential = {
+			was_never_end_game_tag_trigger = yes
+			NOT = { exists = N1Y }
+			2103 = { NOT = { is_core = N1Y } }
+			owns = 2103
+		}
+		provinces_to_highlight = {
+			province_id = 2103
+		}
+		allow = {
+			NOT = { exists = N1Y }
+			OR = {
+				is_elector = yes
+				is_emperor = yes
+			}
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			owns = 2103
+		}
+		effect = {
+			add_dip_power = 50
+			add_imperial_influence = 5
+			2103 = {
+				add_core = N1Y
+				change_culture = root
+                change_religion = root
+				change_province_name = "Olensk"
+				rename_capital = "Olensk"				
+			}
+			release = N1Y
+			hidden_effect = {
+				N1Y = { 
+					set_in_empire = yes
+					add_manpower = 10
+					add_years_of_income = 1
+					set_government_rank = 1
+					change_religion = root
+					change_primary_culture = root
+					define_ruler = {
+						adm = 3
+						dip = 2
+						mil = 2
+						name = "Yaroslav"
+						culture = root
+						dynasty = root
+						religion = root
+					}
+					capital_scope = {
+						build_to_forcelimit = {
+							infantry = 0.7
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 100
+	}
+	
+	# Primorye
+	release_N1Z = {
+		potential = {
+			was_never_end_game_tag_trigger = yes
+			NOT = { exists = N1Z }
+			4215 = { NOT = { is_core = N1Z } }
+			2105 = { NOT = { is_core = N1Z } }
+			4659 = { NOT = { is_core = N1Z } }
+			1048 = { NOT = { is_core = N1Z } }
+			4214 = { NOT = { is_core = N1Z } }
+			1050 = { NOT = { is_core = N1Z } }
+			4216 = { NOT = { is_core = N1Z } }
+			729 = { NOT = { is_core = N1Z } }
+			4217 = { NOT = { is_core = N1Z } }
+			4656 = { NOT = { is_core = N1Z } }
+			4655 = { NOT = { is_core = N1Z } }
+			2186 = { NOT = { is_core = N1Z } }
+			1850 = { NOT = { is_core = N1Z } }
+			owns = 4215
+			owns = 2105
+			owns = 4659
+			owns = 1048
+			owns = 4214
+			owns = 1050
+			owns = 4216
+			owns = 729
+			owns = 4217
+			owns = 4656
+			owns = 4655
+			owns = 2186
+			owns = 1850
+		}
+		provinces_to_highlight = {
+			province_id = 4215
+			province_id = 2105
+			province_id = 4659
+			province_id = 1048
+			province_id = 4214
+			province_id = 1050
+			province_id = 4216
+			province_id = 729
+			province_id = 4217
+			province_id = 4656
+			province_id = 4655
+			province_id = 2186
+			province_id = 1850
+		}
+		allow = {
+			NOT = { exists = N1Z }
+			OR = {
+				is_elector = yes
+				is_emperor = yes
+			}
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			owns = 4215
+			owns = 2105
+			owns = 4659
+			owns = 1048
+			owns = 4214
+			owns = 1050
+			owns = 4216
+			owns = 729
+			owns = 4217
+			owns = 4656
+			owns = 4655
+			owns = 2186
+			owns = 1850
+		}
+		effect = {
+			add_dip_power = 200
+			add_imperial_influence = 20
+			4215 = {
+				add_core = N1Z
+				change_culture = root
+                change_religion = root
+				change_province_name = "Novosemensk"
+				rename_capital = "Novosemensk"				
+			}
+			2105 = {
+				add_core = N1Z
+				change_culture = root
+                change_religion = root			
+			}
+			4659 = {
+				add_core = N1Z
+				change_culture = root
+                change_religion = root			
+			}
+			1048 = {
+				add_core = N1Z
+				change_culture = root
+                change_religion = root			
+			}
+			4214 = {
+				add_core = N1Z
+				change_culture = root
+                change_religion = root			
+			}
+			1050 = {
+				add_core = N1Z
+				change_culture = root
+                change_religion = root			
+			}
+			4216 = {
+				add_core = N1Z
+				change_culture = root
+                change_religion = root			
+			}
+			729 = {
+				add_core = N1Z
+				change_culture = root
+                change_religion = root			
+			}
+			4217 = {
+				add_core = N1Z
+				change_culture = root
+                change_religion = root			
+			}
+			4656 = {
+				add_core = N1Z
+				change_culture = root
+                change_religion = root			
+			}
+			4655 = {
+				add_core = N1Z
+				change_culture = root
+                change_religion = root			
+			}
+			2186 = {
+				add_core = N1Z
+				change_culture = root
+                change_religion = root			
+			}
+			1850 = {
+				add_core = N1Z
+				change_culture = root
+                change_religion = root			
+			}
+			release = N1Z
+			hidden_effect = {
+				N1Z = { 
+					set_in_empire = yes
+					add_manpower = 10
+					add_years_of_income = 1
+					set_government_rank = 1
+					change_religion = root
+					change_primary_culture = root
+					define_ruler = {
+						adm = 3
+						dip = 4
+						mil = 3
+						name = "Semen"
+						culture = root
+						dynasty = root
+						religion = root
+					}
+					capital_scope = {
+						build_to_forcelimit = {
+							infantry = 0.7
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 100
+	}
+	
+	# Sakhalin
+	release_N2A = {
+		potential = {
+			was_never_end_game_tag_trigger = yes
+			NOT = { exists = N2A }
+			1033 = { NOT = { is_core = N2A } }
+			4658 = { NOT = { is_core = N2A } }
+			owns = 1033
+			owns = 4658
+		}
+		provinces_to_highlight = {
+			province_id = 1033
+			province_id = 4658
+		}
+		allow = {
+			NOT = { exists = N2A }
+			OR = {
+				is_elector = yes
+				is_emperor = yes
+			}
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			owns = 1033
+			owns = 4658
+		}
+		effect = {
+			add_dip_power = 50
+			add_imperial_influence = 5
+			1033 = {
+				add_core = N2A
+				change_culture = root
+                change_religion = root
+				change_province_name = "Rybinsk"
+				rename_capital = "Rybinsk"				
+			}
+			4658 = {
+				add_core = N2A
+				change_culture = root
+                change_religion = root			
+			}
+			release = N2A
+			hidden_effect = {
+				N2A = { 
+					set_in_empire = yes
+					add_manpower = 10
+					add_years_of_income = 1
+					set_government_rank = 1
+					change_religion = root
+					change_primary_culture = root
+					define_ruler = {
+						adm = 2
+						dip = 2
+						mil = 1
+						name = "Feodosiy"
+						culture = root
+						dynasty = root
+						religion = root
+					}
+					capital_scope = {
+						build_to_forcelimit = {
+							infantry = 0.7
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 100
+	}
+	
+	# Snezhnogorsk
+	release_N2B = {
+		potential = {
+			was_never_end_game_tag_trigger = yes
+			NOT = { exists = N2B }
+			1070 = { NOT = { is_core = N2B } }
+			2430 = { NOT = { is_core = N2B } }
+			1067 = { NOT = { is_core = N2B } }
+			2431 = { NOT = { is_core = N2B } }
+			1061 = { NOT = { is_core = N2B } }
+			2436 = { NOT = { is_core = N2B } }
+			1059 = { NOT = { is_core = N2B } }
+			owns = 1070
+			owns = 2430
+			owns = 1067
+			owns = 2431
+			owns = 1061
+			owns = 2436
+			owns = 1059
+		}
+		provinces_to_highlight = {
+			province_id = 1070
+			province_id = 2430
+			province_id = 1067
+			province_id = 2431
+			province_id = 1061
+			province_id = 2436
+			province_id = 1059
+		}
+		allow = {
+			NOT = { exists = N2B }
+			OR = {
+				is_elector = yes
+				is_emperor = yes
+			}
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			owns = 1070
+			owns = 2430
+			owns = 1067
+			owns = 2431
+			owns = 1061
+			owns = 2436
+			owns = 1059
+		}
+		effect = {
+			add_dip_power = 100
+			add_imperial_influence = 10
+			1070 = {
+				add_core = N2B
+				change_culture = root
+                change_religion = root
+				change_province_name = "Snezhnogorsk"
+				rename_capital = "Snezhnogorsk"				
+			}
+			2430 = {
+				add_core = N2B
+				change_culture = root
+                change_religion = root			
+			}
+			1067 = {
+				add_core = N2B
+				change_culture = root
+                change_religion = root			
+			}
+			2431 = {
+				add_core = N2B
+				change_culture = root
+                change_religion = root			
+			}
+			1061 = {
+				add_core = N2B
+				change_culture = root
+                change_religion = root			
+			}
+			2436 = {
+				add_core = N2B
+				change_culture = root
+                change_religion = root			
+			}
+			1059 = {
+				add_core = N2B
+				change_culture = root
+                change_religion = root			
+			}
+			release = N2B
+			hidden_effect = {
+				N2B = { 
+					set_in_empire = yes
+					add_manpower = 10
+					add_years_of_income = 1
+					set_government_rank = 1
+					change_religion = root
+					change_primary_culture = root
+					define_ruler = {
+						adm = 3
+						dip = 3
+						mil = 5
+						name = "Boris"
+						culture = root
+						dynasty = root
+						religion = root
+					}
+					capital_scope = {
+						build_to_forcelimit = {
+							infantry = 0.7
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 100
+	}
+	
+	# Priozersk
+	release_N2C = {
+		potential = {
+			was_never_end_game_tag_trigger = yes
+			NOT = { exists = N2C }
+			2368 = { NOT = { is_core = N2C } }
+			461 = { NOT = { is_core = N2C } }
+			459 = { NOT = { is_core = N2C } }
+			owns = 2368
+			owns = 461
+			owns = 459
+		}
+		provinces_to_highlight = {
+			province_id = 2368
+			province_id = 461
+			province_id = 459
+		}
+		allow = {
+			NOT = { exists = N2C }
+			OR = {
+				is_elector = yes
+				is_emperor = yes
+			}
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			owns = 2368
+			owns = 461
+			owns = 459
+		}
+		effect = {
+			add_dip_power = 100
+			add_imperial_influence = 10
+			2368 = {
+				add_core = N2C
+				change_culture = root
+                change_religion = root
+				change_province_name = "Priozersk"
+				rename_capital = "Priozersk"				
+			}
+			461 = {
+				add_core = N2C
+				change_culture = root
+                change_religion = root			
+			}
+			459 = {
+				add_core = N2C
+				change_culture = root
+                change_religion = root			
+			}
+			release = N2C
+			hidden_effect = {
+				N2C = { 
+					set_in_empire = yes
+					add_manpower = 10
+					add_years_of_income = 1
+					set_government_rank = 1
+					change_religion = root
+					change_primary_culture = root
+					define_ruler = {
+						adm = 1
+						dip = 1
+						mil = 1
+						name = "Nazariy"
+						culture = root
+						dynasty = root
+						religion = root
+					}
+					capital_scope = {
+						build_to_forcelimit = {
+							infantry = 0.7
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 100
+	}
+	
+	# Orlov
+	release_N2D = {
+		potential = {
+			was_never_end_game_tag_trigger = yes
+			NOT = { exists = N2D }
+			2126 = { NOT = { is_core = N2D } }
+			owns = 2126
+		}
+		provinces_to_highlight = {
+			province_id = 2126
+		}
+		allow = {
+			NOT = { exists = N2D }
+			OR = {
+				is_elector = yes
+				is_emperor = yes
+			}
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			owns = 2126
+		}
+		effect = {
+			add_dip_power = 100
+			add_imperial_influence = 10
+			2126 = {
+				add_core = N2D
+				change_culture = root
+                change_religion = root
+				change_province_name = "Orlov"
+				rename_capital = "Orlov"				
+			}
+			release = N2D
+			hidden_effect = {
+				N2D = { 
+					set_in_empire = yes
+					add_manpower = 10
+					add_years_of_income = 1
+					set_government_rank = 1
+					change_religion = root
+					change_primary_culture = root
+					define_ruler = {
+						adm = 4
+						dip = 2
+						mil = 3
+						name = "Innokentiy"
+						culture = root
+						dynasty = root
+						religion = root
+					}
+					capital_scope = {
+						build_to_forcelimit = {
+							infantry = 0.7
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 100
+	}
+	
+	# Transkaspiysk
+	release_N2E = {
+		potential = {
+			was_never_end_game_tag_trigger = yes
+			NOT = { exists = N2E }
+			465 = { NOT = { is_core = N2E } }
+			471 = { NOT = { is_core = N2E } }
+			439 = { NOT = { is_core = N2E } }
+			443 = { NOT = { is_core = N2E } }
+			2370 = { NOT = { is_core = N2E } }
+			2362 = { NOT = { is_core = N2E } }
+			owns = 465
+			owns = 471
+			owns = 439
+			owns = 443
+			owns = 2370
+			owns = 2362
+		}
+		provinces_to_highlight = {
+			province_id = 465
+			province_id = 471
+			province_id = 439
+			province_id = 443
+			province_id = 2370
+			province_id = 2362
+		}
+		allow = {
+			NOT = { exists = N2E }
+			OR = {
+				is_elector = yes
+				is_emperor = yes
+			}
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			owns = 465
+			owns = 471
+			owns = 439
+			owns = 443
+			owns = 2370
+			owns = 2362
+		}
+		effect = {
+			add_dip_power = 100
+			add_imperial_influence = 10
+			465 = {
+				add_core = N2E
+				change_culture = root
+                change_religion = root
+				change_province_name = "Transkaspiysk"
+				rename_capital = "Transkaspiysk"				
+			}
+			471 = {
+				add_core = N2E
+				change_culture = root
+                change_religion = root			
+			}
+			439 = {
+				add_core = N2E
+				change_culture = root
+                change_religion = root			
+			}
+			443 = {
+				add_core = N2E
+				change_culture = root
+                change_religion = root			
+			}
+			2370 = {
+				add_core = N2E
+				change_culture = root
+                change_religion = root			
+			}
+			2362 = {
+				add_core = N2E
+				change_culture = root
+                change_religion = root			
+			}
+			release = N2E
+			hidden_effect = {
+				N2E = { 
+					set_in_empire = yes
+					add_manpower = 10
+					add_years_of_income = 1
+					set_government_rank = 1
+					change_religion = root
+					change_primary_culture = root
+					define_ruler = {
+						adm = 2
+						dip = 3
+						mil = 2
+						name = "Makariy"
+						culture = root
+						dynasty = root
+						religion = root
+					}
+					capital_scope = {
+						build_to_forcelimit = {
+							infantry = 0.7
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 100
+	}
+	
+	# Novopavlovsk
+	release_N2F = {
+		potential = {
+			was_never_end_game_tag_trigger = yes
+			NOT = { exists = N2F }
+			1973 = { NOT = { is_core = N2F } }
+			440 = { NOT = { is_core = N2F } }
+			455 = { NOT = { is_core = N2F } }
+			441 = { NOT = { is_core = N2F } }
+			owns = 1973
+			owns = 440
+			owns = 455
+			owns = 441
+		}
+		provinces_to_highlight = {
+			province_id = 1973
+			province_id = 440
+			province_id = 455
+			province_id = 441
+		}
+		allow = {
+			NOT = { exists = N2F }
+			OR = {
+				is_elector = yes
+				is_emperor = yes
+			}
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			owns = 1973
+			owns = 440
+			owns = 455
+			owns = 441
+		}
+		effect = {
+			add_dip_power = 100
+			add_imperial_influence = 10
+			1973 = {
+				add_core = N2F
+				change_culture = root
+                change_religion = root
+				change_province_name = "Novopavlovsk"
+				rename_capital = "Novopavlovsk"				
+			}
+			440 = {
+				add_core = N2F
+				change_culture = root
+                change_religion = root			
+			}
+			455 = {
+				add_core = N2F
+				change_culture = root
+                change_religion = root			
+			}
+			441 = {
+				add_core = N2F
+				change_culture = root
+                change_religion = root			
+			}
+			release = N2F
+			hidden_effect = {
+				N2F = { 
+					set_in_empire = yes
+					add_manpower = 10
+					add_years_of_income = 1
+					set_government_rank = 1
+					change_religion = root
+					change_primary_culture = root
+					define_ruler = {
+						adm = 2
+						dip = 2
+						mil = 3
+						name = "Pavel"
+						culture = root
+						dynasty = root
+						religion = root
+					}
+					capital_scope = {
+						build_to_forcelimit = {
+							infantry = 0.7
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 100
+	}
+	
+	# Samarkand
+	release_N2G = {
+		potential = {
+			was_never_end_game_tag_trigger = yes
+			NOT = { exists = N2G }
+			454 = { NOT = { is_core = N2G } }
+			4344 = { NOT = { is_core = N2G } }
+			453 = { NOT = { is_core = N2G } }
+			442 = { NOT = { is_core = N2G } }
+			owns = 454
+			owns = 4344
+			owns = 453
+			owns = 442
+		}
+		provinces_to_highlight = {
+			province_id = 454
+			province_id = 4344
+			province_id = 453
+			province_id = 442
+		}
+		allow = {
+			NOT = { exists = N2G }
+			OR = {
+				is_elector = yes
+				is_emperor = yes
+			}
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			owns = 454
+			owns = 4344
+			owns = 453
+			owns = 442
+		}
+		effect = {
+			add_dip_power = 100
+			add_imperial_influence = 10
+			454 = {
+				add_core = N2G
+				change_culture = root
+                change_religion = root
+				change_province_name = "Samarkand"
+				rename_capital = "Samarkand"				
+			}
+			4344 = {
+				add_core = N2G
+				change_culture = root
+                change_religion = root			
+			}
+			453 = {
+				add_core = N2G
+				change_culture = root
+                change_religion = root			
+			}
+			442 = {
+				add_core = N2G
+				change_culture = root
+                change_religion = root			
+			}
+			release = N2G
+			hidden_effect = {
+				N2G = { 
+					set_in_empire = yes
+					add_manpower = 10
+					add_years_of_income = 1
+					set_government_rank = 1
+					change_religion = root
+					change_primary_culture = root
+					define_ruler = {
+						adm = 2
+						dip = 2
+						mil = 3
+						name = "Pavel"
+						culture = root
+						dynasty = root
+						religion = root
+					}
+					capital_scope = {
+						build_to_forcelimit = {
+							infantry = 0.7
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 100
+	}
+	
+	# Nikolaisk
+	release_N2H = {
+		potential = {
+			was_never_end_game_tag_trigger = yes
+			NOT = { exists = N2H }
+			2363 = { NOT = { is_core = N2H } }
+			owns = 2363
+		}
+		provinces_to_highlight = {
+			province_id = 2363
+		}
+		allow = {
+			NOT = { exists = N2H }
+			OR = {
+				is_elector = yes
+				is_emperor = yes
+			}
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			owns = 2363
+		}
+		effect = {
+			add_dip_power = 50
+			add_imperial_influence = 5
+			2363 = {
+				add_core = N2H
+				change_culture = root
+                change_religion = root
+				change_province_name = "Nikolaisk"
+				rename_capital = "Nikolaisk"				
+			}
+			release = N2H
+			hidden_effect = {
+				N2H = { 
+					set_in_empire = yes
+					add_manpower = 10
+					add_years_of_income = 1
+					set_government_rank = 1
+					change_religion = root
+					change_primary_culture = root
+					define_ruler = {
+						adm = 2
+						dip = 2
+						mil = 2
+						name = "Nikolay"
+						culture = root
+						dynasty = root
+						religion = root
+					}
+					capital_scope = {
+						build_to_forcelimit = {
+							infantry = 0.7
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 100
+	}
+	
+	# N2I
+	release_N2I = {
+		potential = {
+			was_never_end_game_tag_trigger = yes
+			NOT = { exists = N2I }
+			460 = { NOT = { is_core = N2I } }
+			2125 = { NOT = { is_core = N2I } }
+			2364 = { NOT = { is_core = N2I } }
+			457 = { NOT = { is_core = N2I } }
+			2356 = { NOT = { is_core = N2I } }
+			1969 = { NOT = { is_core = N2I } }
+			owns = 460
+			owns = 2125
+			owns = 2364
+			owns = 457
+			owns = 2356
+			owns = 1969
+		}
+		provinces_to_highlight = {
+			province_id = 460
+			province_id = 2125
+			province_id = 2364
+			province_id = 457
+			province_id = 2356
+			province_id = 1969
+		}
+		allow = {
+			NOT = { exists = N2I }
+			OR = {
+				is_elector = yes
+				is_emperor = yes
+			}
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			owns = 460
+			owns = 2125
+			owns = 2364
+			owns = 457
+			owns = 2356
+			owns = 1969
+		}
+		effect = {
+			add_dip_power = 100
+			add_imperial_influence = 10
+			460 = {
+				add_core = N2I
+				change_culture = root
+                change_religion = root
+				change_province_name = "N2I"
+				rename_capital = "N2I"				
+			}
+			2125 = {
+				add_core = N2I
+				change_culture = root
+                change_religion = root	
+			}
+			2364 = {
+				add_core = N2I
+				change_culture = root
+                change_religion = root	
+			}
+			457 = {
+				add_core = N2I
+				change_culture = root
+                change_religion = root	
+			}
+			2356 = {
+				add_core = N2I
+				change_culture = root
+                change_religion = root	
+			}
+			1969 = {
+				add_core = N2I
+				change_culture = root
+                change_religion = root	
+			}
+			release = N2I
+			hidden_effect = {
+				N2I = { 
+					set_in_empire = yes
+					add_manpower = 10
+					add_years_of_income = 1
+					set_government_rank = 1
+					change_religion = root
+					change_primary_culture = root
+					define_ruler = {
+						adm = 4
+						dip = 3
+						mil = 3
+						name = "Arkadiy"
+						culture = root
+						dynasty = root
+						religion = root
+					}
+					capital_scope = {
+						build_to_forcelimit = {
+							infantry = 0.7
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 100
+	}
+	
+	# N2J
+	release_N2J = {
+		potential = {
+			was_never_end_game_tag_trigger = yes
+			NOT = { exists = N2J }
+			445 = { NOT = { is_core = N2J } }
+			444 = { NOT = { is_core = N2J } }
+			2350 = { NOT = { is_core = N2J } }
+			438 = { NOT = { is_core = N2J } }
+			437 = { NOT = { is_core = N2J } }
+			2349 = { NOT = { is_core = N2J } }
+			owns = 445
+			owns = 444
+			owns = 2350
+			owns = 438
+			owns = 437
+			owns = 2349
+		}
+		provinces_to_highlight = {
+			province_id = 445
+			province_id = 444
+			province_id = 2350
+			province_id = 438
+			province_id = 437
+			province_id = 2349
+		}
+		allow = {
+			NOT = { exists = N2J }
+			OR = {
+				is_elector = yes
+				is_emperor = yes
+			}
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			owns = 445
+			owns = 444
+			owns = 2350
+			owns = 438
+			owns = 437
+			owns = 2349
+		}
+		effect = {
+			add_dip_power = 100
+			add_imperial_influence = 10
+			445 = {
+				add_core = N2J
+				change_culture = root
+                change_religion = root
+				change_province_name = "N2J"
+				rename_capital = "N2J"				
+			}
+			444 = {
+				add_core = N2J
+				change_culture = root
+                change_religion = root	
+			}
+			2350 = {
+				add_core = N2J
+				change_culture = root
+                change_religion = root	
+			}
+			438 = {
+				add_core = N2J
+				change_culture = root
+                change_religion = root	
+			}
+			437 = {
+				add_core = N2J
+				change_culture = root
+                change_religion = root	
+			}
+			2349 = {
+				add_core = N2J
+				change_culture = root
+                change_religion = root	
+			}
+			release = N2J
+			hidden_effect = {
+				N2J = { 
+					set_in_empire = yes
+					add_manpower = 10
+					add_years_of_income = 1
+					set_government_rank = 1
+					change_religion = root
+					change_primary_culture = root
+					define_ruler = {
+						adm = 3
+						dip = 4
+						mil = 3
+						name = "Valeriy"
+						culture = root
+						dynasty = root
+						religion = root
+					}
+					capital_scope = {
+						build_to_forcelimit = {
+							infantry = 0.7
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 100
+	}
+}

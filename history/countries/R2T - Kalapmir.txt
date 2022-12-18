@@ -3,9 +3,9 @@ add_government_reform = free_city
 government_rank = 1
 technology_group = eastern
 religion = orthodox
-primary_culture = kazani
-capital = 303
-fixed_capital = 303
+primary_culture = polovtsian
+capital = 1971
+fixed_capital = 1971
 
 1443.1.1 = {
 	monarch = {

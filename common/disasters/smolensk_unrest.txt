@@ -1,0 +1,63 @@
+smolensk_unrest = {
+
+	potential = {
+		tag = SMO
+		government = monarchy
+		owns = 293
+		current_age = age_of_discovery
+	}
+	
+	
+	can_start = {
+		current_age = age_of_discovery
+		has_any_disaster = no
+		owns = 293
+		NOT = { stability = 1 }
+		NOT = { legitimacy_or_horde_unity = 75 }
+	}
+	
+	can_stop = {
+		OR = {
+			stability = 3
+			has_any_disaster = yes
+			NOT = { owns = 293 }
+		}
+	}
+	
+	progress = {
+		modifier = {
+			factor = 0.5
+			NOT = { stability = 1 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { legitimacy_or_horde_unity = 75 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { legitimacy_or_horde_unity = 50 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { legitimacy_or_horde_unity = 25 }
+		}
+	}
+	
+	can_end = {
+		OR = {
+			stability = 3
+			NOT = { government = monarchy }
+		}
+	}
+	
+	modifier = {	
+		global_unrest = 10
+		global_tax_modifier = -0.3
+	}
+	
+	
+	on_start = 18560010
+	
+	on_monthly = {
+	}
+}

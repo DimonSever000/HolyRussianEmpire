@@ -8,10 +8,12 @@ capital = 275	# Polotsk
 fixed_capital = 275 # Cannot move capital away from this province & no power cost to move to it
 elector = yes
 
+historical_rival = SMO
+
 1442.1.1 = {
 	monarch = {
 		name = "Kirill"
-		dynasty = Rurikovich
+		dynasty = "Rurikovich"
 		birth_date = 1423.1.1
 		dip = 0
 		adm = 1

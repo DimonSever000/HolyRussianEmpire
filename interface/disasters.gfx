@@ -6,4 +6,11 @@ spriteTypes = {
 		noOfFrames = 3
 		loadType = "INGAME"
 	}
+	
+	spriteType = {
+		name = "GFX_disaster_smolensk_unrest"
+		texturefile = "gfx//interface//disasters//smolensk_unrest.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
 }

@@ -8,6 +8,9 @@ capital = 305
 fixed_capital = 305
 elector = yes
 
+historical_friend = BLO
+historical_rival = NOV
+
 1444.1.1 = {
 	monarch = {
 		name = "Yermolay"

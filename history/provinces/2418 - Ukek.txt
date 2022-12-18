@@ -1,7 +1,7 @@
 #2418 - Ukek
 
-owner = R2T
-controller = R2T
+owner = R2U
+controller = R2U
 culture = kazani
 religion = tengri_pagan_reformed
 hre = yes
@@ -11,7 +11,7 @@ trade_goods = iron
 base_manpower = 1
 capital = "Ukek"
 is_city = yes
-add_core = R2T
+add_core = R2U
 
 
 

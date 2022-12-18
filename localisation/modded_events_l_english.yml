@@ -1,25 +1,168 @@
 ﻿l_english:
  #
- modded_event_185600001_title:0 "Ruler retraining"
- modded_event_185600001_desc:0 "The courtiers advise the ruler to learn new things at the expense of time developing other skills. Is it really worth it?"
- modded_event_185600001_option_1:0 "Focus on government"
- modded_event_185600001_option_2:0 "Focus on diplomacy"
- modded_event_185600001_option_3:0 "Focus on the war"
- modded_event_185600001_option_4:0 "Why not go to the library?"
+ modded_event_1856001_title:0 "Ruler retraining"
+ modded_event_1856001_desc:0 "The courtiers advise the ruler to learn new things at the expense of time developing other skills. Is it really worth it?"
+ modded_event_1856001_option_1:0 "Focus on government"
+ modded_event_1856001_option_2:0 "Focus on diplomacy"
+ modded_event_1856001_option_3:0 "Focus on the war"
+ modded_event_1856001_option_4:0 "Why not go to the library?"
  #
- modded_event_185600002_title:0 "Revision of reforms"
- modded_event_185600002_desc:0 "Some council members argue that we need to change a few recent reforms in the name of the stability of the republic. But how exactly should we do it?"
- modded_event_185600002_option_1:0 "Focus on government"
- modded_event_185600002_option_2:0 "Focus on diplomacy"
- modded_event_185600002_option_3:0 "Focus on the war"
- modded_event_185600002_option_4:0 "Reforms will not be canceled"
+ modded_event_1856002_title:0 "Revision of reforms"
+ modded_event_1856002_desc:0 "Some council members argue that we need to change a few recent reforms in the name of the stability of the republic. But how exactly should we do it?"
+ modded_event_1856002_option_1:0 "Focus on government"
+ modded_event_1856002_option_2:0 "Focus on diplomacy"
+ modded_event_1856002_option_3:0 "Focus on the war"
+ modded_event_1856002_option_4:0 "Reforms will not be canceled"
  #
- modded_event_185600003_title:0 "The collapse of the Vladimir"
- modded_event_185600003_desc:0 "Our vassals have decided that now is the right moment to fight for freedom. We must do something!"
- modded_event_185600003_option_1:0 "We are powerless..."
- modded_event_185600003_option_2:0 "Crush them!"
+ modded_event_1856003_title:0 "The collapse of the Vladimir"
+ modded_event_1856003_desc:0 "Our vassals have decided that now is the right moment to fight for freedom. We must do something!"
+ modded_event_1856003_option_1:0 "We are powerless..."
+ modded_event_1856003_option_2:0 "Crush them!"
  #
- modded_event_185600004_title:0 "Stabilization of Vladimir"
- modded_event_185600004_desc:0 "The situation in the country can hardly be called positive, but we managed to at least stabilize."
- modded_event_185600004_option_1:0 "Good news"
+ modded_event_18560031_title:0 "The collapse of the Vladimir"
+ modded_event_18560031_desc:0 "The principality of Vladimir is bursting at the seams, this is a great chance to finally finish off our rival!"
+ modded_event_18560031_option_1:0 "Our help is not needed"
+ modded_event_18560031_option_2:0 "Bring in the troops!"
  #
+ modded_event_1856004_title:0 "Novgorod Ultimatum"
+ modded_event_1856004_desc:0 "Novgorod diplomats came to us with an ultimatum. They demand change of government and subjugation in exchange for maintaining formal independence and diplomatic protection. This is an unheard of attack on our sovereignty, but we must respond..."
+ modded_event_1856004_option_1:0 "We'll lay down our weapons"
+ modded_event_1856004_option_2:0 "Raise your bayonets!"
+ #
+ modded_event_18560041_title:0 "Beloozero surrenders"
+ modded_event_18560041_desc:0 "It seems they were afraid of the power emanating from us and preferred shame."
+ modded_event_18560041_option_1:0 "Diplomacy wins"
+ #
+ modded_event_18560042_title:0 "Beloozero refuses to surrender"
+ modded_event_18560042_desc:0 "Diplomats from Beloozero defiantly burned a tome about peace and expelled our diplomats."
+ modded_event_18560042_option_1:0 "Self-confident upstarts!"
+ #
+ modded_event_18560043_title:0 "Defense of the Beloozero independence"
+ modded_event_18560043_desc:0 "Diplomats from Beloozero asked us to condemn the actions of Novgorod and intervene in the war on their side."
+ modded_event_18560043_option_1:0 "War!"
+ modded_event_18560043_option_2:0 "I'm choose neutrality"
+ #
+ #
+ #
+ modded_event_1856005_title:0 "Purchase of Kursk"
+ modded_event_1856005_desc:0 "We need to get the Kursk. Let's try to offer Chernigov a diplomatic solution."
+ modded_event_1856005_option_1:0 "Let's see what they say."
+ #
+ modded_event_1856006_title:0 "Purchase of Kursk"
+ modded_event_1856006_desc:0 "Ryazan offers to buy Kursk for a great price. What will we answer?"
+ modded_event_1856006_option_1:0 "We need this money"
+ modded_event_1856006_option_2:0 "We do not squander our lands!"
+ #
+ modded_event_18560061_title:0 "Purchase of Kursk"
+ modded_event_18560061_desc:0 "Chernigov agrees to sell us Kursk, but demands a lot of money. What will we answer?"
+ modded_event_18560061_option_1:0 "Let them choke"
+ modded_event_18560061_option_2:0 "We can offer them war"
+ modded_event_18560061_option_3:0 "Let's leave this question"
+ #
+ modded_event_185600611_title:0 "Purchase of Kursk"
+ modded_event_185600611_desc:0 "Ryazan agrees to give money in exchange for Kursk!"
+ modded_event_185600611_option_1:0 "Voiced coins!"
+ #
+ modded_event_185600612_title:0 "Purchase of Kursk"
+ modded_event_185600612_desc:0 "Dishonest losers from Ryazan have declared war on us for Kursk!"
+ modded_event_185600612_option_1:0 "Prepare for war!"
+ #
+ modded_event_185600613_title:0 "Purchase of Kursk"
+ modded_event_185600613_desc:0 "The beggars from Ryazan were unable to provide us with enough money and left with nothing."
+ modded_event_185600613_option_1:0 "Well we haven't lost anything"
+ #
+ modded_event_18560062_title:0 "Purchase of Kursk"
+ modded_event_18560062_desc:0 "Chernigov refuses any negotiations!"
+ modded_event_18560062_option_1:0 "We can offer them war"
+ modded_event_18560062_option_2:0 "Let's leave this question"
+ #
+ modded_event_185600621_title:0 "Purchase of Kursk"
+ modded_event_185600621_desc:0 "Dishonest losers from Ryazan have declared war on us for Kursk!"
+ modded_event_185600621_option_1:0 "Prepare for war!"
+ #
+ modded_event_185600622_title:0 "Purchase of Kursk"
+ modded_event_185600622_desc:0 "Ryazan refuses to take further action."
+ modded_event_185600622_option_1:0 "In any case, we have not lost anything"
+ #
+ #
+ #
+ modded_event_1856007_title:0 "Agreements with Odoyev"
+ modded_event_1856007_desc:0 "We must send them an ultimatum to become a vassal."
+ modded_event_1856007_option_1:0 "The power of diplomacy"
+ #
+ modded_event_18560071_title:0 "Ultimatum from Ryazan"
+ modded_event_18560071_desc:0 "Ryazan demands submission from us, crossing all sorts of diplomatic borders! What we can do?"
+ modded_event_18560071_option_1:0 "Send the severed heads of diplomats to Ryazan!"
+ modded_event_18560071_option_2:0 "We accept our fate..."
+ #
+ modded_event_185600711_title:0 "Odoyev refusal"
+ modded_event_185600711_desc:0 "They killed our diplomats and sent us their heads. We will never forgive this!"
+ modded_event_185600711_option_1:0 "We'll burn it down!"
+ #
+ modded_event_185600712_title:0 "Odoyev agrees"
+ modded_event_185600712_desc:0 "They have realized their weakness and swear allegiance to our state."
+ modded_event_185600712_option_1:0 "Bring me a glass of wine"
+ #
+ #
+ #
+ modded_event_1856008_title:0 "Security guarantees"
+ modded_event_1856008_desc:0 "We must try to win over the weak eastern states to a vassal oath, or at least guarantee their freedom."
+ modded_event_1856008_option_1:0 "Send an embassy"
+ modded_event_1856008_option_2:0 "This is a useless waste of time"
+ #
+ modded_event_18560081_title:0 "Security guarantees"
+ modded_event_18560081_desc:0 "Pereyaslavl offers us several protection options. Should we agree to this?"
+ modded_event_18560081_option_1:0 "We pledge allegiance"
+ modded_event_18560081_option_2:0 "Enough simple guarantees"
+ modded_event_18560081_option_3:0 "Freedom over guarantees"
+ #
+ modded_event_185600811_title:0 "Security guarantees"
+ modded_event_185600811_desc:0 "Lisov agrees to accept our protectorate."
+ modded_event_185600811_option_1:0 "Glory to the Republic!"
+ #
+ modded_event_185600821_title:0 "Security guarantees"
+ modded_event_185600821_desc:0 "Dnepr agrees to accept our protectorate."
+ modded_event_185600821_option_1:0 "Glory to the Republic!"
+ #
+ modded_event_185600812_title:0 "Security guarantees"
+ modded_event_185600812_desc:0 "Lisov agrees to accept our guarantees."
+ modded_event_185600812_option_1:0 "Well, at least something..."
+ #
+ modded_event_185600822_title:0 "Security guarantees"
+ modded_event_185600822_desc:0 "Dnepr agrees to accept our guarantees."
+ modded_event_185600822_option_1:0 "Well, at least something..."
+ #
+ modded_event_185600813_title:0 "Security guarantees"
+ modded_event_185600813_desc:0 "Lisov refuses any guarantees and insists on non-intervention."
+ modded_event_185600813_option_1:0 "We won't forget this!"
+ #
+ modded_event_185600823_title:0 "Security guarantees"
+ modded_event_185600823_desc:0 "Dnepr refuses any guarantees and insists on non-intervention."
+ modded_event_185600823_option_1:0 "We won't forget this!"
+ #
+ #
+ #
+ modded_event_1856009_title:0 "Ultimatum to the Don"
+ modded_event_1856009_desc:0 "We see the weakness of the Cossacks and must send them an ultimatum about the vassal oath."
+ modded_event_1856009_option_1:0 "Do it!"
+ #
+ modded_event_18560091_title:0 "Ultimatum from Pereyaslavl"
+ modded_event_18560091_desc:0 "Pereyaslavl sees our weakness and sent us an ultimatum. We are forced to respond."
+ modded_event_18560091_option_1:0 "Let's bow our heads"
+ modded_event_18560091_option_2:0 "We are weak but not broken!"
+ #
+ modded_event_185600911_title:0 "Ultimatum to the Don"
+ modded_event_185600911_desc:0 "Don surrenders and lays down his weapons."
+ modded_event_185600911_option_1:0 "Bloodless victory!"
+ #
+ modded_event_185600912_title:0 "Ultimatum to the Don"
+ modded_event_185600912_desc:0 "Don refuses to negotiate and prepares an army!"
+ modded_event_185600912_option_1:0 "We'll show these upstarts their place!"
+ #
+ modded_event_18560010_title:0 "Voice of the cities"
+ modded_event_18560010_desc:0 "The most important cities of our state announced an ultimatum to us. We have several painful options for dealing with the crisis. What should we do?"
+ modded_event_18560010_option_1:0 "We will not listen to these upstarts! Bring in the troops!"
+ modded_event_18560010_option_2:0 "I will have to accept a compromise and abdicate the throne."
+ modded_event_18560010_option_3:0 "All we can do is let them go..."
+ 
+ 

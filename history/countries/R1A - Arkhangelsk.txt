@@ -9,6 +9,14 @@ capital = 1955	# Arkhangelsk
 fixed_capital = 1955 # Cannot move capital away from this province & no power cost to move to it
 elector = yes
 
+historical_friend = NOV
+historical_rival = PRM
+historical_rival = BLO
+
+1444.1.1 = {
+	set_estate_privilege = estate_burghers_expeditors_land_rights
+}
+
 1440.1.1 = {
 	monarch = {
 		name = "Kirill"

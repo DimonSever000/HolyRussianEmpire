@@ -1,5 +1,67 @@
 ﻿l_english:
+ #
  HRE_HRE:0 "The Holy Russian Empire"
  HRE_ELECTORS:0 "Grand princes"
  ELECTORATE_DUCHY:0 "Grand Principality"
+ # 1
+ emperor_reichsreform_title:0 "Call for reforms"
+ emperor_reichsreform_desc:0 "It is necessary to call for consolidation to protect the empire."
+ # 2
+ emperor_reichsregiment_title:0 "Convocation of the Duma"
+ emperor_reichsregiment_desc:0 "General meeting of princes to discuss pressing issues."
+ # 3
+ emperor_reichsstabilitaet_title:0 "Border stability"
+ emperor_reichsstabilitaet_desc:0 "Guaranteeing the integrity of the empire and its expansion."
+ # 4
+ emperor_gemeinerpfennig_title:0 "Central taxation"
+ emperor_gemeinerpfennig_desc:0 "All princes belonging to the empire must pay for protection."
+ # 5
+ emperor_perpetual_diet_title:0 "Perpetual Imperial Duma"
+ emperor_perpetual_diet_desc:0 "The Institute of the Duma must become a universal and permanent governing body."
+ # 6
+ emperor_landsknechtswesen_title:0 "Create the Druzhina"
+ emperor_landsknechtswesen_desc:0 "Reorganization of mercenaries from all over Rus' into more cohesive druzhina's to protect the empire."
+ #7
+ emperor_landfriede_title:0 "Peace enforcement"
+ emperor_landfriede_desc:0 "All wars within the empire should be stopped."
+ #
+ ####
+ # Децентрализация
+ ####
+ # 1
+ emperor_reichstag_collegia_title:0 "Separate voting"
+ emperor_reichstag_collegia_desc:0 "The votes of free cities, princes and grand princes should be counted separately, with a fair weight for each vote."
+ # 2
+ emperor_expand_gemeiner_pfennig_title:0 "Military tax"
+ emperor_expand_gemeiner_pfennig_desc:0 "All subjects of the empire must pay a manpower tax to support the throne."
+ # 3
+ emperor_rechenschaft_title:0 "Economic aid"
+ emperor_rechenschaft_desc:0 "The emperor assumes obligations to ensure the financial stability of the members of the empire."
+ # 4
+ emperor_geteilte_macht_title:0 "Delegation of powers"
+ emperor_geteilte_macht_desc:0 "Delegate the collection of taxes to the grand princes to increase their loyalty."
+ # 5
+ emperor_reichskrieg_title:0 "Decentralized Empire"
+ emperor_reichskrieg_desc:0 "Unite the Holy Russian Empire into a single country with separation of powers."
+ #
+ ####
+ # Централизация
+ ####
+ # 1
+ emperor_hofgericht_title:0 "Law supremacy"
+ emperor_hofgericht_desc:0 "The emperor will receive the right to the final vote at the meetings of the Duma."
+ # 2
+ emperor_imperial_estates_title:0 "Restrict estates"
+ emperor_imperial_estates_desc:0 "Estates must know their place."
+ modifier_emperor_imperial_estates:0 "Restrict estates"
+ # 3
+ emperor_erbkaisertum_title:0 "Tsar of all Rus'"
+ emperor_erbkaisertum_desc:0 "Cancel the election of the emperor and transfer the title by inheritance."
+ # 4
+ emperor_privilegia_de_non_appelando_title:0 "End of internecine wars"
+ emperor_privilegia_de_non_appelando_desc:0 "Revoke the right to vote from the princes."
+ # 5
+ emperor_renovatio_title:0 "Centralized Empire"
+ emperor_renovatio_desc:0 "Unite the Holy Russian Empire into a single country with a unified system of government."
+ #
  

@@ -1,0 +1,569 @@
+ryazan_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = RYA
+		}
+	}
+	has_country_shield = yes
+
+	ryazan_1_1 = {
+		icon = mission_conquer_50_development
+		required_missions = {  }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 301
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			owns = 301
+			301 = { development = 20 }
+		}
+		effect = {
+			add_province_modifier = {
+				name = "growth_of_capital"
+				duration = 7300
+			}
+			4252 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	ryazan_1_2 = {
+		position = 2
+		icon = mission_colonial
+		required_missions = { ryazan_1_1 }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4252
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			owns = 4252
+		}
+		effect = {
+			296 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			4251 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	ryazan_1_3 = {
+		position = 3
+		icon = mission_cannons_firing
+		required_missions = { ryazan_1_2 }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 296
+				province_id = 4251
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			owns = 296
+			owns = 4251
+		}
+		effect = {
+			add_country_modifier = {
+				name = "hegemonic_ambition"
+				duration = 7300 #25 years
+			}
+			307 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			1754 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			4254 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			1956 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			4253 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			295 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	ryazan_1_4 = {
+		position = 4
+		icon = mission_unite_home_region
+		required_missions = { ryazan_1_3 }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 307
+				province_id = 1754
+				province_id = 4254
+				province_id = 1956
+				province_id = 4253
+				province_id = 295
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			owns = 307
+			owns = 1754
+			owns = 4254
+			owns = 1956
+			owns = 4253
+			owns = 295
+			NOT = { exists = R1R }
+		}
+		effect = {
+			add_prestige = 30
+			add_country_modifier = {
+				name = "modifier_ryazan_1_4"
+				duration = 7300
+			}
+		}
+	}
+}
+ryazan_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = RYA
+		}
+	}
+	has_country_shield = yes
+	
+	
+	ryazan_2_1 = {
+		position = 1
+		icon = mission_early_modern_university
+		required_missions = { }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 301
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			OR = {
+				301 = {
+					owned_by = ROOT
+					OR = {
+						has_great_project = {
+							type = ryazan_arsenal
+							tier = 2
+						}
+						has_great_project = {
+							type = ryazan_arsenal
+							tier = 3
+						}
+					}
+				}
+				AND = {
+					num_of_owned_provinces_with = {
+						has_fort_building_trigger = yes 
+						value = 3
+					}
+					army_size_percentage = 1
+				}
+			}
+		}
+		effect = {
+			add_mil_power = 50
+			299 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			302 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			1778 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	ryazan_2_2 = {
+		position = 2
+		icon = mission_recruit_the_cossacks
+		required_missions = { ryazan_2_1 }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 299
+				province_id = 302
+				province_id = 1778
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			owns = 299
+			owns = 302
+			owns = 1778
+		}
+		effect = {
+			add_mil_power = 100
+		}
+	}
+	
+	ryazan_2_3 = {
+		position = 3
+		icon = mission_colonial
+		required_missions = { ryazan_2_2 }
+		trigger = {
+			grown_by_development = 300
+		}
+		effect = {
+			add_country_modifier = {
+				name = "modifier_ryazan_2_3"
+				duration = 9125 #25 years
+			}
+			add_adm_power = 50
+		}
+	}
+	
+	ryazan_2_4 = {
+		position = 4
+		icon = mission_hands_praying
+		required_missions = { ryazan_2_3 }
+		trigger = {
+			is_defender_of_faith = yes
+			num_of_owned_provinces_with = {
+				religion = orthodox
+				has_tax_building_trigger = yes
+				value = 10
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "modifier_ryazan_2_4"
+				duration = 9125 #25 years
+			}
+		}
+	}
+	
+	ryazan_2_5 = {
+		position = 5
+		icon = mission_empire
+		required_missions = { ryazan_1_4 ryazan_2_4 ryazan_3_4 }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4245
+				province_id = 297
+				province_id = 4251
+				province_id = 296
+				province_id = 4116
+				province_id = 298
+				province_id = 299
+				province_id = 2408
+				province_id = 300
+				province_id = 4252
+				province_id = 295
+				province_id = 4253
+				province_id = 307
+				province_id = 301
+				province_id = 4255
+				province_id = 302
+				province_id = 1778
+				province_id = 1956
+				province_id = 1754
+				province_id = 4254
+				province_id = 4244
+				province_id = 289
+				province_id = 1945
+				province_id = 4543
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			owns = 4245
+			owns = 297
+			owns = 4251
+			owns = 296
+			owns = 4116
+			owns = 298
+			owns = 299
+			owns = 2408
+			owns = 300
+			owns = 4252
+			owns = 295
+			owns = 4253
+			owns = 307
+			owns = 301
+			owns = 4255
+			owns = 302
+			owns = 1778
+			owns = 1956
+			owns = 1754
+			owns = 4254
+			owns = 4244
+			owns = 289
+			owns = 1945
+			owns = 4543
+			is_emperor = yes
+		}
+		effect = {
+			add_country_modifier = {
+				name = "modifier_ryazan_2_5"
+				duration = -1
+			}
+		}
+	}
+}
+
+ryazan_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = RYA
+		}
+	}
+	has_country_shield = yes
+
+	ryazan_3_1 = {
+		position = 1
+		icon = mission_alliances
+		required_missions = { }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 289
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = { 
+			OR = {
+				owns = 289
+				CHR = {
+					has_opinion = {
+						who = root
+						value = 150
+					}
+				}
+			}
+		}
+		effect = {
+			if = { 
+				limit = {
+					exists = CHR
+					NOT = { war_with = CHR }
+					CHR = {
+						owns = 298
+					}
+				}
+				country_event = { id = 1856005 }
+			}
+		}
+	}
+	ryazan_3_2 = {
+		position = 2
+		icon = mission_noble_council
+		required_missions = { ryazan_3_1 }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 298
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = { 
+			owns = 298
+		}
+		effect = {
+			add_dip_power = 50
+			add_prestige = 30
+		}
+	}
+	
+	ryazan_3_3 = {
+		position = 3
+		icon = mission_alliances
+		required_missions = { ryazan_2_2 }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4116
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = { 
+			OR = {
+				owns = 4116
+				OKA = {
+					has_opinion = {
+						who = root
+						value = 150
+					}
+				}
+			}
+		}
+		effect = {
+			add_dip_power = 50
+			if = { 
+				limit = {
+					exists = OKA
+					NOT = { war_with = OKA }
+					OKA = {
+						owns = 4116
+					}
+				}
+				country_event = { id = 1856007 }
+			}
+			4245 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			4244 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			297 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	ryazan_3_4 = {
+		position = 4
+		icon = mission_early_game_buildings
+		required_missions = { ryazan_3_3 }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4245
+				province_id = 4244
+				province_id = 297
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = { 
+			owns = 4245
+			owns = 4244
+			owns = 297
+		}
+		effect = {
+			if = {
+				limit = {
+					exists = CHR
+					valid_for_personal_unions_trigger = yes
+					TVE = {
+						valid_for_personal_unions_trigger = yes
+					}
+				}
+				add_casus_belli = {
+					type = cb_restore_personal_union
+					months = 300
+					target = CHR
+				}
+			}
+			298 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			4543 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			1945 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			289 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}

@@ -1,12 +1,17 @@
 government = republic
-add_government_reform = veche_republic
+add_government_reform = peasant_republic
 government_rank = 1
 technology_group = eastern
 religion = orthodox
-primary_culture = ruthenian
+primary_culture = chernihivan
 technology_group = eastern
 capital = 2407
 fixed_capital = 2407
+
+1444.1.1 = {
+	set_estate_privilege = estate_burghers_peasant_rule
+	set_estate_privilege = estate_burghers_land_rights
+}
 
 1444.1.1 = {
 	monarch = {

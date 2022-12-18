@@ -1,10 +1,10 @@
-namespace = government_events
+namespace = holy_russian_empire
 
 # Ruler retraining
 country_event = {
-	id = 185600001
-	title = "modded_event_185600001_title"
-	desc = "modded_event_185600001_desc"
+	id = 1856001
+	title = "modded_event_1856001_title"
+	desc = "modded_event_1856001_desc"
 	picture = BIG_BOOK_eventPicture
 	
 	trigger = {
@@ -17,26 +17,26 @@ country_event = {
 	}
 	
 	option = {
-		name = "modded_event_185600001_option_1"
+		name = "modded_event_1856001_option_1"
 		change_adm = 2
 		change_dip = -1
 		change_mil = -1
 	}
 	option = {
-		name = "modded_event_185600001_option_2"
+		name = "modded_event_1856001_option_2"
 		change_adm = -1
 		change_dip = 2
 		change_mil = -1
 	}
 	option = {
-		name = "modded_event_185600001_option_3"
+		name = "modded_event_1856001_option_3"
 		change_adm = -1
 		change_dip = -1
 		change_mil = 2
 	}
 	
 	option = {
-		name = "modded_event_185600001_option_4"
+		name = "modded_event_1856001_option_4"
 		add_stability = 1
 		add_republican_tradition = -10
 	}
@@ -44,9 +44,9 @@ country_event = {
 
 # Revision of reforms
 country_event = {
-	id = 185600002
-	title = "modded_event_185600002_title"
-	desc = "modded_event_185600002_desc"
+	id = 1856002
+	title = "modded_event_1856002_title"
+	desc = "modded_event_1856002_desc"
 	picture = ADVISOR_eventPicture
 	
 	trigger = {
@@ -58,47 +58,58 @@ country_event = {
 	}
 	
 	option = {
-		name = "modded_event_185600002_option_1"
+		name = "modded_event_1856002_option_1"
 		add_adm_power = 100
 		add_dip_power = -50
 		add_mil_power = -50
 	}
 	option = {
-		name = "modded_event_185600002_option_2"
+		name = "modded_event_1856002_option_2"
 		add_adm_power = -50
 		add_dip_power = 100
 		add_mil_power = -50
 	}
 	option = {
-		name = "modded_event_185600002_option_3"
+		name = "modded_event_1856002_option_3"
 		add_adm_power = -50
 		add_dip_power = -50
 		add_mil_power = 100
 	}
 	option = {
-		name = "modded_event_185600002_option_4"
+		name = "modded_event_1856002_option_4"
 		add_republican_tradition = 10
 	}
 }
 
 # The collapse of the Vladimir
 country_event = {
-	id = 185600003
-	title = "modded_event_185600003_title"
-	desc = "modded_event_185600003_desc"
+	id = 1856003
+	title = "modded_event_1856003_title"
+	desc = "modded_event_1856003_desc"
 	picture = BAD_WITH_MONARCH_eventPicture
 	is_triggered_only = yes
 
 	option = {
-		name = "modded_event_185600003_option_1"
+		name = "modded_event_1856003_option_1"
 		add_dip_power = -200
 		every_subject_country = {
 			R1R = { free_vassal = PREV }
 		}
+		MOS = {
+			define_ruler = {
+				name = "Ivan"
+				dynasty = Rurikovich
+				adm = 5
+				dip = 5
+				mil = 6
+				claim = 100
+				age = 30
+			}
+		}
 	}
 	
 	option = {
-		name = "modded_event_185600003_option_2"
+		name = "modded_event_1856003_option_2"
 		every_subject_country = {
 			declare_war_with_cb = {
 				who = root
@@ -107,22 +118,21 @@ country_event = {
 		}
 		
 		if = { 
-			limit = { exists = R1V }
-			R1V = {
-				declare_war_with_cb = {
-					who = root
-					casus_belli = cb_annex
-				}
+			limit = { exists = RYA }
+			RYA = { 
+				country_event = { id = 18560031 }
 			}
 		}
 		
-		if = { 
-			limit = { exists = NZH }
-			NZH = {
-				declare_war_with_cb = {
-					who = root
-					casus_belli = cb_annex
-				}
+		MOS = {
+			define_ruler = {
+				name = "Ivan"
+				dynasty = Rurikovich
+				adm = 5
+				dip = 5
+				mil = 6
+				claim = 100
+				age = 30
 			}
 		}
 		
@@ -130,16 +140,1197 @@ country_event = {
 	}
 }
 
-# Stabilization of Vladimir
+# The collapse of the Vladimir - Ryazan event
 country_event = {
-	id = 185600004
-	title = "modded_event_185600004_title"
-	desc = "modded_event_185600004_desc"
-	picture = ECONOMY_eventPicture
+	id = 18560031
+	title = "modded_event_18560031_title"
+	desc = "modded_event_18560031_desc"
+	picture = GOOD_WITH_MONARCH_eventPicture
 	is_triggered_only = yes
 
 	option = {
-		name = "modded_event_185600004_option_1"
+		name = "modded_event_18560031_option_1"
+		add_stability = 1
+		ai_chance = {
+			factor = 1
+		}
+	}
+	
+	option = {
+		name = "modded_event_18560031_option_2"
+		add_stability = -1
+		declare_war_with_cb = {
+			who = R1R
+			casus_belli = cb_annex
+		}
+		ai_chance = {
+			factor = 2
+		}
+		add_war_exhaustion = 4
+	}
+}
+
+# Agreement with Beloozero
+country_event = {
+	id = 1856004
+	title = "modded_event_1856004_title"
+	desc = "modded_event_1856004_desc"
+	picture = BANKRUPTCY_eventPicture
+	is_triggered_only = yes
+
+	option = {
+		name = "modded_event_1856004_option_1"
+		NOV = { 
+			country_event = { id = 18560041 }
+		}
+	}
+	
+	option = {
+		name = "modded_event_1856004_option_2"
+		NOV = { 
+			country_event = { id = 18560042 }
+		}
+	}
+}
+
+#Beloozero surrenders
+country_event = {
+	id = 18560041
+	title = "modded_event_18560041_title"
+	desc = "modded_event_18560041_desc"
+	picture = CIVIL_WAR_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "modded_event_18560041_option_1"
+		
+		NOV = {
+			add_dip_power = 100
+		}
+		BLO = {
+			change_government = republic
+		}
+		NOV = { 
+			vassalize = BLO
+		}
+		if = { 
+			limit = {
+				exists = R1H
+			}
+			R1H = {
+				change_government = republic
+			}
+			
+			if = { 
+				limit = {
+					exists = R1A
+					R1A = {
+						owns = 1955
+						has_opinion = {
+							who = NOV
+							value = 100
+						}
+					}
+				}
+				R1A = { 
+					vassalize = R1H
+				}
+			}
+			else_if = {
+				limit = {
+					exists = NOV
+				}
+				NOV = { 
+					vassalize = R1H
+				}
+			}
+		}
+	}
+}
+
+#Beloozero not surrenders
+country_event = {
+	id = 18560042
+	title = "modded_event_18560042_title"
+	desc = "modded_event_18560042_desc"
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "modded_event_18560042_option_1"
+		NOV = { 
+			add_stability = -1
+			declare_war_with_cb = {
+				who = BLO
+				casus_belli = cb_vassalize_mission
+			}
+			add_war_exhaustion = 4
+		}
+		if = { 
+			limit = {
+				NOV = { is_emperor = no }
+			}
+			emperor = { 
+				country_event = { id = 18560043 }
+			}
+		}
+	}
+}
+
+#Emperor position about Beloozero
+country_event = {
+	id = 18560043
+	title = "modded_event_18560043_title"
+	desc = "modded_event_18560043_desc"
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "modded_event_18560043_option_1"
+		add_imperial_influence = 5
+		emperor = { 
+			join_all_defensive_wars_of = BLO
+			add_dip_power = 100
+		}
+		NOV = {
+			add_dip_power = -100
+		}
+		ai_chance = {
+			factor = 2
+		}
+	}
+	
+	option = {
+		name = "modded_event_18560043_option_2"
+		add_imperial_influence = -10
+		emperor = { 
+			add_dip_power = -100
+		}
+		NOV = {
+			add_dip_power = 100
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+#Purchase of Kursk
+country_event = {
+	id = 1856005
+	title = "modded_event_1856005_title"
+	desc = "modded_event_1856005_desc"
+	picture = CORRUPTION_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "modded_event_1856005_option_1"
+		CHR = {
+			country_event = { id = 1856006 }
+		}
+	}
+}
+
+#Purchase of Kursk - Chernigov event
+country_event = {
+	id = 1856006
+	title = "modded_event_1856006_title"
+	desc = "modded_event_1856006_desc"
+	picture = CORRUPTION_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "modded_event_1856006_option_1"
+		RYA = {
+			country_event = { id = 18560061 }
+		}
+	}
+	
+	option = {
+		name = "modded_event_1856006_option_2"
+		RYA = {
+			country_event = { id = 18560062 }
+		}
+	}
+}
+
+#Purchase of Kursk - Chernigov wants money
+country_event = {
+	id = 18560061
+	title = "modded_event_18560061_title"
+	desc = "modded_event_18560061_desc"
+	picture = CORRUPTION_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "modded_event_18560061_option_1"
+		add_years_of_income = -1
+		298 = {
+			cede_province = RYA
+			add_core = RYA
+			remove_core = CHR
+		}
+		CHR = {
+			country_event = { id = 185600611 }
+		}
+		ai_chance = {
+			factor = 4
+			modifier = {
+				factor = 5
+				years_of_income = 1
+			}
+		}
+	}
+	
+	option = {
+		name = "modded_event_18560061_option_2"
+		add_imperial_influence = -10
+		add_stability = -1
+		declare_war_with_cb = {
+			who = CHR
+			casus_belli = cb_annex
+		}
+		add_war_exhaustion = 4
+		CHR = {
+			country_event = { id = 185600612 }
+		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = -3
+				OR = {
+					NOT = { stability = 0 }
+					war_exhaustion = 4
+				}
+			}
+			modifier = {
+				factor = 4
+				NOT = { years_of_income = 1 }
+			}
+		}
+	}
+	
+	option = {
+		name = "modded_event_18560061_option_3"
+		add_dip_power = -50
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 5
+				NOT = { years_of_income = 1 }
+			}
+		}
+		CHR = {
+			country_event = { id = 185600613 }
+		}
+	}
+}
+
+#Purchase of Kursk - Chernigov event
+country_event = {
+	id = 185600611
+	title = "modded_event_185600611_title"
+	desc = "modded_event_185600611_desc"
+	picture = MERCHANTS_TALKING_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "modded_event_185600611_option_1"
+		add_years_of_income = 1
+	}
+}
+
+#Purchase of Kursk - Chernigov event
+country_event = {
+	id = 185600612
+	title = "modded_event_185600612_title"
+	desc = "modded_event_185600612_desc"
+	picture = BANKRUPTCY_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "modded_event_185600612_option_1"
+		add_mil_power = 100
+	}
+}
+
+#Purchase of Kursk - Chernigov event
+country_event = {
+	id = 185600613
+	title = "modded_event_185600613_title"
+	desc = "modded_event_185600613_desc"
+	picture = BANKRUPTCY_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "modded_event_185600613_option_1"
 		add_dip_power = 50
+	}
+}
+
+#Purchase of Kursk - Chernigov backs out of a deal
+country_event = {
+	id = 18560062
+	title = "modded_event_18560062_title"
+	desc = "modded_event_18560062_desc"
+	picture = CIVIL_WAR_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "modded_event_18560062_option_1"
+		add_imperial_influence = -10
+		add_stability = -1
+		declare_war_with_cb = {
+			who = CHR
+			casus_belli = cb_annex
+		}
+		add_war_exhaustion = 4
+		CHR = {
+			country_event = { id = 185600621 }
+		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = -3
+				OR = {
+					NOT = { stability = 0 }
+					war_exhaustion = 4
+				}
+			}
+			modifier = {
+				factor = 4
+				NOT = { years_of_income = 1 }
+			}
+		}
+	}
+	
+	option = {
+		name = "modded_event_18560062_option_2"
+		add_dip_power = -50
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 5
+				NOT = { years_of_income = 1 }
+			}
+		}
+		CHR = {
+			country_event = { id = 185600622 }
+		}
+	}
+}
+
+#Purchase of Kursk - Chernigov event
+country_event = {
+	id = 185600621
+	title = "modded_event_185600621_title"
+	desc = "modded_event_185600621_desc"
+	picture = BANKRUPTCY_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "modded_event_185600621_option_1"
+		add_mil_power = 100
+	}
+}
+
+#Purchase of Kursk - Chernigov event
+country_event = {
+	id = 185600622
+	title = "modded_event_185600622_title"
+	desc = "modded_event_185600622_desc"
+	picture = BANKRUPTCY_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "modded_event_185600622_option_1"
+		add_dip_power = 50
+	}
+}
+
+#Agreement with Odoyev
+country_event = {
+	id = 1856007
+	title = "modded_event_1856007_title"
+	desc = "modded_event_1856007_desc"
+	picture = DIPLOMACY_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "modded_event_1856007_option_1"
+		OKA = {
+			country_event = { id = 18560071 }
+		}
+	}
+}
+
+#Agreement with Odoyev - Odoyev event
+country_event = {
+	id = 18560071
+	title = "modded_event_18560071_title"
+	desc = "modded_event_18560071_desc"
+	picture = DIPLOMACY_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "modded_event_18560071_option_1"
+		add_mil_power = 50
+		RYA = {
+			country_event = { id = 185600711 }
+		}
+		ai_chance = {
+			factor = 3
+		}
+	}
+	
+	option = {
+		name = "modded_event_18560071_option_2"
+		if {
+			limit = {
+				OKA = {
+					is_part_of_hre = yes
+				}
+			}
+			add_imperial_influence = -5
+		}
+		RYA = {
+			country_event = { id = 185600712 }
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+#Agreement with Odoyev - Odoyev refuses
+country_event = {
+	id = 185600711
+	title = "modded_event_185600711_title"
+	desc = "modded_event_185600711_desc"
+	picture = DIPLOMACY_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "modded_event_185600711_option_1"
+		add_imperial_influence = -10
+		add_stability = -1
+		declare_war_with_cb = {
+			who = OKA
+			casus_belli = cb_vassalize_mission
+		}
+	}
+}
+
+#Agreement with Odoyev - Odoyev agrees
+country_event = {
+	id = 185600712
+	title = "modded_event_185600712_title"
+	desc = "modded_event_185600712_desc"
+	picture = DIPLOMACY_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "modded_event_185600712_option_1"
+		add_prestige = 30
+		vassalize = OKA
+	}
+}
+
+# Security Guarantees
+country_event = {
+	id = 1856008
+	title = "modded_event_1856008_title"
+	desc = "modded_event_1856008_desc"
+	picture = GENERALS_DISCUSSING_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "modded_event_1856008_option_1"
+		if = {
+			limit = { exists = R3C }
+			R3C = {
+				country_event = { id = 18560081 }
+			}
+		}
+		if = {
+			limit = { exists = R2K }
+			R2K = {
+				country_event = { id = 18560081 }
+			}
+		}
+		ai_chance = {
+			factor = 5
+		}
+	}
+	
+	option = {
+		name = "modded_event_1856008_option_2"
+		add_dip_power = -100
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+# Security Guarantees - subjects event
+country_event = {
+	id = 18560081
+	title = "modded_event_18560081_title"
+	desc = "modded_event_18560081_desc"
+	picture = AULIC_COUNCIL_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "modded_event_18560081_option_1"
+		add_stability = 1
+		if = {
+			limit = { tag = R3C }
+			R1Z = {
+				country_event = { id = 185600811 }
+			}
+		}
+		if = {
+			limit = { tag = R2K }
+			R1Z = {
+				country_event = { id = 185600821 }
+			}
+		}
+		ai_chance = {
+			factor = 3
+		}
+	}
+	
+	option = {
+		name = "modded_event_18560081_option_2"
+		if = {
+			limit = { tag = R3C }
+			R1Z = {
+				country_event = { id = 185600812 }
+			}
+		}
+		if = {
+			limit = { tag = R2K }
+			R1Z = {
+				country_event = { id = 185600822 }
+			}
+		}
+		ai_chance = {
+			factor = 2
+		}
+	}
+	
+	option = {
+		name = "modded_event_18560081_option_3"
+		add_mil_power = 50
+		if = {
+			limit = { tag = R3C }
+			R1Z = {
+				country_event = { id = 185600813 }
+			}
+		}
+		if = {
+			limit = { tag = R2K }
+			R1Z = {
+				country_event = { id = 185600823 }
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+
+# Security Guarantees - R3C subject full agrees
+country_event = {
+	id = 185600811
+	title = "modded_event_185600811_title"
+	desc = "modded_event_185600811_desc"
+	picture = CONQUEST_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "modded_event_185600811_option_1"
+		add_prestige = 30
+		vassalize = R3C
+		R3C = {
+			if = {
+				limit = {
+					root = {
+						government = republic
+					}
+				}
+				change_government = republic
+			}
+		}
+	}
+}
+
+# Security Guarantees - R2K subject full agrees
+country_event = {
+	id = 185600821
+	title = "modded_event_185600821_title"
+	desc = "modded_event_185600821_desc"
+	picture = CONQUEST_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "modded_event_185600821_option_1"
+		add_prestige = 30
+		vassalize = R2K
+		R2K = {
+			if = {
+				limit = {
+					root = {
+						government = republic
+					}
+				}
+				change_government = republic
+			}
+		}
+	}
+}
+
+# Security Guarantees - R3C subject agrees
+country_event = {
+	id = 185600812
+	title = "modded_event_185600812_title"
+	desc = "modded_event_185600812_desc"
+	picture = DIPLOMACY_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "modded_event_185600812_option_1"
+		create_guarantee = R3C
+	}
+}
+
+# Security Guarantees - R2K subject agrees
+country_event = {
+	id = 185600822
+	title = "modded_event_185600822_title"
+	desc = "modded_event_185600822_desc"
+	picture = DIPLOMACY_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "modded_event_185600822_option_1"
+		create_guarantee = R2K
+	}
+}
+
+# Security Guarantees - R3C subject refuses
+country_event = {
+	id = 185600813
+	title = "modded_event_185600813_title"
+	desc = "modded_event_185600813_desc"
+	picture = SCOTTISH_MERCENARIES_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "modded_event_185600813_option_1"
+		add_prestige = -10
+		291 = {
+			limit = {
+				NOT = { is_permanent_claim = ROOT }
+				NOT = { is_core = ROOT	}
+			}
+			add_permanent_claim = ROOT
+		}
+	}
+}
+
+# Security Guarantees - R2K subject refuses
+country_event = {
+	id = 185600823
+	title = "modded_event_185600823_title"
+	desc = "modded_event_185600823_desc"
+	picture = SCOTTISH_MERCENARIES_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "modded_event_185600823_option_1"
+		add_prestige = -10
+		2441 = {
+			limit = {
+				NOT = { is_permanent_claim = ROOT }
+				NOT = { is_core = ROOT	}
+			}
+			add_permanent_claim = ROOT
+		}
+	}
+}
+
+# Ultimatum to the Don
+country_event = {
+	id = 1856009
+	title = "modded_event_1856009_title"
+	desc = "modded_event_1856009_desc"
+	picture = GENERALS_DISCUSSING_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "modded_event_1856009_option_1"
+		if = {
+			limit = { exists = R2O }
+			R2O = {
+				country_event = { id = 18560091 }
+			}
+		}
+	}
+}
+
+# Ultimatum to the Don - Don event
+country_event = {
+	id = 18560091
+	title = "modded_event_18560091_title"
+	desc = "modded_event_18560091_desc"
+	picture = OVEREXTENSION_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "modded_event_18560091_option_1"
+		R1Z = {
+			country_event = { id = 185600911 }
+		}
+		ai_chance = {
+			factor = 2
+		}
+	}
+	
+	option = {
+		name = "modded_event_18560091_option_2"
+		add_mil_power = 100
+		R1Z = {
+			country_event = { id = 185600912 }
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+# Ultimatum to the Don - Don agrees
+country_event = {
+	id = 185600911
+	title = "modded_event_185600911_title"
+	desc = "modded_event_185600911_desc"
+	picture = CONQUEST_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "modded_event_185600911_option_1"
+		add_prestige = 30
+		vassalize = R2O
+	}
+}
+
+# Ultimatum to the Don - Don refuses
+country_event = {
+	id = 185600912
+	title = "modded_event_185600912_title"
+	desc = "modded_event_185600912_desc"
+	picture = CONQUEST_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "modded_event_185600912_option_1"
+		add_imperial_influence = -10
+		add_stability = -1
+		declare_war_with_cb = {
+			who = R2O
+			casus_belli = cb_vassalize_mission
+		}
+	}
+}
+
+# Voice of the cities
+country_event = {
+	id = 18560010
+	title = "modded_event_18560010_title"
+	desc = "modded_event_18560010_desc"
+	picture = ANGRY_MOB_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "modded_event_18560010_option_1"
+		if = {
+			limit = {
+				NOT = { exists = R3D }
+				owns = 4245
+			}
+			4245 = {
+				add_core = R3D
+			}
+			release = R3D
+			R3D = {
+				hidden_effect = {
+					set_in_empire = yes
+					add_manpower = 10
+					add_years_of_income = 1
+					set_government_rank = 1
+					change_government = republic
+					add_government_reform = free_city
+					change_primary_culture = root
+					define_ruler = {
+						adm = 3
+						dip = 2
+						mil = 2
+						name = "Dmitriy"
+						culture = root
+						dynasty = root
+						religion = root
+					}
+					capital_scope = {
+						build_to_forcelimit = {
+						infantry = 0.75
+						}
+					}
+				}
+			}
+			declare_war_with_cb = {
+				who = R3D
+				casus_belli = cb_annex
+			}
+		}
+		if = {
+			limit = {
+				NOT = { exists = R3E }
+				owns = 297
+			}
+			297 = {
+				add_core = R3E
+			}
+			release = R3E
+			R3E = {
+				hidden_effect = {
+					set_in_empire = yes
+					add_manpower = 10
+					add_years_of_income = 1
+					set_government_rank = 1
+					change_government = republic
+					add_government_reform = free_city
+					change_primary_culture = root
+					define_ruler = {
+						adm = 2
+						dip = 1
+						mil = 1
+						name = "Fyodor"
+						culture = root
+						dynasty = root
+						religion = root
+					}
+					capital_scope = {
+						build_to_forcelimit = {
+						infantry = 0.75
+						}
+					}
+				}
+			}
+			declare_war_with_cb = {
+				who = R3E
+				casus_belli = cb_annex
+			}
+		}
+		if = {
+			limit = {
+				NOT = { exists = R3F }
+				owns = 4244
+			}
+			4244 = {
+				add_core = R3F
+			}
+			release = R3F
+			R3F = {
+				hidden_effect = {
+					set_in_empire = yes
+					add_manpower = 10
+					add_years_of_income = 1
+					set_government_rank = 1
+					change_government = republic
+					add_government_reform = free_city
+					change_primary_culture = root
+					define_ruler = {
+						adm = 2
+						dip = 4
+						mil = 4
+						name = "Daniil"
+						culture = root
+						dynasty = root
+						religion = root
+					}
+					capital_scope = {
+						build_to_forcelimit = {
+						infantry = 0.75
+						}
+					}
+				}
+			}
+			declare_war_with_cb = {
+				who = R3F
+				casus_belli = cb_annex
+			}
+		}
+		add_mil_power = 100
+		add_imperial_influence = -10
+		ai_chance = {
+			factor = 2
+		}
+	}
+	
+	option = {
+		name = "modded_event_18560010_option_2"
+		change_government = republic
+		add_government_reform = peasant_republic
+		
+		if = {
+			limit = {
+				NOT = { exists = R3D }
+				owns = 4245
+			}
+			4245 = {
+				add_core = R3D
+			}
+			release = R3D
+			R3D = {
+				hidden_effect = {
+					set_in_empire = yes
+					add_manpower = 10
+					add_years_of_income = 1
+					set_government_rank = 1
+					change_government = republic
+					add_government_reform = free_city
+					change_primary_culture = root
+					define_ruler = {
+						adm = 3
+						dip = 2
+						mil = 2
+						name = "Dmitriy"
+						culture = root
+						dynasty = root
+						religion = root
+					}
+					capital_scope = {
+						build_to_forcelimit = {
+						infantry = 0.75
+						}
+					}
+				}
+			}
+			vassalize = R3D
+		}
+		if = {
+			limit = {
+				NOT = { exists = R3E }
+				owns = 297
+			}
+			297 = {
+				add_core = R3E
+			}
+			release = R3E
+			R3E = {
+				hidden_effect = {
+					set_in_empire = yes
+					add_manpower = 10
+					add_years_of_income = 1
+					set_government_rank = 1
+					change_government = republic
+					add_government_reform = free_city
+					change_primary_culture = root
+					define_ruler = {
+						adm = 2
+						dip = 1
+						mil = 1
+						name = "Fyodor"
+						culture = root
+						dynasty = root
+						religion = root
+					}
+					capital_scope = {
+						build_to_forcelimit = {
+						infantry = 0.75
+						}
+					}
+				}
+			}
+			vassalize = R3E
+		}
+		if = {
+			limit = {
+				NOT = { exists = R3F }
+				owns = 4244
+			}
+			4244 = {
+				add_core = R3F
+			}
+			release = R3F
+			R3F = {
+				hidden_effect = {
+					set_in_empire = yes
+					add_manpower = 10
+					add_years_of_income = 1
+					set_government_rank = 1
+					change_government = republic
+					add_government_reform = free_city
+					change_primary_culture = root
+					define_ruler = {
+						adm = 2
+						dip = 4
+						mil = 4
+						name = "Daniil"
+						culture = root
+						dynasty = root
+						religion = root
+					}
+					capital_scope = {
+						build_to_forcelimit = {
+						infantry = 0.75
+						}
+					}
+				}
+			}
+			vassalize = R3F
+		}
+		define_ruler = {
+			adm = 0
+			dip = 5
+			mil = 2
+			name = "Kirill"
+			culture = root
+			dynasty = root
+			religion = root
+		}
+		add_prestige = -30
+		add_imperial_influence = 5
+		ai_chance = {
+			factor = 4
+		}
+	}
+	
+	option = {
+		name = "modded_event_18560010_option_3"
+		if = {
+			limit = {
+				NOT = { exists = R3D }
+				owns = 4245
+			}
+			4245 = {
+				add_core = R3D
+				remove_core = SMO
+			}
+			release = R3D
+			R3D = {
+				hidden_effect = {
+					set_in_empire = yes
+					add_manpower = 10
+					add_years_of_income = 1
+					set_government_rank = 1
+					change_government = republic
+					add_government_reform = free_city
+					change_primary_culture = root
+					define_ruler = {
+						adm = 3
+						dip = 2
+						mil = 2
+						name = "Dmitriy"
+						culture = root
+						dynasty = root
+						religion = root
+					}
+					capital_scope = {
+						build_to_forcelimit = {
+						infantry = 0.75
+						}
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = { exists = R3E }
+				owns = 297
+			}
+			297 = {
+				add_core = R3E
+				remove_core = SMO
+			}
+			release = R3E
+			R3E = {
+				hidden_effect = {
+					set_in_empire = yes
+					add_manpower = 10
+					add_years_of_income = 1
+					set_government_rank = 1
+					change_government = republic
+					add_government_reform = free_city
+					change_primary_culture = root
+					define_ruler = {
+						adm = 2
+						dip = 1
+						mil = 1
+						name = "Fyodor"
+						culture = root
+						dynasty = root
+						religion = root
+					}
+					capital_scope = {
+						build_to_forcelimit = {
+						infantry = 0.75
+						}
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = { exists = R3F }
+				owns = 4244
+			}
+			4244 = {
+				add_core = R3F
+				remove_core = SMO
+			}
+			release = R3F
+			R3F = {
+				hidden_effect = {
+					set_in_empire = yes
+					add_manpower = 10
+					add_years_of_income = 1
+					set_government_rank = 1
+					change_government = republic
+					add_government_reform = free_city
+					change_primary_culture = root
+					define_ruler = {
+						adm = 2
+						dip = 4
+						mil = 4
+						name = "Daniil"
+						culture = root
+						dynasty = root
+						religion = root
+					}
+					capital_scope = {
+						build_to_forcelimit = {
+						infantry = 0.75
+						}
+					}
+				}
+			}
+		}
+		define_ruler = {
+			adm = 1
+			dip = 1
+			mil = 1
+			name = "Vsevolod"
+			culture = root
+			dynasty = root
+			religion = root
+		}
+		add_dip_power = -200
+		add_prestige = -50
+		add_imperial_influence = 10
+		ai_chance = {
+			factor = 1
+		}
 	}
 }

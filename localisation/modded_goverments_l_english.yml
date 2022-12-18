@@ -9,3 +9,9 @@
  boyars_republic_desc:0 "This country is governed by a council of high aristocratic houses. The country is formally a republic."
  boyars_republic_legacy:0 "Boyars republic"
  boyars_republic_legacy_desc:0 "This country is governed by a council of high aristocratic houses. The country is formally a republic."
+ #
+ peasant_republic:0 "Peasant republic"
+ peasant_republic:0 "Power in the country belongs to the peasantry. It jointly elects the government and makes laws."
+ peasant_republic:0 "Peasant republic"
+ peasant_republic:0 "Power in the country belongs to the peasantry. It jointly elects the government and makes laws."
+ #

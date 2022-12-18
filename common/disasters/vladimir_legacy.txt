@@ -24,7 +24,7 @@ vladimir_legacy = {
 	
 	progress = {
 		modifier = {
-			factor = 50.5
+			factor = 0.5
 			NOT = { stability = 1 }
 		}
 		modifier = {
@@ -59,7 +59,7 @@ vladimir_legacy = {
 	}
 	
 	
-	on_start = 185600003
+	on_start = 1856003
 	
 	on_monthly = {
 	}

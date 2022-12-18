@@ -163,3 +163,134 @@ great_arkhangelsk_library = {
 		}
 	}
 }
+
+
+# Ryazan Arsenal
+ryazan_arsenal = {
+
+	start = 301
+	date = 1400.01.01
+	
+	time = {
+		months = 0
+	}
+	
+	build_cost = 0
+
+	can_be_moved = no
+	
+	move_days_per_unit_distance = 1
+	
+	starting_tier = 1
+	
+	type = monument
+
+	#can we build it?
+	build_trigger = {
+	}
+
+	on_built = {
+	}
+	
+	on_destroyed = {
+	}
+
+	can_use_modifiers_trigger = {
+	}
+
+	can_upgrade_trigger = {
+	}
+
+	keep_trigger = {
+	}
+
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+
+	tier_1 = {
+
+		upgrade_time = {
+			months = 120
+		}
+
+		cost_to_upgrade = {
+			factor = 1000
+		}
+
+		province_modifiers = {
+		}
+
+		area_modifier = {
+		}
+
+		country_modifiers = {
+			global_manpower_modifier = 0.1
+			global_regiment_cost = -0.1
+		}
+
+		on_upgraded = {
+		}
+	}
+
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+
+		cost_to_upgrade = {
+			factor = 2500
+		}
+
+		province_modifiers = {
+		}
+
+		area_modifier = {
+		}
+
+		country_modifiers = {
+			global_manpower_modifier = 0.2
+			global_regiment_cost = -0.2
+		}
+
+		on_upgraded = {
+		}
+	}
+
+	tier_3 = {
+		upgrade_time = {
+			months = 480
+		}
+
+		cost_to_upgrade = {
+			factor = 5000
+		}
+
+		province_modifiers = {
+		}
+
+		area_modifier = {
+		}
+
+		country_modifiers = {
+			global_manpower_modifier = 0.3
+			global_regiment_cost = -0.3
+		}
+
+		on_upgraded = {
+		}
+	}
+}

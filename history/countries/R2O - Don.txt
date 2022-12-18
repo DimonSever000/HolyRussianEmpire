@@ -9,6 +9,8 @@ capital = 288
 fixed_capital = 288
 elector = yes
 
+historical_rival = KIE
+
 1430.1.1 = {
 	monarch = {
 		name = "Ibrahim"

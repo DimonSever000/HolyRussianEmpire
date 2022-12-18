@@ -12,6 +12,7 @@ base_manpower = 7
 capital = "Kozelsk"
 is_city = yes
 add_core = R2V
+fort_16th = yes
 discovered_by = eastern
 discovered_by = western
 discovered_by = GOL

@@ -5,8 +5,11 @@ primary_culture = smolenskian
 religion = orthodox
 technology_group = eastern
 capital = 293	# Smolensk
-fixed_capital = 293 # Cannot move capital away from this province & no power cost to move to it
+fixed_capital = 293
 elector = yes
+
+historical_friend = KIE
+historical_rival = PLT
 
 1386.1.1 = {
 	monarch = {
@@ -15,5 +18,18 @@ elector = yes
 		adm = 1
 		dip = 5
 		mil = 5
+	}
+}
+1428.1.1 = {
+	heir = {
+		name = "Yury"
+		monarch_name = "Yury II"
+		dynasty = "Rurikovich"
+		birth_date = 1428.1.1
+		death_date = 1470.1.1
+		claim = 10
+		adm = 5
+		dip = 5
+		mil = 6
 	}
 }

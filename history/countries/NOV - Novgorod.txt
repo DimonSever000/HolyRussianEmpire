@@ -9,6 +9,10 @@ capital = 310	# Novgorod
 fixed_capital = 310 # Cannot move capital away from this province & no power cost to move to it
 elector = yes
 
+historical_friend = R1A
+historical_friend = R1R
+historical_rival = KIE
+
 1429.1.1 = {
 	monarch = {
 		name = "Evfimy"

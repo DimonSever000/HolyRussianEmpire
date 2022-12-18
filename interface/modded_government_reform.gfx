@@ -1,0 +1,17 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "government_reform_arkhangelsk_republic"
+		texturefile = "gfx//interface//government_reform_icons//arkhangelsk_republic.dds"
+	}
+	spriteType = {
+		name = "government_reform_boyars_republic"
+		texturefile = "gfx//interface//government_reform_icons//boyars_republic.dds"
+	}
+	spriteType = {
+		name = "government_reform_peasant_republic"
+		texturefile = "gfx//interface//government_reform_icons//peasant_republic.dds"
+	}
+	
+	
+}

@@ -7,6 +7,9 @@ primary_culture = volynian
 capital = 279	# Volhynia
 elector = yes
 
+historical_friend = CHR
+historical_rival = KIE
+
 1443.1.1 = {
 	monarch = {
 		name = "Rostislav"

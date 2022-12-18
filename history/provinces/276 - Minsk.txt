@@ -14,6 +14,7 @@ is_city = yes
 add_core = R2B
 add_core = R2A
 #fort_15th = yes
+fort_15th = yes
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

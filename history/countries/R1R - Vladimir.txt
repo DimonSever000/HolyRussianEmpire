@@ -9,6 +9,10 @@ capital = 307	# Vladimir
 fixed_capital = 307
 elector = yes
 
+historical_friend = NOV
+historical_rival = RYA
+historical_rival = TVE
+
 1400.1.1 = {
 	monarch = {
 		name = "Vladimir"

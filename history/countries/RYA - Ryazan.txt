@@ -8,6 +8,9 @@ capital = 301	# Ryazan
 fixed_capital = 301 # Cannot move capital away from this province & no power cost to move to it
 elector = yes
 
+historical_friend = CHR
+historical_rival = R1R
+
 1412.1.1 = {
 	monarch = {
 		name = "Fyodor"
@@ -16,5 +19,18 @@ elector = yes
 		adm = 1
 		dip = 3
 		mil = 1
+	}
+}
+1430.1.1 = {
+	heir = {
+		name = "Fyodor"
+		monarch_name = "Fyodor II"
+		dynasty = "Rurikovich"
+		birth_date = 1430.1.1
+		death_date = 1467.1.1
+		claim = 100
+		adm = 4
+		dip = 4
+		mil = 3
 	}
 }

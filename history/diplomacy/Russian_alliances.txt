@@ -54,27 +54,6 @@ union = {
 	start_date = 1444.1.1
 }
 
-# Litva and Breslauja
-vassal = {
-	first = LIT
-	second = R1W
-	start_date = 1444.1.1
-}
-
-# Litva and Grodno
-vassal = {
-	first = LIT
-	second = R1X
-	start_date = 1444.1.1
-}
-
-# Kiev and Bratslav
-vassal = {
-	first = KIE
-	second = R1Y
-	start_date = 1444.1.1
-}
-
 # White Ruthenian and Turov
 vassal = {
 	first = R2A

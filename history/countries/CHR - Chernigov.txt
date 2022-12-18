@@ -8,6 +8,10 @@ capital = 289	# Chernigov
 fixed_capital = 289 # Cannot move capital away from this province & no power cost to move to it
 elector = yes
 
+historical_friend = VOL
+historical_friend = RYA
+historical_rival = KIE
+
 1399.1.1 = {
 	monarch = {
 		name = "Bogdan"

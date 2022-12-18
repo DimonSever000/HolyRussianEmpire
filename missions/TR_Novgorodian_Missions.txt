@@ -1,0 +1,778 @@
+novgorod_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+
+	potential = {
+		tag = NOV
+	}
+	has_country_shield = yes
+
+	novgorod_1_1 = {
+		position = 1
+		icon = mission_reconquer_vologda
+		required_missions = {  }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4148
+				province_id = 4260
+				province_id = 1959
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			owns = 4148
+			owns = 4260
+			owns = 1959
+		}
+		effect = {
+			274 = {
+				if = {
+					limit = {
+						NOT = {
+							is_permanent_claim = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			1960 = {
+				if = {
+					limit = {
+						NOT = {
+							is_permanent_claim = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			tver_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	novgorod_1_2 = {
+		position = 2
+		icon = mission_conquer_tver
+		required_missions = { novgorod_1_1 }
+		provinces_to_highlight = {
+			OR = {
+				area = tver_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			tver_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "hegemonic_ambition"
+				duration = 7300 # 25 years
+			}
+			add_prestige = 30
+		}
+	}
+	
+	novgorod_1_3 = {
+		position = 3
+		icon = mission_conquer_50_development
+		required_missions = { novgorod_2_2 novgorod_1_2 }
+		trigger = {
+			grown_by_development = 300
+		}
+		effect = {
+			curonia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			estonia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			livonia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}
+
+novgorod_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+
+	potential = {
+		tag = NOV
+	}
+	has_country_shield = yes
+	
+	novgorod_2_2 = {
+		position = 2
+		icon = mission_recruit_the_cossacks
+		required_missions = { novgorod_1_1 }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 274
+				province_id = 1960
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			owns = 274
+			owns = 1960
+		}
+		effect = {
+			add_prestige = 30
+			capital_scope = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+				area = {
+					limit = { owned_by = ROOT }
+					add_province_modifier = {
+						name = "growth_of_capital"
+						duration = 9125 #25 years
+					}
+				}
+			}
+		}
+	}
+	
+	novgorod_2_3 = {
+		position = 3
+		icon = mission_build_up_to_force_limit
+		required_missions = { }
+		trigger = {
+			num_of_owned_provinces_with = {
+				has_fort_building_trigger = yes 
+				value = 3
+			}
+			army_size_percentage = 1
+		}
+		effect = {
+			add_country_modifier = {
+				name = "expansionist_country"
+				duration = 7300
+			}
+			add_mil_power = 150
+		}
+	}
+	novgorod_2_4 = {
+		position = 4
+		icon = mission_teutonic_knights
+		required_missions = { novgorod_2_3 novgorod_1_3 }
+		provinces_to_highlight = {
+			OR = {
+				area = curonia_area
+				area = estonia_ingria_area
+				area = livonia_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			curonia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			estonia_ingria_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			livonia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			karelia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			finland_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			bothnia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			
+			add_adm_power = 100
+			add_prestige = 30
+		}
+	}
+	
+	novgorod_2_5 = {
+		position = 4
+		icon = mission_conquer_finland
+		required_missions = { novgorod_2_4 }
+		provinces_to_highlight = {
+			OR = {
+				area = karelia_area
+				area = finland_area
+				area = bothnia_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			karelia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			finland_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			bothnia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "modifier_novgorod_2_5"
+				duration = 7300 #25 years
+			}
+		}
+	}
+}
+
+novgorod_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+
+	potential = {
+		tag = NOV
+	}
+	has_country_shield = yes
+
+	novgorod_3_1 = {
+		position = 1
+		icon = mission_develop_nevas_port
+		required_missions = {  }
+		provinces_to_highlight = {
+			province_id = 33
+		}
+		trigger = {
+			33 = {
+				owned_by = ROOT
+				has_building = marketplace
+				has_building = dock
+				is_strongest_trade_power = ROOT
+			}
+			navy_size_percentage = 1
+		}
+		effect = {
+			33 = {
+				add_province_modifier = {
+					name = "neva_fleet"
+					duration = -1
+				}
+			}
+			38 = {
+				if = {
+					limit = {
+						NOT = {
+							is_permanent_claim = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+		}
+	}
+	
+	novgorod_3_2 = {
+		position = 2
+		icon = mission_conquer_riga
+		required_missions = { novgorod_3_1  }
+		provinces_to_highlight = {
+			province_id = 25
+			province_id = 35
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			25 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			35 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_mercantilism = 3
+			add_mil_power = 50
+		}
+	}
+	
+	novgorod_3_3 = {
+		position = 3
+		icon = mission_danzig_or_war
+		required_missions = { novgorod_3_2  }
+		trigger = {
+			1652 = {
+				is_strongest_trade_power = ROOT
+			}
+		}
+		effect = {
+			309 = {
+				if = {
+					limit = {
+						NOT = {
+							is_permanent_claim = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			313 = {
+				if = {
+					limit = {
+						NOT = {
+							is_permanent_claim = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			1958 = {
+				if = {
+					limit = {
+						NOT = {
+							is_permanent_claim = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+		}
+	}
+	
+	novgorod_3_4 = {
+		position = 4
+		icon = mission_sea_battles
+		required_missions = { novgorod_3_3  }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 309
+				province_id = 313
+				province_id = 1958
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			owns = 309
+			owns = 313
+			owns = 1958
+		}
+		effect = {
+			laponia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			32 = {
+				if = {
+					limit = {
+						NOT = {
+							is_permanent_claim = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			1776 = {
+				if = {
+					limit = {
+						NOT = {
+							is_permanent_claim = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+		}
+	}
+	
+	novgorod_3_5 = {
+		position = 5
+		icon = mission_war_chest
+		required_missions = { novgorod_3_4 novgorod_4_4  }
+		provinces_to_highlight = {
+			OR = {
+				area = laponia_area
+				province_id = 32
+				province_id = 1776
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			laponia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			owns = 32
+			owns = 1776
+		}
+		effect = {
+			1777 = {
+				change_province_name = "Small Novgorod"
+				rename_capital = "Small Novgorod"
+				change_culture = ROOT
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+			}
+			313 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+		}
+	}
+	
+	novgorod_3_6 = {
+		position = 6
+		icon = mission_monarch_in_throne_room
+		required_missions = { novgorod_3_5 novgorod_2_5 }
+		provinces_to_highlight = {
+			OR = {
+				area = novgorod_area
+				area = estonia_ingria_area
+				area = laponia_area
+				area = livonia_area
+				area = curonia_area
+				area = karelia_area
+				area = tver_area
+				area = beloozero_area
+				area = north_karelia
+				area = finland_area
+				area = bothnia_area
+				province_id = 313
+				province_id = 1776
+				province_id = 35
+				province_id = 25
+				province_id = 274
+				province_id = 1960
+				province_id = 4148
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			novgorod_area = {
+				type = all
+				owned_by = ROOT
+			}
+			estonia_ingria_area = {
+				type = all
+				owned_by = ROOT
+			}
+			laponia_area = {
+				type = all
+				owned_by = ROOT
+			}
+			livonia_area = {
+				type = all
+				owned_by = ROOT
+			}
+			curonia_area = {
+				type = all
+				owned_by = ROOT
+			}
+			karelia_area = {
+				type = all
+				owned_by = ROOT
+			}
+			tver_area = {
+				type = all
+				owned_by = ROOT
+			}
+			beloozero_area = {
+				type = all
+				owned_by = ROOT
+			}
+			north_karelia = {
+				type = all
+				owned_by = ROOT
+			}
+			finland_area = {
+				type = all
+				owned_by = ROOT
+			}
+			bothnia_area = {
+				type = all
+				owned_by = ROOT
+			}
+			owns = 313
+			owns = 1776
+			owns = 35
+			owns = 25
+			owns = 274
+			owns = 1960
+			owns = 4148
+			
+			OR = {
+				33 = {
+				highest_value_trade_node = yes
+				is_strongest_trade_power = ROOT
+				}
+				1652 = {
+					highest_value_trade_node = yes
+					is_strongest_trade_power = ROOT
+				}
+			}
+			if = {
+				limit = {
+					government = monarchy
+				}
+				is_emperor = yes
+			}
+			else_if = {
+				limit = {
+					government = republic
+				}
+				republican_tradition = 100
+			}
+		}
+		effect = {
+			310 = {
+				change_province_name = "Novgorod the Great"
+				rename_capital = "Novgorod the Great"
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+				add_province_modifier = {
+					name = "nov_the_great"
+					duration = -1
+				}
+			}
+			add_country_modifier = {
+				name = "modifier_novgorod_3_6"
+				duration = -1
+			}
+		}
+	}
+}
+
+novgorod_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+
+	potential = {
+		tag = NOV
+	}
+	has_country_shield = yes
+
+	novgorod_4_1 = {
+		position = 1
+		icon = mission_found_arkhangelsk
+		required_missions = {  }
+		provinces_to_highlight = {
+			province_id = 1955
+		}
+		trigger = {
+			OR = {
+				owns = 1955
+				AND = {
+					alliance_with = R1A
+					R1A = {
+						has_opinion = {
+							who = root
+							value = 120
+						}
+					}
+				}
+			}
+		}
+		
+		effect = {
+			hidden_effect = {
+				BLO = { country_event = { id = 1856004 } }
+			}
+		}
+	}
+	
+	novgorod_4_2 = {
+		position = 2
+		icon = mission_alliances
+		required_missions = { novgorod_4_1 }
+		provinces_to_highlight = {
+			OR = {
+				area = beloozero_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			beloozero_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+
+		effect = {
+			add_prestige = 10
+			add_dip_power = 100
+		}
+	}
+	
+	novgorod_4_3 = {
+		position = 3
+		icon = mission_state_manufactories
+		required_missions = { novgorod_4_2 }
+		trigger = {
+			num_of_owned_provinces_with = {
+				has_production_building_trigger = yes
+				value = 15
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = "modifier_novgorod_4_3"
+				duration = 7300 #25 years
+			}
+		}
+	}
+	
+	novgorod_4_4 = {
+		position = 4
+		icon = mission_protect_white_sea_trade
+		required_missions = { novgorod_3_3 novgorod_4_3 novgorod_5_3 }
+		trigger = {
+			1652 = {
+				highest_value_trade_node = yes
+				is_strongest_trade_power = ROOT
+			}
+		}
+
+		effect = {
+			add_mercantilism = 5
+			add_dip_power = 100
+		}
+	}
+}
+
+novgorod_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = NOV
+	}
+	has_country_shield = yes
+
+	novgorod_5_1 = {
+		icon = mission_noble_council
+		required_missions = {  }
+		trigger = {
+			stability = 2
+			if = {
+				limit = {
+					government = monarchy
+				}
+				legitimacy = 90
+			}
+			else_if = {
+				limit = {
+					government = republic
+				}
+				republican_tradition = 90
+			}
+		}
+		effect = {
+			add_patriarch_authority = 0.15
+		}
+	}
+	
+	novgorod_5_2 = {
+		icon = mission_land_of_churches
+		required_missions = { novgorod_5_1 }
+		trigger = {
+			num_of_owned_provinces_with = {
+				religion = orthodox
+				has_tax_building_trigger = yes
+				value = 10
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "nov_archbishop"
+				duration = 7300
+			}
+		}
+	}
+	
+	novgorod_5_3 = {
+		icon = mission_high_income
+		required_missions = { }
+		trigger = {
+			share_of_starting_income = 2
+		}
+		effect = {
+			add_country_modifier = {
+				name = "growing_economy"
+				duration = 9125 #25 years
+			}
+			add_adm_power = 50
+		}
+	}
+}

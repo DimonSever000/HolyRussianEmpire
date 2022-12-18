@@ -1,0 +1,524 @@
+pereyaslavl_1 = {
+	slot = 1
+	generic = yes
+	ai = yes
+	potential = {
+		OR = {
+			tag = R1Z
+		}
+	}
+	has_country_shield = yes
+
+	pereyaslavl_1_1 = {
+		position = 1
+		icon = balance_the_estates
+		required_missions = {  }
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = building_alliances.tooltip
+				num_of_allies = 2
+				calc_true_if = {
+					all_ally = {
+						has_opinion = {
+							who = ROOT
+							value = 150
+						}
+					}
+					amount = 2
+				}
+			}
+		}
+
+		effect = {
+			add_dip_power = 100
+			add_republican_tradition = 10
+		}
+	}
+	
+	pereyaslavl_1_2 = {
+		position = 2
+		icon = hungarian_union
+		required_missions = { pereyaslavl_1_1 }
+		trigger = {
+			OR = {
+				owns = 291
+				AND = {
+					exists = R3C
+					R3C = {
+						has_opinion = {
+							who = ROOT
+							value = 150
+						}
+					}
+				}
+			}
+			OR = {
+				owns = 2411
+				AND = {
+					exists = R2K
+					R2K = {
+						has_opinion = {
+							who = ROOT
+							value = 150
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			add_dip_power = 50
+			if = {
+				limit = {
+					OR = {
+						exists = R3C
+						exists = R2K
+					}
+				}
+				country_event = { id = 1856008 }
+			}
+		}
+	}
+	
+	pereyaslavl_1_3 = {
+		position = 3
+		icon = mission_establish_the_prikazy
+		required_missions = { pereyaslavl_1_2 }
+		trigger = {
+			is_elector = yes
+		}
+		effect = {
+			280 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	pereyaslavl_1_4 = {
+		position = 4
+		icon = mission_restore_kiev
+		required_missions = { pereyaslavl_1_3 }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 280
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			owns = 280
+			NOT = { exists = KIE }
+		}
+		effect = {
+			add_imperial_influence = 15
+			add_stability = 1
+			add_country_modifier = {
+				name = "modifier_pereyaslavl_1_4"
+				duration = 7300 #25 years
+			}
+		}
+	}
+}
+
+pereyaslavl_2 = {
+	slot = 2
+	generic = yes
+	ai = yes
+	potential = {
+		OR = {
+			tag = R1Z
+		}
+	}
+	has_country_shield = yes
+	
+	
+	pereyaslavl_2_1 = {
+		position = 1
+		icon = mission_build_up_to_force_limit
+		required_missions = { }
+		trigger = {
+			army_size_percentage = 1
+		}
+		effect = {
+			289 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			1945 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			4543 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			298 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = "expansionist_country"
+				duration = 7300
+			}
+		}
+	}
+	
+	pereyaslavl_2_2 = {
+		position = 2
+		icon = mission_unite_home_region
+		required_missions = { pereyaslavl_2_1 pereyaslavl_1_1 }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 289
+				province_id = 1945
+				province_id = 4543
+				province_id = 298
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			owns = 289
+			owns = 1945
+			owns = 4543
+			owns = 298
+		}
+		effect = {
+			add_prestige = 20
+			2412 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			2413 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			286 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	pereyaslavl_2_3 = {
+		position = 3
+		icon = mission_galleys_in_port
+		required_missions = { pereyaslavl_2_2 }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 2412
+				province_id = 2413
+				province_id = 286
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			OR = {
+				owns = 2412
+				owns = 2413
+				owns = 286
+			}
+		}
+		effect = {
+			add_prestige = 20
+			add_years_of_income = 0.5
+			2409 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			2413 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			288 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	pereyaslavl_2_4 = {
+		position = 4
+		icon = mission_non-western_cavalry_raid
+		required_missions = { pereyaslavl_2_3 }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 2409
+				province_id = 2413
+				province_id = 288
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			OR = {
+				AND = {
+					owns = 2409
+					owns = 2413
+					owns = 288
+				}
+				R2O = {
+					NOT = {
+						total_own_and_non_tributary_subject_development = 70
+					}
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					owns = 2409
+					owns = 2413
+					owns = 288
+				}
+				add_dip_power = 100
+				add_republican_tradition = 10
+			}
+			else_if = {
+				limit = {
+					exists = R2O
+				}
+				country_event = { id = 1856009 }
+			}
+			else = {
+				add_dip_power = 100
+				add_prestige = 30
+			}
+		}
+	}
+	
+	pereyaslavl_2_5 = {
+		position = 5
+		icon = balance_of_power
+		required_missions = { pereyaslavl_1_4 pereyaslavl_2_4 pereyaslavl_3_4 }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 280
+				province_id = 2407
+				province_id = 4542
+				province_id = 290
+				province_id = 289
+				province_id = 298
+				province_id = 1945
+				province_id = 4543
+				province_id = 2409
+				province_id = 2411
+				province_id = 291
+				province_id = 2412
+				province_id = 2413
+				province_id = 286
+				province_id = 2409
+				province_id = 288
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			owns = 280
+			owns = 2407
+			owns = 4542
+			owns = 290
+			owns = 289
+			owns = 298
+			owns = 1945
+			owns = 4543
+			owns = 2409
+			owns = 2411
+			owns = 291
+			owns = 2412
+			owns = 2413
+			owns = 286
+			owns = 2409
+			owns = 288
+			
+			if = {
+				limit = {
+					government = monarchy
+				}
+				is_emperor = yes
+			}
+			else_if = {
+				limit = {
+					government = republic
+				}
+				republican_tradition = 100
+			}
+			estate_loyalty = {
+				estate = estate_burghers
+				loyalty = 70
+			}
+		}
+		effect = {
+			2407 = {
+				change_province_name = "Pereslavl the Great"
+				rename_capital = "Pereslavl the Great"
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+			}
+			add_country_modifier = {
+				name = "modifier_pereyaslavl_2_5"
+				duration = -1
+			}
+		}
+	}
+}
+
+pereyaslavl_3 = {
+	slot = 3
+	generic = yes
+	ai = yes
+	potential = {
+		OR = {
+			tag = R1Z
+		}
+	}
+	has_country_shield = yes
+
+	pereyaslavl_3_1 = {
+		position = 1
+		icon = mission_consolidate_the_state
+		required_missions = { }
+		trigger = { 
+			stability = 2
+			if = {
+				limit = {
+					government = monarchy
+				}
+				legitimacy = 100
+			}
+			else_if = {
+				limit = {
+					government = republic
+				}
+				republican_tradition = 100
+			}
+			estate_loyalty = {
+				estate = estate_burghers
+				loyalty = 70
+			}
+		}
+		effect = {
+			add_yearly_manpower = 2
+			add_years_of_income = 0.5
+		}
+	}
+	
+	pereyaslavl_3_2 = {
+		position = 2
+		icon = mission_cathedral_cities
+		required_missions = { pereyaslavl_3_1 }
+		trigger = { 
+			2407 = {
+				has_building = university
+			}
+			NOT = {
+				estate_influence = {
+					estate = estate_church
+					influence = 40
+				}
+			}
+			crown_land_share = 40
+		}
+		effect = {
+			change_innovativeness = 5
+			add_adm_power = 50
+			add_dip_power = 50
+			add_mil_power = 50
+			
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = -10
+			}
+			add_estate_influence_modifier = {
+				estate = estate_church
+				desc = pereyaslavl_3_2_estate_church
+				influence = -10
+				duration = -1
+			}
+		}
+	}
+	
+	pereyaslavl_3_3 = {
+		position = 3
+		icon = defenestrate_the_heretics
+		required_missions = { }
+		trigger = { 
+			NOT = {
+				estate_influence = {
+					estate = estate_nobles
+					influence = 40
+				}
+			}
+			crown_land_share = 40
+		}
+		effect = {
+			add_mil_power = 100
+			
+			add_estate_loyalty = {
+				estate = estate_nobles
+				loyalty = -10
+			}
+			add_estate_influence_modifier = {
+				estate = estate_nobles
+				desc = pereyaslavl_3_3_estate_nobles
+				influence = -10
+				duration = -1
+			}
+		}
+	}
+	
+	pereyaslavl_3_4 = {
+		position = 4
+		icon = mission_establish_high_seas_navy
+		required_missions = { pereyaslavl_2_3 pereyaslavl_3_3 }
+		trigger = { 
+			naval_forcelimit = 40
+		}
+		effect = {
+			add_country_modifier = {
+				name = "modifier_pereyaslavl_3_4"
+				duration = 7300 #25 years
+			}
+		}
+	}
+}

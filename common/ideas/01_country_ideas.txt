@@ -6,7 +6,7 @@
 R1A_ideas = {
 	start = {
 		global_institution_spread = 0.1
-		range = 2.1
+		range = 2
 	}
 	
 	bonus = {
@@ -116,3 +116,43 @@ R1R_ideas = {
 		merc_maintenance_modifier = -0.2
 	}
 }
+
+# Pereyaslavl
+R1Z_ideas = {
+	start = {
+		global_manpower_modifier = 0.15
+	}
+	
+	bonus = {
+		yearly_corruption = -0.1 
+	}	
+
+	trigger = {
+		tag = R1Z
+	}
+	free = yes
+	
+	R1Z_idea_I = {
+		embracement_cost = -0.1
+	}
+	R1Z_idea_II = {
+		stability_cost_modifier = -0.1
+	}
+	R1Z_idea_III = {
+		diplomatic_reputation = 1
+		improve_relation_modifier = 0.1
+	}
+	R1Z_idea_IV = {
+		discipline = 0.05
+	}
+	R1Z_idea_V = {
+		diplomats = 1
+	}
+	R1Z_idea_VI = {
+		trade_efficiency = 0.1
+	}
+	R1Z_idea_VII = {
+		land_maintenance_modifier = -0.2
+	}
+}
+

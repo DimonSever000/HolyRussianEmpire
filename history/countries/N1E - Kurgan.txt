@@ -1,0 +1,8 @@
+government = republic
+government_rank = 1
+technology_group = eastern
+religion = orthodox
+primary_culture = bashkir
+technology_group = eastern
+capital = 1076
+fixed_capital = 1076

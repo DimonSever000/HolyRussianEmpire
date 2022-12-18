@@ -4,19 +4,18 @@ latent_trade_goods = {
 	coal
 }
 
-owner = R2K
-controller = R2K
+owner = R3C
+controller = R3C
 religion = orthodox
 culture = polovtsian
 hre = yes
 base_tax = 3
 base_production = 3
 trade_goods = iron 
-base_manpower = 1
-capital = "Kharkov"
+base_manpower = 2
+capital = "Lisov"
 is_city = yes
-#add_core = CHR
-add_core = R2K
+add_core = R3C
 
 
 discovered_by = western

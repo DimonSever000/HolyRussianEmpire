@@ -7,6 +7,9 @@ primary_culture = ruthenian
 capital = 280	# Kiev
 fixed_capital = 280 # Cannot move capital away from this province & no power cost to move to it
 
+historical_friend = SMO
+historical_rival = NOV
+
 1391.1.1 = {
 	monarch = {
 		name = "Yuriy"

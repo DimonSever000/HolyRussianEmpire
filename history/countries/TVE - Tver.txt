@@ -8,6 +8,8 @@ capital = 294	# Tver
 fixed_capital = 294 # Cannot move capital away from this province & no power cost to move to it
 elector = yes
 
+historical_rival = NOV
+
 1398.11.1 = {
 	monarch = {
 		name = "Mikhail"

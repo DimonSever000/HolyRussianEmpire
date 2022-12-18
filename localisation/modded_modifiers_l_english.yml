@@ -7,3 +7,27 @@
  modifier_penza_2_3:0 "Blessing of the church"
  modifier_penza_2_4:0 "Holy church"
  #
+ modifier_vladimir_2_2:0 "Kniaz decree"
+ modifier_vladimir_3_3:0 "Church approval"
+ modifier_vladimir_3_5:0 "Great Vladimir"
+ #
+ modifier_novgorod_2_5:0 "Finland resources"
+ modifier_novgorod_3_6:0 "Great Novgorod"
+ modifier_novgorod_4_3:0 "Novgorod production"
+ #
+ modifier_ryazan_1_4:0 "Cruel reign"
+ modifier_ryazan_2_3:0 "Economic growth"
+ modifier_ryazan_2_4:0 "Tax revenues"
+ modifier_ryazan_2_5:0 "Great Ryazan"
+ #
+ modifier_pereyaslavl_1_4:0 "Overthrow of Kiev"
+ modifier_pereyaslavl_2_1:0 "Republican army"
+ modifier_pereyaslavl_3_4:0 "Black Sea fleet"
+ modifier_pereyaslavl_2_5:0 "Great Pereyaslavl"
+ #
+ modifier_smolensk_1_2:0 "Godly power"
+ modifier_smolensk_1_3:0 "God with us"
+ modifier_smolensk_2_5:0 "Great Smolensk"
+ modifier_smolensk_3_4:0 "Smolensk diplomatic power"
+ modifier_smolensk_3_5:0 "Birth of the Baltic Fleet"
+ #

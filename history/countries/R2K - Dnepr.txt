@@ -1,0 +1,17 @@
+government = republic
+add_government_reform = free_city
+government_rank = 1
+technology_group = eastern
+religion = orthodox
+primary_culture = polovtsian
+technology_group = eastern
+capital = 2411
+
+1443.1.1 = {
+	monarch = {
+		name = "Svyatoslav"
+		adm = 3
+		dip = 5
+		mil = 1
+	}
+}

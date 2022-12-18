@@ -1,9 +1,8 @@
 #273 - Latgalia / Inflanty Duchy
 
-owner = R1W
-controller = R1W
+owner = LIV
+controller = LIV
 add_core = LIV
-add_core = R1W
 culture = latvian
 religion = orthodox
 capital = "Latgalia"

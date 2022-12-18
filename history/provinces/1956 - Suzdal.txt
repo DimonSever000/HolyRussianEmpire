@@ -14,6 +14,7 @@ is_city = yes
 add_core = R1S
 add_core = R1T
 add_core = R1R
+fort_15th = yes
 discovered_by = GOL
 discovered_by = KAZ
 discovered_by = eastern

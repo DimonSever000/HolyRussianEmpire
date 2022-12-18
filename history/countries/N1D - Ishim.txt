@@ -1,0 +1,9 @@
+government = republic
+add_government_reform = free_city
+government_rank = 1
+technology_group = eastern
+religion = orthodox
+primary_culture = bashkir
+technology_group = eastern
+capital = 4690
+fixed_capital = 4690

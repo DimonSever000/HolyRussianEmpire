@@ -8,6 +8,8 @@ capital = 312	# Beloozero
 fixed_capital = 312 # Cannot move capital away from this province & no power cost to move to it
 elector = yes
 
+historical_rival = R1A
+historical_rival = NOV
 
 1443.1.1 = {
 	monarch = {

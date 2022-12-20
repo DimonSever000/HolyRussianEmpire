@@ -15,17 +15,6 @@ historical_idea_groups = {
 	religious_ideas
 }
 
-historical_idea_groups = {
-	
-	defensive_ideas
-	administrative_ideas
-	quality_ideas
-	quantity_ideas
-	diplomatic_ideas
-	religious_ideas
-	economic_ideas
-	influence_ideas
-}
 
 historical_units = {
 	bardiche_infantry

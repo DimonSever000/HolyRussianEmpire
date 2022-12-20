@@ -25,9 +25,11 @@ arkhangelsk_1 = {
 			1955 = { development = 20 }
 		}
 		effect = {
-			add_province_modifier = {
-				name = "growth_of_capital"
-				duration = 7300
+			1955 = {
+				add_province_modifier = {
+					name = "growth_of_capital"
+					duration = 7300
+				}
 			}
 		}
 	}

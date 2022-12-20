@@ -9,4 +9,9 @@ spriteTypes = {
 		name = "GFX_great_project_ryazan_arsenal"	
 		texturefile = "gfx//interface//great_projects//ryazan_arsenal.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_great_project_church_of_ivan_the_blessed"	
+		texturefile = "gfx//interface//great_projects//church_of_ivan_the_blessed.dds"
+	}
 }

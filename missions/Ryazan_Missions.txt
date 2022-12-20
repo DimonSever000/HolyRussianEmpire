@@ -25,9 +25,11 @@ ryazan_1 = {
 			301 = { development = 20 }
 		}
 		effect = {
-			add_province_modifier = {
-				name = "growth_of_capital"
-				duration = 7300
+			301 = {
+				add_province_modifier = {
+					name = "growth_of_capital"
+					duration = 7300
+				}
 			}
 			4252 = {
 				limit = {
@@ -526,7 +528,7 @@ ryazan_3 = {
 				limit = {
 					exists = CHR
 					valid_for_personal_unions_trigger = yes
-					TVE = {
+					CHR = {
 						valid_for_personal_unions_trigger = yes
 					}
 				}

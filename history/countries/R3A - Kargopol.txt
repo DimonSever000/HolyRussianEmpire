@@ -1,5 +1,5 @@
-government = monarchy
-add_government_reform = principality
+government = republic
+add_government_reform = free_city
 government_rank = 1
 technology_group = eastern
 religion = orthodox
@@ -7,11 +7,9 @@ primary_culture = arkhangelsk
 capital = 1958
 fixed_capital = 1958
 
-1433.1.1 = {
+1439.1.1 = {
 	monarch = {
 		name = "Boris"
-		dynasty = Rurikovich
-		birth_date = 1412.1.1
 		adm = 3
 		dip = 3
 		mil = 2

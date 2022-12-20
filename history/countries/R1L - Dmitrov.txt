@@ -1,5 +1,5 @@
-government = monarchy
-add_government_reform = principality
+government = republic
+add_government_reform = free_city
 government_rank = 1
 mercantilism = 10
 primary_culture = pskovian
@@ -11,8 +11,6 @@ fixed_capital = 4248
 1440.1.1 = {
 	monarch = {
 		name = "Dmitriy"
-		dynasty = Rurikovich
-		birth_date = 1427.1.1
 		adm = 6
 		dip = 0
 		mil = 3

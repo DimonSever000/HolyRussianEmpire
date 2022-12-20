@@ -446,7 +446,7 @@ guiTypes = {
 
 		gridBoxType = {
 			name = "hre_electors"
-			position = { x = 105 y = 293 }
+			position = { x = 105 y = 280 }
 			size = { width = 300 height = 600 }
 			slotsize = { width = 70 height = 95 }
 			max_slots_horizontal = 3

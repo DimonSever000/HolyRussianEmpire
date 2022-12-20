@@ -1,0 +1,1686 @@
+muscovy_1 = {
+	slot = 1
+	generic = yes
+	ai = yes
+	potential = {
+		OR = {
+			tag = MOS
+		}
+	}
+	has_country_shield = yes
+
+	muscovy_1_1 = {
+		position = 1
+		icon = mission_religious
+		required_missions = {  }
+		trigger = {
+			num_of_owned_provinces_with = {
+				religion = orthodox
+				has_tax_building_trigger = yes
+				value = 5
+			}
+			religious_unity = 1
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = "modifier_muscovy_1_1"
+				duration = 7300
+			}
+			add_stability = 1
+		}
+	}
+	
+	muscovy_1_2 = {
+		position = 2
+		icon = mission_land_of_churches
+		required_missions = { muscovy_1_1 }
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = ser_has_any_icon
+				OR = {
+					current_icon = icon_michael
+					current_icon = icon_eleusa
+					current_icon = icon_pancreator
+					current_icon = icon_nicholas
+					current_icon = icon_climacus
+				}
+			}
+		}
+		effect = {
+			add_years_of_income = 1
+			add_prestige = 20
+			country_event = { id = 18560012 }
+		}
+	}
+	
+	muscovy_1_3 = {
+		position = 3
+		icon = modded_church_of_ivan_the_blessed
+		required_missions = { muscovy_1_2 muscovy_2_2 }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 295
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			owns = 295
+			295 = {
+				OR = {
+					has_great_project = {
+						type = church_of_ivan_the_blessed
+						tier = 1
+					}
+					has_great_project = {
+						type = church_of_ivan_the_blessed
+						tier = 2
+					}
+					has_great_project = {
+						type = church_of_ivan_the_blessed
+						tier = 3
+					}
+				}
+			}
+		}
+		effect = {
+			295 = {
+				add_base_tax = 3
+			}
+			add_dip_power = 100
+		}
+	}
+	
+	muscovy_1_4 = {
+		position = 4
+		icon = modded_archangel_michael
+		required_missions = { muscovy_1_3 }
+		trigger = {
+			is_defender_of_faith = yes
+			religious_unity = 1
+		}
+		effect = {
+			add_country_modifier = {
+				name = "modifier_muscovy_1_4"
+				duration = 7300
+			}
+			add_stability = 1
+		}
+	}
+	
+	muscovy_1_6 = {
+		position = 6
+		icon = mission_unite_home_region
+		required_missions = { muscovy_2_5 }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 300
+				province_id = 301
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			owns = 300
+			owns = 301
+		}
+		effect = {
+			add_prestige = 20
+			add_mil_power = 50
+			4147 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			4250 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			308 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			314 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			1753 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			4263 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			4262 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	muscovy_1_7 = {
+		position = 7
+		icon = mission_unite_home_region
+		required_missions = { muscovy_1_6 }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4147
+				province_id = 4250
+				province_id = 308
+				province_id = 314
+				province_id = 1753
+				province_id = 4262
+				province_id = 4263
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			owns = 4147
+			owns = 4250
+			owns = 308
+			owns = 314
+			owns = 1753
+			owns = 4262
+			owns = 4263
+		}
+		effect = {
+			add_prestige = 30
+			add_yearly_manpower = 3
+			chernigov_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			sloboda_ukraine_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			oka_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			ryazan_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			302 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	muscovy_1_8 = {
+		position = 8
+		icon = mission_unite_home_region
+		required_missions = { muscovy_1_7 }
+		provinces_to_highlight = {
+			OR = {
+				area = ryazan_area
+				area = oka_area
+				area = sloboda_ukraine_area
+				area = chernigov_area
+				province_id = 302
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			chernigov_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			sloboda_ukraine_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			oka_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			ryazan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			owns = 302
+		}
+		effect = {
+			add_prestige = 30
+			add_yearly_manpower = 3
+			pripyat_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			volhynia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			red_ruthenia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			moldavia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			277 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			281 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	muscovy_1_9 = {
+		position = 9
+		icon = mission_unite_home_region
+		required_missions = { muscovy_1_8 muscovy_2_8 }
+		provinces_to_highlight = {
+			OR = {
+				area = pripyat_area
+				area = volhynia_area
+				area = red_ruthenia_area
+				area = moldavia_area
+				province_id = 277
+				province_id = 281
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			pripyat_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			volhynia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			red_ruthenia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			moldavia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			owns = 277
+			owns = 281
+		}
+		effect = {
+			add_prestige = 30
+			add_yearly_manpower = 5
+			lower_don_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			astrakhan_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			dagestan_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			circassia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}
+
+muscovy_2 = {
+	slot = 2
+	generic = yes
+	ai = yes
+	potential = {
+		OR = {
+			tag = MOS
+		}
+	}
+	has_country_shield = yes
+	
+	
+	muscovy_2_1 = {
+		position = 1
+		icon = modded_moscow_freedom
+		required_missions = { }
+		trigger = {
+			is_free_or_tributary_trigger = yes
+		}
+		effect = {
+			add_prestige = 10
+			add_country_modifier = {
+				name = "modifier_muscovy_2_1"
+				duration = 7300
+			}
+		}
+	}
+	
+	muscovy_2_2 = {
+		position = 2
+		icon = mission_colonial
+		required_missions = { muscovy_2_1 }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 295
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			owns = 295
+			295 = { development = 15 }
+		}
+		effect = {
+			295 = {
+				add_province_modifier = {
+					name = "growth_of_capital"
+					duration = 7300
+				}
+			}
+			moscow_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	muscovy_2_3 = {
+		position = 3
+		icon = mission_noble_council
+		required_missions = { muscovy_2_2 }
+		trigger = {
+			if = {
+				limit = {
+					has_estate = estate_church
+				}
+				estate_loyalty = {
+					estate = estate_church
+					loyalty = 60
+				}
+			}
+			if = {
+				limit = {
+					has_estate = estate_nobles
+				}
+				estate_loyalty = {
+					estate = estate_nobles
+					loyalty = 60
+				}
+			}
+			if = {
+				limit = {
+					has_estate = estate_burghers
+				}
+				estate_loyalty = {
+					estate = estate_burghers
+					loyalty = 60
+				}
+			}
+		}
+		effect = {
+			add_adm_power = 50
+			add_stability = 1
+		}
+	}
+	
+	muscovy_2_4 = {
+		position = 4
+		icon = balance_of_power
+		required_missions = { muscovy_2_3 muscovy_3_3 }
+		provinces_to_highlight = {
+			OR = {
+				area = moscow_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			moscow_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			country_event = { id = 18560013 }
+		}
+	}
+	
+	muscovy_2_5 = {
+		position = 5
+		icon = mission_conquer_moscow
+		required_missions = { muscovy_2_4 }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 295
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			owns = 295
+				OR = {
+					has_great_project = {
+						type = kremlin
+						tier = 1
+					}
+					has_great_project = {
+						type = kremlin
+						tier = 2
+					}
+					has_great_project = {
+						type = kremlin
+						tier = 3
+					}
+				}
+		}
+		effect = {
+			smolensk_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			tver_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			define_advisor = {
+				type = fortification_expert
+				skill = 5 
+				culture = root
+				cost_multiplier = 0.5
+				name = "Mikhail Lominsky" 
+			}
+		}
+	}
+	
+	muscovy_2_6 = {
+		position = 6
+		icon = mission_unite_home_region
+		required_missions = { muscovy_2_5 }
+		provinces_to_highlight = {
+			OR = {
+				area = tver_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			tver_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 20
+			add_yearly_manpower = 2
+			novgorod_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			beloozero_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			274 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			1960 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			4148 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			1961 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			33 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			34 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			309 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			1958 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			313 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	muscovy_2_7 = {
+		position = 7
+		icon = mission_unite_home_region
+		required_missions = { muscovy_1_6 muscovy_2_6 muscovy_3_6 }
+		provinces_to_highlight = {
+			OR = {
+				area = novgorod_area
+				area = beloozero_area
+				province_id = 274
+				province_id = 1960
+				province_id = 4148
+				province_id = 1961
+				province_id = 33
+				province_id = 34
+				province_id = 309
+				province_id = 1958
+				province_id = 313
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			novgorod_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			beloozero_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			owns = 274
+			owns = 1960
+			owns = 4148
+			owns = 1961
+			owns = 33
+			owns = 34
+			owns = 309
+			owns = 1958
+			owns = 313
+		}
+		effect = {
+			add_prestige = 30
+			add_yearly_manpower = 3
+			west_dniepr_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			east_dniepr_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			yedisan_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			chernigov_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			zaporizhia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			4540 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			1943 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	muscovy_2_8 = {
+		position = 8
+		icon = mission_unite_home_region
+		required_missions = { muscovy_1_7 muscovy_2_7 muscovy_3_7 }
+		provinces_to_highlight = {
+			OR = {
+				area = west_dniepr_area
+				area = east_dniepr_area
+				area = yedisan_area
+				area = chernigov_area
+				area = zaporizhia_area
+				province_id = 4540
+				province_id = 1943
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			west_dniepr_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			east_dniepr_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			yedisan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			chernigov_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			zaporizhia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			owns = 4540
+			owns = 1943
+		}
+		effect = {
+			add_prestige = 30
+			add_yearly_manpower = 5
+			estonia_ingria_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			livonia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			curonia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	muscovy_2_9 = {
+		position = 9
+		icon = mission_unite_home_region
+		required_missions = { muscovy_2_8 }
+		provinces_to_highlight = {
+			OR = {
+				area = estonia_ingria_area
+				area = livonia_area
+				area = curonia_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			estonia_ingria_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			livonia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			curonia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 25
+			add_yearly_manpower = 3
+			finland_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			bothnia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			laponia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			30 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			32 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			4124 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			1776 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	muscovy_2_10 = {
+		position = 10
+		icon = mission_the_third_rome
+		required_missions = { muscovy_1_9 muscovy_2_9 muscovy_3_9 }
+		provinces_to_highlight = {
+			OR = {
+				region = russia_region
+				region = ruthenia_region
+				region = crimea_region
+				region = ural_region
+				area = estonia_ingria_area
+				area = livonia_area
+				area = curonia_area
+				area = samogitia_area
+				area = lithuania_area
+				area = circassia_area
+				area = dagestan_area
+				area = finland_area
+				area = bothnia_area
+				area = laponia_area
+				area = lower_yik_area
+				area = red_ruthenia_area
+				area = moldavia_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			russia_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			ruthenia_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			crimea_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			ural_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			estonia_ingria_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			livonia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			curonia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			samogitia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			lithuania_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			circassia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			dagestan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			finland_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			bothnia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			laponia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			lower_yik_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			red_ruthenia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			moldavia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "modifier_muscovy_5_10"
+				duration = -1
+			}
+		}
+	}
+}
+
+muscovy_3 = {
+	slot = 3
+	generic = yes
+	ai = yes
+	potential = {
+		OR = {
+			tag = MOS
+		}
+	}
+	has_country_shield = yes
+
+	muscovy_3_1 = {
+		position = 1
+		icon = mission_cannons_firing
+		required_missions = { }
+		trigger = { 
+			prestige = 30
+			R2V = {
+				has_opinion = {
+					who = root
+					value = 150
+				}
+			}
+			is_free_or_tributary_trigger = yes
+		}
+		effect = {
+			if = {
+				limit = {
+					exists = R1O
+				}
+				country_event = { id = 18560014 }
+			}
+			add_prestige = 10
+		}
+	}
+	
+	muscovy_3_2 = {
+		position = 2
+		icon = mission_alliances
+		required_missions = { muscovy_2_1 muscovy_3_1 }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4251
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = { 
+			owns = 4251
+		}
+		effect = {
+			moscow_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			define_advisor = {
+				type = diplomat
+				skill = 3 
+				culture = root
+				cost_multiplier = 0.3
+				name = "Fyodor Mikhailovsky" 
+			}
+			add_country_modifier = {
+				name = "modifier_muscovy_3_2"
+				duration = 7300
+			}
+		}
+	}
+	
+	muscovy_3_3 = {
+		position = 3
+		icon = mission_settlers_north_america
+		required_missions = { muscovy_2_2 muscovy_3_2 }
+		provinces_to_highlight = {
+			OR = {
+				area = moscow_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = { 
+			moscow_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			stability = 1
+		}
+		effect = {
+			suzdal_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			307 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			4253 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	muscovy_3_4 = {
+		position = 4
+		icon = mission_autocratic_rule
+		required_missions = { muscovy_3_3 }
+		provinces_to_highlight = {
+			OR = {
+				area = suzdal_area
+				province_id = 307
+				province_id = 4253
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = { 
+			suzdal_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			owns = 307
+			owns = 4253
+		}
+		effect = {
+			add_prestige = 20
+			add_yearly_manpower = 2
+			307 = {
+				add_base_tax = -2
+				add_base_production = -2
+				add_base_manpower = -2
+			}
+			295 = {
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+			}
+		}
+	}
+	
+	muscovy_3_6 = {
+		position = 6
+		icon = mission_unite_home_region
+		required_missions = { muscovy_2_5 }
+		provinces_to_highlight = {
+			OR = {
+				area = smolensk_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			smolensk_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 20
+			add_yearly_manpower = 3
+			white_ruthenia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			minsk_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			275 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	muscovy_3_7 = {
+		position = 7
+		icon = mission_unite_home_region
+		required_missions = { muscovy_3_6 }
+		provinces_to_highlight = {
+			OR = {
+				area = white_ruthenia_area
+				area = minsk_area
+				province_id = 275
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			white_ruthenia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			minsk_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			owns = 275
+		}
+		effect = {
+			add_prestige = 20
+			add_yearly_manpower = 2
+			arkhangelsk_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			4258 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	muscovy_3_8 = {
+		position = 8
+		icon = mission_unite_home_region
+		required_missions = { muscovy_3_7 }
+		provinces_to_highlight = {
+			OR = {
+				area = arkhangelsk_area
+				province_id = 4258
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			arkhangelsk_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			owns = 4258
+		}
+		effect = {
+			add_prestige = 25
+			add_yearly_manpower = 3
+			galich_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			kama_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			kazan_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			perm_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			bashkiria_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			volga_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	muscovy_3_9 = {
+		position = 9
+		icon = mission_unite_home_region
+		required_missions = { muscovy_2_8 muscovy_3_8 }
+		provinces_to_highlight = {
+			OR = {
+				area = galich_area
+				area = kama_area
+				area = kazan_area
+				area = perm_area
+				area = bashkiria_area
+				area = volga_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			galich_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			kama_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			kazan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			perm_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			bashkiria_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			volga_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 30
+			add_yearly_manpower = 4
+			saratov_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			lower_yik_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			samara_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			304 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			2415 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}
+
+muscovy_4 = {
+	slot = 4
+	generic = yes
+	ai = yes
+	potential = {
+		OR = {
+			tag = MOS
+		}
+	}
+	has_country_shield = yes
+
+	
+	muscovy_4_3 = {
+		position = 3
+		icon = mission_state_manufactories
+		required_missions = { muscovy_5_2 }
+		trigger = { 
+			num_of_owned_provinces_with = {
+				has_building = workshop
+				value = 15
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "modifier_muscovy_4_3"
+				duration = 9125 #25 years
+			}
+			add_years_of_income = 1
+			define_advisor = {
+				type = treasurer
+				skill = 3 
+				culture = root
+				cost_multiplier = 0.3
+				name = "Ivan Mozhaisky" 
+			}
+		}
+	}
+	
+	muscovy_4_5 = {
+		position = 5
+		icon = mission_dominate_home_trade_node
+		required_missions = { muscovy_5_4 }
+		trigger = { 
+			33 = {
+				owned_by = ROOT
+				is_strongest_trade_power = ROOT
+			}
+			280 = {
+				owned_by = ROOT
+				is_strongest_trade_power = ROOT
+			}
+		}
+		effect = {
+			add_years_of_income = 1
+			add_dip_power = 50
+		}
+	}
+	
+	muscovy_4_6 = {
+		position = 6
+		icon = mission_sea_battles
+		required_missions = { muscovy_4_5 }
+		trigger = {
+			num_of_owned_provinces_with = {
+				has_building = marketplace
+				has_building = trade_depot
+				has_building = stock_exchange
+				value = 15
+			}
+			owns = 295
+		}
+		effect = {
+			295 = {
+				add_base_tax = 2
+				add_base_manpower = 2
+				add_base_production = 2
+			}
+			add_prestige = 10
+		}
+	}
+}
+
+muscovy_5 = {
+	slot = 5
+	generic = yes
+	ai = yes
+	potential = {
+		OR = {
+			tag = MOS
+		}
+	}
+	has_country_shield = yes
+
+	muscovy_5_1 = {
+		position = 1
+		icon = mission_high_income
+		required_missions = { }
+		trigger = { 
+			grown_by_development = 100
+		}
+		effect = {
+			add_country_modifier = {
+				name = "modifier_muscovy_5_1"
+				duration = 7300 
+			}
+		}
+	}
+	
+	muscovy_5_2 = {
+		position = 2
+		icon = mission_war_chest
+		required_missions = { muscovy_5_1 }
+		trigger = { 
+			share_of_starting_income = 3
+		}
+		effect = {
+			add_country_modifier = {
+				name = "modifier_muscovy_5_2"
+				duration = 7300 
+			}
+			add_adm_power = 100
+		}
+	}
+	
+	muscovy_5_3 = {
+		position = 3
+		icon = mission_have_manufactories
+		required_missions = { muscovy_5_2 }
+		trigger = { 
+			num_of_owned_provinces_with = {
+				base_production = 12
+				value = 8
+			}
+			owns = 295
+		}
+		effect = {
+			add_country_modifier = {
+				name = "modifier_muscovy_5_3"
+				duration = 7300 
+			}
+			295 = {
+				add_base_tax = 2
+				add_base_manpower = 2
+				add_base_production = 2
+			}
+		}
+	}
+	
+	muscovy_5_4 = {
+		position = 4
+		icon = mission_conquer_50_development
+		required_missions = { muscovy_4_3 muscovy_5_3 }
+		trigger = { 
+			grown_by_development = 500
+		}
+		effect = {
+			add_prestige = 30
+			add_yearly_manpower = 5
+		}
+	}
+	
+	muscovy_5_5 = {
+		position = 5
+		icon = mission_early_modern_university
+		required_missions = { muscovy_5_4 }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 295
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = { 
+			295 = {
+				has_building = university
+			}
+		}
+		effect = {
+			change_innovativeness = 5
+			add_adm_power = 50
+			add_dip_power = 50
+			add_mil_power = 50
+		}
+	}
+	
+	muscovy_5_6 = {
+		position = 6
+		icon = mission_establish_the_prikazy
+		required_missions = { muscovy_5_5 }
+		trigger = { 
+			num_of_owned_provinces_with = {
+				OR = {
+					has_building = courthouse
+					has_building = town_hall
+				}
+				value = 10
+			}
+			monthly_adm = 10
+		}
+		effect = {
+			add_stability = 1
+			define_advisor = {
+				type = treasurer
+				skill = 5 
+				culture = root
+				cost_multiplier = 0.5
+				name = "Mikhail Trubetskoy" 
+			}
+		}
+	}
+	
+	muscovy_5_7 = {
+		position = 7
+		icon = modded_industrial_revolution
+		required_missions = { muscovy_4_6 muscovy_5_6 }
+		trigger = {
+			num_of_owned_provinces_with = {
+				OR = {
+					has_building = furnace
+				}
+				value = 10
+			}
+			owns = 295
+			owns = 310
+			owns = 280
+			owns = 1082
+		}
+		effect = {
+			add_country_modifier = {
+				name = "modifier_muscovy_5_7"
+				duration = 7300 
+			}
+			295 = {
+				add_base_production = 3
+			}
+			310 = {
+				add_base_production = 3
+			}
+			280 = {
+				add_base_production = 3
+			}
+			1082 = {
+				add_base_production = 3
+			}
+		}
+	}
+}

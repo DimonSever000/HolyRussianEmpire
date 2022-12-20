@@ -54,6 +54,8 @@ R3C = "countries/R3C.txt"
 R3D = "countries/R3D.txt"
 R3E = "countries/R3E.txt"
 R3F = "countries/R3F.txt"
+R3G = "countries/R3G.txt"
+R3H = "countries/R3H.txt"
 #
 N1A = "countries/N1A.txt"
 N1B = "countries/N1B.txt"

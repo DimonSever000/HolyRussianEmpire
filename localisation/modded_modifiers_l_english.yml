@@ -31,3 +31,29 @@
  modifier_smolensk_3_4:0 "Smolensk diplomatic power"
  modifier_smolensk_3_5:0 "Birth of the Baltic Fleet"
  #
+ modifier_white_ruthenia_1_1:0 "Diplomatic mission"
+ modifier_white_ruthenia_1_5:0 "Defender of the Empire"
+ modifier_white_ruthenia_2_4:0 "Victory over Poland"
+ modifier_white_ruthenia_2_5:0 "Economic growth"
+ modifier_white_ruthenia_2_6:0 "Great Ruthenia"
+ modifier_white_ruthenia_3_1:0 "Church control"
+ #
+ modifier_muscovy_1_1:0 "God with us"
+ modifier_muscovy_1_2_1:0 "Religious consciousness"
+ modifier_muscovy_1_2_2:0 "Blessing of St. Michael"
+ modifier_muscovy_1_2_3:0 "Blessing of Eleusa"
+ modifier_muscovy_1_2_4:0 "Blessing of Christ Pancreator"
+ modifier_muscovy_1_2_5:0 "Blessing of St. Nicholas"
+ modifier_muscovy_1_2_6:0 "Blessing of St. John Climacus"
+ modifier_muscovy_1_4:0 "Sword of God"
+ modifier_muscovy_2_1:0 "Freedom of Moscow"
+ modifier_muscovy_3_2:0 "Mozhaisk treaty"
+ modifier_muscovy_4_3:0 "Economic growth"
+ modifier_muscovy_5_1:0 "Growing economy"
+ modifier_muscovy_5_2:0 "Tax reform"
+ modifier_muscovy_5_3:0 "Craft cities"
+ modifier_muscovy_5_7:0 "Industrial Revolution"
+ modifier_muscovy_5_10:0 "Great Moscow"
+ #
+ 
+ 

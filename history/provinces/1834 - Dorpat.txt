@@ -1,11 +1,11 @@
 #Dorpat
 
-owner = EST
-controller = EST
-add_core = EST
+owner = LIV
+controller = LIV
+add_core = LIV
 culture = estonian
-religion = orthodox
-hre = yes
+religion = catholic
+hre = no
 base_tax = 3 
 base_production = 5
 trade_goods = naval_supplies

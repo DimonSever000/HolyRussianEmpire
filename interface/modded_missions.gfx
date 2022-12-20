@@ -1,0 +1,23 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "modded_archangel_michael"
+		texturefile = "gfx//interface//missions//modded_archangel_michael.dds"
+	}
+	
+	spriteType = {
+		name = "modded_church_of_ivan_the_blessed"
+		texturefile = "gfx//interface//missions//modded_church_of_ivan_the_blessed.dds"
+	}
+	
+	spriteType = {
+		name = "modded_industrial_revolution"
+		texturefile = "gfx//interface//missions//modded_industrial_revolution.dds"
+	}
+	
+	spriteType = {
+		name = "modded_moscow_freedom"
+		texturefile = "gfx//interface//missions//modded_moscow_freedom.dds"
+	}
+	
+}	

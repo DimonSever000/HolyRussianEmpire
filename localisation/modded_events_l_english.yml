@@ -159,10 +159,76 @@
  modded_event_185600912_desc:0 "Don refuses to negotiate and prepares an army!"
  modded_event_185600912_option_1:0 "We'll show these upstarts their place!"
  #
+ #
+ #
  modded_event_18560010_title:0 "Voice of the cities"
  modded_event_18560010_desc:0 "The most important cities of our state announced an ultimatum to us. We have several painful options for dealing with the crisis. What should we do?"
  modded_event_18560010_option_1:0 "We will not listen to these upstarts! Bring in the troops!"
  modded_event_18560010_option_2:0 "I will have to accept a compromise and abdicate the throne."
  modded_event_18560010_option_3:0 "All we can do is let them go..."
+ #
+ #
+ #
+ modded_event_18560011_title:0 "Minsk Congress"
+ modded_event_18560011_desc:0 "Tens of years ago, our country was divided due to dynastic strife, which in the end turned out to be disastrous. We must try to diplomatically unite part of our territories into a single state."
+ modded_event_18560011_option_1:0 "Let's do it!"
+ #
+ modded_event_185600111_title:0 "Minsk Congress"
+ modded_event_185600111_desc:0 "The prince of white ruthenia has convened a congress in Minsk and proposes to us a diplomatic annex with broad self-government. How will we respond to this proposal?"
+ modded_event_185600111_option_1:0 "Long live the grand prince!"
+ modded_event_185600111_option_2:0 "Freedom is not for sale!"
+ #
+ modded_event_1856001111_title:0 "Minsk Congress"
+ modded_event_1856001111_desc:0 "Minsk agrees to become part of the principality on the terms of broad autonomy."
+ modded_event_1856001111_option_1:0 "Good news"
+ #
+ modded_event_1856001121_title:0 "Minsk Congress"
+ modded_event_1856001121_desc:0 "Mazyr agrees to become part of the principality on the terms of broad autonomy."
+ modded_event_1856001121_option_1:0 "Good news"
+ #
+ modded_event_1856001112_title:0 "Minsk Congress"
+ modded_event_1856001112_desc:0 "Minsk categorically refuses to negotiate and seeks the protection of other states."
+ modded_event_1856001112_option_1:0 "They will regret..."
+ #
+ modded_event_1856001122_title:0 "Minsk Congress"
+ modded_event_1856001122_desc:0 "Mazyr categorically refuses to negotiate and seeks the protection of other states."
+ modded_event_1856001122_option_1:0 "They will regret..."
+ #
+ #
+ #
+ modded_event_18560012_title:0 "Church reform"
+ modded_event_18560012_desc:0 "Bringing order to church rituals became an important part of church reform."
+ modded_event_18560012_option_1:0 "God bless!"
+ #
+ #
+ #
+ modded_event_18560013_title:0 "Zemsky Sobor"
+ modded_event_18560013_desc:0 "The time has come to gather representatives of all classes and discuss the fate of our state. On the agenda is the issue of succession to the throne and the choice of form of government."
+ modded_event_18560013_option_1:0 "Principality"
+ modded_event_18560013_option_2:0 "Veche Republic"
+ modded_event_18560013_option_3:0 "Peasant Republic"
+ modded_event_18560013_option_4:0 "Boyars Republic"
+ #
+ #
+ #
+ modded_event_18560014_title:0 "Agreement with Mozhaisk"
+ modded_event_18560014_desc:0 "We must try to annex Mozhaisk peacefully through the mediation of Kozelsk diplomats."
+ modded_event_18560014_option_1:0 "Let's try"
+ #
+ modded_event_185600141_title:0 "Agreement with Moscow"
+ modded_event_185600141_desc:0 "Moscow invites us to join peacefully. At the same time, Kozelsk acts as an intermediary, but we doubt that he will intervene."
+ modded_event_185600141_option_1:0 "We will join"
+ modded_event_185600141_option_2:0 "Never!"
+ #
+ modded_event_1856001411_title:0 "Agreement with Mozhaisk"
+ modded_event_1856001411_desc:0 "Mozhaisk accepts our conditions and becomes part of the principality with guarantees of freedom for local boyars."
+ modded_event_1856001411_option_1:0 "Great!"
+ #
+ modded_event_1856001412_title:0 "Agreement with Mozhaisk"
+ modded_event_1856001412_desc:0 "Mozhaisk refused our generous offer, for which it will pay with grief and war!"
+ modded_event_1856001412_option_1:0 "Means war"
+ #
+ #
+ #
  
  

@@ -17,9 +17,11 @@ smolensk_1 = {
 			total_own_and_non_tributary_subject_development = 100
 		}
 		effect = {
-			add_province_modifier = {
-				name = "growth_of_capital"
-				duration = 7300
+			293 = {
+				add_province_modifier = {
+					name = "growth_of_capital"
+					duration = 7300
+				}
 			}
 			add_years_of_income = 0.25
 		}

@@ -298,103 +298,103 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_emperor_reichsreform"
-		texturefile = "gfx/interface/imperial_diet_reforms/call_for_reichsreform.dds"
+		texturefile = "gfx/interface/imperial_diet_reforms/center_branch_1.dds"
 		loadType = "INGAME"
 	}
 						
 	spriteType = {
 		name = "GFX_emperor_reichsregiment"
-		texturefile = "gfx/interface/imperial_diet_reforms/institute_reichsregiment.dds"
+		texturefile = "gfx/interface/imperial_diet_reforms/center_branch_2.dds"
 		loadType = "INGAME"
 	}
 						
 	spriteType = {
 		name = "GFX_emperor_reichsstabilitaet"
-		texturefile = "gfx/interface/imperial_diet_reforms/absolute_reichsstabilitat.dds"
+		texturefile = "gfx/interface/imperial_diet_reforms/center_branch_3.dds"
 		loadType = "INGAME"
 	}
 	
 	spriteType = {
 		name = "GFX_emperor_gemeinerpfennig"
-		texturefile = "gfx/interface/imperial_diet_reforms/enact_gemeiner_pfennig.dds"
+		texturefile = "gfx/interface/imperial_diet_reforms/center_branch_4.dds"
 		loadType = "INGAME"
 	}
 	
 	spriteType = {
 		name = "GFX_emperor_perpetual_diet"
-		texturefile = "gfx/interface/imperial_diet_reforms/perpetual_diet.dds"
+		texturefile = "gfx/interface/imperial_diet_reforms/center_branch_5.dds"
 		loadType = "INGAME"
 	}
 	
 	spriteType = {
 		name = "GFX_emperor_landsknechtswesen"
-		texturefile = "gfx/interface/imperial_diet_reforms/create_the_landsknechtswesen.dds"
+		texturefile = "gfx/interface/imperial_diet_reforms/center_branch_6.dds"
 		loadType = "INGAME"
 	}
 	
 	spriteType = {
 		name = "GFX_emperor_landfriede"
-		texturefile = "gfx/interface/imperial_diet_reforms/ewiger_landfriede.dds"
+		texturefile = "gfx/interface/imperial_diet_reforms/center_branch_7.dds"
 		loadType = "INGAME"
 	}
 	
 	spriteType = {
 		name = "GFX_emperor_reichstag_collegia"
-		texturefile = "gfx/interface/imperial_diet_reforms/establish_the_reichstag_collegia.dds"
+		texturefile = "gfx/interface/imperial_diet_reforms/left_branch_1.dds"
 		loadType = "INGAME"
 	}
 	
 	spriteType = {
 		name = "GFX_emperor_expand_gemeiner_pfennig"
-		texturefile = "gfx/interface/imperial_diet_reforms/expand_the_gemeiner_pfennig.dds"
+		texturefile = "gfx/interface/imperial_diet_reforms/left_branch_2.dds"
 		loadType = "INGAME"
 	}
 	
 	spriteType = {
 		name = "GFX_emperor_rechenschaft"
-		texturefile = "gfx/interface/imperial_diet_reforms/embrace_rechenschaft_measures.dds"
+		texturefile = "gfx/interface/imperial_diet_reforms/left_branch_3.dds"
 		loadType = "INGAME"
 	}
 	
 	spriteType = {
 		name = "GFX_emperor_geteilte_macht"
-		texturefile = "gfx/interface/imperial_diet_reforms/geteilte_macht.dds"
+		texturefile = "gfx/interface/imperial_diet_reforms/left_branch_4.dds"
 		loadType = "INGAME"
 	}
 	
 	spriteType = {
 		name = "GFX_emperor_reichskrieg"
-		texturefile = "gfx/interface/imperial_diet_reforms/reichskrieg.dds"
+		texturefile = "gfx/interface/imperial_diet_reforms/left_branch_5.dds"
 		loadType = "INGAME"
 	}
 	
 	spriteType = {
 		name = "GFX_emperor_hofgericht"
-		texturefile = "gfx/interface/imperial_diet_reforms/strengthen_the_hofgericht.dds"
+		texturefile = "gfx/interface/imperial_diet_reforms/right_branch_1.dds"
 		loadType = "INGAME"
 	}
 	
 	spriteType = {
 		name = "GFX_emperor_imperial_estates"
-		texturefile = "gfx/interface/imperial_diet_reforms/curtail_the_imperial_estates.dds"
+		texturefile = "gfx/interface/imperial_diet_reforms/right_branch_2.dds"
 		loadType = "INGAME"
 	}
 
 	spriteType = {
 		name = "GFX_emperor_erbkaisertum"
-		texturefile = "gfx/interface/imperial_diet_reforms/proclaim_erbkaisertum.dds"
+		texturefile = "gfx/interface/imperial_diet_reforms/right_branch_3.dds"
 		loadType = "INGAME"
 	}
 	
 	spriteType = {
 		name = "GFX_emperor_privilegia_de_non_appelando"
-		texturefile = "gfx/interface/imperial_diet_reforms/revoke_the_privilegia.dds"
+		texturefile = "gfx/interface/imperial_diet_reforms/right_branch_4.dds"
 		loadType = "INGAME"
 	}
 	
 	spriteType = {
 		name = "GFX_emperor_renovatio"
-		texturefile = "gfx/interface/imperial_diet_reforms/renovatio_imperii.dds"
+		texturefile = "gfx/interface/imperial_diet_reforms/right_branch_5.dds"
 		loadType = "INGAME"
 	}
 	

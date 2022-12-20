@@ -1,0 +1,565 @@
+white_ruthenia_1 = {
+	slot = 1
+	generic = yes
+	ai = yes
+	potential = {
+		OR = {
+			tag = R2A
+		}
+	}
+	has_country_shield = yes
+
+	white_ruthenia_1_1 = {
+		position = 1
+		icon = mission_alliances
+		required_missions = {  }
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = building_alliances.tooltip
+				num_of_allies = 2
+				calc_true_if = {
+					all_ally = {
+						has_opinion = {
+							who = ROOT
+							value = 150
+						}
+					}
+					amount = 2
+				}
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = "modifier_white_ruthenia_1_1"
+				duration = 7300
+			}
+			add_dip_power = 50
+		}
+	}
+	
+	white_ruthenia_1_2 = {
+		position = 2
+		icon = mission_war_chest
+		required_missions = { white_ruthenia_1_1 }
+		trigger = {
+			workshop = 10
+		}
+		effect = {
+			add_years_of_income = 1.5
+		}
+	}
+	
+	white_ruthenia_1_3 = {
+		position = 3
+		icon = mission_settlers_north_america
+		required_missions = { white_ruthenia_1_2 }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 276
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			owns = 276
+			276 = { base_production = 10 }
+			276 = {
+				OR = {
+					has_building = workshop
+					has_building = counting_house
+				}
+			}
+		}
+		effect = {
+			276 = {
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+			}
+			add_yearly_manpower = 2
+		}
+	}
+	
+	white_ruthenia_1_4 = {
+		position = 4
+		icon = mission_unite_home_region
+		required_missions = { white_ruthenia_2_3 }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 271
+				province_id = 272
+				province_id = 1936
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			OR = {
+				LIT = {
+					is_subject_of = root
+				}
+				AND = {
+					owns = 271
+					owns = 272
+					owns = 1936
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					exists = TEU
+					TEU = { NOT = { is_subject_of = root } }
+				}
+				add_casus_belli = {
+					target = TEU
+					type = cb_vassalize_mission
+					months = 300
+				}
+			}
+			else = {
+				add_adm_power = 50
+				add_dip_power = 50
+				add_mil_power = 50
+			}
+		}
+	}
+	
+	white_ruthenia_1_5 = {
+		position = 5
+		icon = mission_teutonic_knights
+		required_missions = { white_ruthenia_1_4 }
+		provinces_to_highlight = {
+			OR = {
+				area = east_prussia_area
+				area = west_prussia_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			OR = {
+				TEU = {
+					is_subject_of = root
+				}
+				AND = {
+					east_prussia_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					west_prussia_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "modifier_white_ruthenia_1_5"
+				duration = 7300 #25 years
+			}
+		}
+	}
+}
+
+white_ruthenia_2 = {
+	slot = 2
+	generic = yes
+	ai = yes
+	potential = {
+		OR = {
+			tag = R2A
+		}
+	}
+	has_country_shield = yes
+	
+	
+	white_ruthenia_2_1 = {
+		position = 1
+		icon = mission_conquer_tver
+		required_missions = { }
+		trigger = {
+			monthly_adm = 7
+			monthly_dip = 7
+			monthly_mil = 7
+			stability = 1
+		}
+		effect = {
+			country_event = { id = 18560011 }
+		}
+	}
+	
+	white_ruthenia_2_2 = {
+		position = 2
+		icon = balance_of_power
+		required_missions = { white_ruthenia_1_1 white_ruthenia_2_1 }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 276
+				province_id = 4544
+				province_id = 4115
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			owns = 276
+			owns = 4544
+			owns = 4115
+		}
+		effect = {
+			add_prestige = 30
+			add_yearly_manpower = 3
+		}
+	}
+	
+	white_ruthenia_2_3 = {
+		position = 3
+		icon = mission_build_up_to_force_limit
+		required_missions = { white_ruthenia_2_2 }
+		trigger = {
+			num_of_owned_provinces_with = {
+				has_fort_building_trigger = yes 
+				value = 3
+			}
+			army_size_percentage = 1
+		}
+		effect = {
+			if = {
+				limit = {
+					exists = LIT
+				}
+				add_casus_belli = {
+					type = cb_vassalize_mission
+					months = 300
+					target = LIT
+				}
+			}
+			if = {
+				limit = {
+					exists = TEU
+				}
+				add_casus_belli = {
+					type = cb_vassalize_mission
+					months = 300
+					target = TEU
+				}
+			}
+			if = {
+				limit = {
+					exists = POL
+				}
+				add_casus_belli = {
+					type = cb_vassalize_mission
+					months = 300
+					target = POL
+				}
+			}
+			add_stability = 1
+		}
+	}
+	
+	white_ruthenia_2_4 = {
+		position = 4
+		icon = mission_unite_home_region
+		required_missions = { white_ruthenia_2_3 }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 254
+				province_id = 262
+				province_id = 257
+				province_id = 260
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			OR = {
+				POL = {
+					is_subject_of = root
+				}
+				AND = {
+					owns = 254
+					owns = 262
+					owns = 257
+					owns = 260
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "modifier_white_ruthenia_2_4"
+				duration = 7300 #25 years
+			}
+		}
+	}
+	
+	white_ruthenia_2_5 = {
+		position = 5
+		icon = mission_conquer_50_development
+		required_missions = { white_ruthenia_1_4 white_ruthenia_2_4 white_ruthenia_3_4 }
+		trigger = {
+			grown_by_development = 400
+		}
+		effect = {
+			add_country_modifier = {
+				name = "modifier_white_ruthenia_2_5"
+				duration = 7300 #25 years
+			}
+		}
+	}
+	
+	white_ruthenia_2_6 = {
+		position = 6
+		icon = mission_monarch_in_throne_room
+		required_missions = { white_ruthenia_1_5 white_ruthenia_2_5 white_ruthenia_3_5 }
+		provinces_to_highlight = {
+			OR = {
+				area = podlasie_area
+				area = pripyat_area
+				area = minsk_area
+				area = lithuania_area
+				province_id = 279
+				province_id = 4538
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			grown_by_development = 500
+			podlasie_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			pripyat_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			tver_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			minsk_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			owns = 279
+			owns = 4538
+			if = {
+				limit = {
+					government = monarchy
+				}
+				is_emperor = yes
+				legitimacy = 100
+			}
+			else_if = {
+				limit = {
+					government = republic
+				}
+				republican_tradition = 100
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "modifier_white_ruthenia_2_6"
+				duration = -1
+			}
+		}
+	}
+}
+
+white_ruthenia_3 = {
+	slot = 3
+	generic = yes
+	ai = yes
+	potential = {
+		OR = {
+			tag = R2A
+		}
+	}
+	has_country_shield = yes
+
+	white_ruthenia_3_1 = {
+		position = 1
+		icon = mission_hands_praying
+		required_missions = { }
+		trigger = { 
+			if = {
+				limit = {
+					has_estate = estate_nobles
+				}
+				estate_loyalty = {
+					estate = estate_church
+					loyalty = 70
+				}
+			}
+			num_of_owned_provinces_with = {
+				has_tax_building_trigger = yes
+				value = 3
+			}
+			owns = 4537
+		}
+		effect = {
+			add_country_modifier = {
+				name = "modifier_white_ruthenia_3_1"
+				duration = 7300 #25 years
+			}
+			4537 = {
+				add_base_tax = 3
+			}
+		}
+	}
+	
+	white_ruthenia_3_2 = {
+		position = 2
+		icon = mission_noble_council
+		required_missions = { white_ruthenia_3_1 }
+		trigger = { 
+			num_of_royal_marriages = 3
+			prestige = 30
+			OR = {
+				owns = 280
+				KIE = {
+					has_opinion = {
+						who = root
+						value = 150
+					}
+				}
+			}
+		}
+		effect = {
+			add_prestige = 20
+			if = {
+				limit = {
+					exists = PLT
+					valid_for_personal_unions_trigger = yes
+					PLT = {
+						valid_for_personal_unions_trigger = yes
+					}
+				}
+				add_casus_belli = {
+					type = cb_restore_personal_union
+					months = 300
+					target = PLT
+				}
+			}
+		}
+	}
+	
+	white_ruthenia_3_3 = {
+		position = 3
+		icon = mission_autocratic_rule
+		required_missions = { white_ruthenia_3_2 }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 275
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = { 
+			owns = 275
+			NOT = { exists = PLT }
+		}
+		effect = {
+			if = {
+				limit = {
+					exists = VOL
+				}
+				add_casus_belli = {
+					type = cb_vassalize_mission
+					months = 300
+					target = VOL
+				}
+			}
+		}
+	}
+	
+	white_ruthenia_3_4 = {
+		position = 4
+		icon = mission_unite_home_region
+		required_missions = { white_ruthenia_2_3 white_ruthenia_3_3 }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 277
+				province_id = 4538
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = { 
+			owns = 277
+			owns = 4538
+			OR = {
+				VOL = {
+					is_subject_of = root
+				}
+				AND = {
+					owns = 279
+					owns = 2424
+					owns = 2961
+				}
+			}
+		}
+		effect = {
+			add_prestige = 30
+			add_yearly_manpower = 5
+		}
+	}
+	
+	white_ruthenia_3_5 = {
+		position = 5
+		icon = mission_dominate_home_trade_node
+		required_missions = { white_ruthenia_3_4 }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 276
+				province_id = 4115
+				province_id = 4537
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			OR = {
+				262 = {
+					is_strongest_trade_power = ROOT
+				}
+				280 = {
+					is_strongest_trade_power = ROOT
+				}
+			}
+			owns = 276
+			owns = 4115
+			owns = 4537
+		}
+		effect = {
+			4537 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+			4115 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+			276 = {
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+			}
+		}
+	}
+}

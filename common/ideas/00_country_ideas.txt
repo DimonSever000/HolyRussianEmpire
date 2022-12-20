@@ -536,46 +536,6 @@ SCA_ideas = {
 	}
 }
 
-MOS_ideas = {
-	start = {
-		diplomatic_upkeep = 1
-		shock_damage = 0.10
-	}
-
-	bonus = {
-		land_forcelimit_modifier = 0.33
-	}
-
-	trigger = {
-		tag = MOS
-	}
-	free = yes		#will be added at load.
-
-	gatherers_of_tribute = {
-		global_tax_modifier = 0.10
-	}
-	legacy_of_dmitriy_donskoi = {
-		army_tradition = 0.5
-	}
-	seat_of_metropolitan_bishop  = {
-		tolerance_own = 1
-		global_missionary_strength = 0.01
-	}
-	pomestnoe_voisko = {
-		land_morale = 0.10
-	}
-	strength_of_the_boyars = {
-		stability_cost_modifier = -0.2
- 	}
-	zasechnaya_cherta = {
-		fort_maintenance_modifier = -0.20
-	}
-	descendants_of_byzantine_emperors = {
-		diplomatic_reputation = 1
-	}
-
-}
-
 
 RUS_ideas = {
 	start = {
@@ -16743,40 +16703,80 @@ SMO_ideas = {
 
 NOV_ideas = {
 	start = {
-		merc_maintenance_modifier = -0.15
-		diplomatic_reputation = 1
+		advisor_pool = 1
+		reduced_liberty_desire = -0.15
 	}
 	
 	bonus = {
-		defensiveness = 0.2
+		technology_cost = -0.1
 	}
 	
 	trigger = {
 		tag = NOV
 	}
-	free = yes		#will be added at load.
+	free = yes
 	
-	northern_center_of_arts = {
-		prestige = 1
-	}
-	city_of_churches = {
-		global_missionary_strength = 0.01
-	}
-	ivans_hundred = {
-		republican_tradition = 0.3
-	}
-	control_of_the_hanseatic_kontor = {
+	NOV_idea_I = {
 		merchants = 1
-		global_trade_power = 0.05
 	}
-	grand_dukes_army = {
-		global_manpower_modifier = 0.20
-	}
-	exploration_tradition = {
+	NOV_idea_II = {
 		navy_tradition = 1
 		privateer_efficiency = 0.15
 	}
-	baltic_shipyard = {
+	NOV_idea_III = {
+		diplomatic_reputation = 1
+		republican_tradition = 0.3
+	}
+	NOV_idea_IV = {
+		global_institution_spread = 0.2
+	}
+	NOV_idea_V = {
 		light_ship_cost = -0.20
 	}
+	NOV_idea_VI = {
+		development_cost = -0.1
+	}
+	NOV_idea_VII = {
+		infantry_power = 0.1
+	}
+}
+
+# Muscovy
+MOS_ideas = {
+	start = {
+		stability_cost_modifier = -0.15
+	}
+
+	bonus = {
+		land_forcelimit_modifier = 0.33
+	}
+
+	trigger = {
+		tag = MOS
+	}
+	free = yes
+	
+	MOS_idea_I = {
+		years_of_nationalism = -5
+	}
+	MOS_idea_II = {
+		global_tax_modifier = 0.10
+	}
+	MOS_idea_III = {
+		tolerance_own = 2
+		global_missionary_strength = 0.03
+	}
+	MOS_idea_IV = {
+		global_autonomy = -0.05
+	}
+	MOS_idea_V = {
+		core_creation = -0.25
+	}
+	MOS_idea_VI = {
+		manpower_recovery_speed = 0.25
+	}
+	MOS_idea_VII = {
+		fire_damage_received = -0.1
+	}
+
 }

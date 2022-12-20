@@ -1,5 +1,5 @@
-government = republic
-add_government_reform = free_city
+government = monarchy
+add_government_reform = principality
 government_rank = 1
 mercantilism = 15
 primary_culture = vladimirian
@@ -8,9 +8,11 @@ technology_group = eastern
 capital = 1956	# Suzdal
 fixed_capital = 1956
 
-1441.1.1 = {
+1440.1.1 = {
 	monarch = {
 		name = "Boris"
+		dynasty = Rurikovich
+		birth_date = 1393.1.1
 		adm = 3
 		dip = 1
 		mil = 1

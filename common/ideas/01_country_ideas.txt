@@ -156,3 +156,42 @@ R1Z_ideas = {
 	}
 }
 
+# White Ruthenia
+R2A_ideas = {
+	start = {
+		cavalry_cost = -0.2
+	}
+	
+	bonus = {
+		land_morale = 0.15
+	}	
+
+	trigger = {
+		tag = R2A
+	}
+	free = yes
+	
+	R2A_idea_I = {
+		trade_efficiency = 0.1
+	}
+	R2A_idea_II = {
+		manpower_recovery_speed = 0.15
+	}
+	R2A_idea_III = {
+		diplomatic_reputation = 1
+		dip_tech_cost_modifier = -0.1
+	}
+	R2A_idea_IV = {
+		discipline = 0.05
+	}
+	R2A_idea_V = {
+		max_absolutism = 25
+	}
+	R2A_idea_VI = {
+		stability_cost_modifier = -0.1
+	}
+	R2A_idea_VII = {
+		institution_spread_from_true_faith = 0.2
+	}
+}
+

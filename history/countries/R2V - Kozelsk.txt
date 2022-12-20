@@ -6,6 +6,7 @@ religion = orthodox
 primary_culture = russian
 capital = 296
 fixed_capital = 296
+historical_friend = MOS
 
 1435.1.1 = {
 	monarch = {

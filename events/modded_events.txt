@@ -1334,3 +1334,372 @@ country_event = {
 		}
 	}
 }
+
+# Minsk Congress
+country_event = {
+	id = 18560011
+	title = "modded_event_18560011_title"
+	desc = "modded_event_18560011_desc"
+	picture = DIPLOMACY_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "modded_event_18560011_option_1"
+		if = {
+			limit = { exists = R2B }
+			R2B = {
+				country_event = { id = 185600111 }
+			}
+		}
+		if = {
+			limit = { exists = R2C }
+			R2C = {
+				country_event = { id = 185600111 }
+			}
+		}
+	}
+}
+
+# Minsk Congress - subjects event
+country_event = {
+	id = 185600111
+	title = "modded_event_185600111_title"
+	desc = "modded_event_185600111_desc"
+	picture = DIPLOMACY_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "modded_event_185600111_option_1"
+		if = {
+			limit = { tag = R2B }
+			R2A = {
+				country_event = { id = 1856001111 }
+			}
+		}
+		if = {
+			limit = { tag = R2C }
+			R2A = {
+				country_event = { id = 1856001121 }
+			}
+		}
+		ai_chance = {
+			factor = 2
+			modifier = {
+				factor = -5
+				NOT = {
+					has_opinion = {
+						who = ROOT 
+						value = 120 
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "modded_event_185600111_option_2"
+		add_stability = 1
+		if = {
+			limit = { tag = R2B }
+			R2A = {
+				country_event = { id = 1856001112 }
+			}
+		}
+		if = {
+			limit = { tag = R2C }
+			R2A = {
+				country_event = { id = 1856001122 }
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+
+# Minsk Congress - R2B subject agrees
+country_event = {
+	id = 1856001111
+	title = "modded_event_1856001111_title"
+	desc = "modded_event_1856001111_desc"
+	picture = DIPLOMACY_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "modded_event_1856001111_option_1"
+		add_prestige = 10
+		R2B = {
+			every_province = {
+				limit = {
+					owned_by = R2B
+				}
+				cede_province = R2A
+				add_core = R2A
+				add_local_autonomy = 100
+			}
+		}
+		set_capital = 276
+	}
+}
+
+# Minsk Congress - R2B subject agrees
+country_event = {
+	id = 1856001121
+	title = "modded_event_1856001121_title"
+	desc = "modded_event_1856001121_desc"
+	picture = DIPLOMACY_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "modded_event_1856001121_option_1"
+		add_prestige = 10
+		R2C = {
+			every_province = {
+				limit = {
+					owned_by = R2C
+				}
+				cede_province = R2A
+				add_core = R2A
+				add_local_autonomy = 100
+			}
+		}
+	}
+}
+
+# Minsk Congress - R3C subject refuses
+country_event = {
+	id = 1856001112
+	title = "modded_event_1856001112_title"
+	desc = "modded_event_1856001112_desc"
+	picture = SCOTTISH_MERCENARIES_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "modded_event_1856001112_option_1"
+		add_prestige = -10
+	}
+}
+
+# Minsk Congress - R2K subject refuses
+country_event = {
+	id = 1856001122
+	title = "modded_event_1856001122_title"
+	desc = "modded_event_1856001122_desc"
+	picture = SCOTTISH_MERCENARIES_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "modded_event_1856001122_option_1"
+		add_prestige = -10
+	}
+}
+
+# Church reform
+country_event = {
+	id = 18560012
+	title = "modded_event_18560012_title"
+	desc = "modded_event_18560012_desc"
+	picture = ORTHODOX_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "modded_event_18560012_option_1"
+		if = {
+			limit = { 
+				religion = orthodox 
+			}
+			if = {
+				limit = { 
+					current_icon = icon_michael
+				}
+				add_country_modifier = {
+					name = "modifier_muscovy_1_2_2"
+					duration = 7300
+				}
+			}
+			else_if = {
+				limit = { 
+					current_icon = icon_eleusa
+				}
+				add_country_modifier = {
+					name = "modifier_muscovy_1_2_3"
+					duration = 7300
+				}
+			}
+			else_if = {
+				limit = { 
+					current_icon = icon_pancreator
+				}
+				add_country_modifier = {
+					name = "modifier_muscovy_1_2_4"
+					duration = 7300
+				}
+			}
+			else_if = {
+				limit = { 
+					current_icon = icon_nicholas
+				}
+				add_country_modifier = {
+					name = "modifier_muscovy_1_2_5"
+					duration = 7300
+				}
+			}
+			else_if = {
+				limit = { 
+					current_icon = icon_climacus
+				}
+				add_country_modifier = {
+					name = "modifier_muscovy_1_2_6"
+					duration = 7300
+				}
+			}
+			else = {
+				add_country_modifier = {
+					name = "modifier_muscovy_1_2_1"
+					duration = 7300
+				}
+			}
+		}
+	}
+}
+
+# Zemsky Sobor
+country_event = {
+	id = 18560013
+	title = "modded_event_18560013_title"
+	desc = "modded_event_18560013_desc"
+	picture = REFORM_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "modded_event_18560013_option_1"
+		set_government_rank = 1
+		change_government = monarchy
+		add_government_reform = principality
+		ai_chance = {
+			factor = 10
+		}
+	}
+	
+	option = {
+		name = "modded_event_18560013_option_2"
+		set_government_rank = 1
+		change_government = republic
+		add_government_reform = veche_republic
+		ai_chance = {
+			factor = 3
+		}
+	}
+	
+	option = {
+		name = "modded_event_18560013_option_3"
+		set_government_rank = 1
+		change_government = republic
+		add_government_reform = peasant_republic
+		ai_chance = {
+			factor = 3
+		}
+	}
+	
+	option = {
+		name = "modded_event_18560013_option_4"
+		set_government_rank = 1
+		change_government = republic
+		add_government_reform = boyars_republic
+		ai_chance = {
+			factor = 3
+		}
+	}
+}
+
+# Agreement with Mozhaisk
+country_event = {
+	id = 18560014
+	title = "modded_event_18560014_title"
+	desc = "modded_event_18560014_desc"
+	picture = GOOD_WITH_MONARCH_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "modded_event_18560014_option_1"
+		if = {
+			limit = { exists = R1O }
+			R1O = {
+				country_event = { id = 185600141 }
+			}
+		}
+	}
+}
+
+# Agreement with Mozhaisk - Mozhaisk event
+country_event = {
+	id = 185600141
+	title = "modded_event_185600141_title"
+	desc = "modded_event_185600141_desc"
+	picture = DIPLOMACY_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "modded_event_185600141_option_1"
+		MOS = {
+			country_event = { id = 1856001411 }
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	
+	option = {
+		name = "modded_event_185600141_option_2"
+		add_mil_power = 100
+		MOS = {
+			country_event = { id = 1856001412 }
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+# Agreement with Mozhaisk - Mozhaisk agrees
+country_event = {
+	id = 1856001411
+	title = "modded_event_1856001411_title"
+	desc = "modded_event_1856001411_desc"
+	picture = DIPLOMACY_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "modded_event_1856001411_option_1"
+		add_prestige = 10
+		R1O = {
+			every_province = {
+				limit = {
+					owned_by = R1O
+				}
+				cede_province = MOS
+				add_core = MOS
+				add_local_autonomy = 50
+			}
+		}
+	}
+}
+
+# Agreement with Mozhaisk - Mozhaisk refuses
+country_event = {
+	id = 1856001412
+	title = "modded_event_1856001412_title"
+	desc = "modded_event_1856001412_desc"
+	picture = CONQUEST_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "modded_event_1856001412_option_1"
+		add_stability = -1
+		declare_war_with_cb = {
+			who = R1O
+			casus_belli = cb_annex
+		}
+	}
+}

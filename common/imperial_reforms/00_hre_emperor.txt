@@ -247,18 +247,8 @@ emperor_imperial_estates = {
 	gui_container = right_branch
 	ai_acceptance_centralize = yes
 	
-	on_effect = {
-		all = {
-			add_country_modifier = {
-				name = "modifier_emperor_imperial_estates"
-				duration = -1
-			}
-		}
-	}
-	off_effect = {
-		all = {
-			remove_country_modifier = modifier_emperor_imperial_estates
-		}
+	all = {
+		harsh_treatment_cost = -0.25
 	}
 
 	emperor = {

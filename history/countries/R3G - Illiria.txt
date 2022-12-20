@@ -1,0 +1,8 @@
+government = monarchy
+add_government_reform = feudalism_reform
+primary_culture = croatian
+religion = catholic
+add_accepted_culture = dalmatian
+add_accepted_culture = bosnian
+technology_group = eastern
+capital = 131

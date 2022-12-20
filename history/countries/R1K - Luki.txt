@@ -1,5 +1,5 @@
-government = republic
-add_government_reform = free_city
+government = monarchy
+add_government_reform = principality
 government_rank = 1
 mercantilism = 10
 primary_culture = pskovian
@@ -11,6 +11,8 @@ fixed_capital = 4148
 1440.1.1 = {
 	monarch = {
 		name = "Daniil"
+		dynasty = Rurikovich
+		birth_date = 1420.1.1
 		adm = 4
 		dip = 3
 		mil = 4

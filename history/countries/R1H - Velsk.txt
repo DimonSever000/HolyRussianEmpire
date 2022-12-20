@@ -1,5 +1,5 @@
-government = republic
-add_government_reform = free_city
+government = monarchy
+add_government_reform = principality
 government_rank = 1
 mercantilism = 10
 primary_culture = arkhangelsk
@@ -11,6 +11,8 @@ fixed_capital = 4259
 1441.1.1 = {
 	monarch = {
 		name = "Aleksandr"
+		dynasty = Rurikovich
+		birth_date = 1412.1.1
 		adm = 4
 		dip = 4
 		mil = 2

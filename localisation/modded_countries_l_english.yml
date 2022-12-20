@@ -45,8 +45,8 @@
  R1Z:0 "Pereyaslavl"
  R1Z_ADJ:0 "Pereyaslavl"
  #
- R2A:0 "White Ruthenian"
- R2A_ADJ:0 "White Ruthenian"
+ R2A:0 "White Ruthenia"
+ R2A_ADJ:0 "White Ruthenia"
  R2B:0 "Minsk"
  R2B_ADJ:0 "Minsk"
  R2C:0 "Mazyr"
@@ -108,6 +108,10 @@
  R3EC_ADJ:0 "Bryansk"
  R3F:0 "Trubchevsk"
  R3F_ADJ:0 "Trubchevsk"
+ R3G:0 "Illiria"
+ R3G_ADJ:0 "Illiria"
+ R3H:0 "Kastoria"
+ R3H_ADJ:0 "Kastoria"
  #
  N1A:0 "Chelyabinsk"
  N1A_ADJ:0 "Chelyabinsk"

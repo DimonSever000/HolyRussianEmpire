@@ -26,13 +26,6 @@ vassal = {
 	start_date = 1444.1.1
 }
 
-# Polotsk and Toropets
-vassal = {
-	first = PLT
-	second = R1P
-	start_date = 1444.1.1
-}
-
 # Vladimir and Suzdal
 vassal = {
 	first = R1R
@@ -80,5 +73,12 @@ dependency = {
 	subject_type = "tributary_state"
 	first = SCA
 	second = R2Y
+	start_date = 1444.1.1
+}
+
+# Kiev and Moldavia
+march = {
+	first = KIE
+	second = MOL
 	start_date = 1444.1.1
 }

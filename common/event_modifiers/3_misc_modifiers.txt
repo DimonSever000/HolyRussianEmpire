@@ -1,7 +1,7 @@
 ##################################################################################################
 # scriptable and usable for event-system below.
 ##################################################################################################
-
+#
 modifier_arkhangelsk_1_4 = {
 	harsh_treatment_cost = -0.25
 	global_unrest = -2
@@ -10,7 +10,9 @@ modifier_arkhangelsk_2_4 = {
 	trade_efficiency = 0.2
 	trade_steering = 0.2
 }
-
+#
+#
+#
 modifier_penza_1_4 = {
 	global_tax_modifier = 0.25
 	global_unrest = -3
@@ -24,7 +26,9 @@ modifier_penza_2_3 = {
 	tolerance_own = 2
 	land_morale = 0.1
 }
-
+#
+#
+#
 modifier_vladimir_2_2 = {
 	discipline = 0.05
 	land_morale = 0.1
@@ -37,84 +41,162 @@ modifier_vladimir_3_5 = {
 	mercenary_discipline = 0.1
 	prestige_from_land = 0.25
 }
-
+#
+#
+#
 modifier_novgorod_2_5 = {
 	trade_efficiency = 0.2
 	global_unrest = -1
 }
-
 modifier_novgorod_3_6 = {
 	interest = -1
 	inflation_reduction = 0.25	
 }
-
 modifier_novgorod_4_3 = {
 	production_efficiency = 0.1
 	merchants = 1
 }
-
+#
+#
+#
 modifier_ryazan_1_4 = {
 	harsh_treatment_cost = -0.5
 	global_unrest = -2
 }
-
 modifier_ryazan_2_3 = {
 	build_cost = -0.1
 	production_efficiency = 0.1
 }
-
 modifier_ryazan_2_4 = {
 	global_tax_modifier = 0.2
 	merchants = 1
 }
-
 modifier_ryazan_2_5 = {
 	discipline = 0.05
 	state_maintenance_modifier = -0.25
 }
-
+#
+#
+#
 modifier_pereyaslavl_1_4 = {
 	land_morale = 0.1
 	global_unrest = -2
 }
-
 modifier_pereyaslavl_2_1 = {
 	discipline = 0.05
 }
-
 modifier_pereyaslavl_3_4 = {
 	light_ship_cost = -0.2
 }
-
 modifier_pereyaslavl_2_5 = {
 	fire_damage_received = -0.1
 	recover_army_morale_speed = 0.1
 }
-
+#
+#
+#
 modifier_smolensk_1_2 = {
 	global_tax_modifier = 0.2
 	tolerance_own = 1
 }
-
 modifier_smolensk_1_3 = {
 	tolerance_own = 2
 	land_morale = 0.15
 }
-
 modifier_smolensk_2_5 = {
 	idea_cost = -0.1
 	leader_land_fire = 2
 }
-
 modifier_smolensk_3_4 = {
 	diplomatic_reputation = 1
 	fabricate_claims_cost = -0.25
 }
-
 modifier_smolensk_3_5 = {
 	galley_cost = -0.2
 }
-
-modifier_emperor_imperial_estates = {
-	global_autonomy = -0.05
+#
+#
+#
+modifier_white_ruthenia_1_1 = {
+	diplomatic_reputation = 1
+	diplomatic_upkeep = 1
+}
+modifier_white_ruthenia_1_5 = {
+	diplomatic_reputation = 2
+	land_morale = 0.15
+}
+modifier_white_ruthenia_2_4 = {
+	discipline = 0.05
+	state_maintenance_modifier = -0.25
+}
+modifier_white_ruthenia_2_5 = {
+	build_cost = -0.1
+	production_efficiency = 0.1
+}
+modifier_white_ruthenia_2_6 = {
+	shock_damage = 0.2
+	cavalry_cost = -0.2
+}
+modifier_white_ruthenia_3_1 = {
+	global_tax_modifier = 0.2
+	tolerance_own = 1
+}
+modifier_white_ruthenia_3_1 = {
+	global_tax_modifier = 0.2
+	tolerance_own = 1
+}
+#
+#
+#
+modifier_muscovy_1_1 = {
+	global_tax_modifier = 0.1
+	tolerance_own = 2
+}
+modifier_muscovy_1_2_1 = {
+	tolerance_own = 2
+}
+modifier_muscovy_1_2_2 = {
+	land_morale = 0.2
+}
+modifier_muscovy_1_2_3 = {
+	global_unrest = -2
+}
+modifier_muscovy_1_2_4 = {
+	state_maintenance_modifier = -0.25
+}
+modifier_muscovy_1_2_5 = {
+	years_of_nationalism = -5
+}
+modifier_muscovy_1_2_6 = {
+	technology_cost = -0.1
+}
+modifier_muscovy_1_4 = {
+	land_morale = 0.1
+	discipline = 0.05
+}
+modifier_muscovy_2_1 = {
+	global_unrest = -2
+}
+modifier_muscovy_3_2 = {
+	diplomatic_reputation = 1
+}
+modifier_muscovy_4_3 = {
+	production_efficiency = 0.1
+}
+modifier_muscovy_5_1 = {
+	build_cost = -0.1
+}
+modifier_muscovy_5_2 = {
+	state_maintenance_modifier = -0.33
+}
+modifier_muscovy_5_3 = {
+	inflation_reduction = 0.15
+	inflation_action_cost = -0.25
+}
+modifier_muscovy_5_7 = {
+	production_efficiency = 0.15
+	interest = -1
+}
+modifier_muscovy_5_10 = {
+	discipline = 0.1
 }

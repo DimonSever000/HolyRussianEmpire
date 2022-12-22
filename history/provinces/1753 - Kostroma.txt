@@ -12,6 +12,7 @@ base_manpower = 4
 capital = "Kostroma"
 is_city = yes
 add_core = R1D
+add_core = YAR
 fort_15th = yes
 discovered_by = eastern
 discovered_by = western

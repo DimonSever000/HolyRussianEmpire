@@ -13,7 +13,6 @@ fort_15th = yes #Cittadellla of Alessandria
 capital = "Cuneo"
 is_city = yes
 add_core = SAV
-add_core = FRA
 
 
 

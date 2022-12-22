@@ -1,0 +1,403 @@
+yaroslavl_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = YAR
+		}
+	}
+	has_country_shield = yes
+
+	yaroslavl_1_1 = {
+		icon = modded_assumption_cathedral
+		required_missions = {  }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 308
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			owns = 308
+			308 = {
+				religion = orthodox
+				has_tax_building_trigger = yes
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "modifier_yaroslavl_1_1"
+				duration = 7300
+			}
+			add_prestige = 10
+		}
+	}
+	yaroslavl_1_2 = {
+		position = 2
+		icon = mission_alliances
+		required_missions = { yaroslavl_1_1 }
+		trigger = {
+			calc_true_if = {
+				amount = 2
+				all_elector = {
+					preferred_emperor = ROOT
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "modifier_yaroslavl_1_2"
+				duration = 7300
+			}
+			add_dip_power = 100
+		}
+	}
+	yaroslavl_1_3 = {
+		position = 3
+		icon = mission_noble_council
+		required_missions = { }
+		trigger = {
+			num_of_owned_provinces_with = {
+				OR = {
+					has_building = courthouse
+					has_building = town_hall
+				}
+				value = 3
+			}
+			monthly_adm = 10
+		}
+		effect = {
+			add_country_modifier = {
+				name = "hegemonic_ambition"
+				duration = 7300 #25 years
+			}
+			add_adm_power = 50
+			add_years_of_income = 1
+		}
+	}
+	yaroslavl_1_4 = {
+		position = 4
+		icon = mission_autocratic_rule
+		required_missions = { yaroslavl_1_3 }
+		trigger = {
+			has_any_disaster = no
+			NOT = { corruption = 1 }
+			stability = 1
+			has_adm_advisor_3 = yes
+			has_dip_advisor_3 = yes
+			has_mil_advisor_3 = yes
+		}
+		effect = {
+			add_prestige = 30
+			add_adm_power = 100
+		}
+	}
+}
+yaroslavl_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = YAR
+		}
+	}
+	has_country_shield = yes
+	
+	
+	yaroslavl_2_1 = {
+		position = 1
+		icon = mission_conquer_romania
+		required_missions = { }
+		provinces_to_highlight = {
+			OR = {
+				area = yaroslavl_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			yaroslavl_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_mil_power = 50
+			suzdal_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			vladimir_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	yaroslavl_2_2 = {
+		position = 2
+		icon = mission_dethrone_the_rurikovichs
+		required_missions = { yaroslavl_2_1 }
+		provinces_to_highlight = {
+			OR = {
+				area = suzdal_area
+				area = vladimir_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			suzdal_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			vladimir_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_mil_power = 100
+			add_prestige = 30
+			tver_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	yaroslavl_2_3 = {
+		position = 3
+		icon = mission_conquer_tver
+		required_missions = { yaroslavl_1_2 yaroslavl_2_2 yaroslavl_3_2 }
+		provinces_to_highlight = {
+			OR = {
+				area = tver_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			tver_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_yearly_manpower = 3
+			add_mil_power = 100
+			moscow_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	yaroslavl_2_4 = {
+		position = 4
+		icon = mission_unite_home_region
+		required_missions = { yaroslavl_2_3 }
+		provinces_to_highlight = {
+			OR = {
+				area = moscow_area
+				province_id = 308
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			moscow_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			owns = 308
+		}
+		effect = {
+			308 = {
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+			}
+			add_country_modifier = {
+				name = "modifier_yaroslavl_2_4"
+				duration = 9125 #25 years
+			}
+		}
+	}
+	
+	yaroslavl_2_5 = {
+		position = 5
+		icon = mission_monarch_in_throne_room
+		required_missions = { yaroslavl_1_4 yaroslavl_2_4 yaroslavl_3_4 }
+		provinces_to_highlight = {
+			OR = {
+				area = moscow_area
+				area = tver_area
+				area = yaroslavl_area
+				area = vladimir_area
+				area = suzdal_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			moscow_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			tver_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			yaroslavl_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			vladimir_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			suzdal_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			if = {
+				limit = {
+					government = monarchy
+				}
+				legitimacy = 100
+				is_emperor = yes
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "modifier_yaroslavl_2_5"
+				duration = -1
+			}
+		}
+	}
+}
+
+yaroslavl_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = YAR
+		}
+	}
+	has_country_shield = yes
+
+	yaroslavl_3_1 = {
+		position = 1
+		icon = mission_recruit_the_cossacks
+		required_missions = { }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 308
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = { 
+			monthly_mil = 10
+			owns = 308
+		}
+		effect = {
+			add_yearly_manpower = 3
+			308 = {
+				add_base_manpower = 3
+			}
+		}
+	}
+	yaroslavl_3_2 = {
+		position = 2
+		icon = mission_recruit_streltsy
+		required_missions = { yaroslavl_3_1 }
+		trigger = { 
+			army_size_percentage = 1
+		}
+		effect = {
+			add_mil_power = 100
+			define_advisor = {
+				type = fortification_expert
+				skill = 3
+				culture = root
+				cost_multiplier = 0.3
+				name = "Mikhail Lominsky" 
+			}
+		}
+	}
+	
+	yaroslavl_3_3 = {
+		position = 3
+		icon = balance_the_estates
+		required_missions = { }
+		trigger = { 
+			adm_tech = 12
+			NOT = { inflation = 0.1 }
+			NOT = { num_of_loans = 1 }
+		}
+		effect = {
+			add_years_of_income = 1
+			add_adm_power = 50
+			add_dip_power = 50
+			add_mil_power = 50
+		}
+	}
+	
+	yaroslavl_3_4 = {
+		position = 4
+		icon = mission_eastern_european_city
+		required_missions = { yaroslavl_3_3 }
+		trigger = { 
+			num_of_owned_provinces_with = {
+				development = 20
+				value = 5
+			}
+		}
+		effect = {
+			change_innovativeness = 5
+			add_prestige = 20
+		}
+	}
+	
+	yaroslavl_3_5 = {
+		position = 5
+		icon = mission_early_modern_university
+		required_missions = { yaroslavl_3_4 }
+		trigger = {
+			208 = {
+				has_building = university
+			}
+		}
+		effect = {
+			change_innovativeness = 10
+			add_adm_power = 50
+			add_dip_power = 50
+			add_mil_power = 50
+		}
+	}
+}

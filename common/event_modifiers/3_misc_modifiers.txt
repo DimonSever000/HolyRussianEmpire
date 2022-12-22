@@ -200,3 +200,51 @@ modifier_muscovy_5_7 = {
 modifier_muscovy_5_10 = {
 	discipline = 0.1
 }
+#
+#
+#
+modifier_yaroslavl_1_1 = {
+	diplomatic_reputation = 1
+	tolerance_own = 1
+}
+modifier_yaroslavl_1_2 = {
+	years_of_nationalism = -5
+	fabricate_claims_cost = -0.25
+}
+modifier_yaroslavl_2_5 = {
+	yearly_absolutism = 1
+	infantry_power = 0.15
+}
+#
+#
+#
+modifier_rostov_1_4 = {
+	state_maintenance_modifier = -0.25
+	global_unrest = -2
+}
+modifier_rostov_2_3 = {
+	diplomatic_reputation = 1
+	land_morale = 0.1
+}
+modifier_rostov_2_5 = {
+	discipline = 0.05
+	land_morale = 0.05
+}
+#
+#
+#
+modifier_estonia_1_1 = {
+	light_ship_cost = -0.25
+}
+modifier_estonia_1_3 = {
+	tolerance_own = 2
+	land_morale = 0.2
+}
+modifier_estonia_2_4 = {
+	tolerance_own = 2
+	discipline = 0.05
+}
+modifier_estonia_2_5 = {
+	land_morale = 0.1
+	discipline = 0.05
+}

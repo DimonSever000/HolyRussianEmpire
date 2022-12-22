@@ -17,3 +17,16 @@ fixed_capital = 308 # Cannot move capital away from this province & no power cos
 		mil = 2
 	}
 }
+1431.1.1 = {
+	heir = {
+		name = "Pavel"
+		monarch_name = "Pavel I"
+		dynasty = "Rurikovich"
+		birth_date = 1431.1.1
+		death_date = 1470.1.1
+		claim = 10
+		adm = 3
+		dip = 2
+		mil = 4
+	}
+}

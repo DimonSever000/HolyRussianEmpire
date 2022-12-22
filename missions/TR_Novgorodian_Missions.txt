@@ -643,9 +643,7 @@ novgorod_4 = {
 		}
 		
 		effect = {
-			hidden_effect = {
-				BLO = { country_event = { id = 1856004 } }
-			}
+			BLO = { country_event = { id = 1856004 } }
 		}
 	}
 	

@@ -55,5 +55,18 @@
  modifier_muscovy_5_7:0 "Industrial Revolution"
  modifier_muscovy_5_10:0 "Great Moscow"
  #
+ modifier_yaroslavl_1_1:0 "Assumption Cathedral"
+ modifier_yaroslavl_1_2:0 "Claims to the Emperor's Throne"
+ modifier_yaroslavl_2_5:0 "Great Yaroslavl"
+ #
+ modifier_rostov_1_4:0 "Restoring order"
+ modifier_rostov_2_3:0 "Fair Borders"
+ modifier_rostov_2_5:0 "Great Rostov"
+ #
+ modifier_estonia_1_1:0 "Freedom from Pirates"
+ modifier_estonia_1_3:0 "God bless"
+ modifier_estonia_2_4:0 "Fall of the heretics"
+ modifier_estonia_2_5:0 "Baltic order"
+ #
  
  

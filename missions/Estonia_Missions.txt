@@ -1,0 +1,469 @@
+estonia_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = EST
+		}
+	}
+	has_country_shield = yes
+
+	estonia_1_1 = {
+		icon = modded_pirates
+		required_missions = {  }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 35
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			owns = 35
+		}
+		effect = {
+			add_country_modifier = {
+				name = "modifier_estonia_1_1"
+				duration = 7300
+			}
+			add_prestige = 20
+		}
+	}
+	estonia_1_2 = {
+		position = 2
+		icon = mission_establish_high_seas_navy
+		required_missions = { estonia_1_1 }
+		trigger = {
+			naval_forcelimit = 30
+		}
+		effect = {
+			add_country_modifier = {
+				name = "modifier_estonia_1_2"
+				duration = 7300
+			}
+			add_dip_power = 100
+			define_advisor = {
+				type = naval_reformer
+				skill = 3 
+				culture = root
+				cost_multiplier = 0.25
+			}
+		}
+	}
+	estonia_1_3 = {
+		position = 3
+		icon = mission_hands_praying
+		required_missions = { }
+		trigger = {
+			num_of_owned_provinces_with = {
+				religion = orthodox
+				has_tax_building_trigger = yes
+				value = 3
+			}
+			religious_unity = 1
+			custom_trigger_tooltip = {
+				tooltip = estonia_1_3_set_icon_michael
+				OR = {
+					current_icon = icon_michael
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "modifier_estonia_1_3"
+				duration = 7300 #25 years
+			}
+			add_stability = 1
+			add_years_of_income = 1
+		}
+	}
+	estonia_1_4 = {
+		position = 4
+		icon = mission_early_modern_university
+		required_missions = { estonia_1_3 }
+		trigger = {
+			36 = {
+				has_building = university
+			}
+			devotion = 90
+		}
+		effect = {
+			add_prestige = 30
+			add_stability = 1
+		}
+	}
+}
+estonia_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = EST
+		}
+	}
+	has_country_shield = yes
+	
+	
+	estonia_2_2 = {
+		position = 2
+		icon = mission_autocephalous_archbishopric
+		required_missions = { estonia_1_1 estonia_3_1 }
+		trigger = {
+			army_size_percentage = 1
+			devotion = 90
+		}
+		effect = {
+			add_mil_power = 100
+			estonia_ingria_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			livonia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			curonia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			if = {
+				limit = {
+					exists = LIV
+					LIV = {
+						OR = {
+							owns = 4241
+							owns = 273
+						}
+						OR = {
+							4241 = { culture = latvian }
+							273 = { culture = latvian }
+						}
+					}
+				}
+				country_event = { id = 18560016 }
+			}
+		}
+	}
+	
+	estonia_2_3 = {
+		position = 3
+		icon = mission_build_up_to_force_limit
+		required_missions = { estonia_2_2 }
+		provinces_to_highlight = {
+			OR = {
+				area = estonia_ingria_area
+				area = livonia_area
+				area = curonia_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			estonia_ingria_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			livonia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			curonia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			army_size_percentage = 1
+			num_of_owned_provinces_with = {
+				has_fort_building_trigger = yes 
+				value = 3
+			}
+		}
+		effect = {
+			add_yearly_manpower = 5
+			add_mil_power = 100
+			lithuania_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			samogitia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			east_prussia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			west_prussia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	estonia_2_4 = {
+		position = 4
+		icon = modded_archangel_michael
+		required_missions = { estonia_1_3 estonia_2_3 estonia_3_3 }
+		provinces_to_highlight = {
+			OR = {
+				area = estonia_ingria_area
+				area = lithuania_area
+				area = samogitia_area
+				area = east_prussia_area
+				area = west_prussia_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			estonia_ingria_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+				religion = orthodox
+			}
+			lithuania_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+				religion = orthodox
+			}
+			samogitia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+				religion = orthodox
+			}
+			east_prussia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+				religion = orthodox
+			}
+			west_prussia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+				religion = orthodox
+			}
+		}
+		effect = {
+			36 = {
+				add_base_manpower = 3
+			}
+			1842 = {
+				add_base_manpower = 3
+			}
+			add_country_modifier = {
+				name = "modifier_estonia_2_4"
+				duration = 9125 #25 years
+			}
+		}
+	}
+	
+	estonia_2_5 = {
+		position = 5
+		icon = mission_monarch_in_throne_room
+		required_missions = { estonia_1_4 estonia_2_4 estonia_3_4 }
+		provinces_to_highlight = {
+			OR = {
+				area = estonia_ingria_area
+				area = livonia_area
+				area = curonia_area
+				area = lithuania_area
+				area = samogitia_area
+				area = east_prussia_area
+				area = west_prussia_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			estonia_ingria_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+				religion = orthodox
+			}
+			livonia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+				religion = orthodox
+			}
+			curonia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+				religion = orthodox
+			}
+			lithuania_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+				religion = orthodox
+			}
+			samogitia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+				religion = orthodox
+			}
+			east_prussia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+				religion = orthodox
+			}
+			west_prussia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+				religion = orthodox
+			}
+			devotion = 90
+		}
+		effect = {
+			add_country_modifier = {
+				name = "modifier_estonia_2_5"
+				duration = -1
+			}
+			country_event = { id = 18560017 }
+		}
+	}
+}
+
+estonia_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = EST
+		}
+	}
+	has_country_shield = yes
+
+	estonia_3_1 = {
+		position = 1
+		icon = mission_conquer_50_development
+		required_missions = { }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1842
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = { 
+			owns = 1842
+			1842 = {
+				has_fort_building_trigger = yes 
+			}
+		}
+		effect = {
+			add_yearly_manpower = 1
+			add_prestige = 10
+		}
+	}
+	estonia_3_2 = {
+		position = 2
+		icon = mission_settlers_north_america
+		required_missions = { estonia_3_1 }
+		trigger = { 
+			army_size_percentage = 1
+			num_of_owned_provinces_with = {
+				base_manpower = 10
+				value = 3
+			}
+		}
+		effect = {
+			add_mil_power = 100
+			define_advisor = {
+				type = commandant
+				skill = 3
+				culture = root
+				cost_multiplier = 0.25
+			}
+			add_yearly_manpower = 3
+		}
+	}
+	
+	estonia_3_3 = {
+		position = 3
+		icon = mission_religious
+		required_missions = { estonia_3_2 }
+		trigger = { 
+			has_adm_advisor_2 = yes
+			has_dip_advisor_2 = yes
+			has_mil_advisor_2 = yes
+		}
+		effect = {
+			add_adm_power = 50
+			add_dip_power = 50
+			add_mil_power = 50
+			add_stability = 1
+		}
+	}
+	
+	estonia_3_4 = {
+		position = 4
+		icon = mission_conquer_finland
+		required_missions = { estonia_3_3 }
+		provinces_to_highlight = {
+			OR = {
+				area = finland_area
+				area = bothnia_area
+				area = laponia_area
+				area = karelia_area
+				area = north_karelia
+				area = pomor_area
+			}
+		}
+		trigger = {
+			finland_area = {
+				type = all
+				is_part_of_hre = yes
+			}
+			bothnia_area = {
+				type = all
+				is_part_of_hre = yes
+			}
+			laponia_area = {
+				type = all
+				is_part_of_hre = yes
+			}
+			karelia_area = {
+				type = all
+				is_part_of_hre = yes
+			}
+			north_karelia = {
+				type = all
+				is_part_of_hre = yes
+			}
+			pomor_area = {
+				type = all
+				is_part_of_hre = yes
+			}
+		}
+		effect = {
+			add_prestige = 40
+			add_dip_power = 100
+		}
+	}
+}

@@ -41,7 +41,12 @@
  R1U_ADJ:0 "Kolomna"
  R1V:0 "Alatyr"
  R1V_ADJ:0 "Alatyr"
- # W? x? y?
+ R1W:0 "Latvia"
+ R1W_ADJ:0 "Latvia"
+ R1X:0 "Slovenia"
+ R1X_ADJ:0 "Slovenia"
+ R1Y:0 "Treviso"
+ R1Y_ADJ:0 "Treviso"
  R1Z:0 "Pereyaslavl"
  R1Z_ADJ:0 "Pereyaslavl"
  #
@@ -112,6 +117,10 @@
  R3G_ADJ:0 "Illiria"
  R3H:0 "Kastoria"
  R3H_ADJ:0 "Kastoria"
+ R3I:0 "Ravenna"
+ R3I_ADJ:0 "Ravenna"
+ R3J:0 "Bergamo"
+ R3J_ADJ:0 "Bergamo"
  #
  N1A:0 "Chelyabinsk"
  N1A_ADJ:0 "Chelyabinsk"
@@ -185,3 +194,9 @@
  N2J:0 "N2J"
  N2J_ADJ:0 "N2J"
  #
+ #
+ #
+ RostovSuzdal:0 "Rostov-Suzdal"
+ RostovSuzdal_ADJ:0 "Rostov-Suzdal"
+ BalticOrder:0 "Baltic Order"
+ BalticOrder_ADJ:0 "Baltic Order"

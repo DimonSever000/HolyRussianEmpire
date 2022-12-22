@@ -60,13 +60,13 @@ R2H_ideas = {
 		state_maintenance_modifier = -0.1
 	}
 	R2H_idea_II = {
-		global_unrest = -3
+		global_unrest = -2
 	}
 	R2H_idea_III = {
-		diplomatic_reputation = 2
+		diplomatic_reputation = 1
 	}
 	R2H_idea_IV = {
-		global_manpower_modifier = 0.25
+		global_manpower_modifier = 0.15
 	}
 	R2H_idea_V = {
 		cavalry_power = 0.15
@@ -192,6 +192,44 @@ R2A_ideas = {
 	}
 	R2A_idea_VII = {
 		institution_spread_from_true_faith = 0.2
+	}
+}
+
+# Yaroslavl
+YAR_ideas = {
+	start = {
+		religious_unity = 0.15
+	}
+	
+	bonus = {
+		all_power_cost = -0.05
+	}	
+
+	trigger = {
+		tag = YAR
+	}
+	free = yes
+	
+	YAR_idea_I = {
+		fort_maintenance_modifier = -0.25
+	}
+	YAR_idea_II = {
+		trade_efficiency = 0.1
+	}
+	YAR_idea_III = {
+		improve_relation_modifier = 0.2
+	}
+	YAR_idea_IV = {
+		diplomats = 1
+	}
+	YAR_idea_V = {
+		discipline = 0.05
+	}
+	YAR_idea_VI = {
+		global_tax_modifier = 0.1
+	}
+	YAR_idea_VII = {
+		state_maintenance_modifier = -0.15
 	}
 }
 

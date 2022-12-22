@@ -1,0 +1,480 @@
+rostov_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = RSO
+		}
+	}
+	has_country_shield = yes
+
+	rostov_1_2 = {
+		position = 2
+		icon = mission_autocephalous_archbishopric
+		required_missions = { rostov_2_1 }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4147
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			owns = 4147
+			4147 = {
+				religion = orthodox
+				has_tax_building_trigger = yes
+			}
+			custom_trigger_tooltip = {
+				tooltip = ser_has_any_icon
+				OR = {
+					current_icon = icon_michael
+					current_icon = icon_eleusa
+					current_icon = icon_pancreator
+					current_icon = icon_nicholas
+					current_icon = icon_climacus
+				}
+			}
+		}
+		effect = {
+			add_prestige = 15
+			yaroslavl_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	rostov_1_3 = {
+		position = 3
+		icon = imperial_ascendancy
+		required_missions = { rostov_1_2 rostov_2_2 }
+		provinces_to_highlight = {
+			OR = {
+				area = yaroslavl_area
+				area = suzdal_area
+				area = vladimir_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			yaroslavl_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			suzdal_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			vladimir_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "hegemonic_ambition"
+				duration = 7300 #25 years
+			}
+			add_adm_power = 50
+			add_years_of_income = 1
+			vologda_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			beloozero_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	rostov_1_4 = {
+		position = 4
+		icon = mission_cossack_cavalry
+		required_missions = { rostov_1_3 }
+		provinces_to_highlight = {
+			OR = {
+				area = vologda_area
+				area = beloozero_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			beloozero_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			vologda_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 30
+			add_country_modifier = {
+				name = "modifier_rostov_1_4"
+				duration = 7300 #25 years
+			}
+		}
+	}
+}
+rostov_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = RSO
+		}
+	}
+	has_country_shield = yes
+	
+	
+	rostov_2_1 = {
+		position = 1
+		icon = mission_empire
+		required_missions = { }
+		trigger = {
+			stability = 1
+			if = {
+				limit = {
+					government = monarchy
+				}
+				legitimacy = 90
+			}
+			else_if = {
+				limit = {
+					government = republic
+				}
+				republican_tradition = 90
+			}
+			has_adm_advisor_1 = yes
+			has_dip_advisor_1 = yes
+			has_mil_advisor_1 = yes
+		}
+		effect = {
+			add_mil_power = 100
+			1956 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	rostov_2_2 = {
+		position = 2
+		icon = mission_noble_council
+		required_missions = { rostov_2_1 rostov_3_1 }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4147
+				province_id = 1956
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			owns = 4147
+			owns = 1956
+		}
+		effect = {
+			add_mil_power = 100
+			add_prestige = 30
+			suzdal_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			vladimir_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			country_event = { id = 18560015 }
+		}
+	}
+	
+	rostov_2_3 = {
+		position = 3
+		icon = balance_of_power
+		required_missions = { rostov_2_2 rostov_3_2 }
+		provinces_to_highlight = {
+			OR = {
+				area = vladimir_area
+				area = suzdal_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			vladimir_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			suzdal_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_yearly_manpower = 3
+			add_stability = 1
+			add_country_modifier = {
+				name = "modifier_rostov_2_3"
+				duration = 7300 #25 years
+			}
+		}
+	}
+	
+	rostov_2_4 = {
+		position = 4
+		icon = balance_the_estates
+		required_missions = { rostov_2_3 }
+		trigger = {
+			owns = 1956
+			owns = 4147
+			stability = 2
+			monthly_adm = 10
+			NOT = { num_of_loans = 1 }
+		}
+		effect = {
+			1956 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+			4147 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+			novgorod_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	rostov_2_5 = {
+		position = 5
+		icon = mission_monarch_in_throne_room
+		required_missions = { rostov_1_4 rostov_2_4 rostov_3_4 }
+		provinces_to_highlight = {
+			OR = {
+				area = moscow_area
+				area = tver_area
+				area = vladimir_area
+				area = suzdal_area
+				area = yaroslavl_area
+				area = vologda_area
+				area = beloozero_area
+				area = novgorod_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			moscow_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			tver_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			vladimir_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			suzdal_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			vologda_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			beloozero_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			novgorod_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			if = {
+				limit = {
+					government = monarchy
+				}
+				legitimacy = 100
+				is_emperor = yes
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "modifier_rostov_2_5"
+				duration = -1
+			}
+		}
+	}
+}
+
+rostov_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = RSO
+		}
+	}
+	has_country_shield = yes
+
+	rostov_3_1 = {
+		position = 1
+		icon = mission_alliances
+		required_missions = { }
+		trigger = { 
+			monthly_dip = 10
+		}
+		effect = {
+			add_prestige = 20
+		}
+	}
+	rostov_3_2 = {
+		position = 2
+		icon = mission_consolidate_the_state
+		required_missions = { }
+		trigger = { 
+			if = {
+				limit = {
+					has_estate = estate_church
+				}
+				estate_loyalty = {
+					estate = estate_church
+					loyalty = 60
+				}
+			}
+			if = {
+				limit = {
+					has_estate = estate_nobles
+				}
+				estate_loyalty = {
+					estate = estate_nobles
+					loyalty = 60
+				}
+			}
+			if = {
+				limit = {
+					has_estate = estate_burghers
+				}
+				estate_loyalty = {
+					estate = estate_burghers
+					loyalty = 60
+				}
+			}
+		}
+		effect = {
+			add_stability = 1
+			add_legitimacy = 25
+			define_advisor = {
+				skill = 3
+				culture = root
+				cost_multiplier = 0.3
+			}
+		}
+	}
+	
+	rostov_3_3 = {
+		position = 3
+		icon = mission_colonial
+		required_missions = { }
+		trigger = { 
+			capital_scope = {
+				development = 30
+			}
+		}
+		effect = {
+			add_years_of_income = 1
+			add_adm_power = 50
+			add_dip_power = 50
+			add_mil_power = 50
+			tver_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			moscow_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	rostov_3_4 = {
+		position = 4
+		icon = mission_conquer_tver
+		required_missions = { rostov_3_3 }
+		provinces_to_highlight = {
+			OR = {
+				area = moscow_area
+				area = tver_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			moscow_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			tver_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_years_of_income = 1
+			add_prestige = 30
+			capital_scope = {
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+			}
+		}
+	}
+}

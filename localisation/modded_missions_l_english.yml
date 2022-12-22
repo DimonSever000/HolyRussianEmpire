@@ -332,5 +332,97 @@
  #
  #
  #
+ yaroslavl_1_1_title:0 "Assumption Cathedral"
+ yaroslavl_1_1_desc:0 "In the past, the Assumption Cathedral was destroyed during the heavy siege of Yaroslavl and it is our duty to restore it."
+ yaroslavl_1_2_title:0 "Influential support"
+ yaroslavl_1_2_desc:0 "We should enlist support and try to get the emperor's throne."
+ yaroslavl_1_3_title:0 "Administration reform"
+ yaroslavl_1_3_desc:0 "A stable and efficient administration is the key to the greatness of the state."
+ yaroslavl_1_4_title:0 "Order at court"
+ yaroslavl_1_4_desc:0 "Good advice at the right time can change the fate of the world."
+ #
+ yaroslavl_2_1_title:0 "Old claims"
+ yaroslavl_2_1_desc:0 "It is time to satisfy old claims and crush opponents."
+ yaroslavl_2_2_title:0 "Sunset of Vladimir"
+ yaroslavl_2_2_desc:0 "The split of the Vladimir principality should play into our hands. Now we will rule this land."
+ yaroslavl_2_3_title:0 "Throne of Tver"
+ yaroslavl_2_3_desc:0 "Tver is an important region of the empire, having commercial and military significance."
+ yaroslavl_2_4_title:0 "Liquidation of Moscow"
+ yaroslavl_2_4_desc:0 "The Moscow region is not rich, but its possession allows you to influence the big princes of the empire."
+ yaroslavl_2_5_title:0 "Great Yaroslavl"
+ yaroslavl_2_5_desc:0 "Our ambitions must be satisfied. The kniaz of Yaroslavl will be emperor!"
+ #
+ yaroslavl_3_1_title:0 "Military schools"
+ yaroslavl_3_1_desc:0 "It is worth paying attention to the qualitative military development of the state if we want to challenge our neighbors."
+ yaroslavl_3_2_title:0 "Mobilization of the militia"
+ yaroslavl_3_2_desc:0 "The boyar militia remains a large part of our army and we should increase it."
+ yaroslavl_3_3_title:0 "Economic stabilization"
+ yaroslavl_3_3_desc:0 "The growth of the economy and military campaigns led to an increase in debt and damage to coins. It's time to deal with this."
+ yaroslavl_3_4_title:0 "Urbanization of cities"
+ yaroslavl_3_4_desc:0 "Urban development will help us to decentralize and strengthen administration."
+ yaroslavl_3_5_title:0 "Yaroslavl Academy"
+ yaroslavl_3_5_desc:0 "Innovative developments in the army are a necessary condition for our survival."
+ #
+ #
+ #
+ rostov_1_2_title:0 "Church Support"
+ rostov_1_2_desc:0 "The Church is one of the pillars of our legitimacy. The support of the church will provide us with international recognition."
+ rostov_1_3_title:0 "Yaroslavl legacy"
+ rostov_1_3_desc:0 "Yaroslavl at different points in history was part of a single state with us. We must take advantage of this and lay claim to the throne."
+ rostov_1_4_title:0 "Northern claims"
+ rostov_1_4_desc:0 "Eliminating northern rivals is a good opportunity to gain more regional influence."
+ #
+ rostov_2_1_title:0 "Restoring legitimacy"
+ rostov_2_1_desc:0 "Succession disputes between the sons of the past grand kniaz undermine our legitimacy to this day. We must ensure the stability of our government."
+ rostov_2_2_title:0 "Rostov-Suzdal Principality"
+ rostov_2_2_desc:0 "We have a long joint history with Suzdal and must restore justice."
+ rostov_2_3_title:0 "Old borders"
+ rostov_2_3_desc:0 "The Vladimir principality is tearing at the seams. This is a great time to reclaim your boundaries and reinforce your claims."
+ rostov_2_4_title:0 "Establishing order"
+ rostov_2_4_desc:0 "Stabilizing the administration after global expansion is not an easy but important task for further reforms."
+ rostov_2_5_title:0 "Rise to glory"
+ rostov_2_5_desc:0 "We have achieved tremendous success and strengthened our own power. It's time to show the world your greatness."
+ #
+ rostov_3_1_title:0 "Diplomatic power"
+ rostov_3_1_desc:0 "War is not the only way to project power. We must take care of the diplomatic front."
+ rostov_3_2_title:0 "Estates under control"
+ rostov_3_2_desc:0 "The estates must be sufficiently satisfied with our government for the effectiveness of our bureaucracy and the avoidance of conspiracies."
+ rostov_3_3_title:0 "Great capital"
+ rostov_3_3_desc:0 "The capital of the state is its face, so our capital must be great and formidable."
+ rostov_3_4_title:0 "Wealth of Tver"
+ rostov_3_4_desc:0 "Tver is in a strategically important position that will help us influence the trade of the north and south of the empire."
+ #
+ #
+ #
+ estonia_1_1_title:0 "End the pirates"
+ estonia_1_1_desc:0 "The barbarian pirate state right on the western islands that used to belong to us can no longer go unpunished!"
+ estonia_1_2_title:0 "Imperial Navy"
+ estonia_1_2_desc:0 "We are an important Baltic port of the empire and must correspond to a high status, strengthening the maritime greatness of the emperor."
+ estonia_1_3_title:0 "God help"
+ estonia_1_3_desc:0 "Only faith in God and the protection of his interests should be a priority goal."
+ estonia_1_3_set_icon_michael:0 "Set icon of Archangel Michael"
+ estonia_1_4_title:0 "Revel Seminary"
+ estonia_1_4_desc:0 "Our faith does not reject science, but only God can bring true revelation into this world."
+ #
+ estonia_2_2_title:0 "Holy march"
+ estonia_2_2_desc:0 "Directly to the south, at the very borders of the empire, powerful heretical orders are located. God's will is to destroy the heretics. We must prepare and strike first."
+ estonia_2_3_title:0 "Baltic Shield"
+ estonia_2_3_desc:0 "We have cleansed the Baltics of filth, but this is only the beginning. God with us!"
+ estonia_2_4_title:0 "Punishing sword"
+ estonia_2_4_desc:0 "On our way, the last and most significant threat is the Teutonic Knights. Archangel Michael will help us in battle!"
+ estonia_2_5_title:0 "Baltic order"
+ estonia_2_5_desc:0 "We have defeated and destroyed the most important threat in the Baltic. We can proclaim the great Baltic order."
+ #
+ estonia_3_1_title:0 "Fortress in Narva"
+ estonia_3_1_desc:0 "Narva is a convenient position for defense both on the northern flank and on the western. We should build a castle here."
+ estonia_3_2_title:0 "Militarization"
+ estonia_3_2_desc:0 "Every subject of the state must fill our army when necessary."
+ estonia_3_3_title:0 "Spiritual council"
+ estonia_3_3_desc:0 "Only competent and energetic men should constitute our great council."
+ estonia_3_4_title:0 "Promoting Justice"
+ estonia_3_4_desc:0 "Scandinavian barbarians have occupied the old imperial lands. Our duty is not only to return the lost but also to restore justice."
+ #
+ #
+ #
  
  

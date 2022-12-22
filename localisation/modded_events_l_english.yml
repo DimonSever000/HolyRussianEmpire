@@ -230,5 +230,42 @@
  #
  #
  #
+ modded_event_18560015_title:0 "Rostov-Suzdal unity"
+ modded_event_18560015_desc:0 "Rostov and Suzdal are again under the rule of a single ruler. We must decide whether to establish a new name and determine the capital."
+ modded_event_18560015_option_1:0 "We will leave everything as it is"
+ modded_event_18560015_option_2:0 "Rostov will be the capital"
+ modded_event_18560015_option_3:0 "Suzdal will be the capital"
+ #
+ #
+ #
+ modded_event_18560016_title:0 "Latvian national uprising"
+ modded_event_18560016_desc:0 "Our task is to incite an uprising on the territory of the Livonian Order in order to undermine its stability and, possibly, military intervention."
+ modded_event_18560016_option_1:0 "Set fire!"
+ #
+ modded_event_185600161_title:0 "Latvian national uprising"
+ modded_event_185600161_desc:0 "Latvian peasants armed themselves with pitchforks and torches. They plunder cities and ravage churches in search of money and weapons! Estonian heretics threaten us with war if we don't sit down at the negotiating table..."
+ modded_event_185600161_option_1:0 "Crush them!"
+ modded_event_185600161_option_2:0 "We can't resist this..."
+ #
+ modded_event_1856001611_title:0 "Latvian national uprising"
+ modded_event_1856001611_desc:0 "The Livonian order enters into a fierce war with the rebellious peasants. Will we honor our guarantees?"
+ modded_event_1856001611_option_1:0 "They will be useful to us"
+ modded_event_1856001611_option_2:0 "We will watch from the sidelines"
+ #
+ modded_event_1856001621_title:0 "Latvian national uprising"
+ modded_event_1856001621_desc:0 "We succeeded in getting the order to diplomatically recognize the independence of Latvia. What are we to do now with these peasants?"
+ modded_event_1856001621_option_1:0 "Let them kiss the cross"
+ modded_event_1856001621_option_2:0 "Let's get by with the guarantee of their miserable independence"
+ modded_event_1856001621_option_3:0 "It's enough"
+ #
+ #
+ #
+ modded_event_18560017_title:0 "Baltic order"
+ modded_event_18560017_desc:0 "The time has come to record our success in history and establish a new chapter capital."
+ modded_event_18560017_option_1:0 "We will not change the capital"
+ modded_event_18560017_option_2:0 "Choose Riga"
+ modded_event_18560017_option_3:0 "Choose Koenigsberg"
+ modded_event_18560017_option_4:0 "Choose Vilnius"
+ #
  
  

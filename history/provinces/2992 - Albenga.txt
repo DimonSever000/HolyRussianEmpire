@@ -3,7 +3,6 @@
 owner = FRA
 controller = FRA
 add_core = GEN
-add_core = FRA
 culture = ligurian
 religion = catholic
 hre = no

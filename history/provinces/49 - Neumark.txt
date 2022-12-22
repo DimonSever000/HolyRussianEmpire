@@ -2,7 +2,7 @@
 
 owner = TEU
 controller = TEU
-#add_core = TEU
+add_core = TEU
 culture = saxon
 religion = catholic
 hre = no

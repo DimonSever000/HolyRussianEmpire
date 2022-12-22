@@ -7,12 +7,29 @@ technology_group = eastern
 capital = 4147 # Rostov
 fixed_capital = 4147 # Cannot move capital away from this province & no power cost to move to it
 
-1444.1.1 = {
+historical_friend = R1S
+historical_rival = R1R
+
+1412.1.1 = {
 	monarch = {
 		name = "Konstantin"
 		dynasty = "Rurikovich"
+		birth_date = 1402.1.1
+		adm = 2
+		dip = 3
+		mil = 3
+	}
+}
+1440.1.1 = {
+	heir = {
+		name = "Konstantin"
+		monarch_name = "Konstantin II"
+		dynasty = "Rurikovich"
+		birth_date = 1440.1.1
+		death_date = 1477.1.1
+		claim = 25
+		adm = 4
 		dip = 4
-		adm = 1
-		mil = 1
+		mil = 3
 	}
 }

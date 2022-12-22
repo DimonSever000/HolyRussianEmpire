@@ -20,4 +20,14 @@ spriteTypes = {
 		texturefile = "gfx//interface//missions//modded_moscow_freedom.dds"
 	}
 	
+	spriteType = {
+		name = "modded_assumption_cathedral"
+		texturefile = "gfx//interface//missions//modded_assumption_cathedral.dds"
+	}
+	
+	spriteType = {
+		name = "modded_pirates"
+		texturefile = "gfx//interface//missions//modded_pirates.dds"
+	}
+	
 }	

@@ -1,0 +1,7 @@
+government = republic
+government_rank = 1
+mercantilism = 10
+primary_culture = slovene
+religion = catholic
+technology_group = eastern
+capital = 4751

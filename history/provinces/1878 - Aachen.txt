@@ -4,8 +4,8 @@ latent_trade_goods = {
 	coal
 }
 
-owner = AAC
-controller = AAC
+owner = R3L
+controller = R3L
 culture = hessian
 religion = catholic
 trade_goods = grain
@@ -13,7 +13,7 @@ capital = "Aachen"
 base_tax = 6
 base_production = 6
 is_city = yes
-add_core = AAC
+add_core = R3L
 base_manpower = 2
 hre = no
 

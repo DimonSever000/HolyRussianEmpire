@@ -1,0 +1,16 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = eastern
+religion = orthodox
+primary_culture = anatolian
+capital = 1846
+
+1417.1.1 = {
+	monarch = {
+		name = "Konstantinos"
+		dip = 3
+		adm = 2
+		mil = 2
+	}
+}

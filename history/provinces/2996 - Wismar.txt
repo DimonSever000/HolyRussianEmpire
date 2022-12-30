@@ -1,8 +1,8 @@
 # - Wismar
 
-owner = MKL
-controller = MKL
-add_core = MKL
+owner = HAN
+controller = HAN
+add_core = HAN
 culture = pommeranian
 religion = catholic
 hre = no
@@ -19,9 +19,3 @@ discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
-
-
-1531.1.1  = { religion = protestant }
-1648.10.24 = { owner = SWE controller = SWE add_core = SWE } #Peace of Westphalia
-1803.1.1 = { owner = MKL controller = MKL add_core = MKL } #Pledged to Mecklenburg-Schwerin
-1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved

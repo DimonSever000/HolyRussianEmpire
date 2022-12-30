@@ -1,8 +1,8 @@
 #46 - Rostock
 
-owner = MKL
-controller = MKL
-add_core = MKL
+owner = HAN
+controller = HAN
+add_core = HAN
 culture = pommeranian
 religion = catholic
 hre = no
@@ -19,9 +19,3 @@ discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
-
-
-1531.1.1 = { religion = protestant }
-1628.1.1 = { fort_16th = yes } #Fortified by Wallenstein
-1677.1.1 = { unrest = 4 }# Disastrous fire in Rostock
-1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved

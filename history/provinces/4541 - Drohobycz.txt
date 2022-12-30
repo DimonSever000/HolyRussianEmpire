@@ -12,7 +12,6 @@ base_manpower = 2
 capital = "Drohobycz"
 is_city = yes
 add_core = R2G
-add_core = VOL
 
 
 discovered_by = KAZ

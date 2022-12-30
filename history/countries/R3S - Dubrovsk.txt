@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = principality
+government_rank = 1
+technology_group = eastern
+religion = orthodox
+primary_culture = dagestani
+capital = 4306
+fixed_capital = 4306
+
+1411.1.1 = {
+	monarch = {
+		name = "Afanasiy"
+		dynasty = Rurikovich
+		birth_date = 1390.1.1
+		dip = 3
+		adm = 4
+		mil = 2
+	}
+}

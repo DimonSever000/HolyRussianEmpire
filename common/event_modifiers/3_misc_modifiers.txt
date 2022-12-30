@@ -30,7 +30,6 @@ modifier_penza_2_3 = {
 #
 #
 modifier_vladimir_2_2 = {
-	discipline = 0.05
 	land_morale = 0.1
 }
 modifier_vladimir_3_3 = {
@@ -38,7 +37,7 @@ modifier_vladimir_3_3 = {
 	missionaries = 1
 }
 modifier_vladimir_3_5 = {
-	mercenary_discipline = 0.1
+	mercenary_discipline = 0.05
 	prestige_from_land = 0.25
 }
 #
@@ -60,7 +59,7 @@ modifier_novgorod_4_3 = {
 #
 #
 modifier_ryazan_1_4 = {
-	harsh_treatment_cost = -0.5
+	harsh_treatment_cost = -0.3
 	global_unrest = -2
 }
 modifier_ryazan_2_3 = {
@@ -89,7 +88,6 @@ modifier_pereyaslavl_3_4 = {
 	light_ship_cost = -0.2
 }
 modifier_pereyaslavl_2_5 = {
-	fire_damage_received = -0.1
 	recover_army_morale_speed = 0.1
 }
 #
@@ -105,7 +103,7 @@ modifier_smolensk_1_3 = {
 }
 modifier_smolensk_2_5 = {
 	idea_cost = -0.1
-	leader_land_fire = 2
+	leader_land_fire = 1
 }
 modifier_smolensk_3_4 = {
 	diplomatic_reputation = 1
@@ -134,12 +132,8 @@ modifier_white_ruthenia_2_5 = {
 	production_efficiency = 0.1
 }
 modifier_white_ruthenia_2_6 = {
-	shock_damage = 0.2
-	cavalry_cost = -0.2
-}
-modifier_white_ruthenia_3_1 = {
-	global_tax_modifier = 0.2
-	tolerance_own = 1
+	shock_damage = 0.1
+	cavalry_cost = -0.1
 }
 modifier_white_ruthenia_3_1 = {
 	global_tax_modifier = 0.2
@@ -156,7 +150,7 @@ modifier_muscovy_1_2_1 = {
 	tolerance_own = 2
 }
 modifier_muscovy_1_2_2 = {
-	land_morale = 0.2
+	land_morale = 0.15
 }
 modifier_muscovy_1_2_3 = {
 	global_unrest = -2
@@ -172,7 +166,6 @@ modifier_muscovy_1_2_6 = {
 }
 modifier_muscovy_1_4 = {
 	land_morale = 0.1
-	discipline = 0.05
 }
 modifier_muscovy_2_1 = {
 	global_unrest = -2
@@ -187,10 +180,10 @@ modifier_muscovy_5_1 = {
 	build_cost = -0.1
 }
 modifier_muscovy_5_2 = {
-	state_maintenance_modifier = -0.33
+	state_maintenance_modifier = -0.2
 }
 modifier_muscovy_5_3 = {
-	inflation_reduction = 0.15
+	inflation_reduction = 0.1
 	inflation_action_cost = -0.25
 }
 modifier_muscovy_5_7 = {
@@ -213,7 +206,7 @@ modifier_yaroslavl_1_2 = {
 }
 modifier_yaroslavl_2_5 = {
 	yearly_absolutism = 1
-	infantry_power = 0.15
+	infantry_power = 0.1
 }
 #
 #
@@ -228,7 +221,6 @@ modifier_rostov_2_3 = {
 }
 modifier_rostov_2_5 = {
 	discipline = 0.05
-	land_morale = 0.05
 }
 #
 #
@@ -246,5 +238,80 @@ modifier_estonia_2_4 = {
 }
 modifier_estonia_2_5 = {
 	land_morale = 0.1
-	discipline = 0.05
+}
+#
+#
+#
+modifier_kozelsk_1_2 = {
+	manpower_recovery_speed = 0.2
+}
+modifier_kozelsk_2_5 = {
+	manpower_recovery_speed = 0.2
+}
+#
+#
+#
+modifier_volhynia_1_4 = {
+	build_cost = -0.1
+}
+modifier_volhynia_2_3 = {
+	production_efficiency = 0.1
+}
+modifier_volhynia_3_5 = {
+	cavalry_power = 0.1
+	culture_conversion_cost = -0.2
+}
+modifier_volhynia_4_2 = {
+	inflation_action_cost = -0.3
+}
+#
+#
+#
+modifier_kiev_1_3 = {
+	build_cost = -0.1
+	inflation_action_cost = -0.2
+}
+modifier_kiev_1_4 = {
+	inflation_reduction = 0.1
+}
+modifier_kiev_1_5 = {
+	merchants = 1
+}
+modifier_kiev_1_11 = {
+	global_autonomy = -0.05
+	harsh_treatment_cost = -0.25
+	religious_unity = 0.15
+}
+modifier_kiev_2_2 = {
+	diplomatic_reputation = 1
+	diplomats = 1
+}
+modifier_kiev_2_3 = {
+	years_of_nationalism = -5
+}
+modifier_kiev_2_9 = {
+	years_of_nationalism = -5
+	global_autonomy = -0.05
+}
+modifier_kiev_2_13 = {
+	production_efficiency = 0.1
+	build_time = -0.1
+}
+modifier_kiev_3_14 = {
+	state_maintenance_modifier = -0.2
+	land_forcelimit_modifier = 0.33
+}
+province_modifier_kiev_3_14 = {
+	province_trade_power_modifier = 0.5
+	local_unrest = -2
+	local_development_cost = -0.2
+}
+modifier_kiev_4_5 = {
+	local_unrest = -2
+}
+modifier_kiev_4_6 = {
+	religious_unity = 0.2
+}
+modifier_kiev_4_11 = {
+	trade_efficiency = 0.15
 }

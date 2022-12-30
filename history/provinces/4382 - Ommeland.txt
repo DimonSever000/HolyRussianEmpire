@@ -1,7 +1,7 @@
 # 4383 Ommeland - Groningen, Ommeland & Drenthe
 
-owner = FRI
-controller = FRI
+owner = R3K
+controller = R3K
 capital = "Groningen"
 is_city = yes
 culture = frisian
@@ -12,6 +12,7 @@ base_production = 4
 base_manpower = 2
 trade_goods = cloth 
 add_core = FRI
+add_core = R3K
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

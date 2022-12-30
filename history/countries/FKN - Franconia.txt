@@ -1,0 +1,16 @@
+government = monarchy
+add_government_reform = feudalism_reform
+technology_group = western
+religion = catholic
+primary_culture = franconian
+capital = 67	# Nurnberg
+
+1430.1.1 = {
+	monarch = {
+		name = "Johann"
+		birth_date = 1410.1.1
+		dip = 2
+		adm = 3
+		mil = 2
+	}
+}

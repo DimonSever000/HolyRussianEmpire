@@ -7,8 +7,6 @@ tr_russian_minors_1 = {
 	}
 	potential = {
 		OR = {
-			tag = VOL
-			tag = KIE
 			tag = CHR
 			tag = OKA
 			tag = PSK
@@ -251,8 +249,6 @@ tr_russian_minors_2 = {
 	}
 	potential = {
 		OR = {
-			tag = VOL
-			tag = KIE
 			tag = CHR
 			tag = OKA
 			tag = PSK
@@ -403,8 +399,6 @@ tr_russian_minors_3 = {
 	}
 	potential = {
 		OR = {
-			tag = VOL
-			tag = KIE
 			tag = CHR
 			tag = OKA
 			tag = PSK

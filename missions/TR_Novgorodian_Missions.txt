@@ -746,7 +746,6 @@ novgorod_5 = {
 		required_missions = { novgorod_5_1 }
 		trigger = {
 			num_of_owned_provinces_with = {
-				religion = orthodox
 				has_tax_building_trigger = yes
 				value = 10
 			}

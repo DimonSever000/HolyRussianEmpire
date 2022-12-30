@@ -1055,11 +1055,14 @@ muscovy_3 = {
 		required_missions = { }
 		trigger = { 
 			prestige = 30
-			R2V = {
-				has_opinion = {
-					who = root
-					value = 150
+			OR = {
+				R2V = {
+					has_opinion = {
+						who = root
+						value = 150
+					}
 				}
+				owns = 296
 			}
 			is_free_or_tributary_trigger = yes
 		}
@@ -1500,9 +1503,11 @@ muscovy_4 = {
 		required_missions = { muscovy_4_5 }
 		trigger = {
 			num_of_owned_provinces_with = {
-				has_building = marketplace
-				has_building = trade_depot
-				has_building = stock_exchange
+				OR = {
+					has_building = marketplace
+					has_building = trade_depot
+					has_building = stock_exchange
+				}
 				value = 15
 			}
 			owns = 295

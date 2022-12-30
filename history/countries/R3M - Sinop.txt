@@ -1,0 +1,16 @@
+government = theocracy
+add_government_reform = monastic_order_reform
+government_rank = 1
+technology_group = eastern
+religion = orthodox
+primary_culture = anatolian
+capital = 328
+
+1434.1.1 = {
+	monarch = {
+		name = "Oleg"
+		dip = 3
+		adm = 3
+		mil = 2
+	}
+}

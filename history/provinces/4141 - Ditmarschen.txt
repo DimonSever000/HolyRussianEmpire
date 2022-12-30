@@ -1,8 +1,9 @@
 #4141 - Ditmarschen
 
-owner = DTT
-controller = DTT
-add_core = DTT
+owner = SCA
+controller = SCA
+add_core = DAN
+add_core = SCA
 culture = lower_saxon
 religion = catholic
 hre = no

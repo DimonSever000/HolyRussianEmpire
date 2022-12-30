@@ -1,0 +1,6 @@
+# France and Batavia
+vassal = {
+	first = FRA
+	second = R3K
+	start_date = 1440.1.1
+}

@@ -1,7 +1,7 @@
 # 66 - Bamberg
-owner = BAM
-controller = BAM
-add_core = BAM
+owner = FKN
+controller = FKN
+add_core = FKN
 culture = franconian
 religion = catholic
 base_tax = 2
@@ -17,13 +17,3 @@ discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
-
-
-1632.2.1 = { controller = SWE }
-1635.1.16 = { controller = BAM }
-1803.1.1 = {
-	owner = BAV
-	controller = BAV
-	add_core = BAV
-} # Annexed by Bavaria
-1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved

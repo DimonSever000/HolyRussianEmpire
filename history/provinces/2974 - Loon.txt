@@ -1,8 +1,8 @@
 #2974 Loon
 
-owner = LIE
-controller = LIE
-add_core = LIE
+owner = FRA
+controller = FRA
+add_core = BRB
 is_city = yes
 capital = "Loon"
 culture = flemish

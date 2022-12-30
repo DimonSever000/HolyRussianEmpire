@@ -12,6 +12,7 @@ base_production = 3
 trade_goods = wool
 base_manpower = 2
 add_core = FRA
+add_core = SAV
 
 
 

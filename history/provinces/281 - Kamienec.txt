@@ -11,7 +11,6 @@ trade_goods = livestock
 base_manpower = 2
 capital = "Kamieniec"
 is_city = yes
-add_core = VOL
 add_core = R2G
 discovered_by = western
 discovered_by = eastern

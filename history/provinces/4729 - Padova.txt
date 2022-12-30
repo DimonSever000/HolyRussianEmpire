@@ -1,7 +1,7 @@
 #4729 - Padova, Padua
 
-owner = PDV
-controller = PDV
+owner = VRN
+controller = VRN
 culture = venetian 
 religion = catholic 
 hre = no 
@@ -12,6 +12,7 @@ base_manpower = 2
 capital = "Padova" 
 is_city = yes 
 add_core = PDV
+add_core = VRN
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

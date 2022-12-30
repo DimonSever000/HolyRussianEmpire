@@ -1,0 +1,28 @@
+government = monarchy
+add_government_reform = feudalism_reform
+technology_group = western
+primary_culture = bavarian
+religion = catholic
+capital = 65
+
+1433.12.1 = {
+	monarch = {
+		name = "Albrecht"
+		dynasty = "von Wittelsbach"
+		birth_date = 1400.1.1
+		adm = 4
+		dip = 2
+		mil = 2
+	}
+}
+
+1440.1.1  = {
+	monarch = {
+		name = "Wilhelm I"
+		dynasty = "von Wittelsbach"
+		birth_date = 1440.1.1
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}

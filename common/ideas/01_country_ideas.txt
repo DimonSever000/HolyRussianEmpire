@@ -69,10 +69,10 @@ R2H_ideas = {
 		global_manpower_modifier = 0.15
 	}
 	R2H_idea_V = {
-		cavalry_power = 0.15
+		cavalry_power = 0.1
 	}
 	R2H_idea_VI = {
-		global_heretic_missionary_strength = 0.03
+		global_heretic_missionary_strength = 0.02
 	}
 	R2H_idea_VII = {
 		yearly_corruption = -0.1
@@ -98,13 +98,13 @@ R1R_ideas = {
 		diplomats = 1
 	}
 	R1R_idea_II = {
-		vassal_forcelimit_bonus = 0.5
+		vassal_forcelimit_bonus = 0.3
 	}
 	R1R_idea_III = {
-		diplomatic_reputation = 3
+		diplomatic_reputation = 2
 	}
 	R1R_idea_IV = {
-		infantry_power = 0.2
+		infantry_power = 0.1
 	}
 	R1R_idea_V = {
 		diplomats = 1
@@ -230,6 +230,86 @@ YAR_ideas = {
 	}
 	YAR_idea_VII = {
 		state_maintenance_modifier = -0.15
+	}
+}
+
+# Kozelsk
+R2V_ideas = {
+	start = {
+		discipline = 0.05
+		tolerance_own = 1
+	}
+	
+	bonus = {
+		mil_tech_cost_modifier = -0.1
+	}	
+
+	trigger = {
+		tag = R2V
+	}
+	free = yes
+	
+	R2V_idea_I = {
+		fort_maintenance_modifier = -0.25
+	}
+	R2V_idea_II = {
+		enforce_religion_cost = -0.3
+	}
+	R2V_idea_III = {
+		global_tax_modifier = 0.1
+	}
+	R2V_idea_IV = {
+		missionaries = 1
+	}
+	R2V_idea_V = {
+		land_forcelimit_modifier = 0.2
+	}
+	R2V_idea_VI = {
+		ae_impact = -0.1
+	}
+	R2V_idea_VII = {
+		land_morale = 0.1
+	}
+}
+
+# Volhynia
+VOL_ideas = {
+	start = {
+		num_accepted_cultures = 1
+		tolerance_heretic = 1
+	}
+	
+	bonus = {
+		diplomats = 1
+		advisor_pool = 1
+	}	
+
+	trigger = {
+		tag = VOL
+	}
+	free = yes
+	
+	VOL_idea_I = {
+		tolerance_heretic = 2
+	}
+	VOL_idea_II = {
+		administrative_efficiency = 0.05
+		adm_tech_cost_modifier = -0.05
+	}
+	VOL_idea_III = {
+		infantry_cost = -0.1
+	}
+	VOL_idea_IV = {
+		missionaries = 1
+	}
+	VOL_idea_V = {
+		global_tax_modifier = 0.1
+	}
+	VOL_idea_VI = {
+		shock_damage = 0.1
+	}
+	VOL_idea_VII = {
+		reinforce_speed = 0.1
 	}
 }
 

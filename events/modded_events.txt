@@ -2055,3 +2055,85 @@ country_event = {
 		}
 	}
 }
+
+# The Question of legacy
+country_event = {
+	id = 18560018
+	title = "modded_event_18560018_title"
+	desc = "modded_event_18560018_desc"
+	picture = POPE_PREACHING_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "modded_event_18560018_option_1"
+		add_prestige = 10
+		add_stability = -1
+		ai_chance = {
+			factor = 5
+		}
+	}
+	
+	option = {
+		name = "modded_event_18560018_option_2"
+		set_government_rank = 1
+		change_government = monarchy
+		add_government_reform = principality
+		add_stability = 1
+		ai_chance = {
+			factor = 3
+		}
+	}
+	
+	option = {
+		name = "modded_event_18560018_option_3"
+		set_government_rank = 1
+		change_government = republic
+		add_government_reform = boyars_republic
+		add_stability = 1
+		ai_chance = {
+			factor = 2
+		}
+	}
+}
+
+# Estates Council
+country_event = {
+	id = 18560019
+	title = "modded_event_18560019_title"
+	desc = "modded_event_18560019_desc"
+	picture = COURT_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "modded_event_18560019_option_1"
+		change_adm = 2
+		add_estate_influence_modifier = {
+			estate = estate_church
+			desc = event_18560019_estate_church_influence_desc
+			influence = 10
+			duration = 18250
+		}
+	}
+	
+	option = {
+		name = "modded_event_18560019_option_2"
+		change_dip = 2
+		add_estate_influence_modifier = {
+			estate = estate_burghers
+			desc = event_18560019_estate_burghers_influence_desc
+			influence = 10
+			duration = 18250
+		}
+	}
+	
+	option = {
+		name = "modded_event_18560019_option_3"
+		change_mil = 2
+		add_estate_influence_modifier = {
+			estate = estate_nobles
+			desc = event_18560019_estate_nobles_influence_desc
+			influence = 10
+			duration = 18250
+		}
+	}
+}

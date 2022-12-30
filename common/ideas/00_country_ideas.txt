@@ -5782,44 +5782,6 @@ BUL_ideas = {
 	}
 }
 
-KIE_ideas = {
-	start = {
-		global_unrest = -1	
-		global_heretic_missionary_strength = 0.01
-	}
-	
-	bonus = {
-		land_morale = 0.1
-	}
-	
-	trigger = {
-		tag = KIE
-	}
-	free = yes
-	
-	mother_of_all_cities = {
-		prestige = 1
-	}
-	heritage_of_rus = {
-		diplomatic_reputation = 1		
-	}
-	fending_off_the_invaders = {
-		defensiveness = 0.15		
-	}
-	chernozem_land = {
-		production_efficiency = 0.1
-	}
-	center_of_orthodox_church = {
-		global_missionary_strength = 0.01
-		tolerance_own = 1		
-	}
-	support_local_traders = {
-		merchants = 1
-	}
-	centralized_rule = {
-		global_tax_modifier = 0.1
-	}
-}
 
 NAX_ideas = {
 	start = {
@@ -16568,10 +16530,10 @@ RYA_ideas = {
 	free = yes
 	
 	RYA_idea_I = {
-		harsh_treatment_cost = -0.25
+		harsh_treatment_cost = -0.2
 	}
 	RYA_idea_II = {
-		discipline = 0.05
+		leader_land_manuever = 1
 	}
 	RYA_idea_III = {
 		religious_unity = 0.15
@@ -16583,7 +16545,7 @@ RYA_ideas = {
 		trade_efficiency = 0.1
 	}
 	RYA_idea_VI = {
-		manpower_recovery_speed = 0.15
+		manpower_recovery_speed = 0.1
 	}
 	RYA_idea_VII = {
 		land_morale = 0.2
@@ -16597,7 +16559,7 @@ SMO_ideas = {
 	}
 	
 	bonus = {
-		discipline = 0.05
+		fire_damage_received = -0.1
 	}	
 
 	trigger = {
@@ -16690,17 +16652,17 @@ MOS_ideas = {
 		global_tax_modifier = 0.10
 	}
 	MOS_idea_III = {
-		tolerance_own = 2
-		global_missionary_strength = 0.03
+		tolerance_own = 1
+		global_missionary_strength = 0.02
 	}
 	MOS_idea_IV = {
 		global_autonomy = -0.05
 	}
 	MOS_idea_V = {
-		core_creation = -0.25
+		core_creation = -0.15
 	}
 	MOS_idea_VI = {
-		manpower_recovery_speed = 0.25
+		manpower_recovery_speed = 0.2
 	}
 	MOS_idea_VII = {
 		fire_damage_received = -0.1
@@ -16724,8 +16686,8 @@ RSO_ideas = {
 	free = yes
 	
 	RSO_idea_I = {
-		inflation_reduction = 0.1
-		interest = -1
+		inflation_reduction = 0.05
+		interest = -0.5
 	}
 	RSO_idea_II = {
 		manpower_recovery_speed = 0.15
@@ -16755,7 +16717,7 @@ EST_ideas = {
 	}
 
 	bonus = {
-		war_exhaustion = -0.05
+		war_exhaustion = -0.03
 	}
 
 	trigger = {
@@ -16767,7 +16729,7 @@ EST_ideas = {
 		core_creation = -0.15
 	}
 	EST_idea_II = {
-		warscore_cost_vs_other_religion = -0.3
+		warscore_cost_vs_other_religion = -0.25
 	}
 	EST_idea_III = {
 		tolerance_own = 2
@@ -16782,6 +16744,48 @@ EST_ideas = {
 		naval_maintenance_modifier = -0.2
 	}
 	EST_idea_VII = {
-		leader_land_shock = 2
+		leader_land_shock = 1
+	}
+}
+
+# Kiev
+KIE_ideas = {
+	start = {
+		religious_unity = 0.1
+		institution_spread_from_true_faith = 0.1
+	}
+
+	bonus = {
+		years_of_nationalism = -5
+	}
+
+	trigger = {
+		tag = KIE
+	}
+	free = yes
+	
+	KIE_idea_I = {
+		prestige = 1
+		diplomatic_reputation = 1
+	}
+	KIE_idea_II = {
+		imperial_authority = 0.1
+		diplomatic_annexation_cost = -0.15
+	}
+	KIE_idea_III = {
+		core_creation = -0.15
+	}
+	KIE_idea_IV = {
+		merchants = 1
+	}
+	KIE_idea_V = {
+		production_efficiency = 0.1
+	}
+	KIE_idea_VI = {
+		global_tax_modifier = 0.1
+		tolerance_own = 1
+	}
+	KIE_idea_VII = {
+		cavalry_power = 0.15
 	}
 }

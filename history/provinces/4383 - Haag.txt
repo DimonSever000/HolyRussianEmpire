@@ -1,8 +1,9 @@
 # 4383 South Holland - Principal cities: Den Haag, Delft, Leiden
 
-owner = HOL
-controller = HOL
+owner = R3K
+controller = R3K
 add_core = HOL
+add_core = R3K
 capital = "'s-Gravenhage"
 is_city = yes
 culture = dutch

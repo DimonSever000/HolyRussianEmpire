@@ -1,5 +1,5 @@
-owner = BYT
-controller = BYT
+owner = FKN
+controller = FKN
 capital = "Bayreuth"
 is_city = yes
 culture = franconian
@@ -9,7 +9,7 @@ base_tax = 2
 base_production = 2
 base_manpower = 2
 trade_goods = wool
-add_core = BYT
+add_core = FKN
 fort_15th = yes
 
 discovered_by = eastern

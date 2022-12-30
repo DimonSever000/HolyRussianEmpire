@@ -1,7 +1,7 @@
 # 100 Friesland - Principal cities: Leeuwarden & Harlingen 
 
-owner = FRI
-controller = FRI
+owner = R3K
+controller = R3K
 capital = "Leeuwarden"
 is_city = yes
 culture = frisian
@@ -12,6 +12,7 @@ base_production = 6
 trade_goods = livestock 
 base_manpower = 2
 add_core = FRI
+add_core = R3K
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

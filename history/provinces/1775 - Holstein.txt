@@ -1,8 +1,9 @@
 #1775 - Holstein
 
-owner = SHL
-controller = SHL
-add_core = SHL
+owner = SCA
+controller = SCA
+add_core = SCA
+add_core = DAN
 culture = lower_saxon
 religion = catholic
 hre = no

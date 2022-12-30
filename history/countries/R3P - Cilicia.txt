@@ -1,0 +1,16 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = eastern
+religion = orthodox
+primary_culture = anatolian
+capital = 324
+
+1420.1.1 = {
+	monarch = {
+		name = "Nikolaos"
+		dip = 4
+		adm = 4
+		mil = 2
+	}
+}

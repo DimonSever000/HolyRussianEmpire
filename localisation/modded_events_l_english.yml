@@ -267,5 +267,23 @@
  modded_event_18560017_option_3:0 "Choose Koenigsberg"
  modded_event_18560017_option_4:0 "Choose Vilnius"
  #
+ #
+ #
+ modded_event_18560018_title:0 "The Question of legacy"
+ modded_event_18560018_desc:0 "Many officials from your circle are sure that our form of government has exhausted itself and it is time to choose something more stable."
+ modded_event_18560018_option_1:0 "Nonsense!"
+ modded_event_18560018_option_2:0 "I will become a kniaz"
+ modded_event_18560018_option_3:0 "Maybe they are right..."
+ #
+ #
+ #
+ modded_event_18560019_title:0 "Estates Council"
+ modded_event_18560019_desc:0 "A council of estates was convened. Here are the most important representatives of the boyars, merchants and the church. They will determine the course of our development for the coming years."
+ modded_event_18560019_option_1:0 "Give support to the church"
+ event_18560019_estate_church_influence_desc:0 "Church influence"
+ modded_event_18560019_option_2:0 "Merchants will receive support"
+ event_18560019_estate_nobles_influence_desc:0 "Nobles influence"
+ modded_event_18560019_option_3:0 "Military force takes precedence"
+ event_18560019_estate_burghers_influence_desc:0 "Burghers influence"
  
  

@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = western
+religion = catholic
+primary_culture = hessian
+add_accepted_culture = swabian
+add_accepted_culture = hannoverian
+capital = 85
+
+1440.1.1 = {
+	monarch = {
+		name = "Maurits"
+		dynasty = "The Palatinate"
+		dip = 3
+		adm = 4
+		mil = 4
+	}
+}

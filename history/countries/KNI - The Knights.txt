@@ -1,0 +1,20 @@
+government = theocracy
+add_government_reform = monastic_order_reform
+government_rank = 1
+primary_culture = ruthenian
+religion = orthodox
+technology_group = eastern
+capital = 320
+historical_friend = KIE
+add_army_professionalism = 0.1
+
+1420.1.1 = {
+	monarch = {
+		name = "Alexei"
+		birth_date = 1390.1.1
+		culture = ruthenian
+		adm = 1
+		dip = 2
+		mil = 2
+	}
+}

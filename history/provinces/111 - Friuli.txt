@@ -1,7 +1,7 @@
 #111 - Friuli
 
-owner = AQU
-controller = AQU
+owner = R1Y
+controller = R1Y
 culture = venetian 
 religion = catholic 
 hre = no 
@@ -12,6 +12,7 @@ base_manpower = 2
 capital = "Udine" 
 is_city = yes # Estimated
 add_core = AQU
+add_core = R1Y
 
 
 

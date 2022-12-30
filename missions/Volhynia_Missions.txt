@@ -1,0 +1,711 @@
+volhynia_1 = {
+	slot = 1
+	generic = yes
+	ai = yes
+	potential = {
+		OR = {
+			tag = VOL
+		}
+	}
+	has_country_shield = yes
+
+	volhynia_1_4 = {
+		position = 4
+		icon = mission_early_game_buildings
+		required_missions = { volhynia_2_3 }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 279
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			owns = 279
+			279 = { development = 30 }
+		}
+		effect = {
+			add_country_modifier = {
+				name = "modifier_volhynia_1_4"
+				duration = 7300
+			}
+			add_prestige = 20
+			add_adm_power = 50
+		}
+	}
+	
+	volhynia_1_5 = {
+		position = 5
+		icon = modded_centralization
+		required_missions = { volhynia_1_4 }
+		trigger = {
+			crown_land_share = 80
+		}
+		effect = {
+			add_estate_influence_modifier = {
+				estate = estate_church
+				desc = volhynia_1_5_estate_church_influence_desc
+				influence = -5
+				duration = -1
+			}
+			add_estate_influence_modifier = {
+				estate = estate_nobles
+				desc = volhynia_1_5_estate_nobles_influence_desc
+				influence = -5
+				duration = -1
+			}
+			add_estate_influence_modifier = {
+				estate = estate_burghers
+				desc = volhynia_1_5_estate_burghers_influence_desc
+				influence = -5
+				duration = -1
+			}
+			add_stability = 1
+		}
+	}
+}
+
+volhynia_2 = {
+	slot = 2
+	generic = yes
+	ai = yes
+	potential = {
+		OR = {
+			tag = VOL
+		}
+	}
+	has_country_shield = yes
+	
+	
+	volhynia_2_2 = {
+		position = 2
+		icon = mission_dominate_home_trade_node
+		required_missions = { volhynia_3_1 }
+		trigger = {
+			num_of_owned_provinces_with = {
+				OR = {
+					has_building = marketplace
+					has_building = trade_depot
+					has_building = stock_exchange
+				}
+				value = 3
+			}
+		}
+		effect = {
+			add_years_of_income = 1
+			add_dip_power = 50
+		}
+	}
+	
+	volhynia_2_3 = {
+		position = 3
+		icon = mission_have_manufactories
+		required_missions = { volhynia_2_2 }
+		trigger = {
+			num_of_owned_provinces_with = {
+				base_production = 10
+				has_building = workshop
+				value = 6
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "modifier_volhynia_2_3"
+				duration = 7300
+			}
+		}
+	}
+	
+	volhynia_2_4 = {
+		position = 4
+		icon = mission_unite_home_region
+		required_missions = { volhynia_2_3 volhynia_3_3 }
+		provinces_to_highlight = {
+			OR = {
+				area = lithuania_area
+				area = samogitia_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			lithuania_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			samogitia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 30
+			add_dip_power = 100
+		}
+	}
+	
+	volhynia_2_5 = {
+		position = 5
+		icon = mission_high_income
+		required_missions = { volhynia_2_4 }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 262
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			owns = 262
+			has_great_project = {
+				type = krakow_cloth_hall
+				tier = 3
+			}
+		}
+		effect = {
+			define_advisor = {
+				type = trader
+				skill = 3
+				culture = root
+				cost_multiplier = 0.25
+			}
+		}
+	}
+}
+
+volhynia_3 = {
+	slot = 3
+	generic = yes
+	ai = yes
+	potential = {
+		OR = {
+			tag = VOL
+		}
+	}
+	has_country_shield = yes
+
+	volhynia_3_1 = {
+		position = 1
+		icon = balance_of_power
+		required_missions = { }
+		trigger = { 
+			has_any_disaster = no
+			stability = 1
+			has_adm_advisor_2 = yes
+			is_free_or_tributary_trigger = yes
+			monthly_adm = 10
+		}
+		effect = {
+			country_event = { id = 18560019 }
+			add_prestige = 10
+		}
+	}
+	
+	volhynia_3_2 = {
+		position = 2
+		icon = mission_empire
+		required_missions = { volhynia_3_1 }
+		provinces_to_highlight = {
+			OR = {
+				area = red_ruthenia_area
+				province_id = 281
+			}
+		}
+		trigger = { 
+			red_ruthenia_area = {
+				type = all
+				owned_by = ROOT
+			}
+			owns = 281
+		}
+		effect = {
+			malopolska_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			sandomierz_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	volhynia_3_3 = {
+		position = 3
+		icon = mission_conquer_5_states
+		required_missions = { volhynia_3_2 }
+		provinces_to_highlight = {
+			OR = {
+				area = malopolska_area
+				area = sandomierz_area
+			}
+		}
+		trigger = { 
+			malopolska_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			sandomierz_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_casus_belli = {
+				target = LIT
+				type = cb_vassalize_mission
+				months = 300
+			}
+			add_casus_belli = {
+				target = POL
+				type = cb_vassalize_mission
+				months = 300
+			}
+			add_casus_belli = {
+				type = cb_restore_personal_union
+				months = 300
+				target = KIE
+			}
+			wielkopolska_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			podlasie_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			mazovia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			central_poland_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			kuyavia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	volhynia_3_4 = {
+		position = 4
+		icon = mission_unite_home_region
+		required_missions = { volhynia_3_3 }
+		provinces_to_highlight = {
+			OR = {
+				area = wielkopolska_area
+				area = mazovia_area
+				area = central_poland_area
+				area = kuyavia_area
+				area = sandomierz_area
+				area = malopolska_area
+				province_id = 279
+				province_id = 261
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = { 
+			owns = 279
+			owns = 261
+			wielkopolska_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			mazovia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			central_poland_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			kuyavia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			sandomierz_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			malopolska_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 30
+			add_yearly_manpower = 3
+			279 = {
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+			}
+			261 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+		}
+	}
+	
+	volhynia_3_5 = {
+		position = 5
+		icon = mission_monarch_in_throne_room
+		required_missions = { volhynia_2_4 volhynia_3_4 volhynia_4_4 }
+		provinces_to_highlight = {
+			OR = {
+				area = wielkopolska_area
+				area = mazovia_area
+				area = central_poland_area
+				area = kuyavia_area
+				area = sandomierz_area
+				area = malopolska_area
+				area = podlasie_area
+				area = volhynia_area
+				province_id = 281
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			owns = 281
+			wielkopolska_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			mazovia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			central_poland_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			kuyavia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			sandomierz_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			malopolska_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			podlasie_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			volhynia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			is_emperor = yes
+		}
+		effect = {
+			add_prestige = 30
+			add_country_modifier = {
+				name = "modifier_volhynia_3_5"
+				duration = -1
+			}
+		}
+	}
+}
+
+volhynia_4 = {
+	slot = 4
+	generic = yes
+	ai = yes
+	potential = {
+		OR = {
+			tag = VOL
+		}
+	}
+	has_country_shield = yes
+
+	
+	volhynia_4_2 = {
+		position = 2
+		icon = mission_high_income
+		required_missions = { volhynia_3_1 }
+		trigger = { 
+			share_of_starting_income = 3
+		}
+		effect = {
+			add_country_modifier = {
+				name = "modifier_volhynia_4_2"
+				duration = 9125 #25 years
+			}
+			define_advisor = {
+				type = treasurer
+				skill = 3 
+				culture = root
+				cost_multiplier = 0.3
+			}
+		}
+	}
+	
+	volhynia_4_3 = {
+		position = 3
+		icon = mission_war_chest
+		required_missions = { volhynia_4_2 }
+		trigger = { 
+			num_of_owned_provinces_with = {
+				has_tax_building_trigger = yes
+				value = 5
+			}
+		}
+		effect = {
+			add_years_of_income = 1
+			add_stability = 1
+		}
+	}
+	
+	volhynia_4_4 = {
+		position = 4
+		icon = mission_restore_kiev
+		required_missions = { volhynia_3_3 volhynia_4_3 }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 280
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = { 
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				OR = {
+					province_id = 280
+				}
+				value = 1
+			}
+		}
+		effect = {
+			add_prestige = 30
+			add_dip_power = 100
+			transdanubia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			slovakia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			southern_transylvania_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			transylvania_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			alfold_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	volhynia_4_5 = {
+		position = 5
+		icon = mission_non-western_cavalry_raid
+		required_missions = { volhynia_4_4 }
+		provinces_to_highlight = {
+			OR = {
+				area = transdanubia_area
+				area = slovakia_area
+				area = southern_transylvania_area
+				area = transylvania_area
+				area = alfold_area
+			}
+			NOT = {
+				is_part_of_hre = yes
+			}
+		}
+		trigger = { 
+			transdanubia_area = {
+				type = all
+				is_part_of_hre = yes
+			}
+			slovakia_area = {
+				type = all
+				is_part_of_hre = yes
+			}
+			southern_transylvania_area = {
+				type = all
+				is_part_of_hre = yes
+			}
+			transylvania_area = {
+				type = all
+				is_part_of_hre = yes
+			}
+			alfold_area = {
+				type = all
+				is_part_of_hre = yes
+			}
+		}
+		effect = {
+			add_stability = 1
+			add_dip_power = 150
+		}
+	}
+}
+
+volhynia_5 = {
+	slot = 5
+	generic = yes
+	ai = yes
+	potential = {
+		OR = {
+			tag = VOL
+		}
+	}
+	has_country_shield = yes
+
+	volhynia_5_4 = {
+		position = 4
+		icon = mission_hands_praying
+		required_missions = { volhynia_4_3 }
+		provinces_to_highlight = {
+			OR = {
+				area = wielkopolska_area
+				area = mazovia_area
+				area = central_poland_area
+				area = kuyavia_area
+				area = sandomierz_area
+				area = malopolska_area
+				area = podlasie_area
+				area = podolia_volhynia_area
+				area = volhynia_area
+			}
+			NOT = {
+				religion = root
+			}
+		}
+		trigger = {
+			owns = 281
+			wielkopolska_area = {
+				type = all
+				religion = root
+			}
+			mazovia_area = {
+				type = all
+				religion = root
+			}
+			central_poland_area = {
+				type = all
+				religion = root
+			}
+			kuyavia_area = {
+				type = all
+				religion = root
+			}
+			sandomierz_area = {
+				type = all
+				religion = root
+			}
+			malopolska_area = {
+				type = all
+				religion = root
+			}
+			podlasie_area = {
+				type = all
+				religion = root
+			}
+			podolia_volhynia_area = {
+				type = all
+				religion = root
+			}
+			volhynia_area = {
+				type = all
+				religion = root
+			}
+		}
+		effect = {
+			add_prestige = 30
+			add_yearly_manpower = 4
+			add_casus_belli = {
+				target = TEU
+				type = cb_vassalize_mission
+				months = 300
+			}
+		}
+	}
+	
+	volhynia_5_5 = {
+		position = 5
+		icon = modded_archangel_michael
+		required_missions = { volhynia_5_4 }
+		provinces_to_highlight = {
+			OR = {
+				area = east_prussia_area
+				area = west_prussia_area
+			}
+			NOT = {
+				religion = root
+			}
+		}
+		trigger = { 
+			east_prussia_area = {
+				type = all
+				religion = root
+			}
+			west_prussia_area = {
+				type = all
+				religion = root
+			}
+			is_defender_of_faith = yes
+			religious_unity = 1
+		}
+		effect = {
+			add_years_of_income = 2
+			add_dip_power = 100
+		}
+	}
+}

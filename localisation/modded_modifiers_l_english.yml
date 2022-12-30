@@ -68,5 +68,27 @@
  modifier_estonia_2_4:0 "Fall of the heretics"
  modifier_estonia_2_5:0 "Baltic order"
  #
+ modifier_kozelsk_1_2:0 "Mobilization of recruits"
+ modifier_kozelsk_2_5:0 "Great Kozelsk"
+ #
+ modifier_volhynia_1_4:0 "New construction"
+ modifier_volhynia_2_3:0 "Production growth"
+ modifier_volhynia_3_5:0 "Great Volhynia"
+ modifier_volhynia_4_2:0 "Economic stabilization"
+ #
+ modifier_kiev_1_3:0 "Regional development"
+ modifier_kiev_1_4:0 "Production regions"
+ modifier_kiev_1_5:0 "Trade monopoly"
+ modifier_kiev_1_11:0 "Balkan ambitions"
+ modifier_kiev_2_2:0 "Diplomatic power"
+ modifier_kiev_2_3:0 "Suppression of autonomy"
+ modifier_kiev_2_9:0 "Western administration"
+ modifier_kiev_2_13:0 "Industrial Revolution"
+ modifier_kiev_3_14:0 "Great Kiev"
+ province_modifier_kiev_3_14:0 "Great Kiev"
+ modifier_kiev_4_5:0 "Loyal Cossacks"
+ modifier_kiev_4_6:0 "Religious order"
+ modifier_kiev_4_11:0 "Fur trade"
+ 
  
  

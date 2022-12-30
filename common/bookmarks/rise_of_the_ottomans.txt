@@ -1,23 +1,23 @@
 bookmark =
 {
-	name = "RISE_OF_THE_OTTOMANS"
-	desc = "RISE_OF_THE_OTTOMANS_DESC"
+	name = "bookmark_rise_of_mamluks_title"
+	desc = "bookmark_rise_of_mamluks_desc"
 	date = 1444.11.11
 	
 	center = 112
 	default = yes
 	
 	country = KIE
-	country = R1R
-	country = R1A	
+	country = MOS
+	country = R1R	
 	country = NOV
+	country = R1A
 	country = RYA
 	country = VOL
 	country = SMO	
-	country = CHR
+	country = R1Z
 	country = TVE
 	country = R2U
-	country = MOS
 	
 	easy_country = KIE
 }

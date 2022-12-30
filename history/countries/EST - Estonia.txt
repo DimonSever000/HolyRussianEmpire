@@ -5,6 +5,12 @@ technology_group = eastern
 religion = orthodox
 primary_culture = estonian
 capital = 36
+add_army_professionalism = 0.15
+
+1444.1.1 = {
+	set_estate_privilege = estate_church_religious_state
+	set_estate_privilege = estate_church_land_rights
+}
 
 1440.1.1 = {
 	monarch = {

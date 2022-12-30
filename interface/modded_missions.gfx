@@ -30,4 +30,44 @@ spriteTypes = {
 		texturefile = "gfx//interface//missions//modded_pirates.dds"
 	}
 	
+	spriteType = {
+		name = "modded_tsar"
+		texturefile = "gfx//interface//missions//modded_tsar.dds"
+	}
+	
+	spriteType = {
+		name = "modded_centralization"
+		texturefile = "gfx//interface//missions//modded_centralization.dds"
+	}
+	
+	spriteType = {
+		name = "modded_constantinople"
+		texturefile = "gfx//interface//missions//modded_constantinople.dds"
+	}
+	
+	spriteType = {
+		name = "modded_dynastic_marriage"
+		texturefile = "gfx//interface//missions//modded_dynastic_marriage.dds"
+	}
+	
+	spriteType = {
+		name = "modded_heir"
+		texturefile = "gfx//interface//missions//modded_heir.dds"
+	}
+	
+	spriteType = {
+		name = "modded_throne"
+		texturefile = "gfx//interface//missions//modded_throne.dds"
+	}
+	
+	spriteType = {
+		name = "modded_diplomacy"
+		texturefile = "gfx//interface//missions//modded_diplomacy.dds"
+	}
+	
+	spriteType = {
+		name = "modded_orthodox"
+		texturefile = "gfx//interface//missions//modded_orthodox.dds"
+	}
+	
 }	

@@ -1,5 +1,5 @@
-owner = TRI
-controller = TRI
+owner = R3L
+controller = R3L
 culture = hessian
 religion = catholic
 trade_goods = grain
@@ -7,8 +7,8 @@ capital = "Koblenz"
 base_tax = 4 
 base_production = 4
 is_city = yes
-fort_15th = yes #Eltz & Stolzenfels Castles
-add_core = TRI
+fort_15th = yes 
+add_core = R3L
 base_manpower = 2
 hre = no
 

@@ -17,8 +17,6 @@ vladimir_1 = {
 				province_id = 295
 				province_id = 4253
 				province_id = 1956
-				province_id = 306
-				province_id = 2423
 				province_id = 307
 				province_id = 1754
 				province_id = 4254
@@ -28,25 +26,12 @@ vladimir_1 = {
 			}
 		}
 		trigger = {
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				OR = {
-					province_id = 295
-					province_id = 4253
-					province_id = 1956
-					province_id = 306
-					province_id = 2423
-				}
-				value = 5
-			}
-			307 = {
-				owned_by = ROOT
-			}
-			1754 = {
-				owned_by = ROOT
-			}
-			4254 = {
-				owned_by = ROOT
-			}
+			owns = 295
+			owns = 4253
+			owns = 1956
+			owns = 307
+			owns = 1754
+			owns = 4254
 		}
 
 		effect = {

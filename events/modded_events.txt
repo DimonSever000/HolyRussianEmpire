@@ -2137,3 +2137,115 @@ country_event = {
 		}
 	}
 }
+
+# Troika Council
+country_event = {
+	id = 18560020
+	title = "modded_event_18560020_title"
+	desc = "modded_event_18560020_desc"
+	picture = COURT_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "modded_event_18560020_option_1"
+		define_heir = {
+			adm = 1
+			dip = 1
+			mil = 1
+			age = 15
+			dynasty = ROOT
+			claim = 50
+		}
+		ai_chance = {
+			factor = 4
+		}
+	}
+	
+	option = {
+		name = "modded_event_18560020_option_2"
+		define_heir = {
+			adm = 5
+			dip = 3
+			mil = 2
+			age = 15
+			dynasty = ROOT
+			claim = 50
+		}
+		add_dip_power = -50
+		if = {
+			limit = {
+				NOT = { exists = R1N }
+				owns = 1752
+			}
+			1752 = {
+				add_core = R1N
+			}
+			release = R1N
+			R1N = {
+				capital_scope = {
+					build_to_forcelimit = {
+						infantry = 1
+					}
+				}
+				define_ruler = {
+					dynasty = root
+				}
+			}
+		}
+		if = {
+			limit = {
+				R1N = { is_subject_of = ROOT }
+			}
+			TVE = { free_vassal = R1N }
+			R1N = {
+				capital_scope = {
+					build_to_forcelimit = {
+						infantry = 1
+					}
+				}
+				define_ruler = {
+					dynasty = root
+				}
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	
+	option = {
+		name = "modded_event_18560020_option_3"
+		add_dip_power = -50
+		define_heir = {
+			adm = 2
+			dip = 3
+			mil = 5
+			age = 15
+			dynasty = ROOT
+			claim = 50
+		}
+		if = {
+			limit = {
+				NOT = { exists = R2F }
+				owns = 4249
+			}
+			4249 = {
+				add_core = R2F
+			}
+			release = R2F
+			R2F = {
+				capital_scope = {
+					build_to_forcelimit = {
+						infantry = 1
+					}
+				}
+				define_ruler = {
+					dynasty = root
+				}
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}

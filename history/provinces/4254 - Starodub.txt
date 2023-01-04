@@ -12,6 +12,7 @@ base_manpower = 3
 capital = "Starodub"
 is_city = yes
 add_core = R1R
+add_core = R3U
 discovered_by = GOL
 discovered_by = KAZ
 discovered_by = eastern

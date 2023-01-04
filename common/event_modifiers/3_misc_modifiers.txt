@@ -315,3 +315,18 @@ modifier_kiev_4_6 = {
 modifier_kiev_4_11 = {
 	trade_efficiency = 0.15
 }
+#
+#
+#
+modifier_tver_1_2 = {
+	build_cost = -0.1
+	state_maintenance_modifier = -0.1
+}
+modifier_tver_2_4 = {
+	harsh_treatment_cost = -0.2
+	global_unrest = -2
+}
+modifier_tver_2_5 = {
+	leader_siege = 1
+	global_autonomy = -0.05
+}

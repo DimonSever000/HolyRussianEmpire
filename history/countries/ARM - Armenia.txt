@@ -1,0 +1,17 @@
+government = monarchy
+add_government_reform = autocracy_reform 
+primary_culture = armenian
+add_accepted_culture = azerbaijani
+add_accepted_culture = georgian
+religion = coptic
+technology_group = eastern
+capital = 419
+
+1410.1.1 = {
+	monarch = {
+		name = "David"
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+}

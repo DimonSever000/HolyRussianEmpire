@@ -1,0 +1,463 @@
+tver_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = TVE
+		}
+	}
+	has_country_shield = yes
+
+	tver_1_1 = {
+		icon = balance_of_power
+		required_missions = {  }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4249
+				province_id = 294
+				province_id = 1752
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			owns = 294
+			4249 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			1752 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			has_adm_advisor = yes
+			has_dip_advisor = yes
+			has_mil_advisor = yes
+		}
+		effect = {
+			add_adm_power = 50
+			country_event = { id = 18560020 }
+		}
+	}
+	tver_1_2 = {
+		position = 2
+		icon = mission_war_chest
+		required_missions = { }
+		trigger = {
+			share_of_starting_income = 2
+			grown_by_development = 100
+			adm_tech = 10
+		}
+		effect = {
+			add_country_modifier = {
+				name = "modifier_tver_1_2"
+				duration = 7300
+			}
+		}
+	}
+	tver_1_3 = {
+		position = 3
+		icon = mission_autocratic_rule
+		required_missions = { tver_1_2 }
+		trigger = {
+			adm = 4
+			dip = 4
+			mil = 4
+			has_any_disaster = no
+			NOT = { corruption = 1 }
+			stability = 1
+		}
+		effect = {
+			add_stability = 1
+			add_prestige = 20
+		}
+	}
+	tver_1_4 = {
+		position = 4
+		icon = mission_unite_home_region
+		required_missions = { tver_2_3 }
+		provinces_to_highlight = {
+			OR = {
+				area = oka_area
+				province_id = 301
+			}
+			OR = {
+				NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			}
+		}
+		trigger = {
+			oka_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			301 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 20
+			define_advisor = {
+				type = diplomat
+				skill = 3
+				culture = root
+				cost_multiplier = 0.3
+			}
+		}
+	}
+}
+tver_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = TVE
+		}
+	}
+	has_country_shield = yes
+	
+	
+	tver_2_1 = {
+		position = 1
+		icon = modded_heir
+		required_missions = { }
+		trigger = {
+			if = {
+				limit = {
+					government = monarchy
+					has_government_attribute = heir
+				}
+				has_heir = yes
+				heir_claim = 80
+			}
+			legitimacy_equivalent = 80
+			NOT = {
+				average_unrest = 2
+			}
+		}
+		effect = {
+			add_prestige = 10
+			add_dip_power = 50
+			moscow_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	tver_2_2 = {
+		position = 2
+		icon = mission_defeat_muscovy
+		required_missions = { tver_1_1 tver_2_1 tver_3_1 }
+		provinces_to_highlight = {
+			OR = {
+				area = moscow_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			moscow_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_mil_power = 50
+			vladimir_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	tver_2_3 = {
+		position = 3
+		icon = mission_dethrone_the_rurikovichs
+		required_missions = { tver_2_2 }
+		provinces_to_highlight = {
+			OR = {
+				area = vladimir_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			tver_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_yearly_manpower = 3
+			add_mil_power = 100
+			smolensk_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	tver_2_4 = {
+		position = 4
+		icon = mission_unite_home_region
+		required_missions = { tver_2_3 }
+		provinces_to_highlight = {
+			OR = {
+				area = smolensk_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			smolensk_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			capital_scope = {
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+			}
+			add_country_modifier = {
+				name = "modifier_tver_2_4"
+				duration = 9125 #25 years
+			}
+			white_ruthenia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	tver_2_5 = {
+		position = 5
+		icon = mission_monarch_in_throne_room
+		required_missions = { tver_1_4 tver_2_4 tver_3_4 }
+		provinces_to_highlight = {
+			OR = {
+				area = moscow_area
+				area = tver_area
+				area = smolensk_area
+				area = vladimir_area
+				area = oka_area
+				area = white_ruthenia_area
+				province_id = 301
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			moscow_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			tver_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			smolensk_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			vladimir_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			oka_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			white_ruthenia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			301 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			if = {
+				limit = {
+					government = monarchy
+				}
+				legitimacy = 100
+				is_emperor = yes
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "modifier_tver_2_5"
+				duration = -1
+			}
+		}
+	}
+}
+
+tver_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = TVE
+		}
+	}
+	has_country_shield = yes
+
+	tver_3_1 = {
+		position = 1
+		icon = mission_settlers_north_america
+		required_missions = { }
+		provinces_to_highlight = {
+			OR = {
+				area = tver_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = { 
+			tver_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			stability = 1
+			army_size_percentage = 1
+		}
+		effect = {
+			add_yearly_manpower = 2
+			add_prestige = 10
+		}
+	}
+	tver_3_2 = {
+		position = 2
+		icon = mission_dominate_home_trade_node
+		required_missions = { }
+		trigger = { 
+			33 = {
+				NOT = { is_strongest_trade_power = NOV }
+			}
+			prestige = 30
+		}
+		effect = {
+			define_advisor = {
+				type = trader
+				skill = 3
+				culture = root
+				cost_multiplier = 0.3
+			}
+			add_casus_belli = {
+				target = LIT
+				type = cb_vassalize_mission
+				months = 300
+			}
+			add_casus_belli = {
+				target = LIV
+				type = cb_vassalize_mission
+				months = 300
+			}
+			add_casus_belli = {
+				target = RIG
+				type = cb_vassalize_mission
+				months = 300
+			}
+		}
+	}
+	
+	tver_3_3 = {
+		position = 3
+		icon = mission_russian_revolution
+		required_missions = { tver_3_2 }
+		trigger = { 
+			OR = {
+				LIT = {
+					NOT = { army_size_percentage = 0.3 }
+				}
+				NOT = { exists = LIT }
+			}
+			OR = {
+				LIV = {
+					NOT = { army_size_percentage = 0.3 }
+				}
+				NOT = { exists = LIV }
+			}
+			OR = {
+				RIG = {
+					NOT = { army_size_percentage = 0.3 }
+				}
+				NOT = { exists = RIG }
+			}
+		}
+		effect = {
+			add_dip_power = 100
+			add_imperial_influence = 15
+		}
+	}
+	
+	tver_3_4 = {
+		position = 4
+		icon = mission_cannons_firing
+		required_missions = { tver_2_3 }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 301
+			}
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = { 
+			301 = {
+				owned_by = ROOT
+				OR = {
+					has_great_project = {
+						type = ryazan_arsenal
+						tier = 2
+					}
+					has_great_project = {
+						type = ryazan_arsenal
+						tier = 3
+					}
+				}
+			}
+		}
+		effect = {
+			change_innovativeness = 5
+			add_prestige = 20
+			add_mil_power = 50
+		}
+	}
+	
+	tver_3_5 = {
+		position = 5
+		icon = mission_early_modern_university
+		required_missions = { tver_3_4 }
+		trigger = {
+			294 = {
+				has_building = university
+			}
+		}
+		effect = {
+			change_innovativeness = 10
+			add_adm_power = 50
+			add_dip_power = 50
+			add_mil_power = 50
+		}
+	}
+}

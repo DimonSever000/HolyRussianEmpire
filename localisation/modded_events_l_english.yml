@@ -285,5 +285,15 @@
  event_18560019_estate_nobles_influence_desc:0 "Nobles influence"
  modded_event_18560019_option_3:0 "Military force takes precedence"
  event_18560019_estate_burghers_influence_desc:0 "Burghers influence"
- 
+ #
+ #
+ #
+ modded_event_18560020_title:0 "Troika Council"
+ modded_event_18560020_desc:0 "We have gathered a council of all the nobles and high-ranking figures to decide on the heir. We are faced with a difficult choice, the consequences of which may be felt for many years to come."
+ modded_event_18560020_option_1:0 "Compromise"
+ modded_event_18560020_option_2:0 "Rzhev heir"
+ modded_event_18560020_option_3:0 "Zubtsov heir"
+ #
+ #
+ #
  

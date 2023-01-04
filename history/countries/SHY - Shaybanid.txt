@@ -1,0 +1,17 @@
+government = tribal
+add_government_reform = steppe_horde
+technology_group = nomad_group
+religion = sunni
+primary_culture = uzbehk
+capital = 442
+historical_rival = KZH
+religious_school = hanafi_school
+
+1425.1.1 = { 
+	monarch = { 
+		name = "Abur" 
+		dip = 2 
+		adm = 4
+		mil = 4
+	}
+}

@@ -1,0 +1,16 @@
+government = monarchy
+add_government_reform = feudalism_reform
+primary_culture = leonese
+religion = catholic
+technology_group = western
+capital = 208 #Leon
+
+1440.1.1 = {
+	monarch = {
+		name = "Ordoсo"
+		birth_date = 1401.1.1
+		adm = 1
+		dip = 1
+		mil = 2
+	}
+}

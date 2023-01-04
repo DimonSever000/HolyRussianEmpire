@@ -1,0 +1,6 @@
+# Mamluks and Fezzan
+vassal = {
+	first = MAM
+	second = FZA
+	start_date = 1444.1.1
+}

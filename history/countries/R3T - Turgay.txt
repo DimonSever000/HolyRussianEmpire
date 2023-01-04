@@ -1,0 +1,18 @@
+government = tribal
+add_government_reform = steppe_horde
+technology_group = nomad_group
+religion = tengri_pagan_reformed
+add_accepted_culture = khazak
+primary_culture = siberian
+capital = 4692
+fixed_capital = 4692
+
+1432.1.1 = {
+	monarch = {
+		name = "Sayn"
+		dynasty = "Genghisid"
+		adm = 4
+		dip = 3
+		mil = 3
+	}
+}

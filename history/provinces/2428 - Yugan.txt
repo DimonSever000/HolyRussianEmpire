@@ -1,9 +1,9 @@
 #2428 - Yugan
 
-owner = SHY
-controller = SHY
+owner = R3T
+controller = R3T
 add_core = SIB
-add_core = SHY
+add_core = R3T
 culture = ostyaki
 religion = tengri_pagan_reformed
 capital = "Yugan"

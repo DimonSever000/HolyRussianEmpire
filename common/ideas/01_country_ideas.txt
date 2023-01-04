@@ -313,3 +313,319 @@ VOL_ideas = {
 	}
 }
 
+# Ryazan
+RYA_ideas = {
+	start = {
+		mil_tech_cost_modifier = -0.1
+	}
+	
+	bonus = {
+		max_absolutism = 30
+	}	
+
+	trigger = {
+		tag = RYA
+	}
+	free = yes
+	
+	RYA_idea_I = {
+		harsh_treatment_cost = -0.2
+	}
+	RYA_idea_II = {
+		leader_land_manuever = 1
+	}
+	RYA_idea_III = {
+		religious_unity = 0.15
+	}
+	RYA_idea_IV = {
+		advisor_cost = -0.2
+	}
+	RYA_idea_V = {
+		trade_efficiency = 0.1
+	}
+	RYA_idea_VI = {
+		manpower_recovery_speed = 0.1
+	}
+	RYA_idea_VII = {
+		land_morale = 0.2
+	}
+}
+
+# Smolensk
+SMO_ideas = {
+	start = {
+		fort_maintenance_modifier = -0.25
+	}
+	
+	bonus = {
+		fire_damage_received = -0.1
+	}	
+
+	trigger = {
+		tag = SMO
+	}
+	free = yes
+	
+	SMO_idea_I = {
+		merchants = 1
+	}
+	SMO_idea_II = {
+		garrison_size = 0.2
+	}
+	SMO_idea_III = {
+		diplomatic_reputation = 1
+	}
+	SMO_idea_IV = {
+		global_tax_modifier = 0.1
+	}
+	SMO_idea_V = {
+		artillery_power = 0.1
+	}
+	SMO_idea_VI = {
+		manpower_recovery_speed = 0.15
+	}
+	SMO_idea_VII = {
+		artillery_cost = -0.25
+	}
+}
+
+NOV_ideas = {
+	start = {
+		advisor_pool = 1
+		advisor_cost = -0.1
+	}
+	
+	bonus = {
+		technology_cost = -0.1
+	}
+	
+	trigger = {
+		tag = NOV
+	}
+	free = yes
+	
+	NOV_idea_I = {
+		merchants = 1
+	}
+	NOV_idea_II = {
+		navy_tradition = 1
+		privateer_efficiency = 0.15
+	}
+	NOV_idea_III = {
+		diplomatic_reputation = 1
+		republican_tradition = 0.3
+	}
+	NOV_idea_IV = {
+		global_institution_spread = 0.2
+	}
+	NOV_idea_V = {
+		light_ship_cost = -0.20
+	}
+	NOV_idea_VI = {
+		development_cost = -0.1
+	}
+	NOV_idea_VII = {
+		infantry_power = 0.1
+	}
+}
+
+# Muscovy
+MOS_ideas = {
+	start = {
+		stability_cost_modifier = -0.15
+	}
+
+	bonus = {
+		land_forcelimit_modifier = 0.33
+	}
+
+	trigger = {
+		tag = MOS
+	}
+	free = yes
+	
+	MOS_idea_I = {
+		years_of_nationalism = -5
+	}
+	MOS_idea_II = {
+		global_tax_modifier = 0.10
+	}
+	MOS_idea_III = {
+		tolerance_own = 1
+		global_missionary_strength = 0.02
+	}
+	MOS_idea_IV = {
+		global_autonomy = -0.05
+	}
+	MOS_idea_V = {
+		core_creation = -0.15
+	}
+	MOS_idea_VI = {
+		manpower_recovery_speed = 0.2
+	}
+	MOS_idea_VII = {
+		fire_damage_received = -0.1
+	}
+
+}
+
+# Rostov
+RSO_ideas = {
+	start = {
+		stability_cost_modifier = -0.1
+	}
+
+	bonus = {
+		diplomatic_reputation = 1
+	}
+
+	trigger = {
+		tag = RSO
+	}
+	free = yes
+	
+	RSO_idea_I = {
+		inflation_reduction = 0.05
+		interest = -0.5
+	}
+	RSO_idea_II = {
+		manpower_recovery_speed = 0.15
+	}
+	RSO_idea_III = {
+		dip_tech_cost_modifier = -0.1
+	}
+	RSO_idea_IV = {
+		land_morale = 0.1
+	}
+	RSO_idea_V = {
+		defensiveness = 0.2
+	}
+	RSO_idea_VI = {
+		build_cost = -0.1
+	}
+	RSO_idea_VII = {
+		fire_damage = 0.1
+	}
+}
+
+# Estonia
+EST_ideas = {
+	start = {
+		light_ship_cost = -0.1
+		ship_durability = 0.05
+	}
+
+	bonus = {
+		war_exhaustion = -0.03
+	}
+
+	trigger = {
+		tag = EST
+	}
+	free = yes
+	
+	EST_idea_I = {
+		core_creation = -0.15
+	}
+	EST_idea_II = {
+		warscore_cost_vs_other_religion = -0.25
+	}
+	EST_idea_III = {
+		tolerance_own = 2
+	}
+	EST_idea_IV = {
+		global_manpower_modifier = 0.15
+	}
+	EST_idea_V = {
+		defensiveness = 0.2
+	}
+	EST_idea_VI = {
+		naval_maintenance_modifier = -0.2
+	}
+	EST_idea_VII = {
+		leader_land_shock = 1
+	}
+}
+
+# Kiev
+KIE_ideas = {
+	start = {
+		religious_unity = 0.1
+		institution_spread_from_true_faith = 0.1
+	}
+
+	bonus = {
+		years_of_nationalism = -5
+	}
+
+	trigger = {
+		tag = KIE
+	}
+	free = yes
+	
+	KIE_idea_I = {
+		prestige = 1
+		diplomatic_reputation = 1
+	}
+	KIE_idea_II = {
+		imperial_authority = 0.1
+		diplomatic_annexation_cost = -0.15
+	}
+	KIE_idea_III = {
+		core_creation = -0.15
+	}
+	KIE_idea_IV = {
+		merchants = 1
+	}
+	KIE_idea_V = {
+		production_efficiency = 0.1
+	}
+	KIE_idea_VI = {
+		global_tax_modifier = 0.1
+		tolerance_own = 1
+	}
+	KIE_idea_VII = {
+		cavalry_power = 0.15
+	}
+}
+
+# Tver
+TVE_ideas = {
+	start = {
+		diplomatic_reputation = 1
+	}
+
+	bonus = {
+		fire_damage = 0.1
+	}
+
+	trigger = {
+		tag = TVE
+	}
+	free = yes
+	
+	TVE_idea_I = {
+		trade_efficiency = 0.1
+	}
+	TVE_idea_II = {
+		prestige = 1
+		vassal_income = 0.25
+	}
+	TVE_idea_III = {
+		defensiveness = 0.2
+	}
+	TVE_idea_IV = {
+		development_cost = -0.1
+	}
+	TVE_idea_V = {
+		merchants = 1
+	}
+	TVE_idea_VI = {
+		yearly_absolutism = 1
+	}
+	TVE_idea_VII = {
+		stability_cost_modifier = -0.1
+		advisor_cost = -0.1
+	}
+}
+

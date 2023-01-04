@@ -1,17 +1,17 @@
 #1076 - Kurgan
 
-owner = SHY
-controller = SHY
+owner = R3T
+controller = R3T
 capital = "Kurgan"
 culture = siberian
 religion = tengri_pagan_reformed
 trade_goods = fur
 hre = no
-base_tax = 2
-base_production = 2
-base_manpower = 2
+base_tax = 3 
+base_production = 3
+base_manpower = 3
 is_city = yes
 add_core = SIB
-add_core = SHY
+add_core = R3T
 discovered_by = nomad_group
 revolt_risk = 15

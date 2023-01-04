@@ -1,0 +1,16 @@
+government = monarchy
+add_government_reform = feudalism_reform
+primary_culture = galician
+religion = catholic
+technology_group = western
+capital = 206	# Galicia
+
+1440.1.1 = {
+	monarch = {
+		name = "Xoan"
+		birth_date = 1399.1.1
+		adm = 3
+		dip = 2
+		mil = 1
+	}
+}

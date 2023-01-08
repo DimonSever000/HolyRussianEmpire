@@ -2,7 +2,6 @@
  #
  HRE_HRE:0 "The Holy Russian Empire"
  HRE_ELECTORS:0 "Grand princes"
- ELECTORATE_DUCHY:0 "Grand Principality"
  # 1
  emperor_reichsreform_title:0 "Call for reforms"
  emperor_reichsreform_desc:0 "It is necessary to call for consolidation to protect the empire."
@@ -63,5 +62,11 @@
  # 5
  emperor_renovatio_title:0 "Centralized Empire"
  emperor_renovatio_desc:0 "Unite the Holy Russian Empire into a single country with a unified system of government."
+ #
+ #
+ #
+ CONSUL_ELECTOR:0 "Posadnik-Elector"
+ GRAND_CONSUL_ELECTOR:0 "Grand Posadnik-Elector"
+ GREAT_CONSUL_ELECTOR:0 "Great Posadnik-Elector"
  #
  

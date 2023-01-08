@@ -629,3 +629,43 @@ TVE_ideas = {
 	}
 }
 
+# Polotsk
+PLT_ideas = {
+	start = {
+		infantry_cost = -0.1
+		infantry_power = 0.1
+	}
+
+	bonus = {
+		core_creation = -0.1
+	}
+
+	trigger = {
+		tag = PLT
+	}
+	free = yes
+	
+	PLT_idea_I = {
+		merchants = 1
+	}
+	PLT_idea_II = {
+		legitimacy = 1	
+	}
+	PLT_idea_III = {
+		idea_cost = -0.1
+	}
+	PLT_idea_IV = {
+		development_cost = -0.1
+	}
+	PLT_idea_V = {
+		ship_durability = 0.1
+		global_ship_recruit_speed = -0.1
+	}
+	PLT_idea_VI = {
+		global_tax_modifier = 0.1
+	}
+	PLT_idea_VII = {
+		embargo_efficiency = 0.25
+	}
+}
+

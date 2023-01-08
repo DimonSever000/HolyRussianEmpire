@@ -342,9 +342,10 @@ republic = {
 		prussian_republic
 		united_cantons_legacy
 		#
-		arkhangelsk_republic
-		boyars_republic
-		peasant_republic
+		arkhangelsk_republic_legacy
+		boyars_republic_legacy
+		peasant_republic_legacy
+		cossacks_republic_legacy
 	}
 	reform_levels = {
 		oligarchy_merchant_class_noble_elite = {
@@ -382,6 +383,7 @@ republic = {
 				arkhangelsk_republic
 				boyars_republic
 				peasant_republic
+				cossacks_republic
 			}
 		}
 		republican_virtues = {

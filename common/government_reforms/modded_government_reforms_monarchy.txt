@@ -1,0 +1,70 @@
+principality = {
+	icon = "russian_principality"
+	allow_normal_conversion = yes
+	potential = {
+		NOT = { has_reform = tsardom }
+		NOT = { have_had_reform = tsardom }
+		religion = orthodox
+		OR = {
+			AND = {
+				have_had_reform = principality
+			}
+		}
+	}
+	fixed_rank = 1
+	legacy_equivalent = principality_legacy
+	valid_for_nation_designer = yes
+	nation_designer_cost = 5
+	nation_designer_trigger = {
+		religion = orthodox
+	}
+	modifiers = {
+		global_unrest = -1
+		global_tax_modifier = 0.05
+		governing_capacity = 100
+	}
+
+	conditional = {
+		allow = { }
+		government_abilities = {
+			russian_mechanic
+		}
+	}
+}
+
+tsardom = {
+	icon = "king"
+	allow_normal_conversion = yes
+	potential = {
+		religion = orthodox
+		OR = {
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = tsardom
+			}
+		}
+	}
+	fixed_rank = 3
+	legacy_equivalent = tsardom_legacy
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+
+	nation_designer_trigger = {
+		religion = orthodox
+	}
+
+	modifiers = {
+		global_manpower_modifier = 0.20
+		yearly_absolutism = 0.5
+		global_autonomy = -0.05
+		governing_capacity = 350
+	}
+
+	conditional = {
+		allow = {  }
+		government_abilities = {
+			russian_mechanic
+		}
+		claim_states = yes
+	}
+}

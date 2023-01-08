@@ -1,0 +1,173 @@
+muscovite_monarchy = {
+	rank = {
+		1 = PRINCIPALITY
+		2 = GRAND_PRINCIPALITY
+		3 = TSARDOM
+	}
+
+	ruler_male = {
+		1 = KNIAZ
+		2 = GREAT_KNIAZ
+		3 = TSAR
+	}
+
+	ruler_female = {
+		1 = KNIAGINIA
+		2 = GREAT_KNIAGINIA
+		3 = TSARITSA
+	}
+	consort_male = {
+		1 = KNIAZ
+		2 = GREAT_KNIAZ
+		3 = TSAR
+	}
+
+	consort_female = {
+		1 = KNIAGINIA
+		2 = GREAT_KNIAGINIA
+		3 = TSARITSA
+	}
+
+	heir_male = {
+		1 = KNIAZHICH
+		2 = KNIAZHICH
+		3 = TSAREVICH
+	}
+
+	heir_female = {
+		1 = KNIAZHNA
+		2 = KNIAZHNA
+		3 = TSAREVNA
+	}
+
+	trigger = {
+		tag = MOS
+		is_emperor = no
+	}
+}
+
+modded_russian_monarchy = {
+	rank = {
+		1 = PRINCIPALITY
+		2 = GRAND_PRINCIPALITY
+		3 = TSARDOM
+	}
+
+	ruler_male = {
+		1 = KNIAZ
+		2 = GREAT_KNIAZ
+		3 = TSAR
+	}
+
+	ruler_female = {
+		1 = KNIAGINIA
+		2 = GREAT_KNIAGINIA
+		3 = TSARITSA
+	}
+	consort_male = {
+		1 = KNIAZ
+		2 = GREAT_KNIAZ
+		3 = TSAR
+	}
+
+	consort_female = {
+		1 = KNIAGINIA
+		2 = GREAT_KNIAGINIA
+		3 = TSARITSA
+	}
+
+	heir_male = {
+		1 = KNIAZHICH
+		2 = KNIAZHICH
+		3 = TSAREVICH
+	}
+
+	heir_female = {
+		1 = KNIAZHNA
+		2 = KNIAZHNA
+		3 = TSAREVNA
+	}
+
+	trigger = {
+		OR = {
+			has_reform = principality
+			has_reform = tsardom
+		}
+		is_emperor = no
+	}
+}
+
+holy_roman_electors_monarchy = {
+	rank = {
+		1 = ELECTOR_PRINCIPALITY
+		2 = ELECTOR_GRAND_PRINCIPALITY
+		3 = ELECTOR_TSARDOM
+	}
+
+	ruler_male = {
+		1 = ELECTOR_KNIAZ
+		2 = ELECTOR_GREAT_KNIAZ
+		3 = ELECTOR_TSAR
+	}
+
+	ruler_female = {
+		1 = ELECTOR_KNIAGINIA
+		2 = ELECTOR_GREAT_KNIAGINIA
+		3 = ELECTOR_TSARITSA
+	}
+	consort_male = {
+		1 = KNIAZ
+		2 = GREAT_KNIAZ
+		3 = TSAR
+	}
+
+	consort_female = {
+		1 = KNIAGINIA
+		2 = GREAT_KNIAGINIA
+		3 = TSARITSA
+	}
+
+	heir_male = {
+		1 = KNIAZHICH
+		2 = KNIAZHICH
+		3 = TSAREVICH
+	}
+
+	heir_female = {
+		1 = KNIAZHNA
+		2 = KNIAZHNA
+		3 = TSAREVNA
+	}
+
+	trigger = {
+		AND = {
+			government = monarchy
+			is_elector = yes
+			is_emperor = no
+		}
+	}
+}
+
+cossacks_republic = {
+	rank = {
+		1 = COSSACK_REPUBLIC
+		2 = HETMANATE
+		3 = GREAT_HETMANATE
+	}
+
+	ruler_male = {
+		1 = HETMAN
+		2 = GRAND_HETMAN
+		3 = GREAT_HETMAN
+	}
+
+	ruler_female = {
+		1 = HETMAN
+		2 = GRAND_HETMAN
+		3 = GREAT_HETMAN
+	}
+
+	trigger = {
+		has_reform = cossacks_republic
+	}
+}

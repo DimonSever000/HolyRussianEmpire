@@ -12,6 +12,9 @@ spriteTypes = {
 		name = "government_reform_peasant_republic"
 		texturefile = "gfx//interface//government_reform_icons//peasant_republic.dds"
 	}
-	
+	spriteType = {
+		name = "government_reform_cossacks_republic"
+		texturefile = "gfx//interface//government_reform_icons//cossacks_republic.dds"
+	}
 	
 }

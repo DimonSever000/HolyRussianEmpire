@@ -3,7 +3,8 @@ add_government_reform = principality
 government_rank = 1
 technology_group = eastern
 religion = orthodox
-primary_culture = kazani
+primary_culture = ruthenian
+add_accepted_culture = kazani
 capital = 473
 fixed_capital = 473
 

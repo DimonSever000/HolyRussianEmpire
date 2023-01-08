@@ -94,4 +94,14 @@
  modifier_tver_2_4:0 "Occupation of Smolensk"
  modifier_tver_2_5:0 "Great Tver"
  #
+ modifier_polotsk_1_1:0 "Army training"
+ modifier_polotsk_1_3:0 "Construction of the Baltic fleet"
+ modifier_polotsk_2_5:0 "Baltic trade"
+ modifier_polotsk_2_6:0 "Great Polotsk"
+ #
+ modifier_polovtsy_2_4:0 "Ruin of Rus'"
+ modifier_polovtsy_2_6:0 "Fall of Constantinople"
+ modifier_polovtsy_2_7:0 "Capture of Qaraqorum"
+ modifier_polovtsy_2_8:0 "Steppe revenge"
+ modifier_polovtsy_3_6:0 "Power over Tartaria"
  

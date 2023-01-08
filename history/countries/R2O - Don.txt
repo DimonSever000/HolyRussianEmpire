@@ -1,15 +1,34 @@
-government = monarchy
-add_government_reform = principality
+government = republic
+add_government_reform = cossacks_republic
 government_rank = 1
 technology_group = eastern
 religion = orthodox
-primary_culture = polovtsian
+primary_culture = ruthenian
+add_accepted_culture = polovtsian
 technology_group = eastern
 capital = 288
 fixed_capital = 288
 elector = yes
 
 historical_rival = KIE
+
+change_estate_land_share = {
+	estate = estate_burghers
+	share = -40
+}
+change_estate_land_share = {
+	estate = estate_church
+	share = -40
+}
+change_estate_land_share = {
+	estate = estate_cossacks
+	share = 40
+}
+
+1444.1.1 = {
+	set_estate_privilege = estate_cossacks_land_rights
+	set_estate_privilege = estate_cossacks_establish_the_cossack_regiments
+}
 
 1430.1.1 = {
 	monarch = {

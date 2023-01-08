@@ -62,7 +62,7 @@ union = {
 }
 
 # Don and Kuban
-union = {
+vassal = {
 	first = R2O
 	second = R2N
 	start_date = 1444.1.1

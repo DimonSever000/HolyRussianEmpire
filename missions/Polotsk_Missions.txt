@@ -1,0 +1,591 @@
+polotsk_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = PLT
+		}
+	}
+	has_country_shield = yes
+
+	polotsk_1_1 = {
+		icon = mission_conquer_5_states
+		required_missions = {  }
+		trigger = {
+			army_size_percentage = 1
+			num_of_owned_provinces_with = {
+				has_fort_building_trigger = yes 
+				value = 3
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "modifier_polotsk_1_1"
+				duration = 7300
+			}
+		}
+	}
+	polotsk_1_2 = {
+		position = 2
+		icon = mission_recruit_streltsy
+		required_missions = { polotsk_1_1 }
+		trigger = {
+			monthly_mil = 10
+			has_mil_advisor = yes
+		}
+		effect = {
+			custom_tooltip = polotsk_1_2_custom_tooltip
+			random_province = {
+				limit = {
+					country_or_non_sovereign_subject_holds = ROOT
+					has_fort_building_trigger = yes
+					is_city = yes
+				}
+				add_base_manpower = 2
+			}
+			random_province = {
+				limit = {
+					country_or_non_sovereign_subject_holds = ROOT
+					has_fort_building_trigger = yes
+					is_city = yes
+				}
+				add_base_manpower = 2
+			}
+			random_province = {
+				limit = {
+					country_or_non_sovereign_subject_holds = ROOT
+					has_fort_building_trigger = yes
+					is_city = yes
+				}
+				add_base_manpower = 2
+			}
+		}
+	}
+	polotsk_1_3 = {
+		position = 3
+		icon = mission_heart_of_the_hansa
+		required_missions = { polotsk_1_2 polotsk_2_2 }
+		provinces_to_highlight = {
+			OR = {
+				area = estonia_ingria_area
+				area = livonia_area
+				area = curonia_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = { 
+			estonia_ingria_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			livonia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			curonia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			num_of_owned_provinces_with = {
+				OR = {
+					has_building = dock
+					has_building = drydock
+				}
+				value = 5
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "modifier_polotsk_1_3"
+				duration = 7300 #25 years
+			}
+			add_dip_power = 100
+		}
+	}
+	polotsk_1_4 = {
+		position = 4
+		icon = mission_conquer_riga
+		required_missions = { polotsk_1_3 }
+		trigger = {
+			1926 = {
+				is_strongest_trade_power = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 20
+			define_advisor = {
+				type = naval_reformer
+				skill = 3
+				culture = root
+				cost_multiplier = 0.3
+			}
+		}
+	}
+	polotsk_1_5 = {
+		position = 4
+		icon = mission_conquer_50_development
+		required_missions = { polotsk_1_4 polotsk_2_4 }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4745
+				province_id = 1981
+				province_id = 25
+				province_id = 1930
+				province_id = 35
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+				has_fort_building_trigger = yes
+			}
+		}
+		trigger = {
+			4745 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				has_fort_building_trigger = yes
+			}
+			1981 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				has_fort_building_trigger = yes
+			}
+			25 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				has_fort_building_trigger = yes
+			}
+			1930 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				has_fort_building_trigger = yes
+			}
+			35 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				has_fort_building_trigger = yes
+			}
+		}
+		effect = {
+			add_prestige = 20
+			add_mil_power = 100
+		}
+	}
+}
+polotsk_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = PLT
+		}
+	}
+	has_country_shield = yes
+	
+	
+	polotsk_2_1 = {
+		position = 1
+		icon = mission_autocephalous_archbishopric
+		required_missions = { }
+		trigger = {
+			if = {
+				limit = {
+					religion = orthodox
+				}
+				patriarch_authority = 0.25
+			}
+			else = {
+				religious_unity = 1
+			}
+			num_of_owned_provinces_with = {
+				OR = {
+					has_tax_building_trigger = yes
+				}
+				value = 3
+			}
+		}
+		effect = {
+			pskov_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			add_stability = 1
+		}
+	}
+	polotsk_2_2 = {
+		position = 2
+		icon = mission_unite_home_region
+		required_missions = { polotsk_2_1 polotsk_3_1 }
+		provinces_to_highlight = {
+			OR = {
+				area = pskov_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			pskov_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_mil_power = 50
+			add_prestige = 10
+			samogitia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			lithuania_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			podlasie_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	polotsk_2_3 = {
+		position = 3
+		icon = modded_diplomacy
+		required_missions = { polotsk_2_2 polotsk_3_2 }
+		provinces_to_highlight = {
+			OR = {
+				area = samogitia_area
+				area = lithuania_area
+				area = podlasie_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			samogitia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			lithuania_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			podlasie_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_yearly_manpower = 2
+			add_mil_power = 100
+			east_prussia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			west_prussia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	polotsk_2_4 = {
+		position = 4
+		icon = mission_teutonic_knights
+		required_missions = { polotsk_2_3 polotsk_3_3 }
+		provinces_to_highlight = {
+			OR = {
+				area = east_prussia_area
+				area = west_prussia_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			east_prussia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			west_prussia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 30
+			add_stability = 1
+			define_advisor = {
+				type = army_reformer
+				skill = 3
+				culture = root
+				cost_multiplier = 0.3
+			}
+		}
+	}
+	
+	polotsk_2_5 = {
+		position = 5
+		icon = mission_establish_high_seas_navy
+		required_missions = { polotsk_2_4 }
+		trigger = {
+			naval_forcelimit = 50
+		}
+		effect = {
+			add_country_modifier = {
+				name = "modifier_polotsk_2_5"
+				duration = 7300
+			}
+		}
+	}
+	
+	polotsk_2_6 = {
+		position = 6
+		icon = mission_monarch_in_throne_room
+		required_missions = { polotsk_1_5 polotsk_2_5 polotsk_3_5 }
+		provinces_to_highlight = {
+			OR = {
+				area = livonia_area
+				area = estonia_ingria_area
+				area = curonia_area
+				area = samogitia_area
+				area = lithuania_area
+				area = podlasie_area
+				area = pripyat_area
+				area = minsk_area
+				area = pskov_area
+				area = smolensk_area
+				area = white_ruthenia_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			livonia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			estonia_ingria_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			curonia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			samogitia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			lithuania_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			podlasie_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			pripyat_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			minsk_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			pskov_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			smolensk_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			white_ruthenia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			if = {
+				limit = {
+					government = monarchy
+				}
+				legitimacy = 100
+				is_emperor = yes
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "modifier_polotsk_2_6"
+				duration = -1
+			}
+			capital_scope = {
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+			}
+		}
+	}
+}
+
+polotsk_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = PLT
+		}
+	}
+	has_country_shield = yes
+
+	polotsk_3_1 = {
+		position = 1
+		icon = modded_dynastic_marriage
+		required_missions = { }
+		trigger = {
+			num_of_royal_marriages = 3
+			prestige = 30
+		}
+		effect = {
+			add_stability = 1
+			smolensk_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	polotsk_3_2 = {
+		position = 2
+		icon = mission_unite_home_region
+		required_missions = { polotsk_3_1 }
+		provinces_to_highlight = {
+			OR = {
+				area = smolensk_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			smolensk_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 10
+			minsk_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			pripyat_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	polotsk_3_3 = {
+		position = 3
+		icon = mission_alliances
+		required_missions = { polotsk_3_2 }
+		provinces_to_highlight = {
+			OR = {
+				area = minsk_area
+				area = pripyat_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			minsk_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			pripyat_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_years_of_income = 1
+			add_adm_power = 100
+		}
+	}
+	
+	polotsk_3_4 = {
+		position = 4
+		icon = modded_industrial_revolution
+		required_missions = { }
+		trigger = {
+			num_of_owned_provinces_with = {
+				base_production = 12
+				OR = {
+					has_building = mills
+					has_building = farm_estate
+					has_building = tradecompany
+					has_building = plantations
+					has_building = textile
+					has_building = weapons
+					has_building = wharf
+					has_building = furnace
+				}
+				value = 5
+			}
+		}
+		effect = {
+			change_innovativeness = 5
+			define_advisor = {
+				type = natural_scientist
+				skill = 3
+				culture = root
+				cost_multiplier = 0.3
+			}
+		}
+	}
+	
+	polotsk_3_5 = {
+		position = 5
+		icon = mission_early_modern_university
+		required_missions = { polotsk_3_4 }
+		trigger = {
+			275 = {
+				has_building = university
+			}
+		}
+		effect = {
+			change_innovativeness = 10
+			add_adm_power = 50
+			add_dip_power = 50
+			add_mil_power = 50
+		}
+	}
+}

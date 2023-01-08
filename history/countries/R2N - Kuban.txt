@@ -1,9 +1,10 @@
-government = monarchy
-add_government_reform = principality
+government = republic
+add_government_reform = cossacks_republic
 government_rank = 1
 technology_group = eastern
 religion = orthodox
-primary_culture = polovtsian
+primary_culture = ruthenian
+add_accepted_culture = polovtsian
 technology_group = eastern
 capital = 287
 fixed_capital = 287

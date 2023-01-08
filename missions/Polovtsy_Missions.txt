@@ -1,0 +1,655 @@
+polovtsy_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = R2U
+		}
+	}
+	has_country_shield = yes
+
+	polovtsy_1_3 = {
+		position = 3
+		icon = mission_develop_nevas_port
+		required_missions = { polovtsy_2_2 }
+		provinces_to_highlight = {
+			OR = {
+				area = crimea_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			crimea_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_mil_power = 50
+			add_prestige = 20
+			carpathia_region = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	polovtsy_1_5 = {
+		position = 5
+		icon = mission_conquer_romania
+		required_missions = { polovtsy_1_3 polovtsy_2_4 }
+		provinces_to_highlight = {
+			OR = {
+				region = carpathia_region
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			carpathia_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_mil_power = 50
+			add_prestige = 20
+			france_region = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			low_countries_region = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			italy_region = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			north_german_region = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			south_german_region = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			iberia_region = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			poland_region = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	polovtsy_1_6 = {
+		position = 6
+		icon = mission_unite_home_region
+		required_missions = { polovtsy_1_5 }
+		provinces_to_highlight = {
+			OR = {
+				region = italy_region
+				region = north_german_region
+				region = south_german_region
+				region = poland_region
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			italy_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			north_german_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			south_german_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			poland_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_mil_power = 100
+			add_prestige = 25
+			add_stability = 1
+		}
+	}
+	
+	polovtsy_1_7 = {
+		position = 7
+		icon = defeat_the_english
+		required_missions = { polovtsy_1_6 }
+		provinces_to_highlight = {
+			OR = {
+				region = france_region
+				region = low_countries_region
+				region = iberia_region
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			france_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			low_countries_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			iberia_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_mil_power = 150
+			add_prestige = 50
+			add_stability = 1
+		}
+	}
+}
+polovtsy_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = R2U
+		}
+	}
+	has_country_shield = yes
+	
+	
+	polovtsy_2_1 = {
+		position = 1
+		icon = mission_colonial
+		required_missions = { }
+		provinces_to_highlight = {
+			OR = {
+				area = lower_yik_area
+				area = astrakhan_area
+				province_id = 473
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			473 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			lower_yik_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			astrakhan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_dip_power = 100
+			add_prestige = 20
+			circassia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			dagestan_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	polovtsy_2_2 = {
+		position = 2
+		icon = mission_cossack_cavalry
+		required_missions = { polovtsy_2_1 }
+		provinces_to_highlight = {
+			OR = {
+				area = circassia_area
+				area = dagestan_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			circassia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			dagestan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_mil_power = 50
+			define_advisor = {
+				type = diplomat
+				skill = 3
+				culture = root
+				cost_multiplier = 0.3
+			}
+		}
+	}
+	
+	polovtsy_2_3 = {
+		position = 3
+		icon = modded_diplomacy
+		required_missions = { polovtsy_2_2 }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 466
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			466 = {
+				owned_by = ROOT
+				development = 25
+			}
+			adm_tech = 10
+			monthly_adm = 10
+		}
+		effect = {
+			add_yearly_manpower = 2
+			add_mil_power = 100
+			ruthenia_region = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	polovtsy_2_4 = {
+		position = 4
+		icon = mission_restore_kiev
+		required_missions = { polovtsy_2_3 }
+		provinces_to_highlight = {
+			OR = {
+				region = ruthenia_region
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			ruthenia_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "modifier_polovtsy_2_4"
+				duration = 7300
+			}
+			balkan_region = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	polovtsy_2_5 = {
+		position = 5
+		icon = modded_orthodox
+		required_missions = { polovtsy_2_4 polovtsy_3_4 }
+		provinces_to_highlight = {
+			OR = {
+				region = balkan_region
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			balkan_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_yearly_manpower = 3
+			add_prestige = 30
+		}
+	}
+	
+	polovtsy_2_6 = {
+		position = 6
+		icon = modded_constantinople
+		required_missions = { polovtsy_2_5 }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 151
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			owns = 151
+			army_size_percentage = 1
+		}
+		effect = {
+			add_years_of_income = 1
+			capital_scope = {
+				add_base_tax = 3
+				add_base_production = 3
+				add_base_manpower = 3
+			}
+			151 = {
+				add_base_tax = -3
+				add_base_production = -3
+				add_base_manpower = -3
+			}
+			add_country_modifier = {
+				name = "modifier_polovtsy_2_6"
+				duration = 7300
+			}
+		}
+	}
+	
+	polovtsy_2_7 = {
+		position = 7
+		icon = mission_empire
+		required_missions = { polovtsy_2_6 polovtsy_3_6 }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4678
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			owns = 4678
+			army_size_percentage = 1
+		}
+		effect = {
+			add_prestige = 40
+			add_country_modifier = {
+				name = "modifier_polovtsy_2_7"
+				duration = 7300
+			}
+		}
+	}
+	
+	polovtsy_2_8 = {
+		position = 8
+		icon = mission_break_the_tatar_yoke
+		required_missions = { polovtsy_1_7 polovtsy_2_7 }
+		provinces_to_highlight = {
+			OR = {
+				superregion = eastern_europe_superregion
+				superregion = tartary_superregion 
+				region = iberia_region
+				region = france_region
+				region = south_german_region
+				region = north_german_region
+				region = italy_region
+				region = low_countries_region
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			eastern_europe_superregion = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			tartary_superregion = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			iberia_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			france_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			south_german_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			north_german_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			italy_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			low_countries_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 30
+			add_stability = 1
+			add_country_modifier = {
+				name = "modifier_polovtsy_2_8"
+				duration = -1
+			}
+		}
+	}
+}
+
+polovtsy_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = R2U
+		}
+	}
+	has_country_shield = yes
+
+	polovtsy_3_2 = {
+		position = 2
+		icon = mission_high_income
+		required_missions = { polovtsy_2_1 }
+		trigger = { 
+			NOT = { inflation = 0.1 }
+			NOT = { num_of_loans = 1 }
+			share_of_starting_income = 3
+		}
+		effect = {
+			add_adm_power = 100
+			define_advisor = {
+				type = natural_scientist
+				skill = 3
+				culture = root
+				cost_multiplier = 0.3
+			}
+			lower_don_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			azov_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	polovtsy_3_3 = {
+		position = 3
+		icon = mission_cossack_cavalry
+		required_missions = { polovtsy_2_2 polovtsy_3_2 }
+		provinces_to_highlight = {
+			OR = {
+				area = lower_don_area
+				area = azov_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			lower_don_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			azov_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_yearly_manpower = 2
+			add_mil_power = 50
+		}
+	}
+	
+	polovtsy_3_4 = {
+		position = 4
+		icon = mission_war_chest
+		required_missions = { polovtsy_2_3 polovtsy_3_3 }
+		provinces_to_highlight = {
+			OR = {
+				region = russia_region
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			russia_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_years_of_income = 2
+			ural_region = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	polovtsy_3_5 = {
+		position = 5
+		icon = mission_advance_to_the_dnieper
+		required_missions = { polovtsy_3_4 }
+		provinces_to_highlight = {
+			OR = {
+				region = ural_region
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			ural_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_years_of_income = 2
+			tartary_superregion = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	polovtsy_3_6 = {
+		position = 6
+		icon = mission_cannons_firing
+		required_missions = { polovtsy_3_5 }
+		provinces_to_highlight = {
+			OR = {
+				superregion = tartary_superregion
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			tartary_superregion = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "modifier_polovtsy_3_6"
+				duration = 9125 #25 years
+			}
+		}
+	}
+}

@@ -330,3 +330,44 @@ modifier_tver_2_5 = {
 	leader_siege = 1
 	global_autonomy = -0.05
 }
+#
+#
+#
+modifier_polotsk_1_1 = {
+	land_morale = 0.05
+	land_forcelimit_modifier = 0.1
+}
+modifier_polotsk_1_3 = {
+	light_ship_cost = -0.15
+}
+modifier_polotsk_2_5 = {
+	trade_efficiency = 0.1
+}
+modifier_polotsk_2_6 = {
+	global_trade_power = 0.1
+	leader_naval_fire = 1
+}
+#
+#
+#
+modifier_polovtsy_2_4 = {
+	harsh_treatment_cost = -0.2
+	land_morale = 0.1
+}
+modifier_polovtsy_2_6 = {
+	missionaries = 1
+	global_missionary_strength = 0.03
+}
+modifier_polovtsy_2_7 = {
+	discipline = 0.05
+	global_autonomy = -0.05
+}
+modifier_polovtsy_2_8 = {
+	war_exhaustion = -0.05
+	administrative_efficiency = 0.1
+	land_morale = 0.1
+}
+modifier_polovtsy_3_6 = {
+	local_unrest = -2
+	religious_unity = 0.25
+}

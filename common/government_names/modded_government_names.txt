@@ -151,7 +151,31 @@ holy_roman_electors_monarchy = {
 cossacks_republic = {
 	rank = {
 		1 = COSSACK_REPUBLIC
-		2 = HETMANATE
+		2 = COSSACK_REPUBLIC
+		3 = COSSACK_REPUBLIC
+	}
+
+	ruler_male = {
+		1 = HETMAN
+		2 = HETMAN
+		3 = HETMAN
+	}
+
+	ruler_female = {
+		1 = HETMAN
+		2 = HETMAN
+		3 = HETMAN
+	}
+
+	trigger = {
+		has_reform = cossacks_republic
+	}
+}
+
+cossacks_monarchy = {
+	rank = {
+		1 = HETMANATE
+		2 = GRAND_HETMANATE
 		3 = GREAT_HETMANATE
 	}
 
@@ -168,6 +192,6 @@ cossacks_republic = {
 	}
 
 	trigger = {
-		has_reform = cossacks_republic
+		has_reform = cossacks_monarchy
 	}
 }

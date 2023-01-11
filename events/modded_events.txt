@@ -2419,3 +2419,44 @@ country_event = {
 		}
 	}
 }
+
+# Don - Hetman event
+country_event = {
+	id = 18560024
+	title = "modded_event_18560024_title"
+	desc = "modded_event_18560024_desc"
+	picture = GOOD_WITH_MONARCH_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "modded_event_18560024_option_1"
+		add_republican_tradition = 15
+		ai_chance = {
+			factor = 1
+		}
+	}
+	
+	option = {
+		name = "modded_event_18560024_option_2"
+		add_stability = -1
+		change_government = monarchy
+		add_government_reform = cossacks_monarchy
+		ai_chance = {
+			factor = 2
+		}
+	}
+}
+
+# Don-Kuban
+country_event = {
+	id = 18560025
+	title = "modded_event_18560025_title"
+	desc = "modded_event_18560025_desc"
+	picture = REFORM_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "modded_event_18560025_option_1"
+		override_country_name = DonKuban
+	}
+}

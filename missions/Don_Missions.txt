@@ -1,0 +1,482 @@
+don_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = R2O
+		}
+	}
+	has_country_shield = yes
+
+	don_1_1 = {
+		icon = mission_conquer_romania
+		required_missions = {  }
+		trigger = {
+			monthly_adm = 7
+			monthly_dip = 7
+			monthly_mil = 7
+			stability = 1
+		}
+		effect = {
+			crimea_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			yedisan_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			zaporizhia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	don_1_3 = {
+		position = 3
+		icon = mission_cossack_cavalry
+		required_missions = { don_1_1 }
+		provinces_to_highlight = {
+			OR = {
+				area = crimea_area
+				area = yedisan_area
+				area = zaporizhia_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			crimea_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			yedisan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			zaporizhia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "hegemonic_ambition"
+				duration = 7300 #25 years
+			}
+			add_mil_power = 100
+		}
+	}
+	
+	don_1_4 = {
+		position = 4
+		icon = mission_dominate_home_trade_node
+		required_missions = { don_1_3 }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 2410
+			}
+		}
+		trigger = {
+			has_adm_advisor = yes
+			2410 = {
+				development = 20
+				has_building = marketplace 
+				has_building = trade_depot
+				has_building = stock_exchange
+			}
+		}
+		effect = {
+			add_prestige = 10
+			add_adm_power = 100
+		}
+	}
+}
+
+don_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = R2O
+		}
+	}
+	has_country_shield = yes
+	
+	
+	don_2_1 = {
+		position = 1
+		icon = mission_have_two_subjects
+		required_missions = { }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 287
+				province_id = 2414
+			}
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			287 = {
+				owned_by = ROOT
+			}
+			2414 = {
+				owned_by = ROOT
+			}
+			NOT = {
+				exists = R2N
+			}
+		}
+		effect = {
+			add_stability = 1
+			azov_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			lower_don_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			country_event = { id = 18560025 }
+		}
+	}
+	
+	don_2_2 = {
+		position = 2
+		icon = mission_religious
+		required_missions = { don_1_1 don_2_1 }
+		provinces_to_highlight = {
+			OR = {
+				area = azov_area
+				area = lower_don_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			azov_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			lower_don_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 20
+			astrakhan_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			circassia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			dagestan_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	don_2_3 = {
+		position = 3
+		icon = mission_unite_home_region
+		required_missions = { don_2_2 don_3_2 }
+		provinces_to_highlight = {
+			OR = {
+				area = astrakhan_area
+				area = circassia_area
+				area = dagestan_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			astrakhan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			circassia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			dagestan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_yearly_manpower = 2
+			add_years_of_income = 1
+		}
+	}
+	
+	don_2_4 = {
+		position = 4
+		icon = modded_diplomacy
+		required_missions = { don_2_3 }
+		trigger = {
+			stability = 1
+			NOT = { corruption = 1 }
+			num_of_owned_provinces_with = {
+				OR = {
+					has_building = courthouse
+					has_building = town_hall
+				}
+				development = 20
+				value = 3
+			}
+			crown_land_share = 60
+		}
+		effect = {
+			capital_scope = {
+				add_base_tax = 3
+			}
+			add_country_modifier = {
+				name = "modifier_don_2_4"
+				duration = 9125 #25 years
+			}
+		}
+	}
+	
+	don_2_5 = {
+		position = 5
+		icon = mission_monarch_in_throne_room
+		required_missions = { don_1_4 don_2_4 don_3_4 }
+		provinces_to_highlight = {
+			OR = {
+				area = astrakhan_area
+				area = dagestan_area
+				area = circassia_area
+				area = lower_don_area
+				area = azov_area
+				area = crimea_area
+				area = zaporizhia_area
+				area = yedisan_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			astrakhan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			dagestan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			circassia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			lower_don_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			azov_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			crimea_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			zaporizhia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			yedisan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			if = {
+				limit = {
+					government = monarchy
+				}
+				legitimacy = 90
+				is_emperor = yes
+			}
+			else_if = {
+				limit = {
+					government = republic
+				}
+				republican_tradition = 90
+				is_elector = yes
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "modifier_don_2_5"
+				duration = -1
+			}
+			country_event = { id = 18560024 }
+		}
+	}
+}
+
+don_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = R2O
+		}
+	}
+	has_country_shield = yes
+
+	don_3_1 = {
+		position = 1
+		icon = mission_recruit_streltsy
+		required_missions = { }
+		trigger = { 
+			num_of_owned_provinces_with = {
+				OR = {
+					has_building = barracks
+					has_building = training_fields
+				}
+				base_manpower = 8
+				value = 5
+			}
+		}
+		effect = {
+			add_yearly_manpower = 2
+			add_mil_power = 50
+		}
+	}
+	
+	don_3_2 = {
+		position = 2
+		icon = mission_non-western_cavalry_raid
+		required_missions = { don_3_1 }
+		trigger = { 
+			cavalry_fraction = 0.5
+			army_size_percentage = 1
+			has_mil_advisor = yes
+		}
+		effect = {
+			add_mil_power = 50
+			define_advisor = {
+				type = army_organiser
+				skill = 3
+				culture = root
+				cost_multiplier = 0.5
+			}
+		}
+	}
+	
+	don_3_3 = {
+		position = 3
+		icon = mission_recruit_the_cossacks
+		required_missions = { don_3_2 }
+		trigger = { 
+			has_leader_with = { 
+				manuever = 5 
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "modifier_don_3_3"
+				duration = 7300
+			}
+		}
+	}
+	
+	don_3_4 = {
+		position = 4
+		icon = mission_autocephalous_archbishopric
+		required_missions = { }
+		provinces_to_highlight = {
+			OR = {
+				area = astrakhan_area
+				area = dagestan_area
+				area = circassia_area
+				area = lower_don_area
+				area = azov_area
+				area = crimea_area
+				area = zaporizhia_area
+				area = yedisan_area
+			}
+			NOT = {
+				religion = root
+			}
+		}
+		trigger = {
+			astrakhan_area = {
+				type = all
+				religion = root
+			}
+			dagestan_area = {
+				type = all
+				religion = root
+			}
+			circassia_area = {
+				type = all
+				religion = root
+			}
+			lower_don_area = {
+				type = all
+				religion = root
+			}
+			azov_area = {
+				type = all
+				religion = root
+			}
+			crimea_area = {
+				type = all
+				religion = root
+			}
+			zaporizhia_area = {
+				type = all
+				religion = root
+			}
+			yedisan_area = {
+				type = all
+				religion = root
+			}
+
+		}
+		effect = {
+			add_stability = 1
+			add_country_modifier = {
+				name = "modifier_don_3_4"
+				duration = 7300
+			}
+		}
+	}
+}

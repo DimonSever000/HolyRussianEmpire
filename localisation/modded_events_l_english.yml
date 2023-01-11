@@ -322,4 +322,16 @@
  modded_event_18560023_option_3:0 "Veche republic!"
  modded_event_18560023_option_4:0 "Boyar Republic!"
  modded_event_18560023_option_5:0 "Peasant Republic!"
- 
+ #
+ #
+ #
+ modded_event_18560024_title:0 "Strengthening the power of the hetman"
+ modded_event_18560024_desc:0 "The question of the hetman's power is long overdue in our society. The time has come to determine whether we should preserve the ancient order or whether the hetman should be crowned."
+ modded_event_18560024_option_1:0 "The Cossacks will remain free!"
+ modded_event_18560024_option_2:0 "Absolute power!"
+ #
+ #
+ #
+ modded_event_18560025_title:0 "Don-Kuban republic"
+ modded_event_18560025_desc:0 "The unification of the steppe regions of the Don and Kuban is an important event. Both parts of the state are important enough that the name should be changed."
+ modded_event_18560025_option_1:0 "Long life for Don-Kuban!"

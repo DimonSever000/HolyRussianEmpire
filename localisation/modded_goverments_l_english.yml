@@ -32,6 +32,7 @@
  COSSACK_REPUBLIC:0 "Cossacks republic"
  HETMANATE:0 "Hetmanate"
  GREAT_HETMANATE:0 "Great hetmanate"
+ GRAND_HETMANATE:0 "Grand hetmanate"
  HETMAN:0 "Hetman"
  GRAND_HETMAN:0 "Grand Hetman"
  GREAT_HETMAN:0 "Great Hetman"
@@ -40,3 +41,9 @@
  pskovian_republic_desc:0 "The country is governed through representatives in a parliament composed of the largest and most important trading cities."
  pskovian_republic_legacy:0 "Pskovian republic"
  pskovian_republic_legacy_desc:0 "The country is governed through representatives in a parliament composed of the largest and most important trading cities."
+ #
+ cossacks_monarchy:0 "Cossacks monarchy"
+ cossacks_monarchy_desc:0 "The state is controlled by the great hetman, who in fact controls all spheres of life."
+ cossacks_monarchy_legacy:0 "Cossacks monarchy"
+ cossacks_monarchy_legacy_desc:0 "The state is controlled by the great hetman, who in fact controls all spheres of life."
+ #

@@ -409,3 +409,30 @@ modifier_pskov_2_5 = {
 modifier_pskov_3_4 = {
 	dip_tech_cost_modifier = -0.1
 }
+#
+#
+#
+modifier_don_2_4 = {
+	yearly_absolutism = 0.5
+	global_autonomy = -0.05
+}
+modifier_don_2_5 = {
+	state_maintenance_modifier = -0.1
+	leader_land_shock = 1
+	cavalry_power = 0.15
+}
+modifier_don_3_3 = {
+	movement_speed = 0.1
+	cavalry_power = 0.05
+}
+modifier_don_3_4 = {
+	tolerance_own = 2
+	land_morale = 0.05
+}
+#
+#
+#
+HRE_establish_new_siberian_frontier = {
+	may_establish_frontier = yes
+	auto_explore_adjacent_to_colony = yes
+}

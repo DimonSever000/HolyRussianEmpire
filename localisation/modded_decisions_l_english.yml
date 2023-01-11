@@ -75,3 +75,6 @@
  republic_call_militia_desc:0 "Hard times have come. Every citizen of the republic must take up arms!"
  republic_call_militia_estate_influence_desc:0 "Republican militia called"
  #
+ HRE_establish_new_siberian_frontier_title:0 "March to Siberia"
+ HRE_establish_new_siberian_frontier_desc:0 "We are waiting for an unknown horizon in the Siberian wastelands. We must try to get them!"
+ #

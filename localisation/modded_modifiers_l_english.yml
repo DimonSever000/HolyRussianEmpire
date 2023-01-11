@@ -115,5 +115,12 @@
  modifier_pskov_2_4:0 "Stabilization of Polotsk"
  modifier_pskov_2_5:0 "Great Pskov"
  modifier_pskov_3_4:0 "Control of Novgorod"
+ #
+ modifier_don_2_4:0 "Control over autonomy"
+ modifier_don_2_5:0 "Great Hetmanate"
+ modifier_don_3_3:0 "Bet on cavalry"
+ modifier_don_3_4:0 "Religious upsurge"
+ #
+ HRE_establish_new_siberian_frontier:0 "March to Siberia"
  
  

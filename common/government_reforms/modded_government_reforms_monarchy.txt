@@ -63,3 +63,34 @@ tsardom = {
 		claim_states = yes
 	}
 }
+
+cossacks_monarchy = {
+	icon = "cossacks_monarchy"
+	allow_normal_conversion = yes
+	potential = {
+		has_estate = estate_cossacks
+	}
+	fixed_rank = 2
+	legacy_equivalent = cossacks_monarchy_legacy
+	
+	custom_attributes = {
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = yes
+		elections_increase_factions_influence = no
+		lottery_election = yes
+		election_on_death = yes
+	}
+
+	modifiers = {
+		war_exhaustion = -0.05
+		cavalry_cost = -0.2
+		max_absolutism = 20
+	}
+
+	conditional = {
+		allow = { }
+		government_abilities = {
+			russian_mechanic
+		}
+	}
+}

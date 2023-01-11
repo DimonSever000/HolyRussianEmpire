@@ -62,6 +62,8 @@ monarchy = {
 				polish_autocratic_monarchy
 				lithuanian_grand_kingdom
 				lithuanian_grand_empire
+				# modded
+				cossacks_monarchy
 			}
 		}
 		hereditary_vs_nobility = {
@@ -238,6 +240,8 @@ monarchy = {
 		solomonic_empire_legacy
 		musa_rule_legacy
 		mossi_federal_kingdom_legacy
+		# modded
+		cossacks_monarchy_legacy
 	}
 
 	# Each group of exclusive reforms are mutually exclusive to each other

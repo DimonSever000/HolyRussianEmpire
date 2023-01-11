@@ -1,0 +1,31 @@
+country_decisions = {
+
+	HRE_establish_new_siberian_frontier = {
+		potential = {
+			NOT = { has_country_modifier = HRE_establish_new_siberian_frontier }
+			is_part_of_hre = yes
+		}
+		allow = {
+			is_part_of_hre = yes
+			any_owned_province = {
+				OR = {
+					region = east_siberia_region
+					region = west_siberia_region
+					region = ural_region
+				}
+			}
+		}
+		
+		effect = {
+			add_adm_power = -150
+			add_country_modifier = {
+				name = "HRE_establish_new_siberian_frontier"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		ai_importance = 100
+	}
+}

@@ -13,7 +13,6 @@ capital = "Alatyr"
 is_city = yes
 add_core = R1V
 add_core = R1R
-add_core = NZH
 
 
 

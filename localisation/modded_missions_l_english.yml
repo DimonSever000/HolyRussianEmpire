@@ -708,4 +708,82 @@
  polovtsy_3_5_desc:0 "The Ural principalities are the most distant from central Rus' and are not able to offer such fierce resistance."
  polovtsy_3_6_title:0 "Return to the steppes"
  polovtsy_3_6_desc:0 "The boundless lands of Great Tartaria are a restless place. We own them."
- 
+ #
+ #
+ #
+ nizhny_novgorod_1_2_title:0 "Nizhny Novgorod Cathedral"
+ nizhny_novgorod_1_2_desc:0 "Nizhny Novgorod is a relatively young Russian city built in wild barbarian areas. Our duty is to carry the light of faith."
+ nizhny_novgorod_1_4_title:0 "Influence on the Emperor"
+ nizhny_novgorod_1_4_desc:0 "Nizhny Novgorod citizens should have weight in the Imperial Duma. We must achieve this."
+ #
+ nizhny_novgorod_2_1_title:0 "Great council"
+ nizhny_novgorod_2_1_desc:0 "Convening a city meeting is a regular procedure for choosing a course for the development of Nizhny Novgorod."
+ nizhny_novgorod_2_2_title:0 "Decomposition of the Vladimir"
+ nizhny_novgorod_2_2_desc:0 "The principality of Vladimir controls the territories that were once claimed by the Nizhny Novgorod - Suzdal principality. We must fight for them again."
+ nizhny_novgorod_2_3_title:0 "Novgorod-Suzdal"
+ nizhny_novgorod_2_3_desc:0 "Our duty is to return the territories of the Nizhny Novgorod - Suzdal principality and reform the state system."
+ nizhny_novgorod_2_4_title:0 "Convocation of the Veche"
+ nizhny_novgorod_2_4_desc:0 "Now that we control the core of the principality, we must determine the future of the government system."
+ nizhny_novgorod_2_5_title:0 "Prosperity of Nizhny Novgorod"
+ nizhny_novgorod_2_5_desc:0 "The growth of the welfare of the state, its power and influence will allow us to enter our own golden age."
+ #
+ nizhny_novgorod_3_2_title:0 "Capital urbanization"
+ nizhny_novgorod_3_2_desc:0 "The expansion of the city beyond the city wall and the growth of income is an important task for the government."
+ nizhny_novgorod_3_3_title:0 "Kazan trade"
+ nizhny_novgorod_3_3_desc:0 "Nizhny Novgorod merchants must control trade in the Kazan region, enriching our state."
+ nizhny_novgorod_3_4_title:0 "Trade preferences"
+ nizhny_novgorod_3_4_desc:0 "The growth of trade influence outside the Kazan trade hub leads to the expansion of trading companies and interests."
+ nizhny_novgorod_3_5_title:0 "Nizhny Novgorod University"
+ nizhny_novgorod_3_5_desc:0 "Nizhny Novgorod University will become a center of attraction for innovative ideas and innovators from all over the empire."
+ #
+ #
+ #
+ beloozero_1_2_title:0 "Growing Influence"
+ beloozero_1_2_desc:0 "The development and expansion of the state, together with the support of our rule within the empire, opens up great prospects."
+ beloozero_1_3_title:0 "Economic growth"
+ beloozero_1_3_desc:0 "Increasing the welfare of the state will allow us to fight more profitable wars and strengthen our bargaining power."
+ beloozero_1_4_title:0 "Grand Fleet"
+ beloozero_1_4_desc:0 "The great and vast fleet of the White Sea is what we are striving for. Ship ownership is prestigious and beneficial to our trade."
+ #
+ beloozero_2_1_title:0 "Annexation of Velsk"
+ beloozero_2_1_desc:0 "The end of the independence of Velsk is a logical step towards the centralization of possessions."
+ beloozero_2_2_title:0 "Kostroma weakening"
+ beloozero_2_2_desc:0 "Vologda is a relatively rich northern region of Rus', the occupation of which, among other things, will crush the ambitions of Kostroma and enrich our state."
+ beloozero_2_3_title:0 "Ustyug capture"
+ beloozero_2_3_desc:0 "Veliky Ustyug is a rather passive principality in the outskirts of Rus', but its annexation opens the way for us to Arkhangelsk, a rich Russian port."
+ beloozero_2_4_title:0 "Trade expansion"
+ beloozero_2_4_desc:0 "Granting privileges to merchants and expanding infrastructure guarantees us prosperity for years to come."
+ beloozero_2_5_title:0 "Way to greatness"
+ beloozero_2_5_desc:0 "We have eclipsed the most dangerous competitors and have taken possession of a vast region of northern Rus'. This is truly a great event for our state."
+ #
+ beloozero_3_3_title:0 "White Sea project"
+ beloozero_3_3_desc:0 "The preparation of the state for the invasion of Arkhangelsk and the nearest principalities is an important stage in the conquest of the north."
+ beloozero_3_4_title:0 "Rivalry with Novgorod"
+ beloozero_3_4_desc:0 "Ownership of the northern ports of Rus' puts Novgorod in a difficult position. We absolutely must win this fight."
+ #
+ #
+ #
+ pskov_1_2_title:0 "Fight for trade"
+ pskov_1_2_desc:0 "Neighborhood with Novgorod forces us to wage a difficult but important trade struggle for influence in the region."
+ pskov_1_3_title:0 "Merchant navy"
+ pskov_1_3_desc:0 "Getting access to the sea allows us to go to the Baltic and advance our interests in the field of war and peace trade."
+ pskov_1_4_title:0 "Investment in production"
+ pskov_1_4_desc:0 "The development of trade should be accompanied by investments in production in our regions in order to attract large capitals."
+ #
+ pskov_2_1_title:0 "Pskov Kremlin"
+ pskov_2_1_desc:0 "The Pskov Kremlin was completely destroyed as a result of a humiliating peace treaty with Novgorod. We are must to restore our fortress walls for the sake of our own security."
+ pskov_2_2_title:0 "Capture of Narva"
+ pskov_2_2_desc:0 "Narva is an important strategic city that would allow us to profitably defend our cities from devastation by the western crusaders."
+ pskov_2_3_title:0 "Expulsion of the knights"
+ pskov_2_3_desc:0 "Our mission is to move hostile armies as far as possible from empire borders."
+ pskov_2_4_title:0 "Capture of Polotsk"
+ pskov_2_4_desc:0 "Polotsk is quite an important trading city in the old trade route of the empire. His control will bring us great benefits."
+ pskov_2_5_title:0 "Great Veche"
+ pskov_2_5_desc:0 "Control over the most important strategic regions allowed us to protect our interests and borders from foreigners. This era can rightly be called great."
+ #
+ pskov_3_1_title:0 "Search for defenders"
+ pskov_3_1_desc:0 "The situation of the republic is difficult after the isolation that arose as a result of the humiliating peace with Novgorod. We must protect ourselves and prevent this from happening again."
+ pskov_3_3_title:0 "Threat to Novgorod"
+ pskov_3_3_desc:0 "First of all, we should weaken Novgorod in the economic sphere and weaken its commercial influence."
+ pskov_3_4_title:0 "Crush Novgorod"
+ pskov_3_4_desc:0 "The military capture of the previously lost Luki, as well as the military humiliation of Novgorod, is what we have been waiting for so long."

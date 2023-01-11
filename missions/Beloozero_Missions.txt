@@ -1,0 +1,384 @@
+beloozero_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = BLO
+		}
+	}
+	has_country_shield = yes
+
+	beloozero_1_2 = {
+		position = 2
+		icon = imperial_ascendancy
+		required_missions = { beloozero_2_1 }
+		trigger = {
+			calc_true_if = {
+				amount = 3
+				all_elector = {
+					preferred_emperor = ROOT
+				}
+			}
+			OR = {
+				is_elector = yes
+				is_emperor = yes
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "modifier_beloozero_1_2"
+				duration = 7300
+			}
+			add_dip_power = 50
+		}
+	}
+	beloozero_1_3 = {
+		position = 3
+		icon = mission_high_income
+		required_missions = { beloozero_1_2 }
+		trigger = {
+			NOT = { inflation = 0.1 }
+			NOT = { num_of_loans = 1 }
+			has_any_disaster = no
+			NOT = { corruption = 1 }
+			share_of_starting_income = 3
+		}
+		effect = {
+			add_adm_power = 100
+		}
+	}
+	beloozero_1_4 = {
+		position = 4
+		icon = mission_establish_high_seas_navy
+		required_missions = { beloozero_1_3 }
+		trigger = {
+			naval_forcelimit = 40
+		}
+		effect = {
+			add_prestige = 20
+			define_advisor = {
+				type = naval_reformer 
+				cost_multiplier = 0.3
+				skill = 3 
+			}
+		}
+	}
+}
+beloozero_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = BLO
+		}
+	}
+	has_country_shield = yes
+	
+	
+	beloozero_2_1 = {
+		position = 1
+		icon = mission_have_two_subjects
+		required_missions = { }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4259
+			}
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			owns = 4259
+			stability = 0
+		}
+		effect = {
+			add_mil_power = 25
+			314 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	beloozero_2_2 = {
+		position = 2
+		icon = mission_dethrone_the_rurikovichs
+		required_missions = { beloozero_2_1 }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 314
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			314 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 15
+			vologda_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			1755 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	beloozero_2_3 = {
+		position = 3
+		icon = mission_unite_home_region
+		required_missions = { beloozero_2_2 }
+		provinces_to_highlight = {
+			OR = {
+				area = vologda_area
+				province_id = 1755
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			vologda_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			1755 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_yearly_manpower = 1
+			add_mil_power = 100
+		}
+	}
+	
+	beloozero_2_4 = {
+		position = 4
+		icon = mission_dominate_home_trade_node
+		required_missions = { beloozero_2_3 beloozero_3_3 }
+		trigger = {
+			num_of_owned_provinces_with = {
+				OR = {
+					has_building = marketplace 
+					has_building = trade_depot
+					has_building = stock_exchange
+				}
+				development = 12
+				value = 4
+			}
+			33 = {
+				is_strongest_trade_power = ROOT
+			}
+		}
+		effect = {
+			capital_scope = {
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+			}
+			add_country_modifier = {
+				name = "modifier_beloozero_2_4"
+				duration = 9125 #25 years
+			}
+		}
+	}
+	
+	beloozero_2_5 = {
+		position = 5
+		icon = mission_monarch_in_throne_room
+		required_missions = { beloozero_1_4 beloozero_2_4 beloozero_3_4 }
+		provinces_to_highlight = {
+			OR = {
+				area = novgorod_area
+				area = arkhangelsk_area
+				area = beloozero_area
+				area = pomor_area
+				area = vologda_area
+				area = north_karelia
+				area = karelia_area
+				province_id = 1755
+				province_id = 1777
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			novgorod_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			arkhangelsk_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			beloozero_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			pomor_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			vologda_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			north_karelia = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			karelia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			1755 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			1777 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			if = {
+				limit = {
+					government = monarchy
+				}
+				legitimacy = 90
+				is_emperor = yes
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "modifier_beloozero_2_5"
+				duration = -1
+			}
+		}
+	}
+}
+
+beloozero_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = BLO
+		}
+	}
+	has_country_shield = yes
+
+	beloozero_3_3 = {
+		position = 3
+		icon = mission_develop_nevas_port
+		required_missions = { beloozero_2_2 }
+		provinces_to_highlight = {
+			OR = {
+				area = vologda_area
+				province_id = 1755
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			vologda_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			1755 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			north_karelia = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			arkhangelsk_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			pomor_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			1777 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	beloozero_3_4 = {
+		position = 4
+		icon = mission_found_arkhangelsk
+		required_missions = { beloozero_3_3 }
+		provinces_to_highlight = {
+			OR = {
+				area = north_karelia
+				area = pomor_area
+				area = arkhangelsk_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			north_karelia = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			pomor_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			arkhangelsk_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			karelia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			novgorod_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}

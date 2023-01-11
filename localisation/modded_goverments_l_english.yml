@@ -35,3 +35,8 @@
  HETMAN:0 "Hetman"
  GRAND_HETMAN:0 "Grand Hetman"
  GREAT_HETMAN:0 "Great Hetman"
+ #
+ pskovian_republic:0 "Pskovian republic"
+ pskovian_republic_desc:0 "The country is governed through representatives in a parliament composed of the largest and most important trading cities."
+ pskovian_republic_legacy:0 "Pskovian republic"
+ pskovian_republic_legacy_desc:0 "The country is governed through representatives in a parliament composed of the largest and most important trading cities."

@@ -346,6 +346,7 @@ republic = {
 		boyars_republic_legacy
 		peasant_republic_legacy
 		cossacks_republic_legacy
+		pskovian_republic_legacy
 	}
 	reform_levels = {
 		oligarchy_merchant_class_noble_elite = {
@@ -384,6 +385,7 @@ republic = {
 				boyars_republic
 				peasant_republic
 				cossacks_republic
+				pskovian_republic
 			}
 		}
 		republican_virtues = {

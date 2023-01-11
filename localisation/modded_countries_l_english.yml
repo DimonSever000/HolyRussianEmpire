@@ -145,6 +145,10 @@
  R3V_ADJ:0 "Murom"
  R3W:0 "Tula"
  R3W_ADJ:0 "Tula"
+ R3X:0 "Kursk"
+ R3X_ADJ:0 "Kursk"
+ R3Y:0 "Rylsk"
+ R3Y_ADJ:0 "Rylsk"
  #
  N1A:0 "Chelyabinsk"
  N1A_ADJ:0 "Chelyabinsk"
@@ -220,7 +224,9 @@
  #
  #
  #
- RostovSuzdal:0 "Rostov-Suzdal"
- RostovSuzdal_ADJ:0 "Rostov-Suzdal"
+ RostovSuzdal:0 "Rostov - Suzdal"
+ RostovSuzdal_ADJ:0 "Rostov - Suzdal"
  BalticOrder:0 "Baltic Order"
  BalticOrder_ADJ:0 "Baltic Order"
+ NizhnyNovgorodSuzdal:0 "Nizhny Novgorod - Suzdal"
+ NizhnyNovgorodSuzdal:0 "Nizhny Novgorod - Suzdal"

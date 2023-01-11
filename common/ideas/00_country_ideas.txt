@@ -7966,44 +7966,6 @@ CYI_ideas = {
 	}
 }
 
-NZH_ideas = {
-	start = {
-		build_cost = -0.1
-		fort_maintenance_modifier = -0.10	
-	}
-
-	bonus = {
-		fabricate_claims_cost = -0.25
-	}
-	
-	trigger = {
-		tag = NZH
-	}
-	free = yes		#
-	
-	nzh_at_the_confluence_of_two_giants = {
-		caravan_power = 0.20
-	}
-	nzh_crossroads_of_nations = {
-		development_cost = -0.1
-	}
-	nzh_issue_land_reforms = {
-		global_tax_modifier = 0.10
-	}
-	nzh_citadel_of_russia = {
-		defensiveness = 0.10
-	}
-	nzh_expand_to_the_east = {
-		colonists = 1
-	}
-	nzh_open_up_the_river_trade = {
-		trade_efficiency = 0.10
-	}
-	nzh_russian_ambition = {
-		culture_conversion_cost = -0.15
-	}
-}
-
 SMI_ideas = {
 	start = {
 		religious_unity = 0.3
@@ -10556,42 +10518,6 @@ SBA_ideas = {
 	}
 	sba_mogami_family = {
 		infantry_power = 0.1
-	}
-}
-
-BLO_ideas = {
-	start = {
-		infantry_power = 0.1
-		trade_efficiency = 0.1
-	}
-	bonus = {
-		global_trade_goods_size_modifier = 0.1
-	}
-	trigger = {
-		tag = BLO
-	}
-	free = yes
-	
-	blo_martial_heritage = {
-		cavalry_cost = -0.1
-	}
-	blo_monastic_traditions = {
-		prestige = 1
-	}
-	blo_strengthen_local_lineages = {
-		legitimacy = 1
-	}
-	blo_control_the_northern_trade = {
-		global_own_trade_power = 0.25
-	}
-	blo_officers_of_beloozero = {
-		army_tradition = 0.5
-	}
-	blo_winter_warfare = {
-		hostile_attrition = 1
-	}
-	blo_scientific_patronage = {
-		technology_cost = -0.05
 	}
 }
 

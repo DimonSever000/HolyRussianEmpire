@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = principality
+technology_group = eastern
+religion = orthodox
+primary_culture = chernihivan
+add_accepted_culture = ryazanian
+capital = 298
+fixed_capital = 298
+
+1442.1.1 = {
+	monarch = {
+		name = "Konstantin"
+		dynasty = Rurikovich
+		birth_date = 1424.1.1
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}

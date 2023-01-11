@@ -163,9 +163,9 @@ rostov_2 = {
 				}
 				republican_tradition = 90
 			}
-			has_adm_advisor_1 = yes
-			has_dip_advisor_1 = yes
-			has_mil_advisor_1 = yes
+			has_adm_advisor = yes
+			has_dip_advisor = yes
+			has_mil_advisor = yes
 		}
 		effect = {
 			add_mil_power = 100

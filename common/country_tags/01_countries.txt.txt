@@ -72,6 +72,8 @@ R3T = "countries/R3T.txt"
 R3U = "countries/R3U.txt"
 R3V = "countries/R3V.txt"
 R3W = "countries/R3W.txt"
+R3X = "countries/R3X.txt"
+R3Y = "countries/R3Y.txt"
 #
 N1A = "countries/N1A.txt"
 N1B = "countries/N1B.txt"

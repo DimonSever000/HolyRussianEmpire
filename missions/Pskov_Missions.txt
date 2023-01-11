@@ -1,0 +1,398 @@
+pskov_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = PSK
+		}
+	}
+	has_country_shield = yes
+
+	pskov_1_2 = {
+		position = 2
+		icon = mission_high_income
+		required_missions = { }
+		trigger = {
+			num_of_owned_provinces_with = {
+				OR = {
+					has_building = marketplace 
+					has_building = trade_depot
+					has_building = stock_exchange
+				}
+				value = 3
+			}
+		}
+		effect = {
+			capital_scope = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+			add_country_modifier = {
+				name = "modifier_pskov_1_2"
+				duration = 9125 #25 years
+			}
+		}
+	}
+	pskov_1_3 = {
+		position = 3
+		icon = mission_develop_nevas_port
+		required_missions = { pskov_1_2 pskov_2_2}
+		trigger = {
+			naval_forcelimit = 20
+		}
+		effect = {
+			add_dip_power = 50
+			define_admiral = {
+				shock = 3
+				fire = 3
+				manuever = 4
+				siege = 0
+			}
+		}
+	}
+	pskov_1_4 = {
+		position = 4
+		icon = mission_have_manufactories
+		required_missions = { pskov_1_3 }
+		trigger = {
+			num_of_owned_provinces_with = {
+				OR = {
+					has_building = mills
+					has_building = farm_estate
+					has_building = tradecompany
+					has_building = plantations
+					has_building = textile
+					has_building = weapons
+					has_building = wharf
+					has_building = furnace
+				}
+				base_production = 10
+				value = 3
+			}
+			NOT = { inflation = 0.1 }
+			NOT = { num_of_loans = 1 }
+			NOT = { corruption = 1 }
+			share_of_starting_income = 3
+		}
+		effect = {
+			add_prestige = 20
+			define_advisor = {
+				type = natural_scientist
+				skill = 3
+				culture = root
+				cost_multiplier = 0.3
+			}
+		}
+	}
+}
+pskov_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = PSK
+		}
+	}
+	has_country_shield = yes
+	
+	
+	pskov_2_1 = {
+		position = 1
+		icon = modded_diplomacy
+		required_missions = { }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 274
+			}
+			NOT = {
+				has_fort_building_trigger = yes 
+			}
+		}
+		trigger = {
+			274 = {
+				has_fort_building_trigger = yes 
+			}
+		}
+		effect = {
+			add_mil_power = 50
+			1842 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	pskov_2_2 = {
+		position = 2
+		icon = mission_conquer_50_development
+		required_missions = { pskov_2_1 }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1842
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			1842 = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 10
+			1834 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			273 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	pskov_2_3 = {
+		position = 3
+		icon = mission_teutonic_knights
+		required_missions = { pskov_2_2 }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1834
+				province_id = 273
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			1834 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			273 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			estonia_ingria_area = {
+				type = all
+				is_part_of_hre = yes
+			}
+			livonia_area = {
+				type = all
+				is_part_of_hre = yes
+			}
+			curonia_area = {
+				type = all
+				is_part_of_hre = yes
+			}
+		}
+		effect = {
+			add_yearly_manpower = 1
+			add_mil_power = 100
+			add_prestige = 20
+			275 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	pskov_2_4 = {
+		position = 4
+		icon = mission_unite_home_region
+		required_missions = { pskov_2_3 }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 275
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			275 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "modifier_pskov_2_4"
+				duration = 7300
+			}
+		}
+	}
+	
+	pskov_2_5 = {
+		position = 5
+		icon = mission_monarch_in_throne_room
+		required_missions = { pskov_1_4 pskov_2_4 pskov_3_4 }
+		provinces_to_highlight = {
+			OR = {
+				area = pskov_area
+				province_id = 273
+				province_id = 1834
+				province_id = 1842
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			pskov_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			273 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			1834 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			1842 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			if = {
+				limit = {
+					government = monarchy
+				}
+				legitimacy = 90
+				is_emperor = yes
+			}
+			else_if = {
+				limit = {
+					government = republic
+				}
+				republican_tradition = 90
+				is_elector = yes
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "modifier_pskov_2_5"
+				duration = -1
+			}
+		}
+	}
+}
+
+pskov_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = PSK
+		}
+	}
+	has_country_shield = yes
+
+	pskov_3_1 = {
+		position = 1
+		icon = balance_of_power
+		required_missions = { }
+		trigger = { 
+			custom_trigger_tooltip = {
+				tooltip = building_alliances.tooltip
+				num_of_allies = 2
+				calc_true_if = {
+					all_ally = {
+						has_opinion = {
+							who = ROOT
+							value = 150
+						}
+					}
+					amount = 2
+				}
+			}
+		}
+		effect = {
+			add_stability = 1
+			add_mil_power = 50
+		}
+	}
+
+	pskov_3_3 = {
+		position = 3
+		icon = mission_establish_the_prikazy
+		required_missions = { pskov_3_1 pskov_2_2 }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 274
+			}
+			NOT = {
+				has_building = marketplace 
+				has_building = trade_depot
+				has_building = stock_exchange
+			}
+		}
+		trigger = {
+			owns = 274
+			274 = {
+				has_building = marketplace 
+				has_building = trade_depot
+				has_building = stock_exchange
+			}
+			NOT = { num_of_loans = 1 }
+			OR = {
+				NOT = { exists = NOV }
+				NOT = {
+					33 = {
+						is_strongest_trade_power = NOV
+					}
+				}
+			}
+		}
+		effect = {
+			add_years_of_income = 1
+			add_prestige = 15
+			4148 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			add_casus_belli = {
+				type = cb_vassalize_mission
+				months = 300
+				target = NOV
+			}
+		}
+	}
+	
+	pskov_3_4 = {
+		position = 4
+		icon = mission_conquer_novgorod
+		required_missions = { pskov_3_3 }
+		trigger = { 
+			33 = {
+				is_strongest_trade_power = ROOT
+			}
+			OR = {
+				NOT = { exists = NOV }
+				NOV = { is_subject_of = root }
+			}
+		}
+		effect = {
+			add_prestige = 20
+			add_country_modifier = {
+				name = "modifier_pskov_3_4"
+				duration = 7300
+			}
+		}
+	}
+}

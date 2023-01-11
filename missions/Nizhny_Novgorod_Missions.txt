@@ -1,0 +1,310 @@
+nizhny_novgorod_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = NZH
+		}
+	}
+	has_country_shield = yes
+
+	nizhny_novgorod_1_2 = {
+		position = 2
+		icon = mission_cathedral_cities
+		required_missions = { nizhny_novgorod_2_1 }
+		provinces_to_highlight = {
+			province_id = 306
+			OR = {
+				NOT = { owned_by = ROOT }
+				OR = {
+					NOT = { has_building = cathedral }
+				}
+			}
+		}
+		trigger = {
+			306 = {
+				owned_by = ROOT
+				OR = {
+					has_building = cathedral
+				}
+			}
+		}
+		effect = {
+			add_stability = 1
+		}
+	}
+	nizhny_novgorod_1_4 = {
+		position = 4
+		icon = mission_empire
+		required_missions = { nizhny_novgorod_1_2 nizhny_novgorod_2_3 }
+		trigger = {
+			OR = {
+				is_elector = yes
+				is_emperor = yes
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "hegemonic_ambition"
+				duration = 7300 #25 years
+			}
+			add_dip_power = 50
+		}
+	}
+}
+nizhny_novgorod_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = NZH
+		}
+	}
+	has_country_shield = yes
+	
+	
+	nizhny_novgorod_2_1 = {
+		position = 1
+		icon = mission_settlers_north_america
+		required_missions = { }
+		trigger = {
+			stability = 1
+			if = {
+				limit = {
+					government = monarchy
+				}
+				legitimacy = 90
+			}
+			else_if = {
+				limit = {
+					government = republic
+				}
+				republican_tradition = 90
+			}
+			has_adm_advisor = yes
+			has_dip_advisor = yes
+			has_mil_advisor = yes
+		}
+		effect = {
+			country_event = { id = 18560021 }
+		}
+	}
+	nizhny_novgorod_2_2 = {
+		position = 2
+		icon = mission_dethrone_the_rurikovichs
+		required_missions = { nizhny_novgorod_2_1 }
+		trigger = {
+			has_mil_advisor_2 = yes
+			army_size_percentage = 1
+		}
+		effect = {
+			add_prestige = 10
+			4254 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			1754 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	nizhny_novgorod_2_3 = {
+		position = 3
+		icon = modded_diplomacy
+		required_missions = { nizhny_novgorod_2_2 }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4254
+				province_id = 1754
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			4254 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			1754 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_yearly_manpower = 2
+			add_mil_power = 25
+			suzdal_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	nizhny_novgorod_2_4 = {
+		position = 4
+		icon = mission_unite_the_princes
+		required_missions = { nizhny_novgorod_2_3 }
+		provinces_to_highlight = {
+			OR = {
+				area = suzdal_area
+				province_id = 306
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			suzdal_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			owns = 306
+			owns = 1956
+			has_adm_advisor = yes
+			has_dip_advisor = yes
+			has_mil_advisor = yes
+		}
+		effect = {
+			add_stability = 1
+			country_event = { id = 18560022 }
+		}
+	}
+	
+	nizhny_novgorod_2_5 = {
+		position = 5
+		icon = mission_war_chest
+		required_missions = { nizhny_novgorod_1_4 nizhny_novgorod_2_4 nizhny_novgorod_3_4 }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 306
+				area = suzdal_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			306 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			suzdal_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			if = {
+				limit = {
+					government = monarchy
+				}
+				legitimacy = 100
+				is_emperor = yes
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "modifier_nizhny_novgorod_2_5"
+				duration = -1
+			}
+			add_prestige = 20
+		}
+	}
+}
+
+nizhny_novgorod_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = NZH
+		}
+	}
+	has_country_shield = yes
+
+	nizhny_novgorod_3_2 = {
+		position = 2
+		icon = mission_conquer_50_development
+		required_missions = { nizhny_novgorod_2_1 }
+		trigger = { 
+			306 = {
+				development = 20
+			}
+			adm_tech = 10
+		}
+		effect = {
+			define_advisor = {
+				type = fortification_expert
+				skill = 3
+				culture = root
+				cost_multiplier = 0.3
+			}
+		}
+	}
+	
+	nizhny_novgorod_3_3 = {
+		position = 3
+		icon = mission_high_income
+		required_missions = { nizhny_novgorod_3_2 }
+		trigger = { 
+			NOT = { inflation = 0.1 }
+			NOT = { num_of_loans = 1 }
+			1082 = {
+				is_strongest_trade_power = ROOT
+			}
+		}
+		effect = {
+			add_years_of_income = 1
+			add_dip_power = 50
+		}
+	}
+	
+	nizhny_novgorod_3_4 = {
+		position = 4
+		icon = mission_dominate_home_trade_node
+		required_missions = { nizhny_novgorod_3_3 }
+		trigger = { 
+			num_of_owned_provinces_with = {
+				OR = {
+					has_building = marketplace 
+					has_building = trade_depot
+					has_building = stock_exchange
+				}
+				development = 15
+				value = 3
+			}
+			share_of_starting_income = 2
+		}
+		effect = {
+			add_prestige = 15
+			add_years_of_income = 1
+		}
+	}
+	
+	nizhny_novgorod_3_5 = {
+		position = 5
+		icon = mission_early_modern_university
+		required_missions = { nizhny_novgorod_3_4 }
+		trigger = {
+			306 = {
+				has_building = university
+			}
+		}
+		effect = {
+			change_innovativeness = 10
+			add_adm_power = 50
+			add_dip_power = 50
+			add_mil_power = 50
+		}
+	}
+}

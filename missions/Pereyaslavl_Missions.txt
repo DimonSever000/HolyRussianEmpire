@@ -84,7 +84,10 @@ pereyaslavl_1 = {
 		icon = mission_establish_the_prikazy
 		required_missions = { pereyaslavl_1_2 }
 		trigger = {
-			is_elector = yes
+			OR = {
+				is_elector = yes
+				is_emperor = yes
+			}
 		}
 		effect = {
 			280 = {
@@ -381,6 +384,7 @@ pereyaslavl_2 = {
 					government = republic
 				}
 				republican_tradition = 100
+				is_elector = yes
 			}
 			estate_loyalty = {
 				estate = estate_burghers

@@ -296,4 +296,30 @@
  #
  #
  #
+ modded_event_18560021_title:0 "Nizhegorodskoye sobraniye"
+ modded_event_18560021_desc:0 "The city council is made up of all estates and represents the broadest strata of influence in the Nozhny Novogorod. Funding is on the agenda. It is up to you to decide who will receive the support."
+ modded_event_18560021_option_1:0 "Church"
+ modded_event_18560021_option_2:0 "Merchants"
+ modded_event_18560021_option_3:0 "Army"
+ event_18560021_estate_church_influence_desc:0 "Church support"
+ event_18560021_estate_burghers_influence_desc:0 "Merchants support"
+ event_18560021_estate_nobles_influence_desc:0 "Army support"
+ #
+ #
+ #
+ modded_event_18560022_title:0 "Nizhny Novgorod - Suzdal Principality"
+ modded_event_18560022_desc:0 "Now that we have regained control over the territories of the once-existing principality, we must decide the future fate of the unification."
+ modded_event_18560022_option_1:0 "We will leave everything as it is"
+ modded_event_18560022_option_2:0 "Suzdal will become the new capital"
+ modded_event_18560022_option_3:0 "Nizhny Novgorod will be the capital"
+ #
+ #
+ #
+ modded_event_18560023_title:0 "Power Debate"
+ modded_event_18560023_desc:0 "The second, but not least important question is about power in the new state. We must determine the form of government and reform it."
+ modded_event_18560023_option_1:0 "We won't change a thing"
+ modded_event_18560023_option_2:0 "I will become a kniaz"
+ modded_event_18560023_option_3:0 "Veche republic!"
+ modded_event_18560023_option_4:0 "Boyar Republic!"
+ modded_event_18560023_option_5:0 "Peasant Republic!"
  

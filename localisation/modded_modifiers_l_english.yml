@@ -104,4 +104,16 @@
  modifier_polovtsy_2_7:0 "Capture of Qaraqorum"
  modifier_polovtsy_2_8:0 "Steppe revenge"
  modifier_polovtsy_3_6:0 "Power over Tartaria"
+ #
+ modifier_nizhny_novgorod_2_5:0 "Prosperity of Nizhny Novgorod"
+ #
+ modifier_beloozero_1_2:0 "Diplomatic initiative"
+ modifier_beloozero_2_4:0 "Trade influence"
+ modifier_beloozero_2_5:0 "Great Beloozero"
+ #
+ modifier_pskov_1_2:0 "Fight for trade"
+ modifier_pskov_2_4:0 "Stabilization of Polotsk"
+ modifier_pskov_2_5:0 "Great Pskov"
+ modifier_pskov_3_4:0 "Control of Novgorod"
+ 
  

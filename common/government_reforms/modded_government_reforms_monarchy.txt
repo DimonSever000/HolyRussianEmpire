@@ -5,11 +5,6 @@ principality = {
 		NOT = { has_reform = tsardom }
 		NOT = { have_had_reform = tsardom }
 		religion = orthodox
-		OR = {
-			AND = {
-				have_had_reform = principality
-			}
-		}
 	}
 	fixed_rank = 1
 	legacy_equivalent = principality_legacy

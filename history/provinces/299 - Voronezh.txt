@@ -12,6 +12,7 @@ base_manpower = 3
 capital = "Voronezh"
 is_city = yes
 add_core = R2D
+add_core = R3X
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim

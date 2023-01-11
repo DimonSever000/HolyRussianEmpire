@@ -5,3 +5,13 @@ religion = orthodox
 primary_culture = ryazanian
 capital = 300
 fixed_capital = 300
+
+1432.1.1 = {
+	monarch = {
+		name = "Vladimir"
+		dynasty = Rurikovich
+		dip = 4
+		adm = 4
+		mil = 0
+	}
+}

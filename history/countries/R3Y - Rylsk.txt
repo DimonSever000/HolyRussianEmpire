@@ -1,0 +1,17 @@
+government = republic
+add_government_reform = boyars_republic
+technology_group = eastern
+religion = orthodox
+primary_culture = chernihivan
+capital = 4543
+fixed_capital = 4543
+
+1435.1.1 = {
+	monarch = {
+		name = "Vasily"
+		dynasty = Rurikovich
+		dip = 1
+		adm = 2
+		mil = 3
+	}
+}

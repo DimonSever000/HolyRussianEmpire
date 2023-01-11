@@ -8,6 +8,8 @@ technology_group = eastern
 capital = 310	# Novgorod
 fixed_capital = 310 # Cannot move capital away from this province & no power cost to move to it
 elector = yes
+historical_rival = PSK
+historical_rival = KIE
 
 historical_friend = R1A
 historical_friend = R1R

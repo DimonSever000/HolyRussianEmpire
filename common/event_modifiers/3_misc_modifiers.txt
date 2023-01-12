@@ -436,3 +436,58 @@ HRE_establish_new_siberian_frontier = {
 	may_establish_frontier = yes
 	auto_explore_adjacent_to_colony = yes
 }
+#
+#
+#
+modifier_holy_russian_empire = {
+	picture = "imperial_authority"
+	prestige = 3
+	technology_cost = -0.05
+	global_institution_spread = 0.1
+	global_tax_modifier = 0.05
+	advisor_pool = 1
+	free_leader_pool = 1
+	diplomats = 1
+	diplomatic_reputation = 3
+	diplomatic_upkeep = 1
+	land_forcelimit = 100
+	build_cost = -0.05
+	build_time = -0.05
+	global_unrest = -2
+	state_maintenance_modifier = -0.25
+	core_creation = -0.1
+	stability_cost_modifier = -0.1
+	legitimacy = 0.25
+	tolerance_own = 1
+	global_missionary_strength = 0.01
+	mercenary_cost = -0.25
+	culture_conversion_cost = -0.5
+}
+modifier_holy_russian_republic = {
+	picture = "imperial_authority"
+	prestige = 3
+	technology_cost = -0.05
+	global_institution_spread = 0.1
+	global_tax_modifier = 0.05
+	advisor_pool = 1
+	free_leader_pool = 1
+	diplomats = 1
+	diplomatic_reputation = 3
+	diplomatic_upkeep = 1
+	land_forcelimit = 100
+	build_cost = -0.05
+	build_time = -0.05
+	global_unrest = -2
+	state_maintenance_modifier = -0.25
+	core_creation = -0.1
+	stability_cost_modifier = -0.1
+	legitimacy = 0.25
+	tolerance_own = 1
+	global_missionary_strength = 0.01
+	mercenary_cost = -0.25
+	num_accepted_cultures = 5
+}
+
+#
+#
+#

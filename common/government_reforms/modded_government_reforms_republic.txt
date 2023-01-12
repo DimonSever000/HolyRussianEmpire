@@ -203,3 +203,47 @@ pskovian_republic = {
 	}
 	duration = 5
 }
+
+russian_republic = {
+	icon = "russian_republic"
+	allow_normal_conversion = no
+	potential = {
+		religion = orthodox
+	}
+	fixed_rank = 3
+	legacy_equivalent = russian_republic_legacy
+
+	modifiers = {
+		global_manpower_modifier = 0.20
+		land_maintenance_modifier = -0.1
+		infantry_power = 0.1
+		governing_capacity = 350
+	}
+
+	conditional = {
+		can_use_trade_post = yes
+		can_form_trade_league = no
+		trade_city_reform = trading_city
+		has_parliament = yes
+		government_abilities = {
+			russian_mechanic
+		}
+		claim_states = yes
+	}
+	
+	factions = {
+		mr_aristocrats
+		mr_traders
+		mr_guilds
+	}
+
+	boost_income = yes
+
+	custom_attributes = {
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+		elections_increase_factions_influence = yes
+	}
+
+	duration = 5
+}

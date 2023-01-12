@@ -1,4 +1,10 @@
 ﻿l_english:
+ #
+ R0A:0 "Holy Russian Republic"
+ R0A_ADJ:0 "Holy Russian Republic"
+ R0B:0 "Holy Russian Empire"
+ R0B_ADJ:0 "Holy Russian Empire"
+ #
  R1A:0 "Arkhangelsk"
  R1A_ADJ:0 "Arkhangelsk"
  R1B:0 "Onega"

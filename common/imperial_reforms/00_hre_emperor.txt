@@ -217,7 +217,7 @@ emperor_reichskrieg = {
 	}
 	on_effect = {
 		emperor = {
-			country_event = { id = 9075 tooltip = renovatio_effect }
+			country_event = { id = 18560026 tooltip = renovatio_effect }
 		}
 	}
 }
@@ -324,7 +324,7 @@ emperor_renovatio = {
 	}
 	on_effect = {
 		emperor = {
-			country_event = { id = 9075 tooltip = renovatio_effect }
+			country_event = { id = 18560027 tooltip = renovatio_effect }
 		}
 	}
 	required_reform = emperor_privilegia_de_non_appelando

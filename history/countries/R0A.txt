@@ -1,0 +1,7 @@
+government = republic
+add_government_reform = russian_republic
+primary_culture = russian
+religion = orthodox
+technology_group = eastern
+capital = 295
+government_rank = 3

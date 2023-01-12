@@ -12,6 +12,7 @@ base_manpower = 1
 capital = "Soroka"
 is_city = yes
 add_core = R1A
+add_core = R1B
 fort_15th = yes
 discovered_by = KAZ
 discovered_by = CRI

@@ -24,5 +24,13 @@ spriteTypes = {
 		name = "government_reform_cossacks_monarchy"
 		texturefile = "gfx//interface//government_reform_icons//cossacks_monarchy.dds"
 	}
+	spriteType = {
+		name = "government_reform_russian_monarchy"
+		texturefile = "gfx//interface//government_reform_icons//russian_monarchy.dds"
+	}
+	spriteType = {
+		name = "government_reform_russian_republic"
+		texturefile = "gfx//interface//government_reform_icons//russian_republic.dds"
+	}
 	
 }

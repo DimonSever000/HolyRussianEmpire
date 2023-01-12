@@ -64,6 +64,7 @@ monarchy = {
 				lithuanian_grand_empire
 				# modded
 				cossacks_monarchy
+				russian_monarchy
 			}
 		}
 		hereditary_vs_nobility = {
@@ -242,6 +243,7 @@ monarchy = {
 		mossi_federal_kingdom_legacy
 		# modded
 		cossacks_monarchy_legacy
+		russian_monarchy_legacy
 	}
 
 	# Each group of exclusive reforms are mutually exclusive to each other
@@ -351,6 +353,7 @@ republic = {
 		peasant_republic_legacy
 		cossacks_republic_legacy
 		pskovian_republic_legacy
+		russian_republic_legacy
 	}
 	reform_levels = {
 		oligarchy_merchant_class_noble_elite = {
@@ -390,6 +393,7 @@ republic = {
 				peasant_republic
 				cossacks_republic
 				pskovian_republic
+				russian_republic
 			}
 		}
 		republican_virtues = {

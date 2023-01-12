@@ -41,12 +41,6 @@ tsardom = {
 	}
 	fixed_rank = 3
 	legacy_equivalent = tsardom_legacy
-	valid_for_nation_designer = yes
-	nation_designer_cost = 40
-
-	nation_designer_trigger = {
-		religion = orthodox
-	}
 
 	modifiers = {
 		global_manpower_modifier = 0.20
@@ -92,5 +86,30 @@ cossacks_monarchy = {
 		government_abilities = {
 			russian_mechanic
 		}
+	}
+}
+
+russian_monarchy = {
+	icon = "russian_monarchy"
+	allow_normal_conversion = no
+	potential = {
+		religion = orthodox
+	}
+	fixed_rank = 3
+	legacy_equivalent = russian_monarchy_legacy
+
+	modifiers = {
+		discipline = 0.1
+		yearly_absolutism = 1
+		global_autonomy = -0.05
+		governing_capacity = 350
+	}
+
+	conditional = {
+		allow = {  }
+		government_abilities = {
+			russian_mechanic
+		}
+		claim_states = yes
 	}
 }

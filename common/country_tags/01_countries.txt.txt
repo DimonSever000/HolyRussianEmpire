@@ -1,3 +1,7 @@
+#
+R0A = "countries/R0A.txt"
+R0B = "countries/R0B.txt"
+#
 R1A = "countries/R1A.txt"
 R1B = "countries/R1B.txt"
 R1C = "countries/R1C.txt"

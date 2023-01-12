@@ -2460,3 +2460,141 @@ country_event = {
 		override_country_name = DonKuban
 	}
 }
+
+# HRE decentralization
+country_event = {
+	id = 18560026
+	title = "modded_event_18560026_title"
+	desc = "modded_event_18560026_desc"
+	picture = HRE_eventPicture
+
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "modded_event_18560026_option_1"
+		change_tag = R0A
+		restore_country_name_effect = yes
+		add_country_modifier = {
+			name = "HRE_establish_new_siberian_frontier"
+			duration = -1
+		}
+		add_country_modifier = {
+			name = "modifier_holy_russian_republic"
+			duration = -1
+		}
+		every_province = {
+			limit = {
+				is_part_of_hre = yes
+				OR = {
+					owned_by = ROOT
+					owner = { is_neighbor_of = ROOT }
+				}
+				NOT = { is_core = ROOT }
+			}
+			add_core = emperor
+		}
+		every_country = {
+			limit = {
+				is_part_of_hre = yes
+				is_emperor = no
+				num_of_cities = 1
+			}
+			country_event = { id = 18560028 }
+		}
+		dismantle_hre = yes
+		set_government_rank = 3
+		change_government = republic
+		add_government_reform = russian_republic
+		add_adm_power = 250
+		if = {
+			limit = {
+				has_custom_ideas = no
+			}
+			country_event = { id = ideagroups.1 }
+		}
+		swap_non_generic_missions = yes
+	}
+}
+
+# HRE centralization
+country_event = {
+	id = 18560027
+	title = "modded_event_18560027_title"
+	desc = "modded_event_18560027_desc"
+	picture = HRE_eventPicture
+
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "modded_event_18560027_option_1"
+		change_tag = R0B
+		restore_country_name_effect = yes
+		add_country_modifier = {
+			name = "HRE_establish_new_siberian_frontier"
+			duration = -1
+		}
+		add_country_modifier = {
+			name = "modifier_holy_russian_empire"
+			duration = -1
+		}
+		every_province = {
+			limit = {
+				is_part_of_hre = yes
+				OR = {
+					owned_by = ROOT
+					owner = { is_neighbor_of = ROOT }
+				}
+				NOT = { is_core = ROOT }
+			}
+			add_core = emperor
+		}
+		every_country = {
+			limit = {
+				is_part_of_hre = yes
+				is_emperor = no
+				num_of_cities = 1
+			}
+			country_event = { id = 18560028 }
+		}
+		dismantle_hre = yes
+		set_government_rank = 3
+		change_government = monarchy
+		add_government_reform = russian_monarchy
+		add_adm_power = 250
+		if = {
+			limit = {
+				has_custom_ideas = no
+			}
+			country_event = { id = ideagroups.1 }
+		}
+		swap_non_generic_missions = yes
+	}
+}
+
+# HRE member states
+country_event = {
+	id = 18560028
+	title = "modded_event_18560028_title"
+	desc = "modded_event_18560028_desc"
+	picture = HRE_eventPicture
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "modded_event_18560028_option_1"
+		if = {
+			limit = {
+				exists = R0A
+			}
+			R0A = { inherit = ROOT }
+		}
+		else_if = {
+			limit = {
+				exists = R0B
+			}
+			R0B = { inherit = ROOT }
+		}
+	}
+}

@@ -47,3 +47,18 @@
  cossacks_monarchy_legacy:0 "Cossacks monarchy"
  cossacks_monarchy_legacy_desc:0 "The state is controlled by the great hetman, who in fact controls all spheres of life."
  #
+ russian_republic:0 "Holy Russian Republic"
+ russian_republic_desc:0 "This state has come a long way from a fragmented feudal empire to a great republic."
+ russian_republic_legacy:0 "Holy Russian Republic"
+ russian_republic_legacy_desc:0 "This state has come a long way from a fragmented feudal empire to a great republic."
+ HOLY_RUSSIAN_REPUBLIC:0 "Holy Russian Republic"
+ PRESIDENT:0 "President"
+ #
+ russian_monarchy:0 "Holy Russian Empire"
+ russian_monarchy_desc:0 "This state has come a long way from a fragmented feudal empire to a great empire."
+ russian_monarchy_legacy:0 "Holy Russian Empire"
+ russian_monarchy_legacy_desc:0 "This state has come a long way from a fragmented feudal empire to a great empire."
+ HOLY_RUSSIAN_EMPIRE:0 "Holy Russian Empire"
+ TSAR_OF_ALL_RUS:0 "Tsar of all Rus'"
+ TSARITSA_OF_ALL_RUS:0 "Tsaritsa of all Rus'"
+ 

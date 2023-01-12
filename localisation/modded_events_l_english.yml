@@ -335,3 +335,18 @@
  modded_event_18560025_title:0 "Don-Kuban republic"
  modded_event_18560025_desc:0 "The unification of the steppe regions of the Don and Kuban is an important event. Both parts of the state are important enough that the name should be changed."
  modded_event_18560025_option_1:0 "Long life for Don-Kuban!"
+ #
+ #
+ #
+ modded_event_18560026_title:0 "Unification of the Holy Russian Republic"
+ modded_event_18560026_desc:0 "Decentralization and imperial reforms led to an unprecedented growth of confederate sentiments within the Holy Russian Empire. Finally, Russia will be united under one authority!"
+ modded_event_18560026_option_1:0 "Long live Russia!"
+ #
+ modded_event_18560027_title:0 "Unification of the Holy Russian Empire"
+ modded_event_18560027_desc:0 "Rigid centralization and imperial reforms led to the consolidation of the Holy Russian Empire. Finally, Russia will be united under one authority!"
+ modded_event_18560027_option_1:0 "Long live Russia!"
+ #
+ modded_event_18560028_title:0 "Unification of the Russia"
+ modded_event_18560028_desc:0 "The central government demands our submission."
+ modded_event_18560028_option_1:0 "Long live Russia!"
+ #

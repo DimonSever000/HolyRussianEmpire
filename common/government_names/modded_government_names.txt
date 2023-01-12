@@ -195,3 +195,76 @@ cossacks_monarchy = {
 		has_reform = cossacks_monarchy
 	}
 }
+
+modded_holy_russian_republic = {
+	rank = {
+		1 = HOLY_RUSSIAN_REPUBLIC
+		2 = HOLY_RUSSIAN_REPUBLIC
+		3 = HOLY_RUSSIAN_REPUBLIC
+	}
+
+	ruler_male = {
+		1 = PRESIDENT
+		2 = PRESIDENT
+		3 = PRESIDENT
+	}
+
+	ruler_female = {
+		1 = PRESIDENT
+		2 = PRESIDENT
+		3 = PRESIDENT
+	}
+
+	trigger = {
+		has_reform = russian_republic
+	}
+}
+
+modded_holy_russian_monarchy = {
+	rank = {
+		1 = HOLY_RUSSIAN_EMPIRE
+		2 = HOLY_RUSSIAN_EMPIRE
+		3 = HOLY_RUSSIAN_EMPIRE
+	}
+
+	ruler_male = {
+		1 = TSAR_OF_ALL_RUS
+		2 = TSAR_OF_ALL_RUS
+		3 = TSAR_OF_ALL_RUS
+	}
+
+	ruler_female = {
+		1 = TSARITSA_OF_ALL_RUS
+		2 = TSARITSA_OF_ALL_RUS
+		3 = TSARITSA_OF_ALL_RUS
+	}
+	consort_male = {
+		1 = TSAR_OF_ALL_RUS
+		2 = TSAR_OF_ALL_RUS
+		3 = TSAR_OF_ALL_RUS
+	}
+
+	consort_female = {
+		1 = TSARITSA_OF_ALL_RUS
+		2 = TSARITSA_OF_ALL_RUS
+		3 = TSARITSA_OF_ALL_RUS
+	}
+
+	heir_male = {
+		1 = TSAREVICH
+		2 = TSAREVICH
+		3 = TSAREVICH
+	}
+
+	heir_female = {
+		1 = TSAREVNA
+		2 = TSAREVNA
+		3 = TSAREVNA
+	}
+
+	trigger = {
+		OR = {
+			has_reform = russian_monarchy
+		}
+	}
+}
